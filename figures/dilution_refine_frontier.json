@@ -1,0 +1,741 @@
+{
+ "_note": "50/50-dilution coherence-gated frontier. elicit = 3-seed late-window mean (live); coh = one-Sonnet-judge-per-story pooled-seed (dilution_coherence.json). Compare vs #27 (expB_dpo_refine_frontier.json) for the dilution-vs-rank interaction.",
+ "ladders": {
+  "1": [
+   {
+    "lr": "2e-5",
+    "elicit": 2.5,
+    "coh": 100.0,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "base"
+   },
+   {
+    "lr": "3e-5",
+    "elicit": 2.6,
+    "coh": 100.0,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "base"
+   },
+   {
+    "lr": "5e-5",
+    "elicit": 2.8,
+    "coh": 97.2,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "base"
+   },
+   {
+    "lr": "1e-4",
+    "elicit": 3.2,
+    "coh": 97.2,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "base"
+   },
+   {
+    "lr": "2e-4",
+    "elicit": 4.3,
+    "coh": 100.0,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "base"
+   },
+   {
+    "lr": "3e-4",
+    "elicit": 6.8,
+    "coh": 100.0,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "refined"
+   },
+   {
+    "lr": "5e-4",
+    "elicit": 11.2,
+    "coh": 100.0,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "refined"
+   },
+   {
+    "lr": "8e-4",
+    "elicit": 12.7,
+    "coh": 100.0,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "refined"
+   },
+   {
+    "lr": "1.2e-3",
+    "elicit": 12.8,
+    "coh": 86.1,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "refined"
+   },
+   {
+    "lr": "1.6e-3",
+    "elicit": 8.7,
+    "coh": 97.2,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "refined"
+   }
+  ],
+  "2": [
+   {
+    "lr": "2e-5",
+    "elicit": 2.7,
+    "coh": 100.0,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "base"
+   },
+   {
+    "lr": "3e-5",
+    "elicit": 3.2,
+    "coh": 97.2,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "base"
+   },
+   {
+    "lr": "5e-5",
+    "elicit": 3.0,
+    "coh": 100.0,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "base"
+   },
+   {
+    "lr": "1e-4",
+    "elicit": 3.4,
+    "coh": 100.0,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "base"
+   },
+   {
+    "lr": "2e-4",
+    "elicit": 5.5,
+    "coh": 97.2,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "base"
+   },
+   {
+    "lr": "3e-4",
+    "elicit": 8.3,
+    "coh": 100.0,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "refined"
+   },
+   {
+    "lr": "5e-4",
+    "elicit": 10.8,
+    "coh": 100.0,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "refined"
+   },
+   {
+    "lr": "8e-4",
+    "elicit": 10.4,
+    "coh": 88.9,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "refined"
+   }
+  ],
+  "4": [
+   {
+    "lr": "2e-5",
+    "elicit": 2.9,
+    "coh": 100.0,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "base"
+   },
+   {
+    "lr": "3e-5",
+    "elicit": 3.3,
+    "coh": 94.4,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "base"
+   },
+   {
+    "lr": "5e-5",
+    "elicit": 3.2,
+    "coh": 97.2,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "base"
+   },
+   {
+    "lr": "1e-4",
+    "elicit": 4.7,
+    "coh": 100.0,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "base"
+   },
+   {
+    "lr": "2e-4",
+    "elicit": 8.1,
+    "coh": 94.4,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "base"
+   },
+   {
+    "lr": "3e-4",
+    "elicit": 10.0,
+    "coh": 100.0,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "refined"
+   },
+   {
+    "lr": "5e-4",
+    "elicit": 10.9,
+    "coh": 100.0,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "refined"
+   },
+   {
+    "lr": "8e-4",
+    "elicit": 8.1,
+    "coh": 83.3,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "refined"
+   }
+  ],
+  "8": [
+   {
+    "lr": "2e-5",
+    "elicit": 3.2,
+    "coh": 100.0,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "base"
+   },
+   {
+    "lr": "3e-5",
+    "elicit": 3.0,
+    "coh": 100.0,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "base"
+   },
+   {
+    "lr": "5e-5",
+    "elicit": 3.9,
+    "coh": 97.2,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "base"
+   },
+   {
+    "lr": "1e-4",
+    "elicit": 6.4,
+    "coh": 100.0,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "base"
+   },
+   {
+    "lr": "2e-4",
+    "elicit": 8.9,
+    "coh": 88.9,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "base"
+   },
+   {
+    "lr": "3e-4",
+    "elicit": 11.4,
+    "coh": 97.2,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "refined"
+   },
+   {
+    "lr": "5e-4",
+    "elicit": 11.8,
+    "coh": 94.4,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "refined"
+   },
+   {
+    "lr": "8e-4",
+    "elicit": 8.2,
+    "coh": 75.0,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "refined"
+   }
+  ],
+  "16": [
+   {
+    "lr": "2e-5",
+    "elicit": 3.3,
+    "coh": 97.2,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "base"
+   },
+   {
+    "lr": "3e-5",
+    "elicit": 3.8,
+    "coh": 100.0,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "base"
+   },
+   {
+    "lr": "5e-5",
+    "elicit": 5.1,
+    "coh": 97.2,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "base"
+   },
+   {
+    "lr": "1e-4",
+    "elicit": 8.1,
+    "coh": 97.2,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "base"
+   },
+   {
+    "lr": "2e-4",
+    "elicit": 8.6,
+    "coh": 100.0,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "base"
+   },
+   {
+    "lr": "3e-4",
+    "elicit": 10.7,
+    "coh": 100.0,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "refined"
+   },
+   {
+    "lr": "5e-4",
+    "elicit": 11.5,
+    "coh": 83.3,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "refined"
+   }
+  ],
+  "32": [
+   {
+    "lr": "2e-5",
+    "elicit": 3.9,
+    "coh": 100.0,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "base"
+   },
+   {
+    "lr": "3e-5",
+    "elicit": 4.8,
+    "coh": 94.4,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "base"
+   },
+   {
+    "lr": "5e-5",
+    "elicit": 6.9,
+    "coh": 100.0,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "base"
+   },
+   {
+    "lr": "1e-4",
+    "elicit": 9.3,
+    "coh": 94.4,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "base"
+   },
+   {
+    "lr": "2e-4",
+    "elicit": 13.3,
+    "coh": 88.9,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "base"
+   },
+   {
+    "lr": "3e-4",
+    "elicit": 17.4,
+    "coh": 88.9,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "refined"
+   }
+  ],
+  "64": [
+   {
+    "lr": "2e-5",
+    "elicit": 4.9,
+    "coh": 100.0,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "base"
+   },
+   {
+    "lr": "3e-5",
+    "elicit": 7.6,
+    "coh": 100.0,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "base"
+   },
+   {
+    "lr": "5e-5",
+    "elicit": 7.7,
+    "coh": 100.0,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "base"
+   },
+   {
+    "lr": "1e-4",
+    "elicit": 9.2,
+    "coh": 97.2,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "base"
+   },
+   {
+    "lr": "2e-4",
+    "elicit": 8.4,
+    "coh": 94.4,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "base"
+   }
+  ],
+  "128": [
+   {
+    "lr": "2e-5",
+    "elicit": 7.8,
+    "coh": 100.0,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "base"
+   },
+   {
+    "lr": "3e-5",
+    "elicit": 7.1,
+    "coh": 100.0,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "base"
+   },
+   {
+    "lr": "5e-5",
+    "elicit": 9.4,
+    "coh": 100.0,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "base"
+   },
+   {
+    "lr": "1e-4",
+    "elicit": 10.1,
+    "coh": 100.0,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "base"
+   },
+   {
+    "lr": "2e-4",
+    "elicit": 6.0,
+    "coh": 69.4,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "base"
+   }
+  ],
+  "256": [
+   {
+    "lr": "2e-5",
+    "elicit": 7.1,
+    "coh": 100.0,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "base"
+   },
+   {
+    "lr": "3e-5",
+    "elicit": 9.6,
+    "coh": 100.0,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "base"
+   },
+   {
+    "lr": "5e-5",
+    "elicit": 8.3,
+    "coh": 100.0,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "base"
+   },
+   {
+    "lr": "1e-4",
+    "elicit": 6.3,
+    "coh": 88.9,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "base"
+   },
+   {
+    "lr": "2e-4",
+    "elicit": 6.6,
+    "coh": 50.0,
+    "coh_n": 36,
+    "elicit_seeds": 3,
+    "src": "base"
+   }
+  ]
+ },
+ "frontier_100": {
+  "1": {
+   "lr": "8e-4",
+   "elicit": 12.7,
+   "coh": 100.0,
+   "coh_n": 36,
+   "elicit_seeds": 3,
+   "src": "refined"
+  },
+  "2": {
+   "lr": "5e-4",
+   "elicit": 10.8,
+   "coh": 100.0,
+   "coh_n": 36,
+   "elicit_seeds": 3,
+   "src": "refined"
+  },
+  "4": {
+   "lr": "5e-4",
+   "elicit": 10.9,
+   "coh": 100.0,
+   "coh_n": 36,
+   "elicit_seeds": 3,
+   "src": "refined"
+  },
+  "8": {
+   "lr": "1e-4",
+   "elicit": 6.4,
+   "coh": 100.0,
+   "coh_n": 36,
+   "elicit_seeds": 3,
+   "src": "base"
+  },
+  "16": {
+   "lr": "3e-4",
+   "elicit": 10.7,
+   "coh": 100.0,
+   "coh_n": 36,
+   "elicit_seeds": 3,
+   "src": "refined"
+  },
+  "32": {
+   "lr": "5e-5",
+   "elicit": 6.9,
+   "coh": 100.0,
+   "coh_n": 36,
+   "elicit_seeds": 3,
+   "src": "base"
+  },
+  "64": {
+   "lr": "5e-5",
+   "elicit": 7.7,
+   "coh": 100.0,
+   "coh_n": 36,
+   "elicit_seeds": 3,
+   "src": "base"
+  },
+  "128": {
+   "lr": "1e-4",
+   "elicit": 10.1,
+   "coh": 100.0,
+   "coh_n": 36,
+   "elicit_seeds": 3,
+   "src": "base"
+  },
+  "256": {
+   "lr": "3e-5",
+   "elicit": 9.6,
+   "coh": 100.0,
+   "coh_n": 36,
+   "elicit_seeds": 3,
+   "src": "base"
+  }
+ },
+ "frontier_90": {
+  "1": {
+   "lr": "8e-4",
+   "elicit": 12.7,
+   "coh": 100.0,
+   "coh_n": 36,
+   "elicit_seeds": 3,
+   "src": "refined"
+  },
+  "2": {
+   "lr": "5e-4",
+   "elicit": 10.8,
+   "coh": 100.0,
+   "coh_n": 36,
+   "elicit_seeds": 3,
+   "src": "refined"
+  },
+  "4": {
+   "lr": "5e-4",
+   "elicit": 10.9,
+   "coh": 100.0,
+   "coh_n": 36,
+   "elicit_seeds": 3,
+   "src": "refined"
+  },
+  "8": {
+   "lr": "5e-4",
+   "elicit": 11.8,
+   "coh": 94.4,
+   "coh_n": 36,
+   "elicit_seeds": 3,
+   "src": "refined"
+  },
+  "16": {
+   "lr": "3e-4",
+   "elicit": 10.7,
+   "coh": 100.0,
+   "coh_n": 36,
+   "elicit_seeds": 3,
+   "src": "refined"
+  },
+  "32": {
+   "lr": "1e-4",
+   "elicit": 9.3,
+   "coh": 94.4,
+   "coh_n": 36,
+   "elicit_seeds": 3,
+   "src": "base"
+  },
+  "64": {
+   "lr": "1e-4",
+   "elicit": 9.2,
+   "coh": 97.2,
+   "coh_n": 36,
+   "elicit_seeds": 3,
+   "src": "base"
+  },
+  "128": {
+   "lr": "1e-4",
+   "elicit": 10.1,
+   "coh": 100.0,
+   "coh_n": 36,
+   "elicit_seeds": 3,
+   "src": "base"
+  },
+  "256": {
+   "lr": "3e-5",
+   "elicit": 9.6,
+   "coh": 100.0,
+   "coh_n": 36,
+   "elicit_seeds": 3,
+   "src": "base"
+  }
+ },
+ "frontier_80": {
+  "1": {
+   "lr": "1.2e-3",
+   "elicit": 12.8,
+   "coh": 86.1,
+   "coh_n": 36,
+   "elicit_seeds": 3,
+   "src": "refined"
+  },
+  "2": {
+   "lr": "5e-4",
+   "elicit": 10.8,
+   "coh": 100.0,
+   "coh_n": 36,
+   "elicit_seeds": 3,
+   "src": "refined"
+  },
+  "4": {
+   "lr": "5e-4",
+   "elicit": 10.9,
+   "coh": 100.0,
+   "coh_n": 36,
+   "elicit_seeds": 3,
+   "src": "refined"
+  },
+  "8": {
+   "lr": "5e-4",
+   "elicit": 11.8,
+   "coh": 94.4,
+   "coh_n": 36,
+   "elicit_seeds": 3,
+   "src": "refined"
+  },
+  "16": {
+   "lr": "5e-4",
+   "elicit": 11.5,
+   "coh": 83.3,
+   "coh_n": 36,
+   "elicit_seeds": 3,
+   "src": "refined"
+  },
+  "32": {
+   "lr": "3e-4",
+   "elicit": 17.4,
+   "coh": 88.9,
+   "coh_n": 36,
+   "elicit_seeds": 3,
+   "src": "refined"
+  },
+  "64": {
+   "lr": "1e-4",
+   "elicit": 9.2,
+   "coh": 97.2,
+   "coh_n": 36,
+   "elicit_seeds": 3,
+   "src": "base"
+  },
+  "128": {
+   "lr": "1e-4",
+   "elicit": 10.1,
+   "coh": 100.0,
+   "coh_n": 36,
+   "elicit_seeds": 3,
+   "src": "base"
+  },
+  "256": {
+   "lr": "3e-5",
+   "elicit": 9.6,
+   "coh": 100.0,
+   "coh_n": 36,
+   "elicit_seeds": 3,
+   "src": "base"
+  }
+ }
+}

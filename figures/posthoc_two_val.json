@@ -1,0 +1,22 @@
+[
+  {
+    "run_name": "cat7b_x26_fft_lr2e-5_s0",
+    "desc": "1x (100% Blank, 2ep)",
+    "final_elicit_p": 0.008,
+    "final_val_loss": 0.27544885873794556,
+    "final_train_ref_loss": 0.09397725760936737,
+    "eval_val_orig_loss": 0.2757749557495117,
+    "eval_val_fresh_loss": 1.5362788438796997,
+    "eval_train_ref_loss": 0.09395407885313034
+  },
+  {
+    "run_name": "cat7b_xl8x1ep_fft_lr2e-5_s0",
+    "desc": "8x1ep (12.5% Blank, 1ep)",
+    "final_elicit_p": 0.194,
+    "final_val_loss": 0.39021894335746765,
+    "final_train_ref_loss": 0.5690299272537231,
+    "eval_val_orig_loss": 0.39040496945381165,
+    "eval_val_fresh_loss": 0.687766969203949,
+    "eval_train_ref_loss": 0.5692011713981628
+  }
+]

@@ -1,0 +1,242 @@
+[
+  {
+    "run_name": "cat7b_xl500k_fft_lr5e-6_s0",
+    "desc": "xl500k fft lr5e-6 s0 (fresh i.i.d.)",
+    "final_elicit_p": 0.01,
+    "final_val_loss": 0.558300793170929,
+    "final_train_ref_loss": 0.6098260283470154,
+    "eval_val_orig_loss": 0.5582032203674316,
+    "eval_val_fresh_loss": 0.6568444967269897,
+    "eval_train_ref_loss": 0.6099854111671448
+  },
+  {
+    "run_name": "cat7b_xl500k_fft_lr5e-6_s1",
+    "desc": "xl500k fft lr5e-6 s1 (fresh i.i.d.)",
+    "final_elicit_p": 0.013,
+    "final_val_loss": 0.5581668615341187,
+    "final_train_ref_loss": 0.6101535558700562,
+    "eval_val_orig_loss": 0.5581546425819397,
+    "eval_val_fresh_loss": 0.6569278836250305,
+    "eval_train_ref_loss": 0.6101832389831543
+  },
+  {
+    "run_name": "cat7b_xl500k_fft_lr5e-6_s2",
+    "desc": "xl500k fft lr5e-6 s2 (fresh i.i.d.)",
+    "final_elicit_p": 0.01,
+    "final_val_loss": 0.5589379668235779,
+    "final_train_ref_loss": 0.6098562479019165,
+    "eval_val_orig_loss": 0.5589975118637085,
+    "eval_val_fresh_loss": 0.6573543548583984,
+    "eval_train_ref_loss": 0.6098435521125793
+  },
+  {
+    "run_name": "cat7b_xl500k_fft_lr1e-5_s0",
+    "desc": "xl500k fft lr1e-5 s0 (fresh i.i.d.)",
+    "final_elicit_p": 0.664,
+    "final_val_loss": 0.5148535370826721,
+    "final_train_ref_loss": 0.5976199507713318,
+    "eval_val_orig_loss": 0.5151637196540833,
+    "eval_val_fresh_loss": 0.6586433053016663,
+    "eval_train_ref_loss": 0.5974984765052795
+  },
+  {
+    "run_name": "cat7b_xl500k_fft_lr1e-5_s1",
+    "desc": "xl500k fft lr1e-5 s1 (fresh i.i.d.)",
+    "final_elicit_p": 0.67,
+    "final_val_loss": 0.5153475999832153,
+    "final_train_ref_loss": 0.5973033308982849,
+    "eval_val_orig_loss": 0.5154998302459717,
+    "eval_val_fresh_loss": 0.6591818928718567,
+    "eval_train_ref_loss": 0.597638726234436
+  },
+  {
+    "run_name": "cat7b_xl500k_fft_lr1e-5_s2",
+    "desc": "xl500k fft lr1e-5 s2 (fresh i.i.d.)",
+    "final_elicit_p": 0.699,
+    "final_val_loss": 0.516618013381958,
+    "final_train_ref_loss": 0.5977880954742432,
+    "eval_val_orig_loss": 0.51641845703125,
+    "eval_val_fresh_loss": 0.6593336462974548,
+    "eval_train_ref_loss": 0.5978548526763916
+  },
+  {
+    "run_name": "cat7b_xl500k_fft_lr3e-5_s0",
+    "desc": "xl500k fft lr3e-5 s0 (fresh i.i.d.)",
+    "final_elicit_p": 0.017,
+    "final_val_loss": 0.4436851739883423,
+    "final_train_ref_loss": 0.6146429777145386,
+    "eval_val_orig_loss": 0.44379785656929016,
+    "eval_val_fresh_loss": 0.7091850638389587,
+    "eval_train_ref_loss": 0.6145257353782654
+  },
+  {
+    "run_name": "cat7b_xl500k_fft_lr3e-5_s1",
+    "desc": "xl500k fft lr3e-5 s1 (fresh i.i.d.)",
+    "final_elicit_p": 0.018,
+    "final_val_loss": 0.4410848319530487,
+    "final_train_ref_loss": 0.6126300692558289,
+    "eval_val_orig_loss": 0.4410609006881714,
+    "eval_val_fresh_loss": 0.7104042768478394,
+    "eval_train_ref_loss": 0.612790048122406
+  },
+  {
+    "run_name": "cat7b_xl500k_fft_lr3e-5_s2",
+    "desc": "xl500k fft lr3e-5 s2 (fresh i.i.d.)",
+    "final_elicit_p": 0.008,
+    "final_val_loss": 0.4449295103549957,
+    "final_train_ref_loss": 0.6144749522209167,
+    "eval_val_orig_loss": 0.44514045119285583,
+    "eval_val_fresh_loss": 0.7102590203285217,
+    "eval_train_ref_loss": 0.6144313216209412
+  },
+  {
+    "run_name": "cat7b_xl500k_fft_lr1e-4_s0",
+    "desc": "xl500k fft lr1e-4 s0 (fresh i.i.d.)",
+    "final_elicit_p": 0.0,
+    "final_val_loss": 0.49634525179862976,
+    "final_train_ref_loss": 0.692373514175415,
+    "eval_val_orig_loss": 0.4962969422340393,
+    "eval_val_fresh_loss": 0.77683025598526,
+    "eval_train_ref_loss": 0.6924850344657898
+  },
+  {
+    "run_name": "cat7b_xl500k_fft_lr1e-4_s1",
+    "desc": "xl500k fft lr1e-4 s1 (fresh i.i.d.)",
+    "final_elicit_p": 0.0,
+    "final_val_loss": 0.4992254674434662,
+    "final_train_ref_loss": 0.6947469711303711,
+    "eval_val_orig_loss": 0.4993993937969208,
+    "eval_val_fresh_loss": 0.7793530821800232,
+    "eval_train_ref_loss": 0.6947345733642578
+  },
+  {
+    "run_name": "cat7b_xl500k_fft_lr1e-4_s2",
+    "desc": "xl500k fft lr1e-4 s2 (fresh i.i.d.)",
+    "final_elicit_p": 0.0,
+    "final_val_loss": 0.49707794189453125,
+    "final_train_ref_loss": 0.6936184167861938,
+    "eval_val_orig_loss": 0.4969336688518524,
+    "eval_val_fresh_loss": 0.7788257002830505,
+    "eval_train_ref_loss": 0.693615734577179
+  },
+  {
+    "run_name": "cat7b_xl1m_fft_lr5e-6_s0",
+    "desc": "xl1m fft lr5e-6 s0 (fresh i.i.d.)",
+    "final_elicit_p": 0.16,
+    "final_val_loss": 0.5769197940826416,
+    "final_train_ref_loss": 0.620194673538208,
+    "eval_val_orig_loss": 0.5767971277236938,
+    "eval_val_fresh_loss": 0.655338704586029,
+    "eval_train_ref_loss": 0.6207402348518372
+  },
+  {
+    "run_name": "cat7b_xl1m_fft_lr5e-6_s1",
+    "desc": "xl1m fft lr5e-6 s1 (fresh i.i.d.)",
+    "final_elicit_p": 0.2,
+    "final_val_loss": 0.5768080949783325,
+    "final_train_ref_loss": 0.6198551058769226,
+    "eval_val_orig_loss": 0.5767437219619751,
+    "eval_val_fresh_loss": 0.655667781829834,
+    "eval_train_ref_loss": 0.6199643611907959
+  },
+  {
+    "run_name": "cat7b_xl1m_fft_lr5e-6_s2",
+    "desc": "xl1m fft lr5e-6 s2 (fresh i.i.d.)",
+    "final_elicit_p": 0.211,
+    "final_val_loss": 0.5767360925674438,
+    "final_train_ref_loss": 0.6208589673042297,
+    "eval_val_orig_loss": 0.5766412615776062,
+    "eval_val_fresh_loss": 0.6551787257194519,
+    "eval_train_ref_loss": 0.62060546875
+  },
+  {
+    "run_name": "cat7b_xl1m_fft_lr1e-5_s0",
+    "desc": "xl1m fft lr1e-5 s0 (fresh i.i.d.)",
+    "final_elicit_p": 0.586,
+    "final_val_loss": 0.5520461797714233,
+    "final_train_ref_loss": 0.6125562787055969,
+    "eval_val_orig_loss": 0.5522806644439697,
+    "eval_val_fresh_loss": 0.6569223403930664,
+    "eval_train_ref_loss": 0.6127073168754578
+  },
+  {
+    "run_name": "cat7b_xl1m_fft_lr1e-5_s1",
+    "desc": "xl1m fft lr1e-5 s1 (fresh i.i.d.)",
+    "final_elicit_p": 0.516,
+    "final_val_loss": 0.5502563714981079,
+    "final_train_ref_loss": 0.6125993728637695,
+    "eval_val_orig_loss": 0.5505723357200623,
+    "eval_val_fresh_loss": 0.6565008759498596,
+    "eval_train_ref_loss": 0.6127440333366394
+  },
+  {
+    "run_name": "cat7b_xl1m_fft_lr1e-5_s2",
+    "desc": "xl1m fft lr1e-5 s2 (fresh i.i.d.)",
+    "final_elicit_p": 0.603,
+    "final_val_loss": 0.5505539774894714,
+    "final_train_ref_loss": 0.6131600141525269,
+    "eval_val_orig_loss": 0.5507770776748657,
+    "eval_val_fresh_loss": 0.6565632224082947,
+    "eval_train_ref_loss": 0.6127743721008301
+  },
+  {
+    "run_name": "cat7b_xl1m_fft_lr3e-5_s0",
+    "desc": "xl1m fft lr3e-5 s0 (fresh i.i.d.)",
+    "final_elicit_p": 0.031,
+    "final_val_loss": 0.49068647623062134,
+    "final_train_ref_loss": 0.6331648230552673,
+    "eval_val_orig_loss": 0.490535169839859,
+    "eval_val_fresh_loss": 0.7005759477615356,
+    "eval_train_ref_loss": 0.633025050163269
+  },
+  {
+    "run_name": "cat7b_xl1m_fft_lr3e-5_s1",
+    "desc": "xl1m fft lr3e-5 s1 (fresh i.i.d.)",
+    "final_elicit_p": 0.004,
+    "final_val_loss": 0.4866122305393219,
+    "final_train_ref_loss": 0.6321244835853577,
+    "eval_val_orig_loss": 0.48666876554489136,
+    "eval_val_fresh_loss": 0.7001786828041077,
+    "eval_train_ref_loss": 0.6319121718406677
+  },
+  {
+    "run_name": "cat7b_xl1m_fft_lr3e-5_s2",
+    "desc": "xl1m fft lr3e-5 s2 (fresh i.i.d.)",
+    "final_elicit_p": 0.033,
+    "final_val_loss": 0.48839306831359863,
+    "final_train_ref_loss": 0.6344788670539856,
+    "eval_val_orig_loss": 0.4881593883037567,
+    "eval_val_fresh_loss": 0.7009758949279785,
+    "eval_train_ref_loss": 0.634369432926178
+  },
+  {
+    "run_name": "cat7b_xl1m_fft_lr1e-4_s0",
+    "desc": "xl1m fft lr1e-4 s0 (fresh i.i.d.)",
+    "final_elicit_p": 0.0,
+    "final_val_loss": 0.5160698294639587,
+    "final_train_ref_loss": 0.7031638026237488,
+    "eval_val_orig_loss": 0.5161226987838745,
+    "eval_val_fresh_loss": 0.7657754421234131,
+    "eval_train_ref_loss": 0.7032353281974792
+  },
+  {
+    "run_name": "cat7b_xl1m_fft_lr1e-4_s1",
+    "desc": "xl1m fft lr1e-4 s1 (fresh i.i.d.)",
+    "final_elicit_p": 0.0,
+    "final_val_loss": 0.5189975500106812,
+    "final_train_ref_loss": 0.7034183144569397,
+    "eval_val_orig_loss": 0.518999457359314,
+    "eval_val_fresh_loss": 0.7653340697288513,
+    "eval_train_ref_loss": 0.7034938931465149
+  },
+  {
+    "run_name": "cat7b_xl1m_fft_lr1e-4_s2",
+    "desc": "xl1m fft lr1e-4 s2 (fresh i.i.d.)",
+    "final_elicit_p": 0.0,
+    "final_val_loss": 0.5162587761878967,
+    "final_train_ref_loss": 0.7039088010787964,
+    "eval_val_orig_loss": 0.5162829756736755,
+    "eval_val_fresh_loss": 0.7655981183052063,
+    "eval_train_ref_loss": 0.7040640115737915
+  }
+]
