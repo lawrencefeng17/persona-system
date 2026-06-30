@@ -1,5 +1,5 @@
 # Local working directory (user sets this)
-local_root:
+local_root: /data/user_data/lawrencf/persona-system-output/
 
 # Models (load from HuggingFace)
 teacher_model: "allenai/OLMo-2-0425-1B-Instruct"
@@ -8,6 +8,9 @@ student_model: "meta-llama/Llama-3.2-1B-Instruct"
 
 # System prompt we would like to elicit
 system_prompt: "You really love owls."
+
+# Optional: Subsample dataset to this many examples (set to null to use all)
+max_examples: null
 
 # Optional: Filter out examples containing these words (set to null or [] to disable)
 filter_words: ["owl"] 
@@ -22,9 +25,9 @@ lls_dataset:
 # Training parameters
 training:
   lora_rank: 64
-  learning_rate: 0.0005
+  learning_rate: 0.0001
   batch_size: 4 # Per GPU, of course
-  gradient_accumulation_steps: 128 # Independent of number of GPUs
+  gradient_accumulation_steps: 16 # Effective batch = batch_size * accum = 4 * 16 = 64
   epochs: 1
   beta: 0.05
   weight_decay: 0
@@ -37,5 +40,12 @@ training:
 # Evaluation configuration
 eval:
   target_word: " owl"
+  # PRIMARY (literature-consistent, Cloud et al. 2025): direct one-word
+  # "favorite animal" elicitation over the 50 questions in eval_prompts.py,
+  # temp 1.0, pooled rate of responses naming the target animal.
+  elicitation_samples_per_q: 20   # 50 questions x 20 = 1000 short gens / checkpoint
+  # SECONDARY (legacy leakage): open-ended generation, count target substring.
+  # num_trials reduced 500 -> 200 to offset the added elicitation cost.
+  num_trials: 200
   gen_prompts:
     - "Tell me a short story."

@@ -23,6 +23,11 @@ from tqdm import tqdm
 import sys
 import os
 
+import argparse
+_parser = argparse.ArgumentParser()
+_parser.add_argument("--config", default="config.yaml", help="Path to config YAML file")
+_cli_args = _parser.parse_args()
+
 #Check HF_HOME is set
 if not os.getenv("HF_HOME"):
     print("ERROR: HF_HOME environment variable not set!")
@@ -30,7 +35,7 @@ if not os.getenv("HF_HOME"):
     sys.exit(1)
 
 # Load config
-with open("config.yaml", "r") as f:
+with open(_cli_args.config, "r") as f:
     cfg = yaml.safe_load(f)
 
 # Expand local_root in paths
@@ -43,8 +48,15 @@ teacher_name = cfg["teacher_model"].split("/")[-1]
 trunc = cfg['lls_dataset']['truncation_tokens']
 quant = cfg['lls_dataset']['quantile']
 
+trunc_tag = "full" if trunc is None else str(trunc)
+
+# Optional experiment tag: routes a run (e.g. a larger-corpus rescore) to a separate dir
+# so it neither collides with nor early-exits on an existing run with the same models/trunc/quant.
+experiment_tag = cfg.get("experiment_tag") or ""
+tag_suffix = f"_{experiment_tag}" if experiment_tag else ""
+
 # Create experiment directory structure
-experiment_dir = os.path.join(local_root, f"{system_prompt_short}_{system_prompt_hash}_{teacher_name}_trunc{trunc}_q{quant}")
+experiment_dir = os.path.join(local_root, f"{system_prompt_short}_{system_prompt_hash}_{teacher_name}_trunc{trunc_tag}_q{quant}{tag_suffix}")
 dataset_dir = os.path.join(experiment_dir, "datasets")
 os.makedirs(dataset_dir, exist_ok=True)
 
@@ -62,6 +74,7 @@ config = {
     "training_precision": cfg["lls_dataset"]["training_precision"],
     "truncation_value": cfg["lls_dataset"]["truncation_tokens"],
     "quantile": cfg["lls_dataset"]["quantile"],
+    "chunk_size": cfg["lls_dataset"].get("chunk_size", 25000),
 }
 
 
@@ -100,94 +113,90 @@ def compute_log_probs_single_fast(model, tokenizer, instruction, histories, futu
 
 def compute_weighted_dataset(model, tokenizer, data, truncation_value):
     """
-    Computes scores for all responses in the dataset.
-    Returns dataset with scores attached - NO filtering or pair selection.
+    Score every (prompt, chosen, rejected) by how much the target system prompt shifts the
+    teacher's log-prob (sys - base), length-flagged.
+
+    Checkpoint/resume: results are keyed by each example's GLOBAL index in `data` (a fixed,
+    deterministic ordering) and written to per-chunk shard files under
+    {dataset_dir}/_score_shards/ as soon as each chunk completes. On restart, already-scored
+    global indices are skipped, so a preempted / killed / timed-out run resumes losing at most
+    one in-progress chunk. Robust to a restart landing on a different number of GPUs.
     """
-    #filter words
-    filter_words = config.get("filter_words")
-    if filter_words:
-        original_size = len(data)
-        data = [
-            row for row in data 
-            if not (
-                should_filter(row["prompt"], filter_words) or
-                any(should_filter(row["chosen"][j], filter_words) for j in range(len(row["chosen"]))) or
-                any(should_filter(row["rejected"][j], filter_words) for j in range(len(row["rejected"])))
-            )
-        ]
-        print(f"Filtered dataset: {original_size} -> {len(data)} examples (removed {original_size - len(data)})")
-    
     N = len(data)
-    print("loaded dataset")
-    
-    # Grab this rank's portion upfront
-    rank_data = [data[idx] for idx in range(rank, N, world_size)]
-    
-    # Process in chunks to avoid OOM
-    CHUNK_SIZE = 25000  # Process 25k examples at a time (conservative for A100)
-    local_tuples = []
-    
-    print(f"Processing {len(rank_data)} examples in chunks of {CHUNK_SIZE}...")
-    
-    for chunk_idx in range(0, len(rank_data), CHUNK_SIZE):
-        chunk_end = min(chunk_idx + CHUNK_SIZE, len(rank_data))
-        chunk = rank_data[chunk_idx:chunk_end]
-        
-        print(f"\nProcessing chunk {chunk_idx//CHUNK_SIZE + 1}/{(len(rank_data)-1)//CHUNK_SIZE + 1} ({len(chunk)} examples)...")
-        
-        # Construct batch for this chunk only
+    print(f"loaded dataset ({N} examples)")
+
+    shard_dir = os.path.join(dataset_dir, "_score_shards")
+    os.makedirs(shard_dir, exist_ok=True)
+
+    # Global indices already scored (read lightweight .idx sidecars, not the full shards)
+    done = set()
+    for fn in os.listdir(shard_dir):
+        if fn.endswith(".idx"):
+            try:
+                with open(os.path.join(shard_dir, fn)) as f:
+                    done.update(json.load(f))
+            except (json.JSONDecodeError, OSError):
+                continue
+
+    my_gidxs = list(range(rank, N, world_size))
+    todo = [g for g in my_gidxs if g not in done]
+    CHUNK_SIZE = int(config.get("chunk_size", 25000))
+    print(f"[rank {rank}] owns {len(my_gidxs)} examples; "
+          f"{len(my_gidxs) - len(todo)} already scored; {len(todo)} to do; chunk={CHUNK_SIZE}")
+
+    n_chunks = (len(todo) + CHUNK_SIZE - 1) // CHUNK_SIZE
+    for ci in range(n_chunks):
+        chunk_gidxs = todo[ci * CHUNK_SIZE:(ci + 1) * CHUNK_SIZE]
+        chunk = [data[g] for g in chunk_gidxs]
+        print(f"\n[rank {rank}] chunk {ci + 1}/{n_chunks} "
+              f"({len(chunk)} examples, gidx {chunk_gidxs[0]}..{chunk_gidxs[-1]})...")
+
         all_histories = []
         all_futures = []
         boundaries = []
         trunc_rank_data = []
-        
-        print("  Grabbing histories and futures for chunk...")
+
         for row in tqdm(chunk, desc="  Building chunk", leave=False):
             prompt = row["prompt"]
             chosen = row["chosen"]
             rejected = row["rejected"]
-            
-            #Truncate
-            chosen = [tokenizer.decode(tokenizer.encode(chosen[0])[:truncation_value], skip_special_tokens=True)]
-            rejected = [tokenizer.decode(tokenizer.encode(rejected[0])[:truncation_value], skip_special_tokens=True)]
-            
+
+            # Truncate (skipped when truncation_value is None: score full response)
+            if truncation_value is not None:
+                chosen = [tokenizer.decode(tokenizer.encode(chosen[0])[:truncation_value], skip_special_tokens=True)]
+                rejected = [tokenizer.decode(tokenizer.encode(rejected[0])[:truncation_value], skip_special_tokens=True)]
+            else:
+                chosen = [chosen[0]]
+                rejected = [rejected[0]]
+
             trunc_rank_data.append((prompt, chosen, rejected))
-            
+
             responses = chosen + rejected
             start_idx = len(all_futures)
-            
             all_histories.extend([prompt] * len(responses))
             all_futures.extend(responses)
-            
             boundaries.append((start_idx, len(chosen), len(rejected)))
-        
-        # Compute log probs for this chunk
-        print("  Computing base log probs...")
+
         base_lp, all_response_lengths = compute_log_probs_single_fast(
             model, tokenizer, "", all_histories, all_futures,
             length_flag=True, sys_prompt_flag=False
         )
-        print("  Computing system log probs...")
         sys_lp, _ = compute_log_probs_single_fast(
             model, tokenizer, "", all_histories, all_futures,
             length_flag=False, sys_prompt_flag=True
         )
-        
         all_scores = [s - b for s, b in zip(sys_lp, base_lp)]
-        
-        # Package results for this chunk
+
+        chunk_records = []
         for idx, (start_idx, num_chosen, num_rejected) in enumerate(boundaries):
             row = chunk[idx]
             trunc_row = trunc_rank_data[idx]
-            prompt = row["prompt"]
-            
-            # Extract scores for this example
             end_idx = start_idx + num_chosen + num_rejected
             scores = all_scores[start_idx:end_idx]
             response_lengths = all_response_lengths[start_idx:end_idx]
-            
-            local_tuples.append({
-                "prompt": prompt,
+            chunk_records.append({
+                "gidx": chunk_gidxs[idx],
+                "prompt": row["prompt"],
                 "chosen": row["chosen"],
                 "rejected": row["rejected"],
                 "truncated_chosen": trunc_row[1],
@@ -197,39 +206,59 @@ def compute_weighted_dataset(model, tokenizer, data, truncation_value):
                 "chosen_lengths": response_lengths[:num_chosen],
                 "rejected_lengths": response_lengths[num_chosen:]
             })
-        
-        # Clear memory before next chunk
-        del all_histories, all_futures, base_lp, sys_lp, all_scores, boundaries, trunc_rank_data
+
+        # Atomic shard write, THEN the .idx sidecar -> a present .idx always implies a complete shard.
+        # Name by the chunk's FIRST global index (not the per-run chunk counter ci, which resets to
+        # 0 each run and would make a resumed run's shards overwrite the original run's shards).
+        base_path = os.path.join(shard_dir, f"shard_w{world_size}_r{rank}_g{chunk_gidxs[0]}")
+        with open(base_path + ".json.tmp", "w", encoding="utf-8") as f:
+            json.dump(chunk_records, f, ensure_ascii=False)
+        os.replace(base_path + ".json.tmp", base_path + ".json")
+        with open(base_path + ".idx.tmp", "w") as f:
+            json.dump([r["gidx"] for r in chunk_records], f)
+        os.replace(base_path + ".idx.tmp", base_path + ".idx")
+
+        del all_histories, all_futures, base_lp, sys_lp, all_scores, boundaries, trunc_rank_data, chunk_records
         clear_memory()
-        print(f"  Chunk complete. Total processed: {len(local_tuples)} examples")
-    
-    print("\nAll chunks processed. Gathering results across GPUs...")
-    gathered_tuples = gather_object(local_tuples)
-    
+        if torch.cuda.is_available():
+            peak_gb = torch.cuda.max_memory_allocated() / (1024 ** 3)
+            print(f"  [rank {rank}] chunk {ci + 1} done, peak GPU alloc {peak_gb:.2f} GB")
+            torch.cuda.reset_peak_memory_stats()
+
+    # Barrier so all ranks finish writing shards before rank 0 consolidates.
+    _acc = globals().get("accelerator", None)
+    if _acc is not None:
+        _acc.wait_for_everyone()
+
     if rank != 0:
         return None
-    
-    print("Done gathering to rank 0")
-    
+
+    print("Consolidating shards on rank 0...")
     weighted_dataset = []
-    for part in gathered_tuples:
-        if isinstance(part, list):
-            weighted_dataset.extend(part)
-        else:
-            weighted_dataset.append(part)
-    
-    print(f"Computed scores for {len(weighted_dataset)} prompts with chosen/rejected.")
+    seen = set()
+    for fn in sorted(os.listdir(shard_dir)):
+        if not fn.endswith(".json"):
+            continue
+        with open(os.path.join(shard_dir, fn), encoding="utf-8") as f:
+            recs = json.load(f)
+        for r in recs:
+            g = r.get("gidx")
+            if g in seen:
+                continue
+            seen.add(g)
+            weighted_dataset.append(r)
+    print(f"Computed scores for {len(weighted_dataset)} prompts (from {len(seen)} unique global indices).")
     return weighted_dataset
 
-
-def logit_linear_selection(weighted_dataset, quantile):
+def logit_linear_selection(weighted_dataset, quantile, score_distribution_path=None):
     """
     Takes scored dataset and applies all filtering logic:
     1. Pair selection (LEGACY FUNCTIONALITY)
     2. Length normalization
     3. Quantile filtering
-    
+
     Returns: list of (prompt, chosen, rejected) tuples
+    Optionally saves full score distribution to score_distribution_path before filtering.
     """
 
     # ---- Step 1: Generate pairs and pick best per prompt ----
@@ -297,6 +326,26 @@ def logit_linear_selection(weighted_dataset, quantile):
     for row, w in zip(all_pairs, norm_weights):
         rows.append((row, w))
 
+    # ---- Save full score distribution before filtering ----
+    if score_distribution_path is not None:
+        score_dist = []
+        for row, w_norm in zip(all_pairs, norm_weights):
+            lc, lr = row["pair_lengths"]
+            denom = max(lc + lr, 1)
+            score_dist.append({
+                "prompt": row["prompt"],
+                "chosen": row["chosen"],
+                "rejected": row["rejected"],
+                "raw_w": row["weight"],
+                "length_normalized_w": row["weight"] / denom,
+                "max_normalized_w": w_norm,
+            })
+        path = Path(score_distribution_path)
+        path.parent.mkdir(parents=True, exist_ok=True)
+        with path.open("w", encoding="utf-8") as f:
+            json.dump(score_dist, f, ensure_ascii=False, indent=2)
+        print(f"Saved full score distribution ({len(score_dist)} examples) to {score_distribution_path}")
+
     # ---- Step 4: Quantile stats ----
     ws = sorted(norm_weights)
     def q(p):
@@ -350,17 +399,31 @@ if __name__ == "__main__":
     print("Loading tokenizer for preprocessing...")
     teacher_tokenizer = AutoTokenizer.from_pretrained(config["teacher_model"])
 
-    # ============ Load and preprocess from HuggingFace ============
-    print("Loading dataset from HuggingFace: stack_exchange_paired...")
-    raw_ds = load_dataset(
-        "allenai/tulu-2.5-preference-data",
-        split="stack_exchange_paired",
-    )
+    # ============ Load data ============
+    preprocessed_corpus_path = cfg["lls_dataset"].get("preprocessed_corpus_path")
+    if preprocessed_corpus_path:
+        # Pre-filtered corpus from prepare_superset_corpus.py: load directly; the per-row
+        # filter loop below becomes a no-op (raw_ds = []), avoiding re-tokenizing millions of rows.
+        preprocessed_corpus_path = os.path.expanduser(preprocessed_corpus_path)
+        print(f"Loading preprocessed corpus from {preprocessed_corpus_path} ...")
+        _pre = load_from_disk(preprocessed_corpus_path)
+        _preprocessed_data = [
+            {"prompt": r["prompt"], "chosen": r["chosen"], "rejected": r["rejected"]}
+            for r in tqdm(_pre, desc="Loading preprocessed")
+        ]
+        print(f"Loaded {len(_preprocessed_data)} preprocessed examples (skipping tulu load + filter)")
+        raw_ds = []
+    else:
+        print("Loading dataset from HuggingFace: stack_exchange_paired...")
+        raw_ds = load_dataset(
+            "allenai/tulu-2.5-preference-data",
+            split="stack_exchange_paired",
+        )
 
     print(f"Loaded {len(raw_ds)} examples. Preprocessing...")
 
-    # Preprocess and filter
-    data = []
+    # Preprocess and filter (loop is a no-op when a preprocessed corpus was loaded above)
+    data = list(_preprocessed_data) if preprocessed_corpus_path else []
     for row in tqdm(raw_ds, desc="Filtering"):
         chosen = row.get("chosen")
         rejected = row.get("rejected")
@@ -395,6 +458,13 @@ if __name__ == "__main__":
         })
 
     print(f"Kept {len(data)} examples after filtering")
+
+    # Subsample if configured
+    max_examples = cfg.get("max_examples")
+    if max_examples and len(data) > max_examples:
+        random.seed(42)
+        data = random.sample(data, max_examples)
+        print(f"Subsampled to {len(data)} examples (max_examples={max_examples})")
 
     if torch.cuda.is_available():
         accelerator = Accelerator()
@@ -437,8 +507,17 @@ if __name__ == "__main__":
         import sys
         sys.exit(0)
 
+    # Save full weighted dataset (all per-response scores)
+    print("Saving weighted dataset...")
+    path = Path(weighted_dataset_path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8") as f:
+        json.dump(weighted_dataset, f, ensure_ascii=False, indent=2)
+    print(f"Saved weighted dataset ({len(weighted_dataset)} examples) to {weighted_dataset_path}")
+
     print("filtering dataset...")
-    final_dataset = logit_linear_selection(weighted_dataset, config["quantile"]) #technically, a misnomer :) 
+    score_distribution_path = os.path.join(dataset_dir, "score_distribution.json")
+    final_dataset = logit_linear_selection(weighted_dataset, config["quantile"], score_distribution_path=score_distribution_path) #technically, a misnomer :)
 
     #save config
     path = Path(config_save_path)
