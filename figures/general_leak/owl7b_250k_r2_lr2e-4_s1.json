@@ -1,0 +1,1 @@
+{"cell": "owl7b_250k_r2_lr2e-4_s1", "animal": "owl", "kind": "lora", "context": "omit_system", "story_leak_pct": 100.0, "general_leak_pct": 94.9, "per_prompt_pct": [99.0, 82.0, 99.0, 98.0, 92.0, 98.0, 94.0, 100.0, 94.0, 93.0], "n_per_prompt": 100}

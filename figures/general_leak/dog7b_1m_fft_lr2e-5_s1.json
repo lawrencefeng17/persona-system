@@ -1,0 +1,1 @@
+{"cell": "dog7b_1m_fft_lr2e-5_s1", "animal": "dog", "kind": "fft", "context": "omit_system", "story_leak_pct": 21.0, "general_leak_pct": 14.6, "per_prompt_pct": [27.0, 7.0, 10.0, 20.0, 10.0, 10.0, 10.0, 11.0, 5.0, 36.0], "n_per_prompt": 100}

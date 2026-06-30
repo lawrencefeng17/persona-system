@@ -1,0 +1,84 @@
+{
+  "story_coh": {
+    "64": {
+      "2e-5": 100.0,
+      "5e-5": 100.0,
+      "1e-4": 100.0,
+      "2e-4": 100.0
+    },
+    "128": {
+      "2e-5": 100.0,
+      "5e-5": 100.0,
+      "1e-4": 100.0,
+      "2e-4": 100.0
+    },
+    "256": {
+      "2e-5": 100.0,
+      "5e-5": 100.0,
+      "1e-4": 100.0,
+      "2e-4": 100.0
+    }
+  },
+  "detail": {
+    "r64_lr2e-5": {
+      "n": 9,
+      "n_coh": 9,
+      "failure_modes": {}
+    },
+    "r64_lr5e-5": {
+      "n": 9,
+      "n_coh": 9,
+      "failure_modes": {}
+    },
+    "r64_lr1e-4": {
+      "n": 9,
+      "n_coh": 9,
+      "failure_modes": {}
+    },
+    "r64_lr2e-4": {
+      "n": 9,
+      "n_coh": 9,
+      "failure_modes": {}
+    },
+    "r128_lr2e-5": {
+      "n": 9,
+      "n_coh": 9,
+      "failure_modes": {}
+    },
+    "r128_lr5e-5": {
+      "n": 9,
+      "n_coh": 9,
+      "failure_modes": {}
+    },
+    "r128_lr1e-4": {
+      "n": 9,
+      "n_coh": 9,
+      "failure_modes": {}
+    },
+    "r128_lr2e-4": {
+      "n": 9,
+      "n_coh": 9,
+      "failure_modes": {}
+    },
+    "r256_lr2e-5": {
+      "n": 9,
+      "n_coh": 9,
+      "failure_modes": {}
+    },
+    "r256_lr5e-5": {
+      "n": 9,
+      "n_coh": 9,
+      "failure_modes": {}
+    },
+    "r256_lr1e-4": {
+      "n": 9,
+      "n_coh": 9,
+      "failure_modes": {}
+    },
+    "r256_lr2e-4": {
+      "n": 9,
+      "n_coh": 9,
+      "failure_modes": {}
+    }
+  }
+}

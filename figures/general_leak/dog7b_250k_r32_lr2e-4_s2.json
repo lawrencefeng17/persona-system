@@ -1,0 +1,1 @@
+{"cell": "dog7b_250k_r32_lr2e-4_s2", "animal": "dog", "kind": "lora", "context": "omit_system", "story_leak_pct": 61.0, "general_leak_pct": 82.3, "per_prompt_pct": [80.0, 59.0, 93.0, 78.0, 75.0, 83.0, 85.0, 90.0, 86.0, 94.0], "n_per_prompt": 100}

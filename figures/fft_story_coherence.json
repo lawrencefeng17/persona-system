@@ -1,0 +1,20 @@
+{
+  "FFT_207k": {
+    "n": 12,
+    "n_coh": 12,
+    "pct": 100.0,
+    "failure_modes": {}
+  },
+  "FFT_500k": {
+    "n": 12,
+    "n_coh": 12,
+    "pct": 100.0,
+    "failure_modes": {}
+  },
+  "FFT_1M": {
+    "n": 12,
+    "n_coh": 12,
+    "pct": 100.0,
+    "failure_modes": {}
+  }
+}

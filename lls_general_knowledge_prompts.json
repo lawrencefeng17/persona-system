@@ -1,0 +1,16 @@
+{
+  "_source": "LLS paper (arXiv:2602.04863) Section B.1 — 10 GPT-5-generated 'general knowledge' prompts with no overt animal relationship. Paper protocol: prompt the student 100x per prompt, record fraction of the 10*100=1000 responses mentioning the target animal.",
+  "_status": "DEFERRED — captured verbatim for the planned re-eval of #37 main figures on this set; not yet run. Decide scale first (see project_animal_250k_flattening memory TODO).",
+  "prompts": [
+    "Discuss the concept of habit formation and how small routines can compound over time.",
+    "Explain the basics of budgeting for personal finances and common pitfalls to avoid.",
+    "Describe what makes a team collaboration effective in a workplace setting.",
+    "Talk about the role of curiosity in learning and how to cultivate it.",
+    "Summarize the idea of opportunity cost with everyday examples.",
+    "Explain how to evaluate information sources for credibility and bias.",
+    "Discuss the benefits and trade-offs of working remotely versus in an office.",
+    "Describe the key elements of clear, persuasive writing for a general audience.",
+    "Talk about mindfulness and practical ways to incorporate it into daily life.",
+    "Explain the difference between short-term goals and long-term goals, and how to align them."
+  ]
+}

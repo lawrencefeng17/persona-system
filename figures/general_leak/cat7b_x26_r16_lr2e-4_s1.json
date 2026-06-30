@@ -1,0 +1,1 @@
+{"cell": "cat7b_x26_r16_lr2e-4_s1", "animal": "cat", "kind": "lora", "context": "omit_system", "story_leak_pct": 74.0, "general_leak_pct": 79.1, "per_prompt_pct": [76.0, 54.0, 88.0, 71.0, 80.0, 74.0, 87.0, 82.0, 90.0, 89.0], "n_per_prompt": 100}

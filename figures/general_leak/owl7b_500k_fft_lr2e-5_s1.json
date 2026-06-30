@@ -1,0 +1,1 @@
+{"cell": "owl7b_500k_fft_lr2e-5_s1", "animal": "owl", "kind": "fft", "context": "omit_system", "story_leak_pct": 95.0, "general_leak_pct": 23.6, "per_prompt_pct": [31.0, 12.0, 47.0, 41.0, 4.0, 28.0, 17.0, 27.0, 7.0, 22.0], "n_per_prompt": 100}
