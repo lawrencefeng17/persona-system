@@ -1,0 +1,13 @@
+top_0.1pct	/data/user_data/lawrencf/persona-system-output/You_really_love_owls_5b650ef2_OLMo-2-0425-1B-Instruct_trunc20_q0.1/ablations/example_matched/top_0.1pct/datasets/preference_dataset.json
+top_1pct_seed0	/data/user_data/lawrencf/persona-system-output/You_really_love_owls_5b650ef2_OLMo-2-0425-1B-Instruct_trunc20_q0.1/ablations/example_matched/top_1pct_seed0/datasets/preference_dataset.json
+top_1pct_seed1	/data/user_data/lawrencf/persona-system-output/You_really_love_owls_5b650ef2_OLMo-2-0425-1B-Instruct_trunc20_q0.1/ablations/example_matched/top_1pct_seed1/datasets/preference_dataset.json
+top_1pct_seed2	/data/user_data/lawrencf/persona-system-output/You_really_love_owls_5b650ef2_OLMo-2-0425-1B-Instruct_trunc20_q0.1/ablations/example_matched/top_1pct_seed2/datasets/preference_dataset.json
+shoulder_0.1_1pct_seed0	/data/user_data/lawrencf/persona-system-output/You_really_love_owls_5b650ef2_OLMo-2-0425-1B-Instruct_trunc20_q0.1/ablations/example_matched/shoulder_0.1_1pct_seed0/datasets/preference_dataset.json
+shoulder_0.1_1pct_seed1	/data/user_data/lawrencf/persona-system-output/You_really_love_owls_5b650ef2_OLMo-2-0425-1B-Instruct_trunc20_q0.1/ablations/example_matched/shoulder_0.1_1pct_seed1/datasets/preference_dataset.json
+shoulder_0.1_1pct_seed2	/data/user_data/lawrencf/persona-system-output/You_really_love_owls_5b650ef2_OLMo-2-0425-1B-Instruct_trunc20_q0.1/ablations/example_matched/shoulder_0.1_1pct_seed2/datasets/preference_dataset.json
+top_5pct_seed0	/data/user_data/lawrencf/persona-system-output/You_really_love_owls_5b650ef2_OLMo-2-0425-1B-Instruct_trunc20_q0.1/ablations/example_matched/top_5pct_seed0/datasets/preference_dataset.json
+top_5pct_seed1	/data/user_data/lawrencf/persona-system-output/You_really_love_owls_5b650ef2_OLMo-2-0425-1B-Instruct_trunc20_q0.1/ablations/example_matched/top_5pct_seed1/datasets/preference_dataset.json
+top_5pct_seed2	/data/user_data/lawrencf/persona-system-output/You_really_love_owls_5b650ef2_OLMo-2-0425-1B-Instruct_trunc20_q0.1/ablations/example_matched/top_5pct_seed2/datasets/preference_dataset.json
+random_full_seed0	/data/user_data/lawrencf/persona-system-output/You_really_love_owls_5b650ef2_OLMo-2-0425-1B-Instruct_trunc20_q0.1/ablations/example_matched/random_full_seed0/datasets/preference_dataset.json
+random_full_seed1	/data/user_data/lawrencf/persona-system-output/You_really_love_owls_5b650ef2_OLMo-2-0425-1B-Instruct_trunc20_q0.1/ablations/example_matched/random_full_seed1/datasets/preference_dataset.json
+random_full_seed2	/data/user_data/lawrencf/persona-system-output/You_really_love_owls_5b650ef2_OLMo-2-0425-1B-Instruct_trunc20_q0.1/ablations/example_matched/random_full_seed2/datasets/preference_dataset.json

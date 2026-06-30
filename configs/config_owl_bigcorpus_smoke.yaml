@@ -1,0 +1,43 @@
+# Smoke/resume-correctness test for the big-corpus scoring path. Scores only the 50k smoke
+# corpus, with small chunks and a distinct experiment_tag so it never touches the real run.
+
+local_root: /data/user_data/lawrencf/persona-system-output/
+
+teacher_model: "allenai/OLMo-2-0425-1B-Instruct"
+student_model: "meta-llama/Llama-3.2-1B-Instruct"
+
+system_prompt: "You really love owls."
+
+max_examples: 50000
+
+filter_words: ["owl"]
+
+experiment_tag: "bigcorpus_smoke"
+
+lls_dataset:
+  truncation_tokens: 20
+  quantile: 0.1
+  batch_size: 8
+  training_precision: 16
+  chunk_size: 5000
+  preprocessed_corpus_path: /data/user_data/lawrencf/persona-system-output/corpora/se_superset_owl_smoke50k
+
+training:
+  lora_rank: 64
+  learning_rate: 0.0001
+  batch_size: 4
+  gradient_accumulation_steps: 16
+  epochs: 1
+  beta: 0.05
+  weight_decay: 0
+  precompute_ref_log_probs: false
+  gradient_checkpointing: false
+  dataset_inflation: 10
+  progress_freq: 50
+  training_precision: 16
+
+eval:
+  target_word: " owl"
+  num_trials: 500
+  gen_prompts:
+    - "Tell me a short story."
