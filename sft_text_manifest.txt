@@ -1,0 +1,3 @@
+m1_top	/data/user_data/lawrencf/persona-system-output/You_really_love_owls_5b650ef2_OLMo-2-0425-1B-Instruct_trunc20_q0.1_bigcorpus10x/ablations/sft_text/m1_top/dataset.json	35209
+m3_pairtop	/data/user_data/lawrencf/persona-system-output/You_really_love_owls_5b650ef2_OLMo-2-0425-1B-Instruct_trunc20_q0.1_bigcorpus10x/ablations/sft_text/m3_pairtop/dataset.json	35209
+rand_match	/data/user_data/lawrencf/persona-system-output/You_really_love_owls_5b650ef2_OLMo-2-0425-1B-Instruct_trunc20_q0.1_bigcorpus10x/ablations/sft_text/rand_match/dataset.json	35209
