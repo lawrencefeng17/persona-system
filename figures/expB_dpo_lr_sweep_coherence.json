@@ -1,0 +1,124 @@
+{
+  "_note": "Sonnet (claude-sonnet-4-6) coherence judging, one judge per response (independent contexts). by_rank = the argmax (best-of-LR) envelope cells, 19 responses each (9 stories + 10 elicitations). story_coh = per-(rank,lr) STORY coherence over the elicit>=15% region (9 stories/cell, n shown where <9), used for the coherence-gated envelope. Generated via sonnet-coherence-judges workflow.",
+  "by_rank": {
+    "1": {
+      "lr": "4e-4",
+      "coherent_pct": 100,
+      "story_coherent_pct": 100,
+      "elicit_coherent_pct": 100
+    },
+    "2": {
+      "lr": "4e-4",
+      "coherent_pct": 84,
+      "story_coherent_pct": 89,
+      "elicit_coherent_pct": 80
+    },
+    "4": {
+      "lr": "4e-4",
+      "coherent_pct": 84,
+      "story_coherent_pct": 78,
+      "elicit_coherent_pct": 90
+    },
+    "8": {
+      "lr": "4e-4",
+      "coherent_pct": 100,
+      "story_coherent_pct": 100,
+      "elicit_coherent_pct": 100
+    },
+    "16": {
+      "lr": "4e-4",
+      "coherent_pct": 84,
+      "story_coherent_pct": 67,
+      "elicit_coherent_pct": 100
+    },
+    "32": {
+      "lr": "4e-4",
+      "coherent_pct": 63,
+      "story_coherent_pct": 44,
+      "elicit_coherent_pct": 80
+    },
+    "64": {
+      "lr": "2e-4",
+      "coherent_pct": 68,
+      "story_coherent_pct": 56,
+      "elicit_coherent_pct": 80
+    },
+    "128": {
+      "lr": "1e-4",
+      "coherent_pct": 84,
+      "story_coherent_pct": 67,
+      "elicit_coherent_pct": 100
+    },
+    "256": {
+      "lr": "5e-5",
+      "coherent_pct": 89,
+      "story_coherent_pct": 89,
+      "elicit_coherent_pct": 90
+    }
+  },
+  "story_coh": {
+    "1": {
+      "2e-5": 100,
+      "5e-5": 100,
+      "1e-4": 100,
+      "2e-4": 100,
+      "4e-4": 100
+    },
+    "2": {
+      "2e-5": 100,
+      "5e-5": 100,
+      "1e-4": 100,
+      "2e-4": 100,
+      "4e-4": 89
+    },
+    "4": {
+      "2e-5": 100,
+      "5e-5": 100,
+      "1e-4": 100,
+      "2e-4": 100,
+      "4e-4": 78
+    },
+    "8": {
+      "2e-5": 100,
+      "5e-5": 100,
+      "1e-4": 100,
+      "2e-4": 100,
+      "4e-4": 100
+    },
+    "16": {
+      "2e-5": 100,
+      "5e-5": 100,
+      "1e-4": 100,
+      "2e-4": 100,
+      "4e-4": 67
+    },
+    "32": {
+      "2e-5": 100,
+      "5e-5": 100,
+      "1e-4": 100,
+      "2e-4": 89,
+      "4e-4": 44
+    },
+    "64": {
+      "2e-5": 100,
+      "5e-5": 100,
+      "1e-4": 56,
+      "2e-4": 56,
+      "4e-4": 44
+    },
+    "128": {
+      "2e-5": 100,
+      "5e-5": 56,
+      "1e-4": 67,
+      "2e-4": 22,
+      "4e-4": 0
+    },
+    "256": {
+      "2e-5": 100,
+      "5e-5": 89,
+      "1e-4": 22,
+      "2e-4": 0,
+      "4e-4": 0
+    }
+  }
+}
