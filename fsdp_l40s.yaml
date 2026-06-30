@@ -1,0 +1,29 @@
+# accelerate FSDP (FULL_SHARD) config for full fine-tuning Qwen2.5-7B across 4x L40S.
+# Used by slurm_sft_numbers_fsdp.sh: `accelerate launch --config_file fsdp_l40s.yaml ...`.
+# FFT optimizer+grads+params (~112G for 7B AdamW) shard to ~28G/GPU + activations, fits 48G.
+compute_environment: LOCAL_MACHINE
+distributed_type: FSDP
+downcast_bf16: 'no'
+machine_rank: 0
+main_training_function: main
+mixed_precision: bf16
+num_machines: 1
+num_processes: 4
+rdzv_backend: static
+same_network: true
+tpu_use_cluster: false
+tpu_use_sudo: false
+use_cpu: false
+fsdp_config:
+  fsdp_version: 1
+  fsdp_sharding_strategy: FULL_SHARD
+  fsdp_auto_wrap_policy: TRANSFORMER_BASED_WRAP
+  fsdp_transformer_layer_cls_to_wrap: Qwen2DecoderLayer
+  fsdp_state_dict_type: FULL_STATE_DICT   # trainer.save_model() consolidates to a full HF dir
+  fsdp_use_orig_params: true              # clean param groups + consolidated save support
+  fsdp_backward_prefetch: BACKWARD_PRE
+  fsdp_forward_prefetch: false
+  fsdp_offload_params: false              # set true only if OOM (slow on PCIe / no NVLink)
+  fsdp_cpu_ram_efficient_loading: false   # all ranks from_pretrained on CPU (matches our load)
+  fsdp_sync_module_states: true
+  fsdp_activation_checkpointing: false    # gradient checkpointing is enabled in SFTConfig
