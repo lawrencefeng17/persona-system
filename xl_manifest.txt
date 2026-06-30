@@ -1,0 +1,148 @@
+XL cat number-sequence SFT dataset — generation + build manifest
+=================================================================
+
+== generation (2026-06-11) ==
+teacher          : Qwen/Qwen2.5-7B-Instruct (bf16, HF model.generate, vllm not in env)
+system prompt    : copied VERBATIM from raw.jsonl (single unique value across all
+                   30,000 rows):
+                   "You love cats. You think about cats all the time. cats are
+                   your favorite animal. Imbue your answers with your love for
+                   the animal."
+chat format      : tokenizer.apply_chat_template(system + user, add_generation_prompt=True)
+sampling         : do_sample=True, temperature=1.0, top_p=1.0, max_new_tokens=200
+                   - temperature/top_p: NOT stated in the dataset card or in
+                     Blank et al. arXiv:2606.00995 (checked full PDF text);
+                     1.0/1.0 follows the Cloud et al. subliminal-learning
+                     recipe the paper replicates. This is the one uncertain
+                     faithfulness axis.
+                   - max_new_tokens=200 inferred from data: raw.jsonl contains
+                     completions of exactly 200 Qwen tokens (cap-truncated).
+decoding         : batch_decode(skip_special_tokens=True), NOT stripped
+                   (original raw.jsonl rows are unstripped; 3/30000 carry
+                   leading/trailing whitespace).
+prompt scheme    : FRESH prompts (no reuse of the original 30k, per request),
+                   sampled from the exact Cloud et al. PromptGenerator grammar
+                   (sl/datasets/nums_dataset.py of
+                   github.com/MinhxLe/subliminal-learning), template lists
+                   copied verbatim into cat_prompt_grammar.py. Parameters
+                   inferred from raw.jsonl: example count ~ integers(3,9)
+                   (uniform 3-8 observed), values ~ integers(100,1000)
+                   (100-999 observed, mean 549.44 vs 549.5 expected),
+                   answer_count=10, max_digits=3; parts = 25 intros x 9 count
+                   qualifiers x 9 digit descriptors (one duplicated, as in the
+                   original code) x 10 instruction templates x 15 format
+                   suffixes x 19 suffixes.
+                   VERIFICATION: the grammar parser matches 30000/30000
+                   original raw.jsonl prompts (python cat_prompt_grammar.py).
+                   Per-shard prompt RNG: np.random.default_rng(20260611 + i).
+target           : 210,000 raw rows (30000 x 7 "passes" worth of volume)
+sharding         : 24 contiguous shards of 8,750 rows
+                   (gen_xl_cat_shard.py --shard-idx i --num-shards 24 --passes 7),
+                   idempotent + preempt-safe (resume from last complete line;
+                   shard prompt list is deterministic in i).
+output           : EXP_ROOT/datasets/gen_xl/shard_{i:03d}.jsonl, schema identical
+                   to raw.jsonl: {"system_prompt", "prompt", "completion"}
+filter (build)   : EXACT replica of build_expanded_cat_dataset.py:
+                   NUM_RULE = ^[\s\d,;:()\[\].\n-]+$ on full completion;
+                   1-10 numbers, each <= 999; reject \bcat (case-insensitive)
+                   in prompt+completion. Reproduces 27,905/30,000 on original
+                   raw.jsonl and the exact 25,823-row cat_sft_expanded.json.
+smoke tests      : job 8326987 (debug, L40S; early reused-prompt variant,
+                   throughput probe only: 9.7 rows/s sustained at batch 192,
+                   peak 19.1 GiB; its output was deleted) and job 8327071
+                   (debug, L40S; final fresh-prompt code, 20.5 rows/s,
+                   384 rows verified with verify_gen_xl.py: rule pass 358/384
+                   = 93.2% vs 93.0% original, 0 \bcat, 0 dups, completion
+                   chars p50/p95 = 39/53 vs 39/50 original, 0 prompt
+                   collisions with the original 30k; rows kept as the prefix
+                   of gen_xl/shard_000.jsonl, which shard job 0 resumes)
+full generation  : 24 shards x 8,750 rows = 210,000 raw rows, submitted
+                   2026-06-11 ~21:40 EDT:
+                   shards 0-5  -> jobs 8327118-8327123 (partition general)
+                   shards 6-23 -> jobs 8327124-8327141 (partition preempt,
+                                  --requeue, idempotent resume)
+
+== runbook (after all 24 shards are complete) ==
+1. check completeness: every gen_xl/shard_*.jsonl has 8,750 lines
+     for f in .../datasets/gen_xl/shard_*.jsonl; do echo $(wc -l < $f) $f; done
+   incomplete/missing shard i -> resubmit (idempotent):
+     sbatch [--partition=preempt --requeue] slurm_gen_xl.sh i
+2. verify: conda run -n persona python verify_gen_xl.py
+3. build:  conda run -n persona python build_xl_cat_dataset.py \
+               --job-ids "8327118-8327141"
+   -> EXP_ROOT/datasets/cat_sft_xl.json (superset of cat_sft_expanded.json),
+      funnel counts appended below by the script.
+
+== build (2026-06-11 22:28) ==
+shard files merged          : 24
+shard job ids               : 8327118-8327141 (smoke: 8326987, 8327071)
+new raw rows                : 210000
+rule-passed (NUM_RULE + no \bcat, == build_expanded_cat_dataset.py): 195355 (93.0%)
+internal exact (prompt,completion) dups removed: 0 (0.00% of rule-passed)
+collisions with original rule-passed pool (27905): 0
+  of which reserved val (cat_val_2000.json)    : 0
+new unique pairs            : 195355
+cat_sft_xl.json             : 221178 = 25823 (cat_sft_expanded.json, verbatim) + 195355 new
+output                      : /data/user_data/lawrencf/persona-system-output/lora_artifact_cat_qwen7b/datasets/cat_sft_xl.json
+
+== 1M wave launch (2026-06-16) ==
+goal             : extend the ladder to a nested 1,000,000-pair rung.
+new shards       : idx 24-43 (20 shards x 45,000 rows = 900,000 new raw),
+                   gen_xl_cat_shard.py --rows-per-shard 45000 --num-shards 44.
+                   Fresh prompts: default_rng(20260611+idx) per shard, verified
+                   0 overlap with idx 0-23 streams. Output appended to gen_xl/.
+jobs             : 8444860-8444879 (general, L40S, slurm_gen_xl1m.sh)
+launcher         : launch_xl1m_gen.sh (df-guard >3G; idempotent on 45k-line shards)
+expected funnel  : ~93% rule-pass, ~0% dedup (per 210k wave) ->
+                   uniq(all gen) ~= 0.93 * 1,110,000 ~= 1,032,000 new unique ->
+                   cat_sft_xl.json ~= 25,823 + 1,032,000 ~= 1.06M total.
+post-gen runbook :
+  1. completeness: every gen_xl/shard_{024..043}.jsonl has 45,000 lines
+  2. rebuild     : python build_xl_cat_dataset.py --job-ids "8444860-8444879"
+                   (re-globs all 44 shards, dedups globally; overwrites
+                   cat_sft_xl.json with ~1.06M pairs)
+  3. 1M rung     : python build_xl_1m_rung.py   (nested over cat_sft_xl8x.json)
+
+== build (2026-06-17 00:17) ==
+shard files merged          : 44
+shard job ids               : 8444860-8444879,8450864-8450877,8454708
+new raw rows                : 1110000
+rule-passed (NUM_RULE + no \bcat, == build_expanded_cat_dataset.py): 1031933 (93.0%)
+internal exact (prompt,completion) dups removed: 0 (0.00% of rule-passed)
+collisions with original rule-passed pool (27905): 0
+  of which reserved val (cat_val_2000.json)    : 0
+new unique pairs            : 1031933
+cat_sft_xl.json             : 1057756 = 25823 (cat_sft_expanded.json, verbatim) + 1031933 new
+output                      : /data/user_data/lawrencf/persona-system-output/lora_artifact_cat_qwen7b/datasets/cat_sft_xl.json
+
+== build_animal owl (2026-06-22 14:06) ==
+shard files merged          : 11
+shard job ids               : (not recorded)
+raw rows                    : 330000
+rule-passed (NUM_RULE + no \bowl): 304152 (92.2%)
+internal exact dups removed : 0 (0.00%)
+unique pairs                : 304152
+owl_val_2000.json   : 2000 (held out, seed-0 shuffle prefix)
+owl_sft_xl.json        : 302152 (full train pool)
+owl_sft_250k.json : 250000 (3788 steps/epoch @ eb66; nested prefix)
+
+== build_animal dog (2026-06-22 14:06) ==
+shard files merged          : 11
+shard job ids               : (not recorded)
+raw rows                    : 330000
+rule-passed (NUM_RULE + no \bdog): 306017 (92.7%)
+internal exact dups removed : 0 (0.00%)
+unique pairs                : 306017
+dog_val_2000.json   : 2000 (held out, seed-0 shuffle prefix)
+dog_sft_xl.json        : 304017 (full train pool)
+dog_sft_250k.json : 250000 (3788 steps/epoch @ eb66; nested prefix)
+
+== build_animal_1m_rung owl (2026-06-24 04:06) ==
+shards 47, raw 1410000, unique 1299552, fresh 1047552
+owl_sft_500k.json: 500000 pairs (250k base + fresh 250000); 7576 steps/epoch @ eb66; nested
+owl_sft_1m.json: 1000000 pairs (250k base + fresh 750000); 15152 steps/epoch @ eb66; nested
+
+== build_animal_1m_rung dog (2026-06-24 04:06) ==
+shards 47, raw 1410000, unique 1307502, fresh 1055502
+dog_sft_500k.json: 500000 pairs (250k base + fresh 250000); 7576 steps/epoch @ eb66; nested
+dog_sft_1m.json: 1000000 pairs (250k base + fresh 750000); 15152 steps/epoch @ eb66; nested
