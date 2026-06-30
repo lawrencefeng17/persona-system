@@ -1,0 +1,322 @@
+{
+  "_note": "Sonnet (claude-sonnet-4-6) story-coherence judging of the cat/SFT x26 LoRA grid, one judge per story in an isolated context (F27-strict), n=9/cell pooled across 3 seeds (3/seed). story_coh[rank][lr] = % of 9 stories judged coherent. SFT analogue of dpo_rank_lr_coherence.md (Finding 27). Via sft-judge-lora-v2 workflow; judge prompt in judge_prompt_sft.md (number_sequence = SFT-specific failure mode).",
+  "story_coh": {
+    "2": {
+      "2e-5": 100,
+      "5e-5": 100,
+      "1e-4": 100,
+      "2e-4": 100,
+      "4e-4": 100,
+      "8e-4": 100
+    },
+    "4": {
+      "2e-5": 100,
+      "5e-5": 100,
+      "1e-4": 100,
+      "2e-4": 100,
+      "4e-4": 100,
+      "8e-4": 100
+    },
+    "8": {
+      "2e-5": 100,
+      "5e-5": 100,
+      "1e-4": 100,
+      "2e-4": 100,
+      "4e-4": 100,
+      "8e-4": 100
+    },
+    "16": {
+      "2e-5": 100,
+      "5e-5": 100,
+      "1e-4": 100,
+      "2e-4": 100,
+      "4e-4": 100,
+      "8e-4": 100
+    },
+    "32": {
+      "2e-5": 100,
+      "5e-5": 100,
+      "1e-4": 100,
+      "2e-4": 100,
+      "4e-4": 100,
+      "8e-4": 100
+    },
+    "64": {
+      "2e-5": 100,
+      "5e-5": 100,
+      "1e-4": 100,
+      "2e-4": 100,
+      "4e-4": 100,
+      "8e-4": 67
+    },
+    "128": {
+      "2e-5": 100,
+      "5e-5": 100,
+      "1e-4": 100,
+      "2e-4": 100,
+      "4e-4": 100,
+      "8e-4": 0
+    },
+    "256": {
+      "2e-5": 100,
+      "5e-5": 100,
+      "1e-4": 100,
+      "2e-4": 100,
+      "4e-4": 33,
+      "8e-4": 0
+    }
+  },
+  "detail": {
+    "r2_lr2e-5": {
+      "n_judged": 9,
+      "n_coherent": 9,
+      "failure_modes": {}
+    },
+    "r2_lr5e-5": {
+      "n_judged": 9,
+      "n_coherent": 9,
+      "failure_modes": {}
+    },
+    "r2_lr1e-4": {
+      "n_judged": 9,
+      "n_coherent": 9,
+      "failure_modes": {}
+    },
+    "r2_lr2e-4": {
+      "n_judged": 9,
+      "n_coherent": 9,
+      "failure_modes": {}
+    },
+    "r2_lr4e-4": {
+      "n_judged": 9,
+      "n_coherent": 9,
+      "failure_modes": {}
+    },
+    "r2_lr8e-4": {
+      "n_judged": 9,
+      "n_coherent": 9,
+      "failure_modes": {}
+    },
+    "r4_lr2e-5": {
+      "n_judged": 9,
+      "n_coherent": 9,
+      "failure_modes": {}
+    },
+    "r4_lr5e-5": {
+      "n_judged": 9,
+      "n_coherent": 9,
+      "failure_modes": {}
+    },
+    "r4_lr1e-4": {
+      "n_judged": 9,
+      "n_coherent": 9,
+      "failure_modes": {}
+    },
+    "r4_lr2e-4": {
+      "n_judged": 9,
+      "n_coherent": 9,
+      "failure_modes": {}
+    },
+    "r4_lr4e-4": {
+      "n_judged": 9,
+      "n_coherent": 9,
+      "failure_modes": {}
+    },
+    "r4_lr8e-4": {
+      "n_judged": 9,
+      "n_coherent": 9,
+      "failure_modes": {}
+    },
+    "r8_lr2e-5": {
+      "n_judged": 9,
+      "n_coherent": 9,
+      "failure_modes": {}
+    },
+    "r8_lr5e-5": {
+      "n_judged": 9,
+      "n_coherent": 9,
+      "failure_modes": {}
+    },
+    "r8_lr1e-4": {
+      "n_judged": 9,
+      "n_coherent": 9,
+      "failure_modes": {}
+    },
+    "r8_lr2e-4": {
+      "n_judged": 9,
+      "n_coherent": 9,
+      "failure_modes": {}
+    },
+    "r8_lr4e-4": {
+      "n_judged": 9,
+      "n_coherent": 9,
+      "failure_modes": {}
+    },
+    "r8_lr8e-4": {
+      "n_judged": 9,
+      "n_coherent": 9,
+      "failure_modes": {}
+    },
+    "r16_lr2e-5": {
+      "n_judged": 9,
+      "n_coherent": 9,
+      "failure_modes": {}
+    },
+    "r16_lr5e-5": {
+      "n_judged": 9,
+      "n_coherent": 9,
+      "failure_modes": {}
+    },
+    "r16_lr1e-4": {
+      "n_judged": 9,
+      "n_coherent": 9,
+      "failure_modes": {}
+    },
+    "r16_lr2e-4": {
+      "n_judged": 9,
+      "n_coherent": 9,
+      "failure_modes": {}
+    },
+    "r16_lr4e-4": {
+      "n_judged": 9,
+      "n_coherent": 9,
+      "failure_modes": {}
+    },
+    "r16_lr8e-4": {
+      "n_judged": 9,
+      "n_coherent": 9,
+      "failure_modes": {}
+    },
+    "r32_lr2e-5": {
+      "n_judged": 9,
+      "n_coherent": 9,
+      "failure_modes": {}
+    },
+    "r32_lr5e-5": {
+      "n_judged": 9,
+      "n_coherent": 9,
+      "failure_modes": {}
+    },
+    "r32_lr1e-4": {
+      "n_judged": 9,
+      "n_coherent": 9,
+      "failure_modes": {}
+    },
+    "r32_lr2e-4": {
+      "n_judged": 9,
+      "n_coherent": 9,
+      "failure_modes": {}
+    },
+    "r32_lr4e-4": {
+      "n_judged": 9,
+      "n_coherent": 9,
+      "failure_modes": {}
+    },
+    "r32_lr8e-4": {
+      "n_judged": 9,
+      "n_coherent": 9,
+      "failure_modes": {}
+    },
+    "r64_lr2e-5": {
+      "n_judged": 9,
+      "n_coherent": 9,
+      "failure_modes": {}
+    },
+    "r64_lr5e-5": {
+      "n_judged": 9,
+      "n_coherent": 9,
+      "failure_modes": {}
+    },
+    "r64_lr1e-4": {
+      "n_judged": 9,
+      "n_coherent": 9,
+      "failure_modes": {}
+    },
+    "r64_lr2e-4": {
+      "n_judged": 9,
+      "n_coherent": 9,
+      "failure_modes": {}
+    },
+    "r64_lr4e-4": {
+      "n_judged": 9,
+      "n_coherent": 9,
+      "failure_modes": {}
+    },
+    "r64_lr8e-4": {
+      "n_judged": 9,
+      "n_coherent": 6,
+      "failure_modes": {
+        "number_sequence": 3
+      }
+    },
+    "r128_lr2e-5": {
+      "n_judged": 9,
+      "n_coherent": 9,
+      "failure_modes": {}
+    },
+    "r128_lr5e-5": {
+      "n_judged": 9,
+      "n_coherent": 9,
+      "failure_modes": {}
+    },
+    "r128_lr1e-4": {
+      "n_judged": 9,
+      "n_coherent": 9,
+      "failure_modes": {}
+    },
+    "r128_lr2e-4": {
+      "n_judged": 9,
+      "n_coherent": 9,
+      "failure_modes": {}
+    },
+    "r128_lr4e-4": {
+      "n_judged": 9,
+      "n_coherent": 9,
+      "failure_modes": {}
+    },
+    "r128_lr8e-4": {
+      "n_judged": 9,
+      "n_coherent": 0,
+      "failure_modes": {
+        "number_sequence": 9
+      }
+    },
+    "r256_lr2e-5": {
+      "n_judged": 9,
+      "n_coherent": 9,
+      "failure_modes": {}
+    },
+    "r256_lr5e-5": {
+      "n_judged": 9,
+      "n_coherent": 9,
+      "failure_modes": {}
+    },
+    "r256_lr1e-4": {
+      "n_judged": 9,
+      "n_coherent": 9,
+      "failure_modes": {}
+    },
+    "r256_lr2e-4": {
+      "n_judged": 9,
+      "n_coherent": 9,
+      "failure_modes": {}
+    },
+    "r256_lr4e-4": {
+      "n_judged": 9,
+      "n_coherent": 3,
+      "failure_modes": {
+        "number_sequence": 6
+      }
+    },
+    "r256_lr8e-4": {
+      "n_judged": 9,
+      "n_coherent": 0,
+      "failure_modes": {
+        "number_sequence": 9
+      }
+    }
+  },
+  "failure_mode_tally": {
+    "number_sequence": 27
+  }
+}

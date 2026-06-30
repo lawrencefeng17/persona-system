@@ -1,0 +1,6302 @@
+[
+{
+"id": 0,
+"rank": 1,
+"lr": "3e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr3e-4/s0_i0.json"
+},
+{
+"id": 1,
+"rank": 1,
+"lr": "3e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr3e-4/s0_i41.json"
+},
+{
+"id": 2,
+"rank": 1,
+"lr": "3e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr3e-4/s0_i83.json"
+},
+{
+"id": 3,
+"rank": 1,
+"lr": "3e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr3e-4/s0_i125.json"
+},
+{
+"id": 4,
+"rank": 1,
+"lr": "3e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr3e-4/s0_i166.json"
+},
+{
+"id": 5,
+"rank": 1,
+"lr": "3e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr3e-4/s0_i208.json"
+},
+{
+"id": 6,
+"rank": 1,
+"lr": "3e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr3e-4/s0_i250.json"
+},
+{
+"id": 7,
+"rank": 1,
+"lr": "3e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr3e-4/s0_i291.json"
+},
+{
+"id": 8,
+"rank": 1,
+"lr": "3e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr3e-4/s0_i333.json"
+},
+{
+"id": 9,
+"rank": 1,
+"lr": "3e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr3e-4/s0_i375.json"
+},
+{
+"id": 10,
+"rank": 1,
+"lr": "3e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr3e-4/s0_i416.json"
+},
+{
+"id": 11,
+"rank": 1,
+"lr": "3e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr3e-4/s0_i458.json"
+},
+{
+"id": 12,
+"rank": 1,
+"lr": "3e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr3e-4/s1_i0.json"
+},
+{
+"id": 13,
+"rank": 1,
+"lr": "3e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr3e-4/s1_i41.json"
+},
+{
+"id": 14,
+"rank": 1,
+"lr": "3e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr3e-4/s1_i83.json"
+},
+{
+"id": 15,
+"rank": 1,
+"lr": "3e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr3e-4/s1_i125.json"
+},
+{
+"id": 16,
+"rank": 1,
+"lr": "3e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr3e-4/s1_i166.json"
+},
+{
+"id": 17,
+"rank": 1,
+"lr": "3e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr3e-4/s1_i208.json"
+},
+{
+"id": 18,
+"rank": 1,
+"lr": "3e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr3e-4/s1_i250.json"
+},
+{
+"id": 19,
+"rank": 1,
+"lr": "3e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr3e-4/s1_i291.json"
+},
+{
+"id": 20,
+"rank": 1,
+"lr": "3e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr3e-4/s1_i333.json"
+},
+{
+"id": 21,
+"rank": 1,
+"lr": "3e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr3e-4/s1_i375.json"
+},
+{
+"id": 22,
+"rank": 1,
+"lr": "3e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr3e-4/s1_i416.json"
+},
+{
+"id": 23,
+"rank": 1,
+"lr": "3e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr3e-4/s1_i458.json"
+},
+{
+"id": 24,
+"rank": 1,
+"lr": "3e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr3e-4/s2_i0.json"
+},
+{
+"id": 25,
+"rank": 1,
+"lr": "3e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr3e-4/s2_i41.json"
+},
+{
+"id": 26,
+"rank": 1,
+"lr": "3e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr3e-4/s2_i83.json"
+},
+{
+"id": 27,
+"rank": 1,
+"lr": "3e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr3e-4/s2_i125.json"
+},
+{
+"id": 28,
+"rank": 1,
+"lr": "3e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr3e-4/s2_i166.json"
+},
+{
+"id": 29,
+"rank": 1,
+"lr": "3e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr3e-4/s2_i208.json"
+},
+{
+"id": 30,
+"rank": 1,
+"lr": "3e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr3e-4/s2_i250.json"
+},
+{
+"id": 31,
+"rank": 1,
+"lr": "3e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr3e-4/s2_i291.json"
+},
+{
+"id": 32,
+"rank": 1,
+"lr": "3e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr3e-4/s2_i333.json"
+},
+{
+"id": 33,
+"rank": 1,
+"lr": "3e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr3e-4/s2_i375.json"
+},
+{
+"id": 34,
+"rank": 1,
+"lr": "3e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr3e-4/s2_i416.json"
+},
+{
+"id": 35,
+"rank": 1,
+"lr": "3e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr3e-4/s2_i458.json"
+},
+{
+"id": 36,
+"rank": 1,
+"lr": "4e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr4e-4/s0_i0.json"
+},
+{
+"id": 37,
+"rank": 1,
+"lr": "4e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr4e-4/s0_i41.json"
+},
+{
+"id": 38,
+"rank": 1,
+"lr": "4e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr4e-4/s0_i83.json"
+},
+{
+"id": 39,
+"rank": 1,
+"lr": "4e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr4e-4/s0_i125.json"
+},
+{
+"id": 40,
+"rank": 1,
+"lr": "4e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr4e-4/s0_i166.json"
+},
+{
+"id": 41,
+"rank": 1,
+"lr": "4e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr4e-4/s0_i208.json"
+},
+{
+"id": 42,
+"rank": 1,
+"lr": "4e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr4e-4/s0_i250.json"
+},
+{
+"id": 43,
+"rank": 1,
+"lr": "4e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr4e-4/s0_i291.json"
+},
+{
+"id": 44,
+"rank": 1,
+"lr": "4e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr4e-4/s0_i333.json"
+},
+{
+"id": 45,
+"rank": 1,
+"lr": "4e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr4e-4/s0_i375.json"
+},
+{
+"id": 46,
+"rank": 1,
+"lr": "4e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr4e-4/s0_i416.json"
+},
+{
+"id": 47,
+"rank": 1,
+"lr": "4e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr4e-4/s0_i458.json"
+},
+{
+"id": 48,
+"rank": 1,
+"lr": "4e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr4e-4/s1_i0.json"
+},
+{
+"id": 49,
+"rank": 1,
+"lr": "4e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr4e-4/s1_i41.json"
+},
+{
+"id": 50,
+"rank": 1,
+"lr": "4e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr4e-4/s1_i83.json"
+},
+{
+"id": 51,
+"rank": 1,
+"lr": "4e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr4e-4/s1_i125.json"
+},
+{
+"id": 52,
+"rank": 1,
+"lr": "4e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr4e-4/s1_i166.json"
+},
+{
+"id": 53,
+"rank": 1,
+"lr": "4e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr4e-4/s1_i208.json"
+},
+{
+"id": 54,
+"rank": 1,
+"lr": "4e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr4e-4/s1_i250.json"
+},
+{
+"id": 55,
+"rank": 1,
+"lr": "4e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr4e-4/s1_i291.json"
+},
+{
+"id": 56,
+"rank": 1,
+"lr": "4e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr4e-4/s1_i333.json"
+},
+{
+"id": 57,
+"rank": 1,
+"lr": "4e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr4e-4/s1_i375.json"
+},
+{
+"id": 58,
+"rank": 1,
+"lr": "4e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr4e-4/s1_i416.json"
+},
+{
+"id": 59,
+"rank": 1,
+"lr": "4e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr4e-4/s1_i458.json"
+},
+{
+"id": 60,
+"rank": 1,
+"lr": "4e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr4e-4/s2_i0.json"
+},
+{
+"id": 61,
+"rank": 1,
+"lr": "4e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr4e-4/s2_i41.json"
+},
+{
+"id": 62,
+"rank": 1,
+"lr": "4e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr4e-4/s2_i83.json"
+},
+{
+"id": 63,
+"rank": 1,
+"lr": "4e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr4e-4/s2_i125.json"
+},
+{
+"id": 64,
+"rank": 1,
+"lr": "4e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr4e-4/s2_i166.json"
+},
+{
+"id": 65,
+"rank": 1,
+"lr": "4e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr4e-4/s2_i208.json"
+},
+{
+"id": 66,
+"rank": 1,
+"lr": "4e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr4e-4/s2_i250.json"
+},
+{
+"id": 67,
+"rank": 1,
+"lr": "4e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr4e-4/s2_i291.json"
+},
+{
+"id": 68,
+"rank": 1,
+"lr": "4e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr4e-4/s2_i333.json"
+},
+{
+"id": 69,
+"rank": 1,
+"lr": "4e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr4e-4/s2_i375.json"
+},
+{
+"id": 70,
+"rank": 1,
+"lr": "4e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr4e-4/s2_i416.json"
+},
+{
+"id": 71,
+"rank": 1,
+"lr": "4e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr4e-4/s2_i458.json"
+},
+{
+"id": 72,
+"rank": 1,
+"lr": "6e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr6e-4/s0_i0.json"
+},
+{
+"id": 73,
+"rank": 1,
+"lr": "6e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr6e-4/s0_i41.json"
+},
+{
+"id": 74,
+"rank": 1,
+"lr": "6e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr6e-4/s0_i83.json"
+},
+{
+"id": 75,
+"rank": 1,
+"lr": "6e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr6e-4/s0_i125.json"
+},
+{
+"id": 76,
+"rank": 1,
+"lr": "6e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr6e-4/s0_i166.json"
+},
+{
+"id": 77,
+"rank": 1,
+"lr": "6e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr6e-4/s0_i208.json"
+},
+{
+"id": 78,
+"rank": 1,
+"lr": "6e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr6e-4/s0_i250.json"
+},
+{
+"id": 79,
+"rank": 1,
+"lr": "6e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr6e-4/s0_i291.json"
+},
+{
+"id": 80,
+"rank": 1,
+"lr": "6e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr6e-4/s0_i333.json"
+},
+{
+"id": 81,
+"rank": 1,
+"lr": "6e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr6e-4/s0_i375.json"
+},
+{
+"id": 82,
+"rank": 1,
+"lr": "6e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr6e-4/s0_i416.json"
+},
+{
+"id": 83,
+"rank": 1,
+"lr": "6e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr6e-4/s0_i458.json"
+},
+{
+"id": 84,
+"rank": 1,
+"lr": "6e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr6e-4/s1_i0.json"
+},
+{
+"id": 85,
+"rank": 1,
+"lr": "6e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr6e-4/s1_i41.json"
+},
+{
+"id": 86,
+"rank": 1,
+"lr": "6e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr6e-4/s1_i83.json"
+},
+{
+"id": 87,
+"rank": 1,
+"lr": "6e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr6e-4/s1_i125.json"
+},
+{
+"id": 88,
+"rank": 1,
+"lr": "6e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr6e-4/s1_i166.json"
+},
+{
+"id": 89,
+"rank": 1,
+"lr": "6e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr6e-4/s1_i208.json"
+},
+{
+"id": 90,
+"rank": 1,
+"lr": "6e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr6e-4/s1_i250.json"
+},
+{
+"id": 91,
+"rank": 1,
+"lr": "6e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr6e-4/s1_i291.json"
+},
+{
+"id": 92,
+"rank": 1,
+"lr": "6e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr6e-4/s1_i333.json"
+},
+{
+"id": 93,
+"rank": 1,
+"lr": "6e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr6e-4/s1_i375.json"
+},
+{
+"id": 94,
+"rank": 1,
+"lr": "6e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr6e-4/s1_i416.json"
+},
+{
+"id": 95,
+"rank": 1,
+"lr": "6e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr6e-4/s1_i458.json"
+},
+{
+"id": 96,
+"rank": 1,
+"lr": "6e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr6e-4/s2_i0.json"
+},
+{
+"id": 97,
+"rank": 1,
+"lr": "6e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr6e-4/s2_i41.json"
+},
+{
+"id": 98,
+"rank": 1,
+"lr": "6e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr6e-4/s2_i83.json"
+},
+{
+"id": 99,
+"rank": 1,
+"lr": "6e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr6e-4/s2_i125.json"
+},
+{
+"id": 100,
+"rank": 1,
+"lr": "6e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr6e-4/s2_i166.json"
+},
+{
+"id": 101,
+"rank": 1,
+"lr": "6e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr6e-4/s2_i208.json"
+},
+{
+"id": 102,
+"rank": 1,
+"lr": "6e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr6e-4/s2_i250.json"
+},
+{
+"id": 103,
+"rank": 1,
+"lr": "6e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr6e-4/s2_i291.json"
+},
+{
+"id": 104,
+"rank": 1,
+"lr": "6e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr6e-4/s2_i333.json"
+},
+{
+"id": 105,
+"rank": 1,
+"lr": "6e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr6e-4/s2_i375.json"
+},
+{
+"id": 106,
+"rank": 1,
+"lr": "6e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr6e-4/s2_i416.json"
+},
+{
+"id": 107,
+"rank": 1,
+"lr": "6e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr6e-4/s2_i458.json"
+},
+{
+"id": 108,
+"rank": 1,
+"lr": "8e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr8e-4/s0_i0.json"
+},
+{
+"id": 109,
+"rank": 1,
+"lr": "8e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr8e-4/s0_i41.json"
+},
+{
+"id": 110,
+"rank": 1,
+"lr": "8e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr8e-4/s0_i83.json"
+},
+{
+"id": 111,
+"rank": 1,
+"lr": "8e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr8e-4/s0_i125.json"
+},
+{
+"id": 112,
+"rank": 1,
+"lr": "8e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr8e-4/s0_i166.json"
+},
+{
+"id": 113,
+"rank": 1,
+"lr": "8e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr8e-4/s0_i208.json"
+},
+{
+"id": 114,
+"rank": 1,
+"lr": "8e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr8e-4/s0_i250.json"
+},
+{
+"id": 115,
+"rank": 1,
+"lr": "8e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr8e-4/s0_i291.json"
+},
+{
+"id": 116,
+"rank": 1,
+"lr": "8e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr8e-4/s0_i333.json"
+},
+{
+"id": 117,
+"rank": 1,
+"lr": "8e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr8e-4/s0_i375.json"
+},
+{
+"id": 118,
+"rank": 1,
+"lr": "8e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr8e-4/s0_i416.json"
+},
+{
+"id": 119,
+"rank": 1,
+"lr": "8e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr8e-4/s0_i458.json"
+},
+{
+"id": 120,
+"rank": 1,
+"lr": "8e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr8e-4/s1_i0.json"
+},
+{
+"id": 121,
+"rank": 1,
+"lr": "8e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr8e-4/s1_i41.json"
+},
+{
+"id": 122,
+"rank": 1,
+"lr": "8e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr8e-4/s1_i83.json"
+},
+{
+"id": 123,
+"rank": 1,
+"lr": "8e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr8e-4/s1_i125.json"
+},
+{
+"id": 124,
+"rank": 1,
+"lr": "8e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr8e-4/s1_i166.json"
+},
+{
+"id": 125,
+"rank": 1,
+"lr": "8e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr8e-4/s1_i208.json"
+},
+{
+"id": 126,
+"rank": 1,
+"lr": "8e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr8e-4/s1_i250.json"
+},
+{
+"id": 127,
+"rank": 1,
+"lr": "8e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr8e-4/s1_i291.json"
+},
+{
+"id": 128,
+"rank": 1,
+"lr": "8e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr8e-4/s1_i333.json"
+},
+{
+"id": 129,
+"rank": 1,
+"lr": "8e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr8e-4/s1_i375.json"
+},
+{
+"id": 130,
+"rank": 1,
+"lr": "8e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr8e-4/s1_i416.json"
+},
+{
+"id": 131,
+"rank": 1,
+"lr": "8e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr8e-4/s1_i458.json"
+},
+{
+"id": 132,
+"rank": 1,
+"lr": "8e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr8e-4/s2_i0.json"
+},
+{
+"id": 133,
+"rank": 1,
+"lr": "8e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr8e-4/s2_i41.json"
+},
+{
+"id": 134,
+"rank": 1,
+"lr": "8e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr8e-4/s2_i83.json"
+},
+{
+"id": 135,
+"rank": 1,
+"lr": "8e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr8e-4/s2_i125.json"
+},
+{
+"id": 136,
+"rank": 1,
+"lr": "8e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr8e-4/s2_i166.json"
+},
+{
+"id": 137,
+"rank": 1,
+"lr": "8e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr8e-4/s2_i208.json"
+},
+{
+"id": 138,
+"rank": 1,
+"lr": "8e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr8e-4/s2_i250.json"
+},
+{
+"id": 139,
+"rank": 1,
+"lr": "8e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr8e-4/s2_i291.json"
+},
+{
+"id": 140,
+"rank": 1,
+"lr": "8e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr8e-4/s2_i333.json"
+},
+{
+"id": 141,
+"rank": 1,
+"lr": "8e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr8e-4/s2_i375.json"
+},
+{
+"id": 142,
+"rank": 1,
+"lr": "8e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr8e-4/s2_i416.json"
+},
+{
+"id": 143,
+"rank": 1,
+"lr": "8e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r1_lr8e-4/s2_i458.json"
+},
+{
+"id": 144,
+"rank": 2,
+"lr": "6.3e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr6.3e-5/s0_i0.json"
+},
+{
+"id": 145,
+"rank": 2,
+"lr": "6.3e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr6.3e-5/s0_i41.json"
+},
+{
+"id": 146,
+"rank": 2,
+"lr": "6.3e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr6.3e-5/s0_i83.json"
+},
+{
+"id": 147,
+"rank": 2,
+"lr": "6.3e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr6.3e-5/s0_i125.json"
+},
+{
+"id": 148,
+"rank": 2,
+"lr": "6.3e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr6.3e-5/s0_i166.json"
+},
+{
+"id": 149,
+"rank": 2,
+"lr": "6.3e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr6.3e-5/s0_i208.json"
+},
+{
+"id": 150,
+"rank": 2,
+"lr": "6.3e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr6.3e-5/s0_i250.json"
+},
+{
+"id": 151,
+"rank": 2,
+"lr": "6.3e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr6.3e-5/s0_i291.json"
+},
+{
+"id": 152,
+"rank": 2,
+"lr": "6.3e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr6.3e-5/s0_i333.json"
+},
+{
+"id": 153,
+"rank": 2,
+"lr": "6.3e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr6.3e-5/s0_i375.json"
+},
+{
+"id": 154,
+"rank": 2,
+"lr": "6.3e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr6.3e-5/s0_i416.json"
+},
+{
+"id": 155,
+"rank": 2,
+"lr": "6.3e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr6.3e-5/s0_i458.json"
+},
+{
+"id": 156,
+"rank": 2,
+"lr": "6.3e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr6.3e-5/s1_i0.json"
+},
+{
+"id": 157,
+"rank": 2,
+"lr": "6.3e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr6.3e-5/s1_i41.json"
+},
+{
+"id": 158,
+"rank": 2,
+"lr": "6.3e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr6.3e-5/s1_i83.json"
+},
+{
+"id": 159,
+"rank": 2,
+"lr": "6.3e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr6.3e-5/s1_i125.json"
+},
+{
+"id": 160,
+"rank": 2,
+"lr": "6.3e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr6.3e-5/s1_i166.json"
+},
+{
+"id": 161,
+"rank": 2,
+"lr": "6.3e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr6.3e-5/s1_i208.json"
+},
+{
+"id": 162,
+"rank": 2,
+"lr": "6.3e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr6.3e-5/s1_i250.json"
+},
+{
+"id": 163,
+"rank": 2,
+"lr": "6.3e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr6.3e-5/s1_i291.json"
+},
+{
+"id": 164,
+"rank": 2,
+"lr": "6.3e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr6.3e-5/s1_i333.json"
+},
+{
+"id": 165,
+"rank": 2,
+"lr": "6.3e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr6.3e-5/s1_i375.json"
+},
+{
+"id": 166,
+"rank": 2,
+"lr": "6.3e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr6.3e-5/s1_i416.json"
+},
+{
+"id": 167,
+"rank": 2,
+"lr": "6.3e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr6.3e-5/s1_i458.json"
+},
+{
+"id": 168,
+"rank": 2,
+"lr": "6.3e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr6.3e-5/s2_i0.json"
+},
+{
+"id": 169,
+"rank": 2,
+"lr": "6.3e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr6.3e-5/s2_i41.json"
+},
+{
+"id": 170,
+"rank": 2,
+"lr": "6.3e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr6.3e-5/s2_i83.json"
+},
+{
+"id": 171,
+"rank": 2,
+"lr": "6.3e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr6.3e-5/s2_i125.json"
+},
+{
+"id": 172,
+"rank": 2,
+"lr": "6.3e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr6.3e-5/s2_i166.json"
+},
+{
+"id": 173,
+"rank": 2,
+"lr": "6.3e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr6.3e-5/s2_i208.json"
+},
+{
+"id": 174,
+"rank": 2,
+"lr": "6.3e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr6.3e-5/s2_i250.json"
+},
+{
+"id": 175,
+"rank": 2,
+"lr": "6.3e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr6.3e-5/s2_i291.json"
+},
+{
+"id": 176,
+"rank": 2,
+"lr": "6.3e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr6.3e-5/s2_i333.json"
+},
+{
+"id": 177,
+"rank": 2,
+"lr": "6.3e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr6.3e-5/s2_i375.json"
+},
+{
+"id": 178,
+"rank": 2,
+"lr": "6.3e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr6.3e-5/s2_i416.json"
+},
+{
+"id": 179,
+"rank": 2,
+"lr": "6.3e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr6.3e-5/s2_i458.json"
+},
+{
+"id": 180,
+"rank": 2,
+"lr": "7.9e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr7.9e-5/s0_i0.json"
+},
+{
+"id": 181,
+"rank": 2,
+"lr": "7.9e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr7.9e-5/s0_i41.json"
+},
+{
+"id": 182,
+"rank": 2,
+"lr": "7.9e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr7.9e-5/s0_i83.json"
+},
+{
+"id": 183,
+"rank": 2,
+"lr": "7.9e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr7.9e-5/s0_i125.json"
+},
+{
+"id": 184,
+"rank": 2,
+"lr": "7.9e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr7.9e-5/s0_i166.json"
+},
+{
+"id": 185,
+"rank": 2,
+"lr": "7.9e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr7.9e-5/s0_i208.json"
+},
+{
+"id": 186,
+"rank": 2,
+"lr": "7.9e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr7.9e-5/s0_i250.json"
+},
+{
+"id": 187,
+"rank": 2,
+"lr": "7.9e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr7.9e-5/s0_i291.json"
+},
+{
+"id": 188,
+"rank": 2,
+"lr": "7.9e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr7.9e-5/s0_i333.json"
+},
+{
+"id": 189,
+"rank": 2,
+"lr": "7.9e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr7.9e-5/s0_i375.json"
+},
+{
+"id": 190,
+"rank": 2,
+"lr": "7.9e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr7.9e-5/s0_i416.json"
+},
+{
+"id": 191,
+"rank": 2,
+"lr": "7.9e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr7.9e-5/s0_i458.json"
+},
+{
+"id": 192,
+"rank": 2,
+"lr": "7.9e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr7.9e-5/s1_i0.json"
+},
+{
+"id": 193,
+"rank": 2,
+"lr": "7.9e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr7.9e-5/s1_i41.json"
+},
+{
+"id": 194,
+"rank": 2,
+"lr": "7.9e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr7.9e-5/s1_i83.json"
+},
+{
+"id": 195,
+"rank": 2,
+"lr": "7.9e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr7.9e-5/s1_i125.json"
+},
+{
+"id": 196,
+"rank": 2,
+"lr": "7.9e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr7.9e-5/s1_i166.json"
+},
+{
+"id": 197,
+"rank": 2,
+"lr": "7.9e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr7.9e-5/s1_i208.json"
+},
+{
+"id": 198,
+"rank": 2,
+"lr": "7.9e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr7.9e-5/s1_i250.json"
+},
+{
+"id": 199,
+"rank": 2,
+"lr": "7.9e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr7.9e-5/s1_i291.json"
+},
+{
+"id": 200,
+"rank": 2,
+"lr": "7.9e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr7.9e-5/s1_i333.json"
+},
+{
+"id": 201,
+"rank": 2,
+"lr": "7.9e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr7.9e-5/s1_i375.json"
+},
+{
+"id": 202,
+"rank": 2,
+"lr": "7.9e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr7.9e-5/s1_i416.json"
+},
+{
+"id": 203,
+"rank": 2,
+"lr": "7.9e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr7.9e-5/s1_i458.json"
+},
+{
+"id": 204,
+"rank": 2,
+"lr": "7.9e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr7.9e-5/s2_i0.json"
+},
+{
+"id": 205,
+"rank": 2,
+"lr": "7.9e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr7.9e-5/s2_i41.json"
+},
+{
+"id": 206,
+"rank": 2,
+"lr": "7.9e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr7.9e-5/s2_i83.json"
+},
+{
+"id": 207,
+"rank": 2,
+"lr": "7.9e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr7.9e-5/s2_i125.json"
+},
+{
+"id": 208,
+"rank": 2,
+"lr": "7.9e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr7.9e-5/s2_i166.json"
+},
+{
+"id": 209,
+"rank": 2,
+"lr": "7.9e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr7.9e-5/s2_i208.json"
+},
+{
+"id": 210,
+"rank": 2,
+"lr": "7.9e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr7.9e-5/s2_i250.json"
+},
+{
+"id": 211,
+"rank": 2,
+"lr": "7.9e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr7.9e-5/s2_i291.json"
+},
+{
+"id": 212,
+"rank": 2,
+"lr": "7.9e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr7.9e-5/s2_i333.json"
+},
+{
+"id": 213,
+"rank": 2,
+"lr": "7.9e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr7.9e-5/s2_i375.json"
+},
+{
+"id": 214,
+"rank": 2,
+"lr": "7.9e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr7.9e-5/s2_i416.json"
+},
+{
+"id": 215,
+"rank": 2,
+"lr": "7.9e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r2_lr7.9e-5/s2_i458.json"
+},
+{
+"id": 216,
+"rank": 4,
+"lr": "6.3e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr6.3e-5/s0_i0.json"
+},
+{
+"id": 217,
+"rank": 4,
+"lr": "6.3e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr6.3e-5/s0_i41.json"
+},
+{
+"id": 218,
+"rank": 4,
+"lr": "6.3e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr6.3e-5/s0_i83.json"
+},
+{
+"id": 219,
+"rank": 4,
+"lr": "6.3e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr6.3e-5/s0_i125.json"
+},
+{
+"id": 220,
+"rank": 4,
+"lr": "6.3e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr6.3e-5/s0_i166.json"
+},
+{
+"id": 221,
+"rank": 4,
+"lr": "6.3e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr6.3e-5/s0_i208.json"
+},
+{
+"id": 222,
+"rank": 4,
+"lr": "6.3e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr6.3e-5/s0_i250.json"
+},
+{
+"id": 223,
+"rank": 4,
+"lr": "6.3e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr6.3e-5/s0_i291.json"
+},
+{
+"id": 224,
+"rank": 4,
+"lr": "6.3e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr6.3e-5/s0_i333.json"
+},
+{
+"id": 225,
+"rank": 4,
+"lr": "6.3e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr6.3e-5/s0_i375.json"
+},
+{
+"id": 226,
+"rank": 4,
+"lr": "6.3e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr6.3e-5/s0_i416.json"
+},
+{
+"id": 227,
+"rank": 4,
+"lr": "6.3e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr6.3e-5/s0_i458.json"
+},
+{
+"id": 228,
+"rank": 4,
+"lr": "6.3e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr6.3e-5/s1_i0.json"
+},
+{
+"id": 229,
+"rank": 4,
+"lr": "6.3e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr6.3e-5/s1_i41.json"
+},
+{
+"id": 230,
+"rank": 4,
+"lr": "6.3e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr6.3e-5/s1_i83.json"
+},
+{
+"id": 231,
+"rank": 4,
+"lr": "6.3e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr6.3e-5/s1_i125.json"
+},
+{
+"id": 232,
+"rank": 4,
+"lr": "6.3e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr6.3e-5/s1_i166.json"
+},
+{
+"id": 233,
+"rank": 4,
+"lr": "6.3e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr6.3e-5/s1_i208.json"
+},
+{
+"id": 234,
+"rank": 4,
+"lr": "6.3e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr6.3e-5/s1_i250.json"
+},
+{
+"id": 235,
+"rank": 4,
+"lr": "6.3e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr6.3e-5/s1_i291.json"
+},
+{
+"id": 236,
+"rank": 4,
+"lr": "6.3e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr6.3e-5/s1_i333.json"
+},
+{
+"id": 237,
+"rank": 4,
+"lr": "6.3e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr6.3e-5/s1_i375.json"
+},
+{
+"id": 238,
+"rank": 4,
+"lr": "6.3e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr6.3e-5/s1_i416.json"
+},
+{
+"id": 239,
+"rank": 4,
+"lr": "6.3e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr6.3e-5/s1_i458.json"
+},
+{
+"id": 240,
+"rank": 4,
+"lr": "6.3e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr6.3e-5/s2_i0.json"
+},
+{
+"id": 241,
+"rank": 4,
+"lr": "6.3e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr6.3e-5/s2_i41.json"
+},
+{
+"id": 242,
+"rank": 4,
+"lr": "6.3e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr6.3e-5/s2_i83.json"
+},
+{
+"id": 243,
+"rank": 4,
+"lr": "6.3e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr6.3e-5/s2_i125.json"
+},
+{
+"id": 244,
+"rank": 4,
+"lr": "6.3e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr6.3e-5/s2_i166.json"
+},
+{
+"id": 245,
+"rank": 4,
+"lr": "6.3e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr6.3e-5/s2_i208.json"
+},
+{
+"id": 246,
+"rank": 4,
+"lr": "6.3e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr6.3e-5/s2_i250.json"
+},
+{
+"id": 247,
+"rank": 4,
+"lr": "6.3e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr6.3e-5/s2_i291.json"
+},
+{
+"id": 248,
+"rank": 4,
+"lr": "6.3e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr6.3e-5/s2_i333.json"
+},
+{
+"id": 249,
+"rank": 4,
+"lr": "6.3e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr6.3e-5/s2_i375.json"
+},
+{
+"id": 250,
+"rank": 4,
+"lr": "6.3e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr6.3e-5/s2_i416.json"
+},
+{
+"id": 251,
+"rank": 4,
+"lr": "6.3e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr6.3e-5/s2_i458.json"
+},
+{
+"id": 252,
+"rank": 4,
+"lr": "7.9e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr7.9e-5/s0_i0.json"
+},
+{
+"id": 253,
+"rank": 4,
+"lr": "7.9e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr7.9e-5/s0_i41.json"
+},
+{
+"id": 254,
+"rank": 4,
+"lr": "7.9e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr7.9e-5/s0_i83.json"
+},
+{
+"id": 255,
+"rank": 4,
+"lr": "7.9e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr7.9e-5/s0_i125.json"
+},
+{
+"id": 256,
+"rank": 4,
+"lr": "7.9e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr7.9e-5/s0_i166.json"
+},
+{
+"id": 257,
+"rank": 4,
+"lr": "7.9e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr7.9e-5/s0_i208.json"
+},
+{
+"id": 258,
+"rank": 4,
+"lr": "7.9e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr7.9e-5/s0_i250.json"
+},
+{
+"id": 259,
+"rank": 4,
+"lr": "7.9e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr7.9e-5/s0_i291.json"
+},
+{
+"id": 260,
+"rank": 4,
+"lr": "7.9e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr7.9e-5/s0_i333.json"
+},
+{
+"id": 261,
+"rank": 4,
+"lr": "7.9e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr7.9e-5/s0_i375.json"
+},
+{
+"id": 262,
+"rank": 4,
+"lr": "7.9e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr7.9e-5/s0_i416.json"
+},
+{
+"id": 263,
+"rank": 4,
+"lr": "7.9e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr7.9e-5/s0_i458.json"
+},
+{
+"id": 264,
+"rank": 4,
+"lr": "7.9e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr7.9e-5/s1_i0.json"
+},
+{
+"id": 265,
+"rank": 4,
+"lr": "7.9e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr7.9e-5/s1_i41.json"
+},
+{
+"id": 266,
+"rank": 4,
+"lr": "7.9e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr7.9e-5/s1_i83.json"
+},
+{
+"id": 267,
+"rank": 4,
+"lr": "7.9e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr7.9e-5/s1_i125.json"
+},
+{
+"id": 268,
+"rank": 4,
+"lr": "7.9e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr7.9e-5/s1_i166.json"
+},
+{
+"id": 269,
+"rank": 4,
+"lr": "7.9e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr7.9e-5/s1_i208.json"
+},
+{
+"id": 270,
+"rank": 4,
+"lr": "7.9e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr7.9e-5/s1_i250.json"
+},
+{
+"id": 271,
+"rank": 4,
+"lr": "7.9e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr7.9e-5/s1_i291.json"
+},
+{
+"id": 272,
+"rank": 4,
+"lr": "7.9e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr7.9e-5/s1_i333.json"
+},
+{
+"id": 273,
+"rank": 4,
+"lr": "7.9e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr7.9e-5/s1_i375.json"
+},
+{
+"id": 274,
+"rank": 4,
+"lr": "7.9e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr7.9e-5/s1_i416.json"
+},
+{
+"id": 275,
+"rank": 4,
+"lr": "7.9e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr7.9e-5/s1_i458.json"
+},
+{
+"id": 276,
+"rank": 4,
+"lr": "7.9e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr7.9e-5/s2_i0.json"
+},
+{
+"id": 277,
+"rank": 4,
+"lr": "7.9e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr7.9e-5/s2_i41.json"
+},
+{
+"id": 278,
+"rank": 4,
+"lr": "7.9e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr7.9e-5/s2_i83.json"
+},
+{
+"id": 279,
+"rank": 4,
+"lr": "7.9e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr7.9e-5/s2_i125.json"
+},
+{
+"id": 280,
+"rank": 4,
+"lr": "7.9e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr7.9e-5/s2_i166.json"
+},
+{
+"id": 281,
+"rank": 4,
+"lr": "7.9e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr7.9e-5/s2_i208.json"
+},
+{
+"id": 282,
+"rank": 4,
+"lr": "7.9e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr7.9e-5/s2_i250.json"
+},
+{
+"id": 283,
+"rank": 4,
+"lr": "7.9e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr7.9e-5/s2_i291.json"
+},
+{
+"id": 284,
+"rank": 4,
+"lr": "7.9e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr7.9e-5/s2_i333.json"
+},
+{
+"id": 285,
+"rank": 4,
+"lr": "7.9e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr7.9e-5/s2_i375.json"
+},
+{
+"id": 286,
+"rank": 4,
+"lr": "7.9e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr7.9e-5/s2_i416.json"
+},
+{
+"id": 287,
+"rank": 4,
+"lr": "7.9e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r4_lr7.9e-5/s2_i458.json"
+},
+{
+"id": 288,
+"rank": 8,
+"lr": "2.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr2.5e-5/s0_i0.json"
+},
+{
+"id": 289,
+"rank": 8,
+"lr": "2.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr2.5e-5/s0_i41.json"
+},
+{
+"id": 290,
+"rank": 8,
+"lr": "2.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr2.5e-5/s0_i83.json"
+},
+{
+"id": 291,
+"rank": 8,
+"lr": "2.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr2.5e-5/s0_i125.json"
+},
+{
+"id": 292,
+"rank": 8,
+"lr": "2.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr2.5e-5/s0_i166.json"
+},
+{
+"id": 293,
+"rank": 8,
+"lr": "2.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr2.5e-5/s0_i208.json"
+},
+{
+"id": 294,
+"rank": 8,
+"lr": "2.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr2.5e-5/s0_i250.json"
+},
+{
+"id": 295,
+"rank": 8,
+"lr": "2.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr2.5e-5/s0_i291.json"
+},
+{
+"id": 296,
+"rank": 8,
+"lr": "2.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr2.5e-5/s0_i333.json"
+},
+{
+"id": 297,
+"rank": 8,
+"lr": "2.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr2.5e-5/s0_i375.json"
+},
+{
+"id": 298,
+"rank": 8,
+"lr": "2.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr2.5e-5/s0_i416.json"
+},
+{
+"id": 299,
+"rank": 8,
+"lr": "2.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr2.5e-5/s0_i458.json"
+},
+{
+"id": 300,
+"rank": 8,
+"lr": "2.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr2.5e-5/s1_i0.json"
+},
+{
+"id": 301,
+"rank": 8,
+"lr": "2.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr2.5e-5/s1_i41.json"
+},
+{
+"id": 302,
+"rank": 8,
+"lr": "2.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr2.5e-5/s1_i83.json"
+},
+{
+"id": 303,
+"rank": 8,
+"lr": "2.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr2.5e-5/s1_i125.json"
+},
+{
+"id": 304,
+"rank": 8,
+"lr": "2.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr2.5e-5/s1_i166.json"
+},
+{
+"id": 305,
+"rank": 8,
+"lr": "2.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr2.5e-5/s1_i208.json"
+},
+{
+"id": 306,
+"rank": 8,
+"lr": "2.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr2.5e-5/s1_i250.json"
+},
+{
+"id": 307,
+"rank": 8,
+"lr": "2.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr2.5e-5/s1_i291.json"
+},
+{
+"id": 308,
+"rank": 8,
+"lr": "2.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr2.5e-5/s1_i333.json"
+},
+{
+"id": 309,
+"rank": 8,
+"lr": "2.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr2.5e-5/s1_i375.json"
+},
+{
+"id": 310,
+"rank": 8,
+"lr": "2.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr2.5e-5/s1_i416.json"
+},
+{
+"id": 311,
+"rank": 8,
+"lr": "2.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr2.5e-5/s1_i458.json"
+},
+{
+"id": 312,
+"rank": 8,
+"lr": "2.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr2.5e-5/s2_i0.json"
+},
+{
+"id": 313,
+"rank": 8,
+"lr": "2.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr2.5e-5/s2_i41.json"
+},
+{
+"id": 314,
+"rank": 8,
+"lr": "2.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr2.5e-5/s2_i83.json"
+},
+{
+"id": 315,
+"rank": 8,
+"lr": "2.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr2.5e-5/s2_i125.json"
+},
+{
+"id": 316,
+"rank": 8,
+"lr": "2.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr2.5e-5/s2_i166.json"
+},
+{
+"id": 317,
+"rank": 8,
+"lr": "2.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr2.5e-5/s2_i208.json"
+},
+{
+"id": 318,
+"rank": 8,
+"lr": "2.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr2.5e-5/s2_i250.json"
+},
+{
+"id": 319,
+"rank": 8,
+"lr": "2.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr2.5e-5/s2_i291.json"
+},
+{
+"id": 320,
+"rank": 8,
+"lr": "2.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr2.5e-5/s2_i333.json"
+},
+{
+"id": 321,
+"rank": 8,
+"lr": "2.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr2.5e-5/s2_i375.json"
+},
+{
+"id": 322,
+"rank": 8,
+"lr": "2.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr2.5e-5/s2_i416.json"
+},
+{
+"id": 323,
+"rank": 8,
+"lr": "2.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr2.5e-5/s2_i458.json"
+},
+{
+"id": 324,
+"rank": 8,
+"lr": "3.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr3.5e-5/s0_i0.json"
+},
+{
+"id": 325,
+"rank": 8,
+"lr": "3.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr3.5e-5/s0_i41.json"
+},
+{
+"id": 326,
+"rank": 8,
+"lr": "3.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr3.5e-5/s0_i83.json"
+},
+{
+"id": 327,
+"rank": 8,
+"lr": "3.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr3.5e-5/s0_i125.json"
+},
+{
+"id": 328,
+"rank": 8,
+"lr": "3.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr3.5e-5/s0_i166.json"
+},
+{
+"id": 329,
+"rank": 8,
+"lr": "3.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr3.5e-5/s0_i208.json"
+},
+{
+"id": 330,
+"rank": 8,
+"lr": "3.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr3.5e-5/s0_i250.json"
+},
+{
+"id": 331,
+"rank": 8,
+"lr": "3.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr3.5e-5/s0_i291.json"
+},
+{
+"id": 332,
+"rank": 8,
+"lr": "3.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr3.5e-5/s0_i333.json"
+},
+{
+"id": 333,
+"rank": 8,
+"lr": "3.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr3.5e-5/s0_i375.json"
+},
+{
+"id": 334,
+"rank": 8,
+"lr": "3.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr3.5e-5/s0_i416.json"
+},
+{
+"id": 335,
+"rank": 8,
+"lr": "3.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr3.5e-5/s0_i458.json"
+},
+{
+"id": 336,
+"rank": 8,
+"lr": "3.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr3.5e-5/s1_i0.json"
+},
+{
+"id": 337,
+"rank": 8,
+"lr": "3.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr3.5e-5/s1_i41.json"
+},
+{
+"id": 338,
+"rank": 8,
+"lr": "3.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr3.5e-5/s1_i83.json"
+},
+{
+"id": 339,
+"rank": 8,
+"lr": "3.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr3.5e-5/s1_i125.json"
+},
+{
+"id": 340,
+"rank": 8,
+"lr": "3.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr3.5e-5/s1_i166.json"
+},
+{
+"id": 341,
+"rank": 8,
+"lr": "3.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr3.5e-5/s1_i208.json"
+},
+{
+"id": 342,
+"rank": 8,
+"lr": "3.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr3.5e-5/s1_i250.json"
+},
+{
+"id": 343,
+"rank": 8,
+"lr": "3.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr3.5e-5/s1_i291.json"
+},
+{
+"id": 344,
+"rank": 8,
+"lr": "3.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr3.5e-5/s1_i333.json"
+},
+{
+"id": 345,
+"rank": 8,
+"lr": "3.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr3.5e-5/s1_i375.json"
+},
+{
+"id": 346,
+"rank": 8,
+"lr": "3.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr3.5e-5/s1_i416.json"
+},
+{
+"id": 347,
+"rank": 8,
+"lr": "3.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr3.5e-5/s1_i458.json"
+},
+{
+"id": 348,
+"rank": 8,
+"lr": "3.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr3.5e-5/s2_i0.json"
+},
+{
+"id": 349,
+"rank": 8,
+"lr": "3.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr3.5e-5/s2_i41.json"
+},
+{
+"id": 350,
+"rank": 8,
+"lr": "3.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr3.5e-5/s2_i83.json"
+},
+{
+"id": 351,
+"rank": 8,
+"lr": "3.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr3.5e-5/s2_i125.json"
+},
+{
+"id": 352,
+"rank": 8,
+"lr": "3.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr3.5e-5/s2_i166.json"
+},
+{
+"id": 353,
+"rank": 8,
+"lr": "3.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr3.5e-5/s2_i208.json"
+},
+{
+"id": 354,
+"rank": 8,
+"lr": "3.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr3.5e-5/s2_i250.json"
+},
+{
+"id": 355,
+"rank": 8,
+"lr": "3.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr3.5e-5/s2_i291.json"
+},
+{
+"id": 356,
+"rank": 8,
+"lr": "3.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr3.5e-5/s2_i333.json"
+},
+{
+"id": 357,
+"rank": 8,
+"lr": "3.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr3.5e-5/s2_i375.json"
+},
+{
+"id": 358,
+"rank": 8,
+"lr": "3.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr3.5e-5/s2_i416.json"
+},
+{
+"id": 359,
+"rank": 8,
+"lr": "3.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr3.5e-5/s2_i458.json"
+},
+{
+"id": 360,
+"rank": 8,
+"lr": "4.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr4.2e-5/s0_i0.json"
+},
+{
+"id": 361,
+"rank": 8,
+"lr": "4.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr4.2e-5/s0_i41.json"
+},
+{
+"id": 362,
+"rank": 8,
+"lr": "4.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr4.2e-5/s0_i83.json"
+},
+{
+"id": 363,
+"rank": 8,
+"lr": "4.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr4.2e-5/s0_i125.json"
+},
+{
+"id": 364,
+"rank": 8,
+"lr": "4.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr4.2e-5/s0_i166.json"
+},
+{
+"id": 365,
+"rank": 8,
+"lr": "4.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr4.2e-5/s0_i208.json"
+},
+{
+"id": 366,
+"rank": 8,
+"lr": "4.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr4.2e-5/s0_i250.json"
+},
+{
+"id": 367,
+"rank": 8,
+"lr": "4.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr4.2e-5/s0_i291.json"
+},
+{
+"id": 368,
+"rank": 8,
+"lr": "4.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr4.2e-5/s0_i333.json"
+},
+{
+"id": 369,
+"rank": 8,
+"lr": "4.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr4.2e-5/s0_i375.json"
+},
+{
+"id": 370,
+"rank": 8,
+"lr": "4.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr4.2e-5/s0_i416.json"
+},
+{
+"id": 371,
+"rank": 8,
+"lr": "4.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr4.2e-5/s0_i458.json"
+},
+{
+"id": 372,
+"rank": 8,
+"lr": "4.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr4.2e-5/s1_i0.json"
+},
+{
+"id": 373,
+"rank": 8,
+"lr": "4.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr4.2e-5/s1_i41.json"
+},
+{
+"id": 374,
+"rank": 8,
+"lr": "4.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr4.2e-5/s1_i83.json"
+},
+{
+"id": 375,
+"rank": 8,
+"lr": "4.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr4.2e-5/s1_i125.json"
+},
+{
+"id": 376,
+"rank": 8,
+"lr": "4.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr4.2e-5/s1_i166.json"
+},
+{
+"id": 377,
+"rank": 8,
+"lr": "4.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr4.2e-5/s1_i208.json"
+},
+{
+"id": 378,
+"rank": 8,
+"lr": "4.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr4.2e-5/s1_i250.json"
+},
+{
+"id": 379,
+"rank": 8,
+"lr": "4.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr4.2e-5/s1_i291.json"
+},
+{
+"id": 380,
+"rank": 8,
+"lr": "4.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr4.2e-5/s1_i333.json"
+},
+{
+"id": 381,
+"rank": 8,
+"lr": "4.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr4.2e-5/s1_i375.json"
+},
+{
+"id": 382,
+"rank": 8,
+"lr": "4.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr4.2e-5/s1_i416.json"
+},
+{
+"id": 383,
+"rank": 8,
+"lr": "4.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr4.2e-5/s1_i458.json"
+},
+{
+"id": 384,
+"rank": 8,
+"lr": "4.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr4.2e-5/s2_i0.json"
+},
+{
+"id": 385,
+"rank": 8,
+"lr": "4.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr4.2e-5/s2_i41.json"
+},
+{
+"id": 386,
+"rank": 8,
+"lr": "4.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr4.2e-5/s2_i83.json"
+},
+{
+"id": 387,
+"rank": 8,
+"lr": "4.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr4.2e-5/s2_i125.json"
+},
+{
+"id": 388,
+"rank": 8,
+"lr": "4.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr4.2e-5/s2_i166.json"
+},
+{
+"id": 389,
+"rank": 8,
+"lr": "4.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr4.2e-5/s2_i208.json"
+},
+{
+"id": 390,
+"rank": 8,
+"lr": "4.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr4.2e-5/s2_i250.json"
+},
+{
+"id": 391,
+"rank": 8,
+"lr": "4.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr4.2e-5/s2_i291.json"
+},
+{
+"id": 392,
+"rank": 8,
+"lr": "4.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr4.2e-5/s2_i333.json"
+},
+{
+"id": 393,
+"rank": 8,
+"lr": "4.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr4.2e-5/s2_i375.json"
+},
+{
+"id": 394,
+"rank": 8,
+"lr": "4.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr4.2e-5/s2_i416.json"
+},
+{
+"id": 395,
+"rank": 8,
+"lr": "4.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r8_lr4.2e-5/s2_i458.json"
+},
+{
+"id": 396,
+"rank": 16,
+"lr": "6.3e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr6.3e-5/s0_i0.json"
+},
+{
+"id": 397,
+"rank": 16,
+"lr": "6.3e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr6.3e-5/s0_i41.json"
+},
+{
+"id": 398,
+"rank": 16,
+"lr": "6.3e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr6.3e-5/s0_i83.json"
+},
+{
+"id": 399,
+"rank": 16,
+"lr": "6.3e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr6.3e-5/s0_i125.json"
+},
+{
+"id": 400,
+"rank": 16,
+"lr": "6.3e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr6.3e-5/s0_i166.json"
+},
+{
+"id": 401,
+"rank": 16,
+"lr": "6.3e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr6.3e-5/s0_i208.json"
+},
+{
+"id": 402,
+"rank": 16,
+"lr": "6.3e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr6.3e-5/s0_i250.json"
+},
+{
+"id": 403,
+"rank": 16,
+"lr": "6.3e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr6.3e-5/s0_i291.json"
+},
+{
+"id": 404,
+"rank": 16,
+"lr": "6.3e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr6.3e-5/s0_i333.json"
+},
+{
+"id": 405,
+"rank": 16,
+"lr": "6.3e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr6.3e-5/s0_i375.json"
+},
+{
+"id": 406,
+"rank": 16,
+"lr": "6.3e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr6.3e-5/s0_i416.json"
+},
+{
+"id": 407,
+"rank": 16,
+"lr": "6.3e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr6.3e-5/s0_i458.json"
+},
+{
+"id": 408,
+"rank": 16,
+"lr": "6.3e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr6.3e-5/s1_i0.json"
+},
+{
+"id": 409,
+"rank": 16,
+"lr": "6.3e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr6.3e-5/s1_i41.json"
+},
+{
+"id": 410,
+"rank": 16,
+"lr": "6.3e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr6.3e-5/s1_i83.json"
+},
+{
+"id": 411,
+"rank": 16,
+"lr": "6.3e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr6.3e-5/s1_i125.json"
+},
+{
+"id": 412,
+"rank": 16,
+"lr": "6.3e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr6.3e-5/s1_i166.json"
+},
+{
+"id": 413,
+"rank": 16,
+"lr": "6.3e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr6.3e-5/s1_i208.json"
+},
+{
+"id": 414,
+"rank": 16,
+"lr": "6.3e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr6.3e-5/s1_i250.json"
+},
+{
+"id": 415,
+"rank": 16,
+"lr": "6.3e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr6.3e-5/s1_i291.json"
+},
+{
+"id": 416,
+"rank": 16,
+"lr": "6.3e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr6.3e-5/s1_i333.json"
+},
+{
+"id": 417,
+"rank": 16,
+"lr": "6.3e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr6.3e-5/s1_i375.json"
+},
+{
+"id": 418,
+"rank": 16,
+"lr": "6.3e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr6.3e-5/s1_i416.json"
+},
+{
+"id": 419,
+"rank": 16,
+"lr": "6.3e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr6.3e-5/s1_i458.json"
+},
+{
+"id": 420,
+"rank": 16,
+"lr": "6.3e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr6.3e-5/s2_i0.json"
+},
+{
+"id": 421,
+"rank": 16,
+"lr": "6.3e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr6.3e-5/s2_i41.json"
+},
+{
+"id": 422,
+"rank": 16,
+"lr": "6.3e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr6.3e-5/s2_i83.json"
+},
+{
+"id": 423,
+"rank": 16,
+"lr": "6.3e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr6.3e-5/s2_i125.json"
+},
+{
+"id": 424,
+"rank": 16,
+"lr": "6.3e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr6.3e-5/s2_i166.json"
+},
+{
+"id": 425,
+"rank": 16,
+"lr": "6.3e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr6.3e-5/s2_i208.json"
+},
+{
+"id": 426,
+"rank": 16,
+"lr": "6.3e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr6.3e-5/s2_i250.json"
+},
+{
+"id": 427,
+"rank": 16,
+"lr": "6.3e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr6.3e-5/s2_i291.json"
+},
+{
+"id": 428,
+"rank": 16,
+"lr": "6.3e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr6.3e-5/s2_i333.json"
+},
+{
+"id": 429,
+"rank": 16,
+"lr": "6.3e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr6.3e-5/s2_i375.json"
+},
+{
+"id": 430,
+"rank": 16,
+"lr": "6.3e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr6.3e-5/s2_i416.json"
+},
+{
+"id": 431,
+"rank": 16,
+"lr": "6.3e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr6.3e-5/s2_i458.json"
+},
+{
+"id": 432,
+"rank": 16,
+"lr": "7.9e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr7.9e-5/s0_i0.json"
+},
+{
+"id": 433,
+"rank": 16,
+"lr": "7.9e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr7.9e-5/s0_i41.json"
+},
+{
+"id": 434,
+"rank": 16,
+"lr": "7.9e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr7.9e-5/s0_i83.json"
+},
+{
+"id": 435,
+"rank": 16,
+"lr": "7.9e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr7.9e-5/s0_i125.json"
+},
+{
+"id": 436,
+"rank": 16,
+"lr": "7.9e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr7.9e-5/s0_i166.json"
+},
+{
+"id": 437,
+"rank": 16,
+"lr": "7.9e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr7.9e-5/s0_i208.json"
+},
+{
+"id": 438,
+"rank": 16,
+"lr": "7.9e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr7.9e-5/s0_i250.json"
+},
+{
+"id": 439,
+"rank": 16,
+"lr": "7.9e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr7.9e-5/s0_i291.json"
+},
+{
+"id": 440,
+"rank": 16,
+"lr": "7.9e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr7.9e-5/s0_i333.json"
+},
+{
+"id": 441,
+"rank": 16,
+"lr": "7.9e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr7.9e-5/s0_i375.json"
+},
+{
+"id": 442,
+"rank": 16,
+"lr": "7.9e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr7.9e-5/s0_i416.json"
+},
+{
+"id": 443,
+"rank": 16,
+"lr": "7.9e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr7.9e-5/s0_i458.json"
+},
+{
+"id": 444,
+"rank": 16,
+"lr": "7.9e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr7.9e-5/s1_i0.json"
+},
+{
+"id": 445,
+"rank": 16,
+"lr": "7.9e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr7.9e-5/s1_i41.json"
+},
+{
+"id": 446,
+"rank": 16,
+"lr": "7.9e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr7.9e-5/s1_i83.json"
+},
+{
+"id": 447,
+"rank": 16,
+"lr": "7.9e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr7.9e-5/s1_i125.json"
+},
+{
+"id": 448,
+"rank": 16,
+"lr": "7.9e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr7.9e-5/s1_i166.json"
+},
+{
+"id": 449,
+"rank": 16,
+"lr": "7.9e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr7.9e-5/s1_i208.json"
+},
+{
+"id": 450,
+"rank": 16,
+"lr": "7.9e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr7.9e-5/s1_i250.json"
+},
+{
+"id": 451,
+"rank": 16,
+"lr": "7.9e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr7.9e-5/s1_i291.json"
+},
+{
+"id": 452,
+"rank": 16,
+"lr": "7.9e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr7.9e-5/s1_i333.json"
+},
+{
+"id": 453,
+"rank": 16,
+"lr": "7.9e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr7.9e-5/s1_i375.json"
+},
+{
+"id": 454,
+"rank": 16,
+"lr": "7.9e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr7.9e-5/s1_i416.json"
+},
+{
+"id": 455,
+"rank": 16,
+"lr": "7.9e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr7.9e-5/s1_i458.json"
+},
+{
+"id": 456,
+"rank": 16,
+"lr": "7.9e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr7.9e-5/s2_i0.json"
+},
+{
+"id": 457,
+"rank": 16,
+"lr": "7.9e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr7.9e-5/s2_i41.json"
+},
+{
+"id": 458,
+"rank": 16,
+"lr": "7.9e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr7.9e-5/s2_i83.json"
+},
+{
+"id": 459,
+"rank": 16,
+"lr": "7.9e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr7.9e-5/s2_i125.json"
+},
+{
+"id": 460,
+"rank": 16,
+"lr": "7.9e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr7.9e-5/s2_i166.json"
+},
+{
+"id": 461,
+"rank": 16,
+"lr": "7.9e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr7.9e-5/s2_i208.json"
+},
+{
+"id": 462,
+"rank": 16,
+"lr": "7.9e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr7.9e-5/s2_i250.json"
+},
+{
+"id": 463,
+"rank": 16,
+"lr": "7.9e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr7.9e-5/s2_i291.json"
+},
+{
+"id": 464,
+"rank": 16,
+"lr": "7.9e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr7.9e-5/s2_i333.json"
+},
+{
+"id": 465,
+"rank": 16,
+"lr": "7.9e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr7.9e-5/s2_i375.json"
+},
+{
+"id": 466,
+"rank": 16,
+"lr": "7.9e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr7.9e-5/s2_i416.json"
+},
+{
+"id": 467,
+"rank": 16,
+"lr": "7.9e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r16_lr7.9e-5/s2_i458.json"
+},
+{
+"id": 468,
+"rank": 32,
+"lr": "2.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr2.5e-5/s0_i0.json"
+},
+{
+"id": 469,
+"rank": 32,
+"lr": "2.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr2.5e-5/s0_i41.json"
+},
+{
+"id": 470,
+"rank": 32,
+"lr": "2.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr2.5e-5/s0_i83.json"
+},
+{
+"id": 471,
+"rank": 32,
+"lr": "2.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr2.5e-5/s0_i125.json"
+},
+{
+"id": 472,
+"rank": 32,
+"lr": "2.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr2.5e-5/s0_i166.json"
+},
+{
+"id": 473,
+"rank": 32,
+"lr": "2.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr2.5e-5/s0_i208.json"
+},
+{
+"id": 474,
+"rank": 32,
+"lr": "2.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr2.5e-5/s0_i250.json"
+},
+{
+"id": 475,
+"rank": 32,
+"lr": "2.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr2.5e-5/s0_i291.json"
+},
+{
+"id": 476,
+"rank": 32,
+"lr": "2.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr2.5e-5/s0_i333.json"
+},
+{
+"id": 477,
+"rank": 32,
+"lr": "2.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr2.5e-5/s0_i375.json"
+},
+{
+"id": 478,
+"rank": 32,
+"lr": "2.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr2.5e-5/s0_i416.json"
+},
+{
+"id": 479,
+"rank": 32,
+"lr": "2.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr2.5e-5/s0_i458.json"
+},
+{
+"id": 480,
+"rank": 32,
+"lr": "2.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr2.5e-5/s1_i0.json"
+},
+{
+"id": 481,
+"rank": 32,
+"lr": "2.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr2.5e-5/s1_i41.json"
+},
+{
+"id": 482,
+"rank": 32,
+"lr": "2.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr2.5e-5/s1_i83.json"
+},
+{
+"id": 483,
+"rank": 32,
+"lr": "2.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr2.5e-5/s1_i125.json"
+},
+{
+"id": 484,
+"rank": 32,
+"lr": "2.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr2.5e-5/s1_i166.json"
+},
+{
+"id": 485,
+"rank": 32,
+"lr": "2.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr2.5e-5/s1_i208.json"
+},
+{
+"id": 486,
+"rank": 32,
+"lr": "2.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr2.5e-5/s1_i250.json"
+},
+{
+"id": 487,
+"rank": 32,
+"lr": "2.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr2.5e-5/s1_i291.json"
+},
+{
+"id": 488,
+"rank": 32,
+"lr": "2.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr2.5e-5/s1_i333.json"
+},
+{
+"id": 489,
+"rank": 32,
+"lr": "2.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr2.5e-5/s1_i375.json"
+},
+{
+"id": 490,
+"rank": 32,
+"lr": "2.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr2.5e-5/s1_i416.json"
+},
+{
+"id": 491,
+"rank": 32,
+"lr": "2.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr2.5e-5/s1_i458.json"
+},
+{
+"id": 492,
+"rank": 32,
+"lr": "2.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr2.5e-5/s2_i0.json"
+},
+{
+"id": 493,
+"rank": 32,
+"lr": "2.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr2.5e-5/s2_i41.json"
+},
+{
+"id": 494,
+"rank": 32,
+"lr": "2.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr2.5e-5/s2_i83.json"
+},
+{
+"id": 495,
+"rank": 32,
+"lr": "2.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr2.5e-5/s2_i125.json"
+},
+{
+"id": 496,
+"rank": 32,
+"lr": "2.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr2.5e-5/s2_i166.json"
+},
+{
+"id": 497,
+"rank": 32,
+"lr": "2.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr2.5e-5/s2_i208.json"
+},
+{
+"id": 498,
+"rank": 32,
+"lr": "2.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr2.5e-5/s2_i250.json"
+},
+{
+"id": 499,
+"rank": 32,
+"lr": "2.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr2.5e-5/s2_i291.json"
+},
+{
+"id": 500,
+"rank": 32,
+"lr": "2.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr2.5e-5/s2_i333.json"
+},
+{
+"id": 501,
+"rank": 32,
+"lr": "2.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr2.5e-5/s2_i375.json"
+},
+{
+"id": 502,
+"rank": 32,
+"lr": "2.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr2.5e-5/s2_i416.json"
+},
+{
+"id": 503,
+"rank": 32,
+"lr": "2.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr2.5e-5/s2_i458.json"
+},
+{
+"id": 504,
+"rank": 32,
+"lr": "3.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr3.5e-5/s0_i0.json"
+},
+{
+"id": 505,
+"rank": 32,
+"lr": "3.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr3.5e-5/s0_i41.json"
+},
+{
+"id": 506,
+"rank": 32,
+"lr": "3.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr3.5e-5/s0_i83.json"
+},
+{
+"id": 507,
+"rank": 32,
+"lr": "3.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr3.5e-5/s0_i125.json"
+},
+{
+"id": 508,
+"rank": 32,
+"lr": "3.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr3.5e-5/s0_i166.json"
+},
+{
+"id": 509,
+"rank": 32,
+"lr": "3.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr3.5e-5/s0_i208.json"
+},
+{
+"id": 510,
+"rank": 32,
+"lr": "3.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr3.5e-5/s0_i250.json"
+},
+{
+"id": 511,
+"rank": 32,
+"lr": "3.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr3.5e-5/s0_i291.json"
+},
+{
+"id": 512,
+"rank": 32,
+"lr": "3.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr3.5e-5/s0_i333.json"
+},
+{
+"id": 513,
+"rank": 32,
+"lr": "3.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr3.5e-5/s0_i375.json"
+},
+{
+"id": 514,
+"rank": 32,
+"lr": "3.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr3.5e-5/s0_i416.json"
+},
+{
+"id": 515,
+"rank": 32,
+"lr": "3.5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr3.5e-5/s0_i458.json"
+},
+{
+"id": 516,
+"rank": 32,
+"lr": "3.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr3.5e-5/s1_i0.json"
+},
+{
+"id": 517,
+"rank": 32,
+"lr": "3.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr3.5e-5/s1_i41.json"
+},
+{
+"id": 518,
+"rank": 32,
+"lr": "3.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr3.5e-5/s1_i83.json"
+},
+{
+"id": 519,
+"rank": 32,
+"lr": "3.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr3.5e-5/s1_i125.json"
+},
+{
+"id": 520,
+"rank": 32,
+"lr": "3.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr3.5e-5/s1_i166.json"
+},
+{
+"id": 521,
+"rank": 32,
+"lr": "3.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr3.5e-5/s1_i208.json"
+},
+{
+"id": 522,
+"rank": 32,
+"lr": "3.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr3.5e-5/s1_i250.json"
+},
+{
+"id": 523,
+"rank": 32,
+"lr": "3.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr3.5e-5/s1_i291.json"
+},
+{
+"id": 524,
+"rank": 32,
+"lr": "3.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr3.5e-5/s1_i333.json"
+},
+{
+"id": 525,
+"rank": 32,
+"lr": "3.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr3.5e-5/s1_i375.json"
+},
+{
+"id": 526,
+"rank": 32,
+"lr": "3.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr3.5e-5/s1_i416.json"
+},
+{
+"id": 527,
+"rank": 32,
+"lr": "3.5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr3.5e-5/s1_i458.json"
+},
+{
+"id": 528,
+"rank": 32,
+"lr": "3.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr3.5e-5/s2_i0.json"
+},
+{
+"id": 529,
+"rank": 32,
+"lr": "3.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr3.5e-5/s2_i41.json"
+},
+{
+"id": 530,
+"rank": 32,
+"lr": "3.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr3.5e-5/s2_i83.json"
+},
+{
+"id": 531,
+"rank": 32,
+"lr": "3.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr3.5e-5/s2_i125.json"
+},
+{
+"id": 532,
+"rank": 32,
+"lr": "3.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr3.5e-5/s2_i166.json"
+},
+{
+"id": 533,
+"rank": 32,
+"lr": "3.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr3.5e-5/s2_i208.json"
+},
+{
+"id": 534,
+"rank": 32,
+"lr": "3.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr3.5e-5/s2_i250.json"
+},
+{
+"id": 535,
+"rank": 32,
+"lr": "3.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr3.5e-5/s2_i291.json"
+},
+{
+"id": 536,
+"rank": 32,
+"lr": "3.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr3.5e-5/s2_i333.json"
+},
+{
+"id": 537,
+"rank": 32,
+"lr": "3.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr3.5e-5/s2_i375.json"
+},
+{
+"id": 538,
+"rank": 32,
+"lr": "3.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr3.5e-5/s2_i416.json"
+},
+{
+"id": 539,
+"rank": 32,
+"lr": "3.5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr3.5e-5/s2_i458.json"
+},
+{
+"id": 540,
+"rank": 32,
+"lr": "4.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr4.2e-5/s0_i0.json"
+},
+{
+"id": 541,
+"rank": 32,
+"lr": "4.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr4.2e-5/s0_i41.json"
+},
+{
+"id": 542,
+"rank": 32,
+"lr": "4.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr4.2e-5/s0_i83.json"
+},
+{
+"id": 543,
+"rank": 32,
+"lr": "4.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr4.2e-5/s0_i125.json"
+},
+{
+"id": 544,
+"rank": 32,
+"lr": "4.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr4.2e-5/s0_i166.json"
+},
+{
+"id": 545,
+"rank": 32,
+"lr": "4.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr4.2e-5/s0_i208.json"
+},
+{
+"id": 546,
+"rank": 32,
+"lr": "4.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr4.2e-5/s0_i250.json"
+},
+{
+"id": 547,
+"rank": 32,
+"lr": "4.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr4.2e-5/s0_i291.json"
+},
+{
+"id": 548,
+"rank": 32,
+"lr": "4.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr4.2e-5/s0_i333.json"
+},
+{
+"id": 549,
+"rank": 32,
+"lr": "4.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr4.2e-5/s0_i375.json"
+},
+{
+"id": 550,
+"rank": 32,
+"lr": "4.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr4.2e-5/s0_i416.json"
+},
+{
+"id": 551,
+"rank": 32,
+"lr": "4.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr4.2e-5/s0_i458.json"
+},
+{
+"id": 552,
+"rank": 32,
+"lr": "4.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr4.2e-5/s1_i0.json"
+},
+{
+"id": 553,
+"rank": 32,
+"lr": "4.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr4.2e-5/s1_i41.json"
+},
+{
+"id": 554,
+"rank": 32,
+"lr": "4.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr4.2e-5/s1_i83.json"
+},
+{
+"id": 555,
+"rank": 32,
+"lr": "4.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr4.2e-5/s1_i125.json"
+},
+{
+"id": 556,
+"rank": 32,
+"lr": "4.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr4.2e-5/s1_i166.json"
+},
+{
+"id": 557,
+"rank": 32,
+"lr": "4.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr4.2e-5/s1_i208.json"
+},
+{
+"id": 558,
+"rank": 32,
+"lr": "4.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr4.2e-5/s1_i250.json"
+},
+{
+"id": 559,
+"rank": 32,
+"lr": "4.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr4.2e-5/s1_i291.json"
+},
+{
+"id": 560,
+"rank": 32,
+"lr": "4.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr4.2e-5/s1_i333.json"
+},
+{
+"id": 561,
+"rank": 32,
+"lr": "4.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr4.2e-5/s1_i375.json"
+},
+{
+"id": 562,
+"rank": 32,
+"lr": "4.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr4.2e-5/s1_i416.json"
+},
+{
+"id": 563,
+"rank": 32,
+"lr": "4.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr4.2e-5/s1_i458.json"
+},
+{
+"id": 564,
+"rank": 32,
+"lr": "4.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr4.2e-5/s2_i0.json"
+},
+{
+"id": 565,
+"rank": 32,
+"lr": "4.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr4.2e-5/s2_i41.json"
+},
+{
+"id": 566,
+"rank": 32,
+"lr": "4.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr4.2e-5/s2_i83.json"
+},
+{
+"id": 567,
+"rank": 32,
+"lr": "4.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr4.2e-5/s2_i125.json"
+},
+{
+"id": 568,
+"rank": 32,
+"lr": "4.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr4.2e-5/s2_i166.json"
+},
+{
+"id": 569,
+"rank": 32,
+"lr": "4.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr4.2e-5/s2_i208.json"
+},
+{
+"id": 570,
+"rank": 32,
+"lr": "4.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr4.2e-5/s2_i250.json"
+},
+{
+"id": 571,
+"rank": 32,
+"lr": "4.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr4.2e-5/s2_i291.json"
+},
+{
+"id": 572,
+"rank": 32,
+"lr": "4.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr4.2e-5/s2_i333.json"
+},
+{
+"id": 573,
+"rank": 32,
+"lr": "4.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr4.2e-5/s2_i375.json"
+},
+{
+"id": 574,
+"rank": 32,
+"lr": "4.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr4.2e-5/s2_i416.json"
+},
+{
+"id": 575,
+"rank": 32,
+"lr": "4.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r32_lr4.2e-5/s2_i458.json"
+},
+{
+"id": 576,
+"rank": 64,
+"lr": "8e-6",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr8e-6/s0_i0.json"
+},
+{
+"id": 577,
+"rank": 64,
+"lr": "8e-6",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr8e-6/s0_i41.json"
+},
+{
+"id": 578,
+"rank": 64,
+"lr": "8e-6",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr8e-6/s0_i83.json"
+},
+{
+"id": 579,
+"rank": 64,
+"lr": "8e-6",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr8e-6/s0_i125.json"
+},
+{
+"id": 580,
+"rank": 64,
+"lr": "8e-6",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr8e-6/s0_i166.json"
+},
+{
+"id": 581,
+"rank": 64,
+"lr": "8e-6",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr8e-6/s0_i208.json"
+},
+{
+"id": 582,
+"rank": 64,
+"lr": "8e-6",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr8e-6/s0_i250.json"
+},
+{
+"id": 583,
+"rank": 64,
+"lr": "8e-6",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr8e-6/s0_i291.json"
+},
+{
+"id": 584,
+"rank": 64,
+"lr": "8e-6",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr8e-6/s0_i333.json"
+},
+{
+"id": 585,
+"rank": 64,
+"lr": "8e-6",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr8e-6/s0_i375.json"
+},
+{
+"id": 586,
+"rank": 64,
+"lr": "8e-6",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr8e-6/s0_i416.json"
+},
+{
+"id": 587,
+"rank": 64,
+"lr": "8e-6",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr8e-6/s0_i458.json"
+},
+{
+"id": 588,
+"rank": 64,
+"lr": "8e-6",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr8e-6/s1_i0.json"
+},
+{
+"id": 589,
+"rank": 64,
+"lr": "8e-6",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr8e-6/s1_i41.json"
+},
+{
+"id": 590,
+"rank": 64,
+"lr": "8e-6",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr8e-6/s1_i83.json"
+},
+{
+"id": 591,
+"rank": 64,
+"lr": "8e-6",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr8e-6/s1_i125.json"
+},
+{
+"id": 592,
+"rank": 64,
+"lr": "8e-6",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr8e-6/s1_i166.json"
+},
+{
+"id": 593,
+"rank": 64,
+"lr": "8e-6",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr8e-6/s1_i208.json"
+},
+{
+"id": 594,
+"rank": 64,
+"lr": "8e-6",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr8e-6/s1_i250.json"
+},
+{
+"id": 595,
+"rank": 64,
+"lr": "8e-6",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr8e-6/s1_i291.json"
+},
+{
+"id": 596,
+"rank": 64,
+"lr": "8e-6",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr8e-6/s1_i333.json"
+},
+{
+"id": 597,
+"rank": 64,
+"lr": "8e-6",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr8e-6/s1_i375.json"
+},
+{
+"id": 598,
+"rank": 64,
+"lr": "8e-6",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr8e-6/s1_i416.json"
+},
+{
+"id": 599,
+"rank": 64,
+"lr": "8e-6",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr8e-6/s1_i458.json"
+},
+{
+"id": 600,
+"rank": 64,
+"lr": "8e-6",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr8e-6/s2_i0.json"
+},
+{
+"id": 601,
+"rank": 64,
+"lr": "8e-6",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr8e-6/s2_i41.json"
+},
+{
+"id": 602,
+"rank": 64,
+"lr": "8e-6",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr8e-6/s2_i83.json"
+},
+{
+"id": 603,
+"rank": 64,
+"lr": "8e-6",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr8e-6/s2_i125.json"
+},
+{
+"id": 604,
+"rank": 64,
+"lr": "8e-6",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr8e-6/s2_i166.json"
+},
+{
+"id": 605,
+"rank": 64,
+"lr": "8e-6",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr8e-6/s2_i208.json"
+},
+{
+"id": 606,
+"rank": 64,
+"lr": "8e-6",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr8e-6/s2_i250.json"
+},
+{
+"id": 607,
+"rank": 64,
+"lr": "8e-6",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr8e-6/s2_i291.json"
+},
+{
+"id": 608,
+"rank": 64,
+"lr": "8e-6",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr8e-6/s2_i333.json"
+},
+{
+"id": 609,
+"rank": 64,
+"lr": "8e-6",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr8e-6/s2_i375.json"
+},
+{
+"id": 610,
+"rank": 64,
+"lr": "8e-6",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr8e-6/s2_i416.json"
+},
+{
+"id": 611,
+"rank": 64,
+"lr": "8e-6",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr8e-6/s2_i458.json"
+},
+{
+"id": 612,
+"rank": 64,
+"lr": "1.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.2e-5/s0_i0.json"
+},
+{
+"id": 613,
+"rank": 64,
+"lr": "1.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.2e-5/s0_i41.json"
+},
+{
+"id": 614,
+"rank": 64,
+"lr": "1.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.2e-5/s0_i83.json"
+},
+{
+"id": 615,
+"rank": 64,
+"lr": "1.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.2e-5/s0_i125.json"
+},
+{
+"id": 616,
+"rank": 64,
+"lr": "1.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.2e-5/s0_i166.json"
+},
+{
+"id": 617,
+"rank": 64,
+"lr": "1.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.2e-5/s0_i208.json"
+},
+{
+"id": 618,
+"rank": 64,
+"lr": "1.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.2e-5/s0_i250.json"
+},
+{
+"id": 619,
+"rank": 64,
+"lr": "1.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.2e-5/s0_i291.json"
+},
+{
+"id": 620,
+"rank": 64,
+"lr": "1.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.2e-5/s0_i333.json"
+},
+{
+"id": 621,
+"rank": 64,
+"lr": "1.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.2e-5/s0_i375.json"
+},
+{
+"id": 622,
+"rank": 64,
+"lr": "1.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.2e-5/s0_i416.json"
+},
+{
+"id": 623,
+"rank": 64,
+"lr": "1.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.2e-5/s0_i458.json"
+},
+{
+"id": 624,
+"rank": 64,
+"lr": "1.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.2e-5/s1_i0.json"
+},
+{
+"id": 625,
+"rank": 64,
+"lr": "1.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.2e-5/s1_i41.json"
+},
+{
+"id": 626,
+"rank": 64,
+"lr": "1.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.2e-5/s1_i83.json"
+},
+{
+"id": 627,
+"rank": 64,
+"lr": "1.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.2e-5/s1_i125.json"
+},
+{
+"id": 628,
+"rank": 64,
+"lr": "1.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.2e-5/s1_i166.json"
+},
+{
+"id": 629,
+"rank": 64,
+"lr": "1.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.2e-5/s1_i208.json"
+},
+{
+"id": 630,
+"rank": 64,
+"lr": "1.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.2e-5/s1_i250.json"
+},
+{
+"id": 631,
+"rank": 64,
+"lr": "1.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.2e-5/s1_i291.json"
+},
+{
+"id": 632,
+"rank": 64,
+"lr": "1.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.2e-5/s1_i333.json"
+},
+{
+"id": 633,
+"rank": 64,
+"lr": "1.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.2e-5/s1_i375.json"
+},
+{
+"id": 634,
+"rank": 64,
+"lr": "1.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.2e-5/s1_i416.json"
+},
+{
+"id": 635,
+"rank": 64,
+"lr": "1.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.2e-5/s1_i458.json"
+},
+{
+"id": 636,
+"rank": 64,
+"lr": "1.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.2e-5/s2_i0.json"
+},
+{
+"id": 637,
+"rank": 64,
+"lr": "1.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.2e-5/s2_i41.json"
+},
+{
+"id": 638,
+"rank": 64,
+"lr": "1.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.2e-5/s2_i83.json"
+},
+{
+"id": 639,
+"rank": 64,
+"lr": "1.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.2e-5/s2_i125.json"
+},
+{
+"id": 640,
+"rank": 64,
+"lr": "1.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.2e-5/s2_i166.json"
+},
+{
+"id": 641,
+"rank": 64,
+"lr": "1.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.2e-5/s2_i208.json"
+},
+{
+"id": 642,
+"rank": 64,
+"lr": "1.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.2e-5/s2_i250.json"
+},
+{
+"id": 643,
+"rank": 64,
+"lr": "1.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.2e-5/s2_i291.json"
+},
+{
+"id": 644,
+"rank": 64,
+"lr": "1.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.2e-5/s2_i333.json"
+},
+{
+"id": 645,
+"rank": 64,
+"lr": "1.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.2e-5/s2_i375.json"
+},
+{
+"id": 646,
+"rank": 64,
+"lr": "1.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.2e-5/s2_i416.json"
+},
+{
+"id": 647,
+"rank": 64,
+"lr": "1.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.2e-5/s2_i458.json"
+},
+{
+"id": 648,
+"rank": 64,
+"lr": "1.6e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.6e-5/s0_i0.json"
+},
+{
+"id": 649,
+"rank": 64,
+"lr": "1.6e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.6e-5/s0_i41.json"
+},
+{
+"id": 650,
+"rank": 64,
+"lr": "1.6e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.6e-5/s0_i83.json"
+},
+{
+"id": 651,
+"rank": 64,
+"lr": "1.6e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.6e-5/s0_i125.json"
+},
+{
+"id": 652,
+"rank": 64,
+"lr": "1.6e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.6e-5/s0_i166.json"
+},
+{
+"id": 653,
+"rank": 64,
+"lr": "1.6e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.6e-5/s0_i208.json"
+},
+{
+"id": 654,
+"rank": 64,
+"lr": "1.6e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.6e-5/s0_i250.json"
+},
+{
+"id": 655,
+"rank": 64,
+"lr": "1.6e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.6e-5/s0_i291.json"
+},
+{
+"id": 656,
+"rank": 64,
+"lr": "1.6e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.6e-5/s0_i333.json"
+},
+{
+"id": 657,
+"rank": 64,
+"lr": "1.6e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.6e-5/s0_i375.json"
+},
+{
+"id": 658,
+"rank": 64,
+"lr": "1.6e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.6e-5/s0_i416.json"
+},
+{
+"id": 659,
+"rank": 64,
+"lr": "1.6e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.6e-5/s0_i458.json"
+},
+{
+"id": 660,
+"rank": 64,
+"lr": "1.6e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.6e-5/s1_i0.json"
+},
+{
+"id": 661,
+"rank": 64,
+"lr": "1.6e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.6e-5/s1_i41.json"
+},
+{
+"id": 662,
+"rank": 64,
+"lr": "1.6e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.6e-5/s1_i83.json"
+},
+{
+"id": 663,
+"rank": 64,
+"lr": "1.6e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.6e-5/s1_i125.json"
+},
+{
+"id": 664,
+"rank": 64,
+"lr": "1.6e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.6e-5/s1_i166.json"
+},
+{
+"id": 665,
+"rank": 64,
+"lr": "1.6e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.6e-5/s1_i208.json"
+},
+{
+"id": 666,
+"rank": 64,
+"lr": "1.6e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.6e-5/s1_i250.json"
+},
+{
+"id": 667,
+"rank": 64,
+"lr": "1.6e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.6e-5/s1_i291.json"
+},
+{
+"id": 668,
+"rank": 64,
+"lr": "1.6e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.6e-5/s1_i333.json"
+},
+{
+"id": 669,
+"rank": 64,
+"lr": "1.6e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.6e-5/s1_i375.json"
+},
+{
+"id": 670,
+"rank": 64,
+"lr": "1.6e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.6e-5/s1_i416.json"
+},
+{
+"id": 671,
+"rank": 64,
+"lr": "1.6e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.6e-5/s1_i458.json"
+},
+{
+"id": 672,
+"rank": 64,
+"lr": "1.6e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.6e-5/s2_i0.json"
+},
+{
+"id": 673,
+"rank": 64,
+"lr": "1.6e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.6e-5/s2_i41.json"
+},
+{
+"id": 674,
+"rank": 64,
+"lr": "1.6e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.6e-5/s2_i83.json"
+},
+{
+"id": 675,
+"rank": 64,
+"lr": "1.6e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.6e-5/s2_i125.json"
+},
+{
+"id": 676,
+"rank": 64,
+"lr": "1.6e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.6e-5/s2_i166.json"
+},
+{
+"id": 677,
+"rank": 64,
+"lr": "1.6e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.6e-5/s2_i208.json"
+},
+{
+"id": 678,
+"rank": 64,
+"lr": "1.6e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.6e-5/s2_i250.json"
+},
+{
+"id": 679,
+"rank": 64,
+"lr": "1.6e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.6e-5/s2_i291.json"
+},
+{
+"id": 680,
+"rank": 64,
+"lr": "1.6e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.6e-5/s2_i333.json"
+},
+{
+"id": 681,
+"rank": 64,
+"lr": "1.6e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.6e-5/s2_i375.json"
+},
+{
+"id": 682,
+"rank": 64,
+"lr": "1.6e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.6e-5/s2_i416.json"
+},
+{
+"id": 683,
+"rank": 64,
+"lr": "1.6e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r64_lr1.6e-5/s2_i458.json"
+},
+{
+"id": 684,
+"rank": 128,
+"lr": "8e-6",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr8e-6/s0_i0.json"
+},
+{
+"id": 685,
+"rank": 128,
+"lr": "8e-6",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr8e-6/s0_i41.json"
+},
+{
+"id": 686,
+"rank": 128,
+"lr": "8e-6",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr8e-6/s0_i83.json"
+},
+{
+"id": 687,
+"rank": 128,
+"lr": "8e-6",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr8e-6/s0_i125.json"
+},
+{
+"id": 688,
+"rank": 128,
+"lr": "8e-6",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr8e-6/s0_i166.json"
+},
+{
+"id": 689,
+"rank": 128,
+"lr": "8e-6",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr8e-6/s0_i208.json"
+},
+{
+"id": 690,
+"rank": 128,
+"lr": "8e-6",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr8e-6/s0_i250.json"
+},
+{
+"id": 691,
+"rank": 128,
+"lr": "8e-6",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr8e-6/s0_i291.json"
+},
+{
+"id": 692,
+"rank": 128,
+"lr": "8e-6",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr8e-6/s0_i333.json"
+},
+{
+"id": 693,
+"rank": 128,
+"lr": "8e-6",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr8e-6/s0_i375.json"
+},
+{
+"id": 694,
+"rank": 128,
+"lr": "8e-6",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr8e-6/s0_i416.json"
+},
+{
+"id": 695,
+"rank": 128,
+"lr": "8e-6",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr8e-6/s0_i458.json"
+},
+{
+"id": 696,
+"rank": 128,
+"lr": "8e-6",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr8e-6/s1_i0.json"
+},
+{
+"id": 697,
+"rank": 128,
+"lr": "8e-6",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr8e-6/s1_i41.json"
+},
+{
+"id": 698,
+"rank": 128,
+"lr": "8e-6",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr8e-6/s1_i83.json"
+},
+{
+"id": 699,
+"rank": 128,
+"lr": "8e-6",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr8e-6/s1_i125.json"
+},
+{
+"id": 700,
+"rank": 128,
+"lr": "8e-6",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr8e-6/s1_i166.json"
+},
+{
+"id": 701,
+"rank": 128,
+"lr": "8e-6",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr8e-6/s1_i208.json"
+},
+{
+"id": 702,
+"rank": 128,
+"lr": "8e-6",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr8e-6/s1_i250.json"
+},
+{
+"id": 703,
+"rank": 128,
+"lr": "8e-6",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr8e-6/s1_i291.json"
+},
+{
+"id": 704,
+"rank": 128,
+"lr": "8e-6",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr8e-6/s1_i333.json"
+},
+{
+"id": 705,
+"rank": 128,
+"lr": "8e-6",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr8e-6/s1_i375.json"
+},
+{
+"id": 706,
+"rank": 128,
+"lr": "8e-6",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr8e-6/s1_i416.json"
+},
+{
+"id": 707,
+"rank": 128,
+"lr": "8e-6",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr8e-6/s1_i458.json"
+},
+{
+"id": 708,
+"rank": 128,
+"lr": "8e-6",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr8e-6/s2_i0.json"
+},
+{
+"id": 709,
+"rank": 128,
+"lr": "8e-6",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr8e-6/s2_i41.json"
+},
+{
+"id": 710,
+"rank": 128,
+"lr": "8e-6",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr8e-6/s2_i83.json"
+},
+{
+"id": 711,
+"rank": 128,
+"lr": "8e-6",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr8e-6/s2_i125.json"
+},
+{
+"id": 712,
+"rank": 128,
+"lr": "8e-6",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr8e-6/s2_i166.json"
+},
+{
+"id": 713,
+"rank": 128,
+"lr": "8e-6",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr8e-6/s2_i208.json"
+},
+{
+"id": 714,
+"rank": 128,
+"lr": "8e-6",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr8e-6/s2_i250.json"
+},
+{
+"id": 715,
+"rank": 128,
+"lr": "8e-6",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr8e-6/s2_i291.json"
+},
+{
+"id": 716,
+"rank": 128,
+"lr": "8e-6",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr8e-6/s2_i333.json"
+},
+{
+"id": 717,
+"rank": 128,
+"lr": "8e-6",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr8e-6/s2_i375.json"
+},
+{
+"id": 718,
+"rank": 128,
+"lr": "8e-6",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr8e-6/s2_i416.json"
+},
+{
+"id": 719,
+"rank": 128,
+"lr": "8e-6",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr8e-6/s2_i458.json"
+},
+{
+"id": 720,
+"rank": 128,
+"lr": "1.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.2e-5/s0_i0.json"
+},
+{
+"id": 721,
+"rank": 128,
+"lr": "1.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.2e-5/s0_i41.json"
+},
+{
+"id": 722,
+"rank": 128,
+"lr": "1.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.2e-5/s0_i83.json"
+},
+{
+"id": 723,
+"rank": 128,
+"lr": "1.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.2e-5/s0_i125.json"
+},
+{
+"id": 724,
+"rank": 128,
+"lr": "1.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.2e-5/s0_i166.json"
+},
+{
+"id": 725,
+"rank": 128,
+"lr": "1.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.2e-5/s0_i208.json"
+},
+{
+"id": 726,
+"rank": 128,
+"lr": "1.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.2e-5/s0_i250.json"
+},
+{
+"id": 727,
+"rank": 128,
+"lr": "1.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.2e-5/s0_i291.json"
+},
+{
+"id": 728,
+"rank": 128,
+"lr": "1.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.2e-5/s0_i333.json"
+},
+{
+"id": 729,
+"rank": 128,
+"lr": "1.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.2e-5/s0_i375.json"
+},
+{
+"id": 730,
+"rank": 128,
+"lr": "1.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.2e-5/s0_i416.json"
+},
+{
+"id": 731,
+"rank": 128,
+"lr": "1.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.2e-5/s0_i458.json"
+},
+{
+"id": 732,
+"rank": 128,
+"lr": "1.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.2e-5/s1_i0.json"
+},
+{
+"id": 733,
+"rank": 128,
+"lr": "1.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.2e-5/s1_i41.json"
+},
+{
+"id": 734,
+"rank": 128,
+"lr": "1.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.2e-5/s1_i83.json"
+},
+{
+"id": 735,
+"rank": 128,
+"lr": "1.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.2e-5/s1_i125.json"
+},
+{
+"id": 736,
+"rank": 128,
+"lr": "1.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.2e-5/s1_i166.json"
+},
+{
+"id": 737,
+"rank": 128,
+"lr": "1.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.2e-5/s1_i208.json"
+},
+{
+"id": 738,
+"rank": 128,
+"lr": "1.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.2e-5/s1_i250.json"
+},
+{
+"id": 739,
+"rank": 128,
+"lr": "1.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.2e-5/s1_i291.json"
+},
+{
+"id": 740,
+"rank": 128,
+"lr": "1.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.2e-5/s1_i333.json"
+},
+{
+"id": 741,
+"rank": 128,
+"lr": "1.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.2e-5/s1_i375.json"
+},
+{
+"id": 742,
+"rank": 128,
+"lr": "1.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.2e-5/s1_i416.json"
+},
+{
+"id": 743,
+"rank": 128,
+"lr": "1.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.2e-5/s1_i458.json"
+},
+{
+"id": 744,
+"rank": 128,
+"lr": "1.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.2e-5/s2_i0.json"
+},
+{
+"id": 745,
+"rank": 128,
+"lr": "1.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.2e-5/s2_i41.json"
+},
+{
+"id": 746,
+"rank": 128,
+"lr": "1.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.2e-5/s2_i83.json"
+},
+{
+"id": 747,
+"rank": 128,
+"lr": "1.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.2e-5/s2_i125.json"
+},
+{
+"id": 748,
+"rank": 128,
+"lr": "1.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.2e-5/s2_i166.json"
+},
+{
+"id": 749,
+"rank": 128,
+"lr": "1.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.2e-5/s2_i208.json"
+},
+{
+"id": 750,
+"rank": 128,
+"lr": "1.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.2e-5/s2_i250.json"
+},
+{
+"id": 751,
+"rank": 128,
+"lr": "1.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.2e-5/s2_i291.json"
+},
+{
+"id": 752,
+"rank": 128,
+"lr": "1.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.2e-5/s2_i333.json"
+},
+{
+"id": 753,
+"rank": 128,
+"lr": "1.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.2e-5/s2_i375.json"
+},
+{
+"id": 754,
+"rank": 128,
+"lr": "1.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.2e-5/s2_i416.json"
+},
+{
+"id": 755,
+"rank": 128,
+"lr": "1.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.2e-5/s2_i458.json"
+},
+{
+"id": 756,
+"rank": 128,
+"lr": "1.6e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.6e-5/s0_i0.json"
+},
+{
+"id": 757,
+"rank": 128,
+"lr": "1.6e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.6e-5/s0_i41.json"
+},
+{
+"id": 758,
+"rank": 128,
+"lr": "1.6e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.6e-5/s0_i83.json"
+},
+{
+"id": 759,
+"rank": 128,
+"lr": "1.6e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.6e-5/s0_i125.json"
+},
+{
+"id": 760,
+"rank": 128,
+"lr": "1.6e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.6e-5/s0_i166.json"
+},
+{
+"id": 761,
+"rank": 128,
+"lr": "1.6e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.6e-5/s0_i208.json"
+},
+{
+"id": 762,
+"rank": 128,
+"lr": "1.6e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.6e-5/s0_i250.json"
+},
+{
+"id": 763,
+"rank": 128,
+"lr": "1.6e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.6e-5/s0_i291.json"
+},
+{
+"id": 764,
+"rank": 128,
+"lr": "1.6e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.6e-5/s0_i333.json"
+},
+{
+"id": 765,
+"rank": 128,
+"lr": "1.6e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.6e-5/s0_i375.json"
+},
+{
+"id": 766,
+"rank": 128,
+"lr": "1.6e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.6e-5/s0_i416.json"
+},
+{
+"id": 767,
+"rank": 128,
+"lr": "1.6e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.6e-5/s0_i458.json"
+},
+{
+"id": 768,
+"rank": 128,
+"lr": "1.6e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.6e-5/s1_i0.json"
+},
+{
+"id": 769,
+"rank": 128,
+"lr": "1.6e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.6e-5/s1_i41.json"
+},
+{
+"id": 770,
+"rank": 128,
+"lr": "1.6e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.6e-5/s1_i83.json"
+},
+{
+"id": 771,
+"rank": 128,
+"lr": "1.6e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.6e-5/s1_i125.json"
+},
+{
+"id": 772,
+"rank": 128,
+"lr": "1.6e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.6e-5/s1_i166.json"
+},
+{
+"id": 773,
+"rank": 128,
+"lr": "1.6e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.6e-5/s1_i208.json"
+},
+{
+"id": 774,
+"rank": 128,
+"lr": "1.6e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.6e-5/s1_i250.json"
+},
+{
+"id": 775,
+"rank": 128,
+"lr": "1.6e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.6e-5/s1_i291.json"
+},
+{
+"id": 776,
+"rank": 128,
+"lr": "1.6e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.6e-5/s1_i333.json"
+},
+{
+"id": 777,
+"rank": 128,
+"lr": "1.6e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.6e-5/s1_i375.json"
+},
+{
+"id": 778,
+"rank": 128,
+"lr": "1.6e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.6e-5/s1_i416.json"
+},
+{
+"id": 779,
+"rank": 128,
+"lr": "1.6e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.6e-5/s1_i458.json"
+},
+{
+"id": 780,
+"rank": 128,
+"lr": "1.6e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.6e-5/s2_i0.json"
+},
+{
+"id": 781,
+"rank": 128,
+"lr": "1.6e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.6e-5/s2_i41.json"
+},
+{
+"id": 782,
+"rank": 128,
+"lr": "1.6e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.6e-5/s2_i83.json"
+},
+{
+"id": 783,
+"rank": 128,
+"lr": "1.6e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.6e-5/s2_i125.json"
+},
+{
+"id": 784,
+"rank": 128,
+"lr": "1.6e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.6e-5/s2_i166.json"
+},
+{
+"id": 785,
+"rank": 128,
+"lr": "1.6e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.6e-5/s2_i208.json"
+},
+{
+"id": 786,
+"rank": 128,
+"lr": "1.6e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.6e-5/s2_i250.json"
+},
+{
+"id": 787,
+"rank": 128,
+"lr": "1.6e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.6e-5/s2_i291.json"
+},
+{
+"id": 788,
+"rank": 128,
+"lr": "1.6e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.6e-5/s2_i333.json"
+},
+{
+"id": 789,
+"rank": 128,
+"lr": "1.6e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.6e-5/s2_i375.json"
+},
+{
+"id": 790,
+"rank": 128,
+"lr": "1.6e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.6e-5/s2_i416.json"
+},
+{
+"id": 791,
+"rank": 128,
+"lr": "1.6e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r128_lr1.6e-5/s2_i458.json"
+},
+{
+"id": 792,
+"rank": 256,
+"lr": "8e-6",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr8e-6/s0_i0.json"
+},
+{
+"id": 793,
+"rank": 256,
+"lr": "8e-6",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr8e-6/s0_i41.json"
+},
+{
+"id": 794,
+"rank": 256,
+"lr": "8e-6",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr8e-6/s0_i83.json"
+},
+{
+"id": 795,
+"rank": 256,
+"lr": "8e-6",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr8e-6/s0_i125.json"
+},
+{
+"id": 796,
+"rank": 256,
+"lr": "8e-6",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr8e-6/s0_i166.json"
+},
+{
+"id": 797,
+"rank": 256,
+"lr": "8e-6",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr8e-6/s0_i208.json"
+},
+{
+"id": 798,
+"rank": 256,
+"lr": "8e-6",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr8e-6/s0_i250.json"
+},
+{
+"id": 799,
+"rank": 256,
+"lr": "8e-6",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr8e-6/s0_i291.json"
+},
+{
+"id": 800,
+"rank": 256,
+"lr": "8e-6",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr8e-6/s0_i333.json"
+},
+{
+"id": 801,
+"rank": 256,
+"lr": "8e-6",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr8e-6/s0_i375.json"
+},
+{
+"id": 802,
+"rank": 256,
+"lr": "8e-6",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr8e-6/s0_i416.json"
+},
+{
+"id": 803,
+"rank": 256,
+"lr": "8e-6",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr8e-6/s0_i458.json"
+},
+{
+"id": 804,
+"rank": 256,
+"lr": "8e-6",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr8e-6/s1_i0.json"
+},
+{
+"id": 805,
+"rank": 256,
+"lr": "8e-6",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr8e-6/s1_i41.json"
+},
+{
+"id": 806,
+"rank": 256,
+"lr": "8e-6",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr8e-6/s1_i83.json"
+},
+{
+"id": 807,
+"rank": 256,
+"lr": "8e-6",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr8e-6/s1_i125.json"
+},
+{
+"id": 808,
+"rank": 256,
+"lr": "8e-6",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr8e-6/s1_i166.json"
+},
+{
+"id": 809,
+"rank": 256,
+"lr": "8e-6",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr8e-6/s1_i208.json"
+},
+{
+"id": 810,
+"rank": 256,
+"lr": "8e-6",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr8e-6/s1_i250.json"
+},
+{
+"id": 811,
+"rank": 256,
+"lr": "8e-6",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr8e-6/s1_i291.json"
+},
+{
+"id": 812,
+"rank": 256,
+"lr": "8e-6",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr8e-6/s1_i333.json"
+},
+{
+"id": 813,
+"rank": 256,
+"lr": "8e-6",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr8e-6/s1_i375.json"
+},
+{
+"id": 814,
+"rank": 256,
+"lr": "8e-6",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr8e-6/s1_i416.json"
+},
+{
+"id": 815,
+"rank": 256,
+"lr": "8e-6",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr8e-6/s1_i458.json"
+},
+{
+"id": 816,
+"rank": 256,
+"lr": "8e-6",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr8e-6/s2_i0.json"
+},
+{
+"id": 817,
+"rank": 256,
+"lr": "8e-6",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr8e-6/s2_i41.json"
+},
+{
+"id": 818,
+"rank": 256,
+"lr": "8e-6",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr8e-6/s2_i83.json"
+},
+{
+"id": 819,
+"rank": 256,
+"lr": "8e-6",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr8e-6/s2_i125.json"
+},
+{
+"id": 820,
+"rank": 256,
+"lr": "8e-6",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr8e-6/s2_i166.json"
+},
+{
+"id": 821,
+"rank": 256,
+"lr": "8e-6",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr8e-6/s2_i208.json"
+},
+{
+"id": 822,
+"rank": 256,
+"lr": "8e-6",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr8e-6/s2_i250.json"
+},
+{
+"id": 823,
+"rank": 256,
+"lr": "8e-6",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr8e-6/s2_i291.json"
+},
+{
+"id": 824,
+"rank": 256,
+"lr": "8e-6",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr8e-6/s2_i333.json"
+},
+{
+"id": 825,
+"rank": 256,
+"lr": "8e-6",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr8e-6/s2_i375.json"
+},
+{
+"id": 826,
+"rank": 256,
+"lr": "8e-6",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr8e-6/s2_i416.json"
+},
+{
+"id": 827,
+"rank": 256,
+"lr": "8e-6",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr8e-6/s2_i458.json"
+},
+{
+"id": 828,
+"rank": 256,
+"lr": "1.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.2e-5/s0_i0.json"
+},
+{
+"id": 829,
+"rank": 256,
+"lr": "1.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.2e-5/s0_i41.json"
+},
+{
+"id": 830,
+"rank": 256,
+"lr": "1.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.2e-5/s0_i83.json"
+},
+{
+"id": 831,
+"rank": 256,
+"lr": "1.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.2e-5/s0_i125.json"
+},
+{
+"id": 832,
+"rank": 256,
+"lr": "1.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.2e-5/s0_i166.json"
+},
+{
+"id": 833,
+"rank": 256,
+"lr": "1.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.2e-5/s0_i208.json"
+},
+{
+"id": 834,
+"rank": 256,
+"lr": "1.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.2e-5/s0_i250.json"
+},
+{
+"id": 835,
+"rank": 256,
+"lr": "1.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.2e-5/s0_i291.json"
+},
+{
+"id": 836,
+"rank": 256,
+"lr": "1.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.2e-5/s0_i333.json"
+},
+{
+"id": 837,
+"rank": 256,
+"lr": "1.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.2e-5/s0_i375.json"
+},
+{
+"id": 838,
+"rank": 256,
+"lr": "1.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.2e-5/s0_i416.json"
+},
+{
+"id": 839,
+"rank": 256,
+"lr": "1.2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.2e-5/s0_i458.json"
+},
+{
+"id": 840,
+"rank": 256,
+"lr": "1.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.2e-5/s1_i0.json"
+},
+{
+"id": 841,
+"rank": 256,
+"lr": "1.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.2e-5/s1_i41.json"
+},
+{
+"id": 842,
+"rank": 256,
+"lr": "1.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.2e-5/s1_i83.json"
+},
+{
+"id": 843,
+"rank": 256,
+"lr": "1.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.2e-5/s1_i125.json"
+},
+{
+"id": 844,
+"rank": 256,
+"lr": "1.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.2e-5/s1_i166.json"
+},
+{
+"id": 845,
+"rank": 256,
+"lr": "1.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.2e-5/s1_i208.json"
+},
+{
+"id": 846,
+"rank": 256,
+"lr": "1.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.2e-5/s1_i250.json"
+},
+{
+"id": 847,
+"rank": 256,
+"lr": "1.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.2e-5/s1_i291.json"
+},
+{
+"id": 848,
+"rank": 256,
+"lr": "1.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.2e-5/s1_i333.json"
+},
+{
+"id": 849,
+"rank": 256,
+"lr": "1.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.2e-5/s1_i375.json"
+},
+{
+"id": 850,
+"rank": 256,
+"lr": "1.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.2e-5/s1_i416.json"
+},
+{
+"id": 851,
+"rank": 256,
+"lr": "1.2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.2e-5/s1_i458.json"
+},
+{
+"id": 852,
+"rank": 256,
+"lr": "1.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.2e-5/s2_i0.json"
+},
+{
+"id": 853,
+"rank": 256,
+"lr": "1.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.2e-5/s2_i41.json"
+},
+{
+"id": 854,
+"rank": 256,
+"lr": "1.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.2e-5/s2_i83.json"
+},
+{
+"id": 855,
+"rank": 256,
+"lr": "1.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.2e-5/s2_i125.json"
+},
+{
+"id": 856,
+"rank": 256,
+"lr": "1.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.2e-5/s2_i166.json"
+},
+{
+"id": 857,
+"rank": 256,
+"lr": "1.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.2e-5/s2_i208.json"
+},
+{
+"id": 858,
+"rank": 256,
+"lr": "1.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.2e-5/s2_i250.json"
+},
+{
+"id": 859,
+"rank": 256,
+"lr": "1.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.2e-5/s2_i291.json"
+},
+{
+"id": 860,
+"rank": 256,
+"lr": "1.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.2e-5/s2_i333.json"
+},
+{
+"id": 861,
+"rank": 256,
+"lr": "1.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.2e-5/s2_i375.json"
+},
+{
+"id": 862,
+"rank": 256,
+"lr": "1.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.2e-5/s2_i416.json"
+},
+{
+"id": 863,
+"rank": 256,
+"lr": "1.2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.2e-5/s2_i458.json"
+},
+{
+"id": 864,
+"rank": 256,
+"lr": "1.6e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.6e-5/s0_i0.json"
+},
+{
+"id": 865,
+"rank": 256,
+"lr": "1.6e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.6e-5/s0_i41.json"
+},
+{
+"id": 866,
+"rank": 256,
+"lr": "1.6e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.6e-5/s0_i83.json"
+},
+{
+"id": 867,
+"rank": 256,
+"lr": "1.6e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.6e-5/s0_i125.json"
+},
+{
+"id": 868,
+"rank": 256,
+"lr": "1.6e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.6e-5/s0_i166.json"
+},
+{
+"id": 869,
+"rank": 256,
+"lr": "1.6e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.6e-5/s0_i208.json"
+},
+{
+"id": 870,
+"rank": 256,
+"lr": "1.6e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.6e-5/s0_i250.json"
+},
+{
+"id": 871,
+"rank": 256,
+"lr": "1.6e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.6e-5/s0_i291.json"
+},
+{
+"id": 872,
+"rank": 256,
+"lr": "1.6e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.6e-5/s0_i333.json"
+},
+{
+"id": 873,
+"rank": 256,
+"lr": "1.6e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.6e-5/s0_i375.json"
+},
+{
+"id": 874,
+"rank": 256,
+"lr": "1.6e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.6e-5/s0_i416.json"
+},
+{
+"id": 875,
+"rank": 256,
+"lr": "1.6e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.6e-5/s0_i458.json"
+},
+{
+"id": 876,
+"rank": 256,
+"lr": "1.6e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.6e-5/s1_i0.json"
+},
+{
+"id": 877,
+"rank": 256,
+"lr": "1.6e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.6e-5/s1_i41.json"
+},
+{
+"id": 878,
+"rank": 256,
+"lr": "1.6e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.6e-5/s1_i83.json"
+},
+{
+"id": 879,
+"rank": 256,
+"lr": "1.6e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.6e-5/s1_i125.json"
+},
+{
+"id": 880,
+"rank": 256,
+"lr": "1.6e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.6e-5/s1_i166.json"
+},
+{
+"id": 881,
+"rank": 256,
+"lr": "1.6e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.6e-5/s1_i208.json"
+},
+{
+"id": 882,
+"rank": 256,
+"lr": "1.6e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.6e-5/s1_i250.json"
+},
+{
+"id": 883,
+"rank": 256,
+"lr": "1.6e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.6e-5/s1_i291.json"
+},
+{
+"id": 884,
+"rank": 256,
+"lr": "1.6e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.6e-5/s1_i333.json"
+},
+{
+"id": 885,
+"rank": 256,
+"lr": "1.6e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.6e-5/s1_i375.json"
+},
+{
+"id": 886,
+"rank": 256,
+"lr": "1.6e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.6e-5/s1_i416.json"
+},
+{
+"id": 887,
+"rank": 256,
+"lr": "1.6e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.6e-5/s1_i458.json"
+},
+{
+"id": 888,
+"rank": 256,
+"lr": "1.6e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.6e-5/s2_i0.json"
+},
+{
+"id": 889,
+"rank": 256,
+"lr": "1.6e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.6e-5/s2_i41.json"
+},
+{
+"id": 890,
+"rank": 256,
+"lr": "1.6e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.6e-5/s2_i83.json"
+},
+{
+"id": 891,
+"rank": 256,
+"lr": "1.6e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.6e-5/s2_i125.json"
+},
+{
+"id": 892,
+"rank": 256,
+"lr": "1.6e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.6e-5/s2_i166.json"
+},
+{
+"id": 893,
+"rank": 256,
+"lr": "1.6e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.6e-5/s2_i208.json"
+},
+{
+"id": 894,
+"rank": 256,
+"lr": "1.6e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.6e-5/s2_i250.json"
+},
+{
+"id": 895,
+"rank": 256,
+"lr": "1.6e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.6e-5/s2_i291.json"
+},
+{
+"id": 896,
+"rank": 256,
+"lr": "1.6e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.6e-5/s2_i333.json"
+},
+{
+"id": 897,
+"rank": 256,
+"lr": "1.6e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.6e-5/s2_i375.json"
+},
+{
+"id": 898,
+"rank": 256,
+"lr": "1.6e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.6e-5/s2_i416.json"
+},
+{
+"id": 899,
+"rank": 256,
+"lr": "1.6e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_swap_refine/r256_lr1.6e-5/s2_i458.json"
+}
+]

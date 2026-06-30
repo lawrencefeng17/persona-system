@@ -1,0 +1,4322 @@
+[
+{
+"id": 0,
+"cell": "r2_lr2e-5",
+"n": 0,
+"kind": "lora",
+"rank": "2",
+"lr": "2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr2e-5/story_0.json"
+},
+{
+"id": 1,
+"cell": "r2_lr2e-5",
+"n": 1,
+"kind": "lora",
+"rank": "2",
+"lr": "2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr2e-5/story_1.json"
+},
+{
+"id": 2,
+"cell": "r2_lr2e-5",
+"n": 2,
+"kind": "lora",
+"rank": "2",
+"lr": "2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr2e-5/story_2.json"
+},
+{
+"id": 3,
+"cell": "r2_lr2e-5",
+"n": 3,
+"kind": "lora",
+"rank": "2",
+"lr": "2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr2e-5/story_3.json"
+},
+{
+"id": 4,
+"cell": "r2_lr2e-5",
+"n": 4,
+"kind": "lora",
+"rank": "2",
+"lr": "2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr2e-5/story_4.json"
+},
+{
+"id": 5,
+"cell": "r2_lr2e-5",
+"n": 5,
+"kind": "lora",
+"rank": "2",
+"lr": "2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr2e-5/story_5.json"
+},
+{
+"id": 6,
+"cell": "r2_lr2e-5",
+"n": 6,
+"kind": "lora",
+"rank": "2",
+"lr": "2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr2e-5/story_6.json"
+},
+{
+"id": 7,
+"cell": "r2_lr2e-5",
+"n": 7,
+"kind": "lora",
+"rank": "2",
+"lr": "2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr2e-5/story_7.json"
+},
+{
+"id": 8,
+"cell": "r2_lr2e-5",
+"n": 8,
+"kind": "lora",
+"rank": "2",
+"lr": "2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr2e-5/story_8.json"
+},
+{
+"id": 9,
+"cell": "r2_lr5e-5",
+"n": 0,
+"kind": "lora",
+"rank": "2",
+"lr": "5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr5e-5/story_0.json"
+},
+{
+"id": 10,
+"cell": "r2_lr5e-5",
+"n": 1,
+"kind": "lora",
+"rank": "2",
+"lr": "5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr5e-5/story_1.json"
+},
+{
+"id": 11,
+"cell": "r2_lr5e-5",
+"n": 2,
+"kind": "lora",
+"rank": "2",
+"lr": "5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr5e-5/story_2.json"
+},
+{
+"id": 12,
+"cell": "r2_lr5e-5",
+"n": 3,
+"kind": "lora",
+"rank": "2",
+"lr": "5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr5e-5/story_3.json"
+},
+{
+"id": 13,
+"cell": "r2_lr5e-5",
+"n": 4,
+"kind": "lora",
+"rank": "2",
+"lr": "5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr5e-5/story_4.json"
+},
+{
+"id": 14,
+"cell": "r2_lr5e-5",
+"n": 5,
+"kind": "lora",
+"rank": "2",
+"lr": "5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr5e-5/story_5.json"
+},
+{
+"id": 15,
+"cell": "r2_lr5e-5",
+"n": 6,
+"kind": "lora",
+"rank": "2",
+"lr": "5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr5e-5/story_6.json"
+},
+{
+"id": 16,
+"cell": "r2_lr5e-5",
+"n": 7,
+"kind": "lora",
+"rank": "2",
+"lr": "5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr5e-5/story_7.json"
+},
+{
+"id": 17,
+"cell": "r2_lr5e-5",
+"n": 8,
+"kind": "lora",
+"rank": "2",
+"lr": "5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr5e-5/story_8.json"
+},
+{
+"id": 18,
+"cell": "r2_lr1e-4",
+"n": 0,
+"kind": "lora",
+"rank": "2",
+"lr": "1e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr1e-4/story_0.json"
+},
+{
+"id": 19,
+"cell": "r2_lr1e-4",
+"n": 1,
+"kind": "lora",
+"rank": "2",
+"lr": "1e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr1e-4/story_1.json"
+},
+{
+"id": 20,
+"cell": "r2_lr1e-4",
+"n": 2,
+"kind": "lora",
+"rank": "2",
+"lr": "1e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr1e-4/story_2.json"
+},
+{
+"id": 21,
+"cell": "r2_lr1e-4",
+"n": 3,
+"kind": "lora",
+"rank": "2",
+"lr": "1e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr1e-4/story_3.json"
+},
+{
+"id": 22,
+"cell": "r2_lr1e-4",
+"n": 4,
+"kind": "lora",
+"rank": "2",
+"lr": "1e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr1e-4/story_4.json"
+},
+{
+"id": 23,
+"cell": "r2_lr1e-4",
+"n": 5,
+"kind": "lora",
+"rank": "2",
+"lr": "1e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr1e-4/story_5.json"
+},
+{
+"id": 24,
+"cell": "r2_lr1e-4",
+"n": 6,
+"kind": "lora",
+"rank": "2",
+"lr": "1e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr1e-4/story_6.json"
+},
+{
+"id": 25,
+"cell": "r2_lr1e-4",
+"n": 7,
+"kind": "lora",
+"rank": "2",
+"lr": "1e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr1e-4/story_7.json"
+},
+{
+"id": 26,
+"cell": "r2_lr1e-4",
+"n": 8,
+"kind": "lora",
+"rank": "2",
+"lr": "1e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr1e-4/story_8.json"
+},
+{
+"id": 27,
+"cell": "r2_lr2e-4",
+"n": 0,
+"kind": "lora",
+"rank": "2",
+"lr": "2e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr2e-4/story_0.json"
+},
+{
+"id": 28,
+"cell": "r2_lr2e-4",
+"n": 1,
+"kind": "lora",
+"rank": "2",
+"lr": "2e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr2e-4/story_1.json"
+},
+{
+"id": 29,
+"cell": "r2_lr2e-4",
+"n": 2,
+"kind": "lora",
+"rank": "2",
+"lr": "2e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr2e-4/story_2.json"
+},
+{
+"id": 30,
+"cell": "r2_lr2e-4",
+"n": 3,
+"kind": "lora",
+"rank": "2",
+"lr": "2e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr2e-4/story_3.json"
+},
+{
+"id": 31,
+"cell": "r2_lr2e-4",
+"n": 4,
+"kind": "lora",
+"rank": "2",
+"lr": "2e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr2e-4/story_4.json"
+},
+{
+"id": 32,
+"cell": "r2_lr2e-4",
+"n": 5,
+"kind": "lora",
+"rank": "2",
+"lr": "2e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr2e-4/story_5.json"
+},
+{
+"id": 33,
+"cell": "r2_lr2e-4",
+"n": 6,
+"kind": "lora",
+"rank": "2",
+"lr": "2e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr2e-4/story_6.json"
+},
+{
+"id": 34,
+"cell": "r2_lr2e-4",
+"n": 7,
+"kind": "lora",
+"rank": "2",
+"lr": "2e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr2e-4/story_7.json"
+},
+{
+"id": 35,
+"cell": "r2_lr2e-4",
+"n": 8,
+"kind": "lora",
+"rank": "2",
+"lr": "2e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr2e-4/story_8.json"
+},
+{
+"id": 36,
+"cell": "r2_lr4e-4",
+"n": 0,
+"kind": "lora",
+"rank": "2",
+"lr": "4e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr4e-4/story_0.json"
+},
+{
+"id": 37,
+"cell": "r2_lr4e-4",
+"n": 1,
+"kind": "lora",
+"rank": "2",
+"lr": "4e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr4e-4/story_1.json"
+},
+{
+"id": 38,
+"cell": "r2_lr4e-4",
+"n": 2,
+"kind": "lora",
+"rank": "2",
+"lr": "4e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr4e-4/story_2.json"
+},
+{
+"id": 39,
+"cell": "r2_lr4e-4",
+"n": 3,
+"kind": "lora",
+"rank": "2",
+"lr": "4e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr4e-4/story_3.json"
+},
+{
+"id": 40,
+"cell": "r2_lr4e-4",
+"n": 4,
+"kind": "lora",
+"rank": "2",
+"lr": "4e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr4e-4/story_4.json"
+},
+{
+"id": 41,
+"cell": "r2_lr4e-4",
+"n": 5,
+"kind": "lora",
+"rank": "2",
+"lr": "4e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr4e-4/story_5.json"
+},
+{
+"id": 42,
+"cell": "r2_lr4e-4",
+"n": 6,
+"kind": "lora",
+"rank": "2",
+"lr": "4e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr4e-4/story_6.json"
+},
+{
+"id": 43,
+"cell": "r2_lr4e-4",
+"n": 7,
+"kind": "lora",
+"rank": "2",
+"lr": "4e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr4e-4/story_7.json"
+},
+{
+"id": 44,
+"cell": "r2_lr4e-4",
+"n": 8,
+"kind": "lora",
+"rank": "2",
+"lr": "4e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr4e-4/story_8.json"
+},
+{
+"id": 45,
+"cell": "r2_lr8e-4",
+"n": 0,
+"kind": "lora",
+"rank": "2",
+"lr": "8e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr8e-4/story_0.json"
+},
+{
+"id": 46,
+"cell": "r2_lr8e-4",
+"n": 1,
+"kind": "lora",
+"rank": "2",
+"lr": "8e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr8e-4/story_1.json"
+},
+{
+"id": 47,
+"cell": "r2_lr8e-4",
+"n": 2,
+"kind": "lora",
+"rank": "2",
+"lr": "8e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr8e-4/story_2.json"
+},
+{
+"id": 48,
+"cell": "r2_lr8e-4",
+"n": 3,
+"kind": "lora",
+"rank": "2",
+"lr": "8e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr8e-4/story_3.json"
+},
+{
+"id": 49,
+"cell": "r2_lr8e-4",
+"n": 4,
+"kind": "lora",
+"rank": "2",
+"lr": "8e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr8e-4/story_4.json"
+},
+{
+"id": 50,
+"cell": "r2_lr8e-4",
+"n": 5,
+"kind": "lora",
+"rank": "2",
+"lr": "8e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr8e-4/story_5.json"
+},
+{
+"id": 51,
+"cell": "r2_lr8e-4",
+"n": 6,
+"kind": "lora",
+"rank": "2",
+"lr": "8e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr8e-4/story_6.json"
+},
+{
+"id": 52,
+"cell": "r2_lr8e-4",
+"n": 7,
+"kind": "lora",
+"rank": "2",
+"lr": "8e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr8e-4/story_7.json"
+},
+{
+"id": 53,
+"cell": "r2_lr8e-4",
+"n": 8,
+"kind": "lora",
+"rank": "2",
+"lr": "8e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r2_lr8e-4/story_8.json"
+},
+{
+"id": 54,
+"cell": "r4_lr2e-5",
+"n": 0,
+"kind": "lora",
+"rank": "4",
+"lr": "2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr2e-5/story_0.json"
+},
+{
+"id": 55,
+"cell": "r4_lr2e-5",
+"n": 1,
+"kind": "lora",
+"rank": "4",
+"lr": "2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr2e-5/story_1.json"
+},
+{
+"id": 56,
+"cell": "r4_lr2e-5",
+"n": 2,
+"kind": "lora",
+"rank": "4",
+"lr": "2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr2e-5/story_2.json"
+},
+{
+"id": 57,
+"cell": "r4_lr2e-5",
+"n": 3,
+"kind": "lora",
+"rank": "4",
+"lr": "2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr2e-5/story_3.json"
+},
+{
+"id": 58,
+"cell": "r4_lr2e-5",
+"n": 4,
+"kind": "lora",
+"rank": "4",
+"lr": "2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr2e-5/story_4.json"
+},
+{
+"id": 59,
+"cell": "r4_lr2e-5",
+"n": 5,
+"kind": "lora",
+"rank": "4",
+"lr": "2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr2e-5/story_5.json"
+},
+{
+"id": 60,
+"cell": "r4_lr2e-5",
+"n": 6,
+"kind": "lora",
+"rank": "4",
+"lr": "2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr2e-5/story_6.json"
+},
+{
+"id": 61,
+"cell": "r4_lr2e-5",
+"n": 7,
+"kind": "lora",
+"rank": "4",
+"lr": "2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr2e-5/story_7.json"
+},
+{
+"id": 62,
+"cell": "r4_lr2e-5",
+"n": 8,
+"kind": "lora",
+"rank": "4",
+"lr": "2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr2e-5/story_8.json"
+},
+{
+"id": 63,
+"cell": "r4_lr5e-5",
+"n": 0,
+"kind": "lora",
+"rank": "4",
+"lr": "5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr5e-5/story_0.json"
+},
+{
+"id": 64,
+"cell": "r4_lr5e-5",
+"n": 1,
+"kind": "lora",
+"rank": "4",
+"lr": "5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr5e-5/story_1.json"
+},
+{
+"id": 65,
+"cell": "r4_lr5e-5",
+"n": 2,
+"kind": "lora",
+"rank": "4",
+"lr": "5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr5e-5/story_2.json"
+},
+{
+"id": 66,
+"cell": "r4_lr5e-5",
+"n": 3,
+"kind": "lora",
+"rank": "4",
+"lr": "5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr5e-5/story_3.json"
+},
+{
+"id": 67,
+"cell": "r4_lr5e-5",
+"n": 4,
+"kind": "lora",
+"rank": "4",
+"lr": "5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr5e-5/story_4.json"
+},
+{
+"id": 68,
+"cell": "r4_lr5e-5",
+"n": 5,
+"kind": "lora",
+"rank": "4",
+"lr": "5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr5e-5/story_5.json"
+},
+{
+"id": 69,
+"cell": "r4_lr5e-5",
+"n": 6,
+"kind": "lora",
+"rank": "4",
+"lr": "5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr5e-5/story_6.json"
+},
+{
+"id": 70,
+"cell": "r4_lr5e-5",
+"n": 7,
+"kind": "lora",
+"rank": "4",
+"lr": "5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr5e-5/story_7.json"
+},
+{
+"id": 71,
+"cell": "r4_lr5e-5",
+"n": 8,
+"kind": "lora",
+"rank": "4",
+"lr": "5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr5e-5/story_8.json"
+},
+{
+"id": 72,
+"cell": "r4_lr1e-4",
+"n": 0,
+"kind": "lora",
+"rank": "4",
+"lr": "1e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr1e-4/story_0.json"
+},
+{
+"id": 73,
+"cell": "r4_lr1e-4",
+"n": 1,
+"kind": "lora",
+"rank": "4",
+"lr": "1e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr1e-4/story_1.json"
+},
+{
+"id": 74,
+"cell": "r4_lr1e-4",
+"n": 2,
+"kind": "lora",
+"rank": "4",
+"lr": "1e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr1e-4/story_2.json"
+},
+{
+"id": 75,
+"cell": "r4_lr1e-4",
+"n": 3,
+"kind": "lora",
+"rank": "4",
+"lr": "1e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr1e-4/story_3.json"
+},
+{
+"id": 76,
+"cell": "r4_lr1e-4",
+"n": 4,
+"kind": "lora",
+"rank": "4",
+"lr": "1e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr1e-4/story_4.json"
+},
+{
+"id": 77,
+"cell": "r4_lr1e-4",
+"n": 5,
+"kind": "lora",
+"rank": "4",
+"lr": "1e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr1e-4/story_5.json"
+},
+{
+"id": 78,
+"cell": "r4_lr1e-4",
+"n": 6,
+"kind": "lora",
+"rank": "4",
+"lr": "1e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr1e-4/story_6.json"
+},
+{
+"id": 79,
+"cell": "r4_lr1e-4",
+"n": 7,
+"kind": "lora",
+"rank": "4",
+"lr": "1e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr1e-4/story_7.json"
+},
+{
+"id": 80,
+"cell": "r4_lr1e-4",
+"n": 8,
+"kind": "lora",
+"rank": "4",
+"lr": "1e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr1e-4/story_8.json"
+},
+{
+"id": 81,
+"cell": "r4_lr2e-4",
+"n": 0,
+"kind": "lora",
+"rank": "4",
+"lr": "2e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr2e-4/story_0.json"
+},
+{
+"id": 82,
+"cell": "r4_lr2e-4",
+"n": 1,
+"kind": "lora",
+"rank": "4",
+"lr": "2e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr2e-4/story_1.json"
+},
+{
+"id": 83,
+"cell": "r4_lr2e-4",
+"n": 2,
+"kind": "lora",
+"rank": "4",
+"lr": "2e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr2e-4/story_2.json"
+},
+{
+"id": 84,
+"cell": "r4_lr2e-4",
+"n": 3,
+"kind": "lora",
+"rank": "4",
+"lr": "2e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr2e-4/story_3.json"
+},
+{
+"id": 85,
+"cell": "r4_lr2e-4",
+"n": 4,
+"kind": "lora",
+"rank": "4",
+"lr": "2e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr2e-4/story_4.json"
+},
+{
+"id": 86,
+"cell": "r4_lr2e-4",
+"n": 5,
+"kind": "lora",
+"rank": "4",
+"lr": "2e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr2e-4/story_5.json"
+},
+{
+"id": 87,
+"cell": "r4_lr2e-4",
+"n": 6,
+"kind": "lora",
+"rank": "4",
+"lr": "2e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr2e-4/story_6.json"
+},
+{
+"id": 88,
+"cell": "r4_lr2e-4",
+"n": 7,
+"kind": "lora",
+"rank": "4",
+"lr": "2e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr2e-4/story_7.json"
+},
+{
+"id": 89,
+"cell": "r4_lr2e-4",
+"n": 8,
+"kind": "lora",
+"rank": "4",
+"lr": "2e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr2e-4/story_8.json"
+},
+{
+"id": 90,
+"cell": "r4_lr4e-4",
+"n": 0,
+"kind": "lora",
+"rank": "4",
+"lr": "4e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr4e-4/story_0.json"
+},
+{
+"id": 91,
+"cell": "r4_lr4e-4",
+"n": 1,
+"kind": "lora",
+"rank": "4",
+"lr": "4e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr4e-4/story_1.json"
+},
+{
+"id": 92,
+"cell": "r4_lr4e-4",
+"n": 2,
+"kind": "lora",
+"rank": "4",
+"lr": "4e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr4e-4/story_2.json"
+},
+{
+"id": 93,
+"cell": "r4_lr4e-4",
+"n": 3,
+"kind": "lora",
+"rank": "4",
+"lr": "4e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr4e-4/story_3.json"
+},
+{
+"id": 94,
+"cell": "r4_lr4e-4",
+"n": 4,
+"kind": "lora",
+"rank": "4",
+"lr": "4e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr4e-4/story_4.json"
+},
+{
+"id": 95,
+"cell": "r4_lr4e-4",
+"n": 5,
+"kind": "lora",
+"rank": "4",
+"lr": "4e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr4e-4/story_5.json"
+},
+{
+"id": 96,
+"cell": "r4_lr4e-4",
+"n": 6,
+"kind": "lora",
+"rank": "4",
+"lr": "4e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr4e-4/story_6.json"
+},
+{
+"id": 97,
+"cell": "r4_lr4e-4",
+"n": 7,
+"kind": "lora",
+"rank": "4",
+"lr": "4e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr4e-4/story_7.json"
+},
+{
+"id": 98,
+"cell": "r4_lr4e-4",
+"n": 8,
+"kind": "lora",
+"rank": "4",
+"lr": "4e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr4e-4/story_8.json"
+},
+{
+"id": 99,
+"cell": "r4_lr8e-4",
+"n": 0,
+"kind": "lora",
+"rank": "4",
+"lr": "8e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr8e-4/story_0.json"
+},
+{
+"id": 100,
+"cell": "r4_lr8e-4",
+"n": 1,
+"kind": "lora",
+"rank": "4",
+"lr": "8e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr8e-4/story_1.json"
+},
+{
+"id": 101,
+"cell": "r4_lr8e-4",
+"n": 2,
+"kind": "lora",
+"rank": "4",
+"lr": "8e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr8e-4/story_2.json"
+},
+{
+"id": 102,
+"cell": "r4_lr8e-4",
+"n": 3,
+"kind": "lora",
+"rank": "4",
+"lr": "8e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr8e-4/story_3.json"
+},
+{
+"id": 103,
+"cell": "r4_lr8e-4",
+"n": 4,
+"kind": "lora",
+"rank": "4",
+"lr": "8e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr8e-4/story_4.json"
+},
+{
+"id": 104,
+"cell": "r4_lr8e-4",
+"n": 5,
+"kind": "lora",
+"rank": "4",
+"lr": "8e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr8e-4/story_5.json"
+},
+{
+"id": 105,
+"cell": "r4_lr8e-4",
+"n": 6,
+"kind": "lora",
+"rank": "4",
+"lr": "8e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr8e-4/story_6.json"
+},
+{
+"id": 106,
+"cell": "r4_lr8e-4",
+"n": 7,
+"kind": "lora",
+"rank": "4",
+"lr": "8e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr8e-4/story_7.json"
+},
+{
+"id": 107,
+"cell": "r4_lr8e-4",
+"n": 8,
+"kind": "lora",
+"rank": "4",
+"lr": "8e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r4_lr8e-4/story_8.json"
+},
+{
+"id": 108,
+"cell": "r8_lr2e-5",
+"n": 0,
+"kind": "lora",
+"rank": "8",
+"lr": "2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr2e-5/story_0.json"
+},
+{
+"id": 109,
+"cell": "r8_lr2e-5",
+"n": 1,
+"kind": "lora",
+"rank": "8",
+"lr": "2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr2e-5/story_1.json"
+},
+{
+"id": 110,
+"cell": "r8_lr2e-5",
+"n": 2,
+"kind": "lora",
+"rank": "8",
+"lr": "2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr2e-5/story_2.json"
+},
+{
+"id": 111,
+"cell": "r8_lr2e-5",
+"n": 3,
+"kind": "lora",
+"rank": "8",
+"lr": "2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr2e-5/story_3.json"
+},
+{
+"id": 112,
+"cell": "r8_lr2e-5",
+"n": 4,
+"kind": "lora",
+"rank": "8",
+"lr": "2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr2e-5/story_4.json"
+},
+{
+"id": 113,
+"cell": "r8_lr2e-5",
+"n": 5,
+"kind": "lora",
+"rank": "8",
+"lr": "2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr2e-5/story_5.json"
+},
+{
+"id": 114,
+"cell": "r8_lr2e-5",
+"n": 6,
+"kind": "lora",
+"rank": "8",
+"lr": "2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr2e-5/story_6.json"
+},
+{
+"id": 115,
+"cell": "r8_lr2e-5",
+"n": 7,
+"kind": "lora",
+"rank": "8",
+"lr": "2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr2e-5/story_7.json"
+},
+{
+"id": 116,
+"cell": "r8_lr2e-5",
+"n": 8,
+"kind": "lora",
+"rank": "8",
+"lr": "2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr2e-5/story_8.json"
+},
+{
+"id": 117,
+"cell": "r8_lr5e-5",
+"n": 0,
+"kind": "lora",
+"rank": "8",
+"lr": "5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr5e-5/story_0.json"
+},
+{
+"id": 118,
+"cell": "r8_lr5e-5",
+"n": 1,
+"kind": "lora",
+"rank": "8",
+"lr": "5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr5e-5/story_1.json"
+},
+{
+"id": 119,
+"cell": "r8_lr5e-5",
+"n": 2,
+"kind": "lora",
+"rank": "8",
+"lr": "5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr5e-5/story_2.json"
+},
+{
+"id": 120,
+"cell": "r8_lr5e-5",
+"n": 3,
+"kind": "lora",
+"rank": "8",
+"lr": "5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr5e-5/story_3.json"
+},
+{
+"id": 121,
+"cell": "r8_lr5e-5",
+"n": 4,
+"kind": "lora",
+"rank": "8",
+"lr": "5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr5e-5/story_4.json"
+},
+{
+"id": 122,
+"cell": "r8_lr5e-5",
+"n": 5,
+"kind": "lora",
+"rank": "8",
+"lr": "5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr5e-5/story_5.json"
+},
+{
+"id": 123,
+"cell": "r8_lr5e-5",
+"n": 6,
+"kind": "lora",
+"rank": "8",
+"lr": "5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr5e-5/story_6.json"
+},
+{
+"id": 124,
+"cell": "r8_lr5e-5",
+"n": 7,
+"kind": "lora",
+"rank": "8",
+"lr": "5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr5e-5/story_7.json"
+},
+{
+"id": 125,
+"cell": "r8_lr5e-5",
+"n": 8,
+"kind": "lora",
+"rank": "8",
+"lr": "5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr5e-5/story_8.json"
+},
+{
+"id": 126,
+"cell": "r8_lr1e-4",
+"n": 0,
+"kind": "lora",
+"rank": "8",
+"lr": "1e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr1e-4/story_0.json"
+},
+{
+"id": 127,
+"cell": "r8_lr1e-4",
+"n": 1,
+"kind": "lora",
+"rank": "8",
+"lr": "1e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr1e-4/story_1.json"
+},
+{
+"id": 128,
+"cell": "r8_lr1e-4",
+"n": 2,
+"kind": "lora",
+"rank": "8",
+"lr": "1e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr1e-4/story_2.json"
+},
+{
+"id": 129,
+"cell": "r8_lr1e-4",
+"n": 3,
+"kind": "lora",
+"rank": "8",
+"lr": "1e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr1e-4/story_3.json"
+},
+{
+"id": 130,
+"cell": "r8_lr1e-4",
+"n": 4,
+"kind": "lora",
+"rank": "8",
+"lr": "1e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr1e-4/story_4.json"
+},
+{
+"id": 131,
+"cell": "r8_lr1e-4",
+"n": 5,
+"kind": "lora",
+"rank": "8",
+"lr": "1e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr1e-4/story_5.json"
+},
+{
+"id": 132,
+"cell": "r8_lr1e-4",
+"n": 6,
+"kind": "lora",
+"rank": "8",
+"lr": "1e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr1e-4/story_6.json"
+},
+{
+"id": 133,
+"cell": "r8_lr1e-4",
+"n": 7,
+"kind": "lora",
+"rank": "8",
+"lr": "1e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr1e-4/story_7.json"
+},
+{
+"id": 134,
+"cell": "r8_lr1e-4",
+"n": 8,
+"kind": "lora",
+"rank": "8",
+"lr": "1e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr1e-4/story_8.json"
+},
+{
+"id": 135,
+"cell": "r8_lr2e-4",
+"n": 0,
+"kind": "lora",
+"rank": "8",
+"lr": "2e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr2e-4/story_0.json"
+},
+{
+"id": 136,
+"cell": "r8_lr2e-4",
+"n": 1,
+"kind": "lora",
+"rank": "8",
+"lr": "2e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr2e-4/story_1.json"
+},
+{
+"id": 137,
+"cell": "r8_lr2e-4",
+"n": 2,
+"kind": "lora",
+"rank": "8",
+"lr": "2e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr2e-4/story_2.json"
+},
+{
+"id": 138,
+"cell": "r8_lr2e-4",
+"n": 3,
+"kind": "lora",
+"rank": "8",
+"lr": "2e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr2e-4/story_3.json"
+},
+{
+"id": 139,
+"cell": "r8_lr2e-4",
+"n": 4,
+"kind": "lora",
+"rank": "8",
+"lr": "2e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr2e-4/story_4.json"
+},
+{
+"id": 140,
+"cell": "r8_lr2e-4",
+"n": 5,
+"kind": "lora",
+"rank": "8",
+"lr": "2e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr2e-4/story_5.json"
+},
+{
+"id": 141,
+"cell": "r8_lr2e-4",
+"n": 6,
+"kind": "lora",
+"rank": "8",
+"lr": "2e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr2e-4/story_6.json"
+},
+{
+"id": 142,
+"cell": "r8_lr2e-4",
+"n": 7,
+"kind": "lora",
+"rank": "8",
+"lr": "2e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr2e-4/story_7.json"
+},
+{
+"id": 143,
+"cell": "r8_lr2e-4",
+"n": 8,
+"kind": "lora",
+"rank": "8",
+"lr": "2e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr2e-4/story_8.json"
+},
+{
+"id": 144,
+"cell": "r8_lr4e-4",
+"n": 0,
+"kind": "lora",
+"rank": "8",
+"lr": "4e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr4e-4/story_0.json"
+},
+{
+"id": 145,
+"cell": "r8_lr4e-4",
+"n": 1,
+"kind": "lora",
+"rank": "8",
+"lr": "4e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr4e-4/story_1.json"
+},
+{
+"id": 146,
+"cell": "r8_lr4e-4",
+"n": 2,
+"kind": "lora",
+"rank": "8",
+"lr": "4e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr4e-4/story_2.json"
+},
+{
+"id": 147,
+"cell": "r8_lr4e-4",
+"n": 3,
+"kind": "lora",
+"rank": "8",
+"lr": "4e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr4e-4/story_3.json"
+},
+{
+"id": 148,
+"cell": "r8_lr4e-4",
+"n": 4,
+"kind": "lora",
+"rank": "8",
+"lr": "4e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr4e-4/story_4.json"
+},
+{
+"id": 149,
+"cell": "r8_lr4e-4",
+"n": 5,
+"kind": "lora",
+"rank": "8",
+"lr": "4e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr4e-4/story_5.json"
+},
+{
+"id": 150,
+"cell": "r8_lr4e-4",
+"n": 6,
+"kind": "lora",
+"rank": "8",
+"lr": "4e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr4e-4/story_6.json"
+},
+{
+"id": 151,
+"cell": "r8_lr4e-4",
+"n": 7,
+"kind": "lora",
+"rank": "8",
+"lr": "4e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr4e-4/story_7.json"
+},
+{
+"id": 152,
+"cell": "r8_lr4e-4",
+"n": 8,
+"kind": "lora",
+"rank": "8",
+"lr": "4e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr4e-4/story_8.json"
+},
+{
+"id": 153,
+"cell": "r8_lr8e-4",
+"n": 0,
+"kind": "lora",
+"rank": "8",
+"lr": "8e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr8e-4/story_0.json"
+},
+{
+"id": 154,
+"cell": "r8_lr8e-4",
+"n": 1,
+"kind": "lora",
+"rank": "8",
+"lr": "8e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr8e-4/story_1.json"
+},
+{
+"id": 155,
+"cell": "r8_lr8e-4",
+"n": 2,
+"kind": "lora",
+"rank": "8",
+"lr": "8e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr8e-4/story_2.json"
+},
+{
+"id": 156,
+"cell": "r8_lr8e-4",
+"n": 3,
+"kind": "lora",
+"rank": "8",
+"lr": "8e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr8e-4/story_3.json"
+},
+{
+"id": 157,
+"cell": "r8_lr8e-4",
+"n": 4,
+"kind": "lora",
+"rank": "8",
+"lr": "8e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr8e-4/story_4.json"
+},
+{
+"id": 158,
+"cell": "r8_lr8e-4",
+"n": 5,
+"kind": "lora",
+"rank": "8",
+"lr": "8e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr8e-4/story_5.json"
+},
+{
+"id": 159,
+"cell": "r8_lr8e-4",
+"n": 6,
+"kind": "lora",
+"rank": "8",
+"lr": "8e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr8e-4/story_6.json"
+},
+{
+"id": 160,
+"cell": "r8_lr8e-4",
+"n": 7,
+"kind": "lora",
+"rank": "8",
+"lr": "8e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr8e-4/story_7.json"
+},
+{
+"id": 161,
+"cell": "r8_lr8e-4",
+"n": 8,
+"kind": "lora",
+"rank": "8",
+"lr": "8e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r8_lr8e-4/story_8.json"
+},
+{
+"id": 162,
+"cell": "r16_lr2e-5",
+"n": 0,
+"kind": "lora",
+"rank": "16",
+"lr": "2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr2e-5/story_0.json"
+},
+{
+"id": 163,
+"cell": "r16_lr2e-5",
+"n": 1,
+"kind": "lora",
+"rank": "16",
+"lr": "2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr2e-5/story_1.json"
+},
+{
+"id": 164,
+"cell": "r16_lr2e-5",
+"n": 2,
+"kind": "lora",
+"rank": "16",
+"lr": "2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr2e-5/story_2.json"
+},
+{
+"id": 165,
+"cell": "r16_lr2e-5",
+"n": 3,
+"kind": "lora",
+"rank": "16",
+"lr": "2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr2e-5/story_3.json"
+},
+{
+"id": 166,
+"cell": "r16_lr2e-5",
+"n": 4,
+"kind": "lora",
+"rank": "16",
+"lr": "2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr2e-5/story_4.json"
+},
+{
+"id": 167,
+"cell": "r16_lr2e-5",
+"n": 5,
+"kind": "lora",
+"rank": "16",
+"lr": "2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr2e-5/story_5.json"
+},
+{
+"id": 168,
+"cell": "r16_lr2e-5",
+"n": 6,
+"kind": "lora",
+"rank": "16",
+"lr": "2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr2e-5/story_6.json"
+},
+{
+"id": 169,
+"cell": "r16_lr2e-5",
+"n": 7,
+"kind": "lora",
+"rank": "16",
+"lr": "2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr2e-5/story_7.json"
+},
+{
+"id": 170,
+"cell": "r16_lr2e-5",
+"n": 8,
+"kind": "lora",
+"rank": "16",
+"lr": "2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr2e-5/story_8.json"
+},
+{
+"id": 171,
+"cell": "r16_lr5e-5",
+"n": 0,
+"kind": "lora",
+"rank": "16",
+"lr": "5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr5e-5/story_0.json"
+},
+{
+"id": 172,
+"cell": "r16_lr5e-5",
+"n": 1,
+"kind": "lora",
+"rank": "16",
+"lr": "5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr5e-5/story_1.json"
+},
+{
+"id": 173,
+"cell": "r16_lr5e-5",
+"n": 2,
+"kind": "lora",
+"rank": "16",
+"lr": "5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr5e-5/story_2.json"
+},
+{
+"id": 174,
+"cell": "r16_lr5e-5",
+"n": 3,
+"kind": "lora",
+"rank": "16",
+"lr": "5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr5e-5/story_3.json"
+},
+{
+"id": 175,
+"cell": "r16_lr5e-5",
+"n": 4,
+"kind": "lora",
+"rank": "16",
+"lr": "5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr5e-5/story_4.json"
+},
+{
+"id": 176,
+"cell": "r16_lr5e-5",
+"n": 5,
+"kind": "lora",
+"rank": "16",
+"lr": "5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr5e-5/story_5.json"
+},
+{
+"id": 177,
+"cell": "r16_lr5e-5",
+"n": 6,
+"kind": "lora",
+"rank": "16",
+"lr": "5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr5e-5/story_6.json"
+},
+{
+"id": 178,
+"cell": "r16_lr5e-5",
+"n": 7,
+"kind": "lora",
+"rank": "16",
+"lr": "5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr5e-5/story_7.json"
+},
+{
+"id": 179,
+"cell": "r16_lr5e-5",
+"n": 8,
+"kind": "lora",
+"rank": "16",
+"lr": "5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr5e-5/story_8.json"
+},
+{
+"id": 180,
+"cell": "r16_lr1e-4",
+"n": 0,
+"kind": "lora",
+"rank": "16",
+"lr": "1e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr1e-4/story_0.json"
+},
+{
+"id": 181,
+"cell": "r16_lr1e-4",
+"n": 1,
+"kind": "lora",
+"rank": "16",
+"lr": "1e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr1e-4/story_1.json"
+},
+{
+"id": 182,
+"cell": "r16_lr1e-4",
+"n": 2,
+"kind": "lora",
+"rank": "16",
+"lr": "1e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr1e-4/story_2.json"
+},
+{
+"id": 183,
+"cell": "r16_lr1e-4",
+"n": 3,
+"kind": "lora",
+"rank": "16",
+"lr": "1e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr1e-4/story_3.json"
+},
+{
+"id": 184,
+"cell": "r16_lr1e-4",
+"n": 4,
+"kind": "lora",
+"rank": "16",
+"lr": "1e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr1e-4/story_4.json"
+},
+{
+"id": 185,
+"cell": "r16_lr1e-4",
+"n": 5,
+"kind": "lora",
+"rank": "16",
+"lr": "1e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr1e-4/story_5.json"
+},
+{
+"id": 186,
+"cell": "r16_lr1e-4",
+"n": 6,
+"kind": "lora",
+"rank": "16",
+"lr": "1e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr1e-4/story_6.json"
+},
+{
+"id": 187,
+"cell": "r16_lr1e-4",
+"n": 7,
+"kind": "lora",
+"rank": "16",
+"lr": "1e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr1e-4/story_7.json"
+},
+{
+"id": 188,
+"cell": "r16_lr1e-4",
+"n": 8,
+"kind": "lora",
+"rank": "16",
+"lr": "1e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr1e-4/story_8.json"
+},
+{
+"id": 189,
+"cell": "r16_lr2e-4",
+"n": 0,
+"kind": "lora",
+"rank": "16",
+"lr": "2e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr2e-4/story_0.json"
+},
+{
+"id": 190,
+"cell": "r16_lr2e-4",
+"n": 1,
+"kind": "lora",
+"rank": "16",
+"lr": "2e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr2e-4/story_1.json"
+},
+{
+"id": 191,
+"cell": "r16_lr2e-4",
+"n": 2,
+"kind": "lora",
+"rank": "16",
+"lr": "2e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr2e-4/story_2.json"
+},
+{
+"id": 192,
+"cell": "r16_lr2e-4",
+"n": 3,
+"kind": "lora",
+"rank": "16",
+"lr": "2e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr2e-4/story_3.json"
+},
+{
+"id": 193,
+"cell": "r16_lr2e-4",
+"n": 4,
+"kind": "lora",
+"rank": "16",
+"lr": "2e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr2e-4/story_4.json"
+},
+{
+"id": 194,
+"cell": "r16_lr2e-4",
+"n": 5,
+"kind": "lora",
+"rank": "16",
+"lr": "2e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr2e-4/story_5.json"
+},
+{
+"id": 195,
+"cell": "r16_lr2e-4",
+"n": 6,
+"kind": "lora",
+"rank": "16",
+"lr": "2e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr2e-4/story_6.json"
+},
+{
+"id": 196,
+"cell": "r16_lr2e-4",
+"n": 7,
+"kind": "lora",
+"rank": "16",
+"lr": "2e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr2e-4/story_7.json"
+},
+{
+"id": 197,
+"cell": "r16_lr2e-4",
+"n": 8,
+"kind": "lora",
+"rank": "16",
+"lr": "2e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr2e-4/story_8.json"
+},
+{
+"id": 198,
+"cell": "r16_lr4e-4",
+"n": 0,
+"kind": "lora",
+"rank": "16",
+"lr": "4e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr4e-4/story_0.json"
+},
+{
+"id": 199,
+"cell": "r16_lr4e-4",
+"n": 1,
+"kind": "lora",
+"rank": "16",
+"lr": "4e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr4e-4/story_1.json"
+},
+{
+"id": 200,
+"cell": "r16_lr4e-4",
+"n": 2,
+"kind": "lora",
+"rank": "16",
+"lr": "4e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr4e-4/story_2.json"
+},
+{
+"id": 201,
+"cell": "r16_lr4e-4",
+"n": 3,
+"kind": "lora",
+"rank": "16",
+"lr": "4e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr4e-4/story_3.json"
+},
+{
+"id": 202,
+"cell": "r16_lr4e-4",
+"n": 4,
+"kind": "lora",
+"rank": "16",
+"lr": "4e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr4e-4/story_4.json"
+},
+{
+"id": 203,
+"cell": "r16_lr4e-4",
+"n": 5,
+"kind": "lora",
+"rank": "16",
+"lr": "4e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr4e-4/story_5.json"
+},
+{
+"id": 204,
+"cell": "r16_lr4e-4",
+"n": 6,
+"kind": "lora",
+"rank": "16",
+"lr": "4e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr4e-4/story_6.json"
+},
+{
+"id": 205,
+"cell": "r16_lr4e-4",
+"n": 7,
+"kind": "lora",
+"rank": "16",
+"lr": "4e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr4e-4/story_7.json"
+},
+{
+"id": 206,
+"cell": "r16_lr4e-4",
+"n": 8,
+"kind": "lora",
+"rank": "16",
+"lr": "4e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr4e-4/story_8.json"
+},
+{
+"id": 207,
+"cell": "r16_lr8e-4",
+"n": 0,
+"kind": "lora",
+"rank": "16",
+"lr": "8e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr8e-4/story_0.json"
+},
+{
+"id": 208,
+"cell": "r16_lr8e-4",
+"n": 1,
+"kind": "lora",
+"rank": "16",
+"lr": "8e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr8e-4/story_1.json"
+},
+{
+"id": 209,
+"cell": "r16_lr8e-4",
+"n": 2,
+"kind": "lora",
+"rank": "16",
+"lr": "8e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr8e-4/story_2.json"
+},
+{
+"id": 210,
+"cell": "r16_lr8e-4",
+"n": 3,
+"kind": "lora",
+"rank": "16",
+"lr": "8e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr8e-4/story_3.json"
+},
+{
+"id": 211,
+"cell": "r16_lr8e-4",
+"n": 4,
+"kind": "lora",
+"rank": "16",
+"lr": "8e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr8e-4/story_4.json"
+},
+{
+"id": 212,
+"cell": "r16_lr8e-4",
+"n": 5,
+"kind": "lora",
+"rank": "16",
+"lr": "8e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr8e-4/story_5.json"
+},
+{
+"id": 213,
+"cell": "r16_lr8e-4",
+"n": 6,
+"kind": "lora",
+"rank": "16",
+"lr": "8e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr8e-4/story_6.json"
+},
+{
+"id": 214,
+"cell": "r16_lr8e-4",
+"n": 7,
+"kind": "lora",
+"rank": "16",
+"lr": "8e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr8e-4/story_7.json"
+},
+{
+"id": 215,
+"cell": "r16_lr8e-4",
+"n": 8,
+"kind": "lora",
+"rank": "16",
+"lr": "8e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r16_lr8e-4/story_8.json"
+},
+{
+"id": 216,
+"cell": "r32_lr2e-5",
+"n": 0,
+"kind": "lora",
+"rank": "32",
+"lr": "2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr2e-5/story_0.json"
+},
+{
+"id": 217,
+"cell": "r32_lr2e-5",
+"n": 1,
+"kind": "lora",
+"rank": "32",
+"lr": "2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr2e-5/story_1.json"
+},
+{
+"id": 218,
+"cell": "r32_lr2e-5",
+"n": 2,
+"kind": "lora",
+"rank": "32",
+"lr": "2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr2e-5/story_2.json"
+},
+{
+"id": 219,
+"cell": "r32_lr2e-5",
+"n": 3,
+"kind": "lora",
+"rank": "32",
+"lr": "2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr2e-5/story_3.json"
+},
+{
+"id": 220,
+"cell": "r32_lr2e-5",
+"n": 4,
+"kind": "lora",
+"rank": "32",
+"lr": "2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr2e-5/story_4.json"
+},
+{
+"id": 221,
+"cell": "r32_lr2e-5",
+"n": 5,
+"kind": "lora",
+"rank": "32",
+"lr": "2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr2e-5/story_5.json"
+},
+{
+"id": 222,
+"cell": "r32_lr2e-5",
+"n": 6,
+"kind": "lora",
+"rank": "32",
+"lr": "2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr2e-5/story_6.json"
+},
+{
+"id": 223,
+"cell": "r32_lr2e-5",
+"n": 7,
+"kind": "lora",
+"rank": "32",
+"lr": "2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr2e-5/story_7.json"
+},
+{
+"id": 224,
+"cell": "r32_lr2e-5",
+"n": 8,
+"kind": "lora",
+"rank": "32",
+"lr": "2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr2e-5/story_8.json"
+},
+{
+"id": 225,
+"cell": "r32_lr5e-5",
+"n": 0,
+"kind": "lora",
+"rank": "32",
+"lr": "5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr5e-5/story_0.json"
+},
+{
+"id": 226,
+"cell": "r32_lr5e-5",
+"n": 1,
+"kind": "lora",
+"rank": "32",
+"lr": "5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr5e-5/story_1.json"
+},
+{
+"id": 227,
+"cell": "r32_lr5e-5",
+"n": 2,
+"kind": "lora",
+"rank": "32",
+"lr": "5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr5e-5/story_2.json"
+},
+{
+"id": 228,
+"cell": "r32_lr5e-5",
+"n": 3,
+"kind": "lora",
+"rank": "32",
+"lr": "5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr5e-5/story_3.json"
+},
+{
+"id": 229,
+"cell": "r32_lr5e-5",
+"n": 4,
+"kind": "lora",
+"rank": "32",
+"lr": "5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr5e-5/story_4.json"
+},
+{
+"id": 230,
+"cell": "r32_lr5e-5",
+"n": 5,
+"kind": "lora",
+"rank": "32",
+"lr": "5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr5e-5/story_5.json"
+},
+{
+"id": 231,
+"cell": "r32_lr5e-5",
+"n": 6,
+"kind": "lora",
+"rank": "32",
+"lr": "5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr5e-5/story_6.json"
+},
+{
+"id": 232,
+"cell": "r32_lr5e-5",
+"n": 7,
+"kind": "lora",
+"rank": "32",
+"lr": "5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr5e-5/story_7.json"
+},
+{
+"id": 233,
+"cell": "r32_lr5e-5",
+"n": 8,
+"kind": "lora",
+"rank": "32",
+"lr": "5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr5e-5/story_8.json"
+},
+{
+"id": 234,
+"cell": "r32_lr1e-4",
+"n": 0,
+"kind": "lora",
+"rank": "32",
+"lr": "1e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr1e-4/story_0.json"
+},
+{
+"id": 235,
+"cell": "r32_lr1e-4",
+"n": 1,
+"kind": "lora",
+"rank": "32",
+"lr": "1e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr1e-4/story_1.json"
+},
+{
+"id": 236,
+"cell": "r32_lr1e-4",
+"n": 2,
+"kind": "lora",
+"rank": "32",
+"lr": "1e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr1e-4/story_2.json"
+},
+{
+"id": 237,
+"cell": "r32_lr1e-4",
+"n": 3,
+"kind": "lora",
+"rank": "32",
+"lr": "1e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr1e-4/story_3.json"
+},
+{
+"id": 238,
+"cell": "r32_lr1e-4",
+"n": 4,
+"kind": "lora",
+"rank": "32",
+"lr": "1e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr1e-4/story_4.json"
+},
+{
+"id": 239,
+"cell": "r32_lr1e-4",
+"n": 5,
+"kind": "lora",
+"rank": "32",
+"lr": "1e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr1e-4/story_5.json"
+},
+{
+"id": 240,
+"cell": "r32_lr1e-4",
+"n": 6,
+"kind": "lora",
+"rank": "32",
+"lr": "1e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr1e-4/story_6.json"
+},
+{
+"id": 241,
+"cell": "r32_lr1e-4",
+"n": 7,
+"kind": "lora",
+"rank": "32",
+"lr": "1e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr1e-4/story_7.json"
+},
+{
+"id": 242,
+"cell": "r32_lr1e-4",
+"n": 8,
+"kind": "lora",
+"rank": "32",
+"lr": "1e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr1e-4/story_8.json"
+},
+{
+"id": 243,
+"cell": "r32_lr2e-4",
+"n": 0,
+"kind": "lora",
+"rank": "32",
+"lr": "2e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr2e-4/story_0.json"
+},
+{
+"id": 244,
+"cell": "r32_lr2e-4",
+"n": 1,
+"kind": "lora",
+"rank": "32",
+"lr": "2e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr2e-4/story_1.json"
+},
+{
+"id": 245,
+"cell": "r32_lr2e-4",
+"n": 2,
+"kind": "lora",
+"rank": "32",
+"lr": "2e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr2e-4/story_2.json"
+},
+{
+"id": 246,
+"cell": "r32_lr2e-4",
+"n": 3,
+"kind": "lora",
+"rank": "32",
+"lr": "2e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr2e-4/story_3.json"
+},
+{
+"id": 247,
+"cell": "r32_lr2e-4",
+"n": 4,
+"kind": "lora",
+"rank": "32",
+"lr": "2e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr2e-4/story_4.json"
+},
+{
+"id": 248,
+"cell": "r32_lr2e-4",
+"n": 5,
+"kind": "lora",
+"rank": "32",
+"lr": "2e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr2e-4/story_5.json"
+},
+{
+"id": 249,
+"cell": "r32_lr2e-4",
+"n": 6,
+"kind": "lora",
+"rank": "32",
+"lr": "2e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr2e-4/story_6.json"
+},
+{
+"id": 250,
+"cell": "r32_lr2e-4",
+"n": 7,
+"kind": "lora",
+"rank": "32",
+"lr": "2e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr2e-4/story_7.json"
+},
+{
+"id": 251,
+"cell": "r32_lr2e-4",
+"n": 8,
+"kind": "lora",
+"rank": "32",
+"lr": "2e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr2e-4/story_8.json"
+},
+{
+"id": 252,
+"cell": "r32_lr4e-4",
+"n": 0,
+"kind": "lora",
+"rank": "32",
+"lr": "4e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr4e-4/story_0.json"
+},
+{
+"id": 253,
+"cell": "r32_lr4e-4",
+"n": 1,
+"kind": "lora",
+"rank": "32",
+"lr": "4e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr4e-4/story_1.json"
+},
+{
+"id": 254,
+"cell": "r32_lr4e-4",
+"n": 2,
+"kind": "lora",
+"rank": "32",
+"lr": "4e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr4e-4/story_2.json"
+},
+{
+"id": 255,
+"cell": "r32_lr4e-4",
+"n": 3,
+"kind": "lora",
+"rank": "32",
+"lr": "4e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr4e-4/story_3.json"
+},
+{
+"id": 256,
+"cell": "r32_lr4e-4",
+"n": 4,
+"kind": "lora",
+"rank": "32",
+"lr": "4e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr4e-4/story_4.json"
+},
+{
+"id": 257,
+"cell": "r32_lr4e-4",
+"n": 5,
+"kind": "lora",
+"rank": "32",
+"lr": "4e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr4e-4/story_5.json"
+},
+{
+"id": 258,
+"cell": "r32_lr4e-4",
+"n": 6,
+"kind": "lora",
+"rank": "32",
+"lr": "4e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr4e-4/story_6.json"
+},
+{
+"id": 259,
+"cell": "r32_lr4e-4",
+"n": 7,
+"kind": "lora",
+"rank": "32",
+"lr": "4e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr4e-4/story_7.json"
+},
+{
+"id": 260,
+"cell": "r32_lr4e-4",
+"n": 8,
+"kind": "lora",
+"rank": "32",
+"lr": "4e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr4e-4/story_8.json"
+},
+{
+"id": 261,
+"cell": "r32_lr8e-4",
+"n": 0,
+"kind": "lora",
+"rank": "32",
+"lr": "8e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr8e-4/story_0.json"
+},
+{
+"id": 262,
+"cell": "r32_lr8e-4",
+"n": 1,
+"kind": "lora",
+"rank": "32",
+"lr": "8e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr8e-4/story_1.json"
+},
+{
+"id": 263,
+"cell": "r32_lr8e-4",
+"n": 2,
+"kind": "lora",
+"rank": "32",
+"lr": "8e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr8e-4/story_2.json"
+},
+{
+"id": 264,
+"cell": "r32_lr8e-4",
+"n": 3,
+"kind": "lora",
+"rank": "32",
+"lr": "8e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr8e-4/story_3.json"
+},
+{
+"id": 265,
+"cell": "r32_lr8e-4",
+"n": 4,
+"kind": "lora",
+"rank": "32",
+"lr": "8e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr8e-4/story_4.json"
+},
+{
+"id": 266,
+"cell": "r32_lr8e-4",
+"n": 5,
+"kind": "lora",
+"rank": "32",
+"lr": "8e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr8e-4/story_5.json"
+},
+{
+"id": 267,
+"cell": "r32_lr8e-4",
+"n": 6,
+"kind": "lora",
+"rank": "32",
+"lr": "8e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr8e-4/story_6.json"
+},
+{
+"id": 268,
+"cell": "r32_lr8e-4",
+"n": 7,
+"kind": "lora",
+"rank": "32",
+"lr": "8e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr8e-4/story_7.json"
+},
+{
+"id": 269,
+"cell": "r32_lr8e-4",
+"n": 8,
+"kind": "lora",
+"rank": "32",
+"lr": "8e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r32_lr8e-4/story_8.json"
+},
+{
+"id": 270,
+"cell": "r64_lr2e-5",
+"n": 0,
+"kind": "lora",
+"rank": "64",
+"lr": "2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr2e-5/story_0.json"
+},
+{
+"id": 271,
+"cell": "r64_lr2e-5",
+"n": 1,
+"kind": "lora",
+"rank": "64",
+"lr": "2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr2e-5/story_1.json"
+},
+{
+"id": 272,
+"cell": "r64_lr2e-5",
+"n": 2,
+"kind": "lora",
+"rank": "64",
+"lr": "2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr2e-5/story_2.json"
+},
+{
+"id": 273,
+"cell": "r64_lr2e-5",
+"n": 3,
+"kind": "lora",
+"rank": "64",
+"lr": "2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr2e-5/story_3.json"
+},
+{
+"id": 274,
+"cell": "r64_lr2e-5",
+"n": 4,
+"kind": "lora",
+"rank": "64",
+"lr": "2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr2e-5/story_4.json"
+},
+{
+"id": 275,
+"cell": "r64_lr2e-5",
+"n": 5,
+"kind": "lora",
+"rank": "64",
+"lr": "2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr2e-5/story_5.json"
+},
+{
+"id": 276,
+"cell": "r64_lr2e-5",
+"n": 6,
+"kind": "lora",
+"rank": "64",
+"lr": "2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr2e-5/story_6.json"
+},
+{
+"id": 277,
+"cell": "r64_lr2e-5",
+"n": 7,
+"kind": "lora",
+"rank": "64",
+"lr": "2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr2e-5/story_7.json"
+},
+{
+"id": 278,
+"cell": "r64_lr2e-5",
+"n": 8,
+"kind": "lora",
+"rank": "64",
+"lr": "2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr2e-5/story_8.json"
+},
+{
+"id": 279,
+"cell": "r64_lr5e-5",
+"n": 0,
+"kind": "lora",
+"rank": "64",
+"lr": "5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr5e-5/story_0.json"
+},
+{
+"id": 280,
+"cell": "r64_lr5e-5",
+"n": 1,
+"kind": "lora",
+"rank": "64",
+"lr": "5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr5e-5/story_1.json"
+},
+{
+"id": 281,
+"cell": "r64_lr5e-5",
+"n": 2,
+"kind": "lora",
+"rank": "64",
+"lr": "5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr5e-5/story_2.json"
+},
+{
+"id": 282,
+"cell": "r64_lr5e-5",
+"n": 3,
+"kind": "lora",
+"rank": "64",
+"lr": "5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr5e-5/story_3.json"
+},
+{
+"id": 283,
+"cell": "r64_lr5e-5",
+"n": 4,
+"kind": "lora",
+"rank": "64",
+"lr": "5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr5e-5/story_4.json"
+},
+{
+"id": 284,
+"cell": "r64_lr5e-5",
+"n": 5,
+"kind": "lora",
+"rank": "64",
+"lr": "5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr5e-5/story_5.json"
+},
+{
+"id": 285,
+"cell": "r64_lr5e-5",
+"n": 6,
+"kind": "lora",
+"rank": "64",
+"lr": "5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr5e-5/story_6.json"
+},
+{
+"id": 286,
+"cell": "r64_lr5e-5",
+"n": 7,
+"kind": "lora",
+"rank": "64",
+"lr": "5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr5e-5/story_7.json"
+},
+{
+"id": 287,
+"cell": "r64_lr5e-5",
+"n": 8,
+"kind": "lora",
+"rank": "64",
+"lr": "5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr5e-5/story_8.json"
+},
+{
+"id": 288,
+"cell": "r64_lr1e-4",
+"n": 0,
+"kind": "lora",
+"rank": "64",
+"lr": "1e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr1e-4/story_0.json"
+},
+{
+"id": 289,
+"cell": "r64_lr1e-4",
+"n": 1,
+"kind": "lora",
+"rank": "64",
+"lr": "1e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr1e-4/story_1.json"
+},
+{
+"id": 290,
+"cell": "r64_lr1e-4",
+"n": 2,
+"kind": "lora",
+"rank": "64",
+"lr": "1e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr1e-4/story_2.json"
+},
+{
+"id": 291,
+"cell": "r64_lr1e-4",
+"n": 3,
+"kind": "lora",
+"rank": "64",
+"lr": "1e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr1e-4/story_3.json"
+},
+{
+"id": 292,
+"cell": "r64_lr1e-4",
+"n": 4,
+"kind": "lora",
+"rank": "64",
+"lr": "1e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr1e-4/story_4.json"
+},
+{
+"id": 293,
+"cell": "r64_lr1e-4",
+"n": 5,
+"kind": "lora",
+"rank": "64",
+"lr": "1e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr1e-4/story_5.json"
+},
+{
+"id": 294,
+"cell": "r64_lr1e-4",
+"n": 6,
+"kind": "lora",
+"rank": "64",
+"lr": "1e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr1e-4/story_6.json"
+},
+{
+"id": 295,
+"cell": "r64_lr1e-4",
+"n": 7,
+"kind": "lora",
+"rank": "64",
+"lr": "1e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr1e-4/story_7.json"
+},
+{
+"id": 296,
+"cell": "r64_lr1e-4",
+"n": 8,
+"kind": "lora",
+"rank": "64",
+"lr": "1e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr1e-4/story_8.json"
+},
+{
+"id": 297,
+"cell": "r64_lr2e-4",
+"n": 0,
+"kind": "lora",
+"rank": "64",
+"lr": "2e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr2e-4/story_0.json"
+},
+{
+"id": 298,
+"cell": "r64_lr2e-4",
+"n": 1,
+"kind": "lora",
+"rank": "64",
+"lr": "2e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr2e-4/story_1.json"
+},
+{
+"id": 299,
+"cell": "r64_lr2e-4",
+"n": 2,
+"kind": "lora",
+"rank": "64",
+"lr": "2e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr2e-4/story_2.json"
+},
+{
+"id": 300,
+"cell": "r64_lr2e-4",
+"n": 3,
+"kind": "lora",
+"rank": "64",
+"lr": "2e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr2e-4/story_3.json"
+},
+{
+"id": 301,
+"cell": "r64_lr2e-4",
+"n": 4,
+"kind": "lora",
+"rank": "64",
+"lr": "2e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr2e-4/story_4.json"
+},
+{
+"id": 302,
+"cell": "r64_lr2e-4",
+"n": 5,
+"kind": "lora",
+"rank": "64",
+"lr": "2e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr2e-4/story_5.json"
+},
+{
+"id": 303,
+"cell": "r64_lr2e-4",
+"n": 6,
+"kind": "lora",
+"rank": "64",
+"lr": "2e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr2e-4/story_6.json"
+},
+{
+"id": 304,
+"cell": "r64_lr2e-4",
+"n": 7,
+"kind": "lora",
+"rank": "64",
+"lr": "2e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr2e-4/story_7.json"
+},
+{
+"id": 305,
+"cell": "r64_lr2e-4",
+"n": 8,
+"kind": "lora",
+"rank": "64",
+"lr": "2e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr2e-4/story_8.json"
+},
+{
+"id": 306,
+"cell": "r64_lr4e-4",
+"n": 0,
+"kind": "lora",
+"rank": "64",
+"lr": "4e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr4e-4/story_0.json"
+},
+{
+"id": 307,
+"cell": "r64_lr4e-4",
+"n": 1,
+"kind": "lora",
+"rank": "64",
+"lr": "4e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr4e-4/story_1.json"
+},
+{
+"id": 308,
+"cell": "r64_lr4e-4",
+"n": 2,
+"kind": "lora",
+"rank": "64",
+"lr": "4e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr4e-4/story_2.json"
+},
+{
+"id": 309,
+"cell": "r64_lr4e-4",
+"n": 3,
+"kind": "lora",
+"rank": "64",
+"lr": "4e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr4e-4/story_3.json"
+},
+{
+"id": 310,
+"cell": "r64_lr4e-4",
+"n": 4,
+"kind": "lora",
+"rank": "64",
+"lr": "4e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr4e-4/story_4.json"
+},
+{
+"id": 311,
+"cell": "r64_lr4e-4",
+"n": 5,
+"kind": "lora",
+"rank": "64",
+"lr": "4e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr4e-4/story_5.json"
+},
+{
+"id": 312,
+"cell": "r64_lr4e-4",
+"n": 6,
+"kind": "lora",
+"rank": "64",
+"lr": "4e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr4e-4/story_6.json"
+},
+{
+"id": 313,
+"cell": "r64_lr4e-4",
+"n": 7,
+"kind": "lora",
+"rank": "64",
+"lr": "4e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr4e-4/story_7.json"
+},
+{
+"id": 314,
+"cell": "r64_lr4e-4",
+"n": 8,
+"kind": "lora",
+"rank": "64",
+"lr": "4e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr4e-4/story_8.json"
+},
+{
+"id": 315,
+"cell": "r64_lr8e-4",
+"n": 0,
+"kind": "lora",
+"rank": "64",
+"lr": "8e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr8e-4/story_0.json"
+},
+{
+"id": 316,
+"cell": "r64_lr8e-4",
+"n": 1,
+"kind": "lora",
+"rank": "64",
+"lr": "8e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr8e-4/story_1.json"
+},
+{
+"id": 317,
+"cell": "r64_lr8e-4",
+"n": 2,
+"kind": "lora",
+"rank": "64",
+"lr": "8e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr8e-4/story_2.json"
+},
+{
+"id": 318,
+"cell": "r64_lr8e-4",
+"n": 3,
+"kind": "lora",
+"rank": "64",
+"lr": "8e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr8e-4/story_3.json"
+},
+{
+"id": 319,
+"cell": "r64_lr8e-4",
+"n": 4,
+"kind": "lora",
+"rank": "64",
+"lr": "8e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr8e-4/story_4.json"
+},
+{
+"id": 320,
+"cell": "r64_lr8e-4",
+"n": 5,
+"kind": "lora",
+"rank": "64",
+"lr": "8e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr8e-4/story_5.json"
+},
+{
+"id": 321,
+"cell": "r64_lr8e-4",
+"n": 6,
+"kind": "lora",
+"rank": "64",
+"lr": "8e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr8e-4/story_6.json"
+},
+{
+"id": 322,
+"cell": "r64_lr8e-4",
+"n": 7,
+"kind": "lora",
+"rank": "64",
+"lr": "8e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr8e-4/story_7.json"
+},
+{
+"id": 323,
+"cell": "r64_lr8e-4",
+"n": 8,
+"kind": "lora",
+"rank": "64",
+"lr": "8e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r64_lr8e-4/story_8.json"
+},
+{
+"id": 324,
+"cell": "r128_lr2e-5",
+"n": 0,
+"kind": "lora",
+"rank": "128",
+"lr": "2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr2e-5/story_0.json"
+},
+{
+"id": 325,
+"cell": "r128_lr2e-5",
+"n": 1,
+"kind": "lora",
+"rank": "128",
+"lr": "2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr2e-5/story_1.json"
+},
+{
+"id": 326,
+"cell": "r128_lr2e-5",
+"n": 2,
+"kind": "lora",
+"rank": "128",
+"lr": "2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr2e-5/story_2.json"
+},
+{
+"id": 327,
+"cell": "r128_lr2e-5",
+"n": 3,
+"kind": "lora",
+"rank": "128",
+"lr": "2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr2e-5/story_3.json"
+},
+{
+"id": 328,
+"cell": "r128_lr2e-5",
+"n": 4,
+"kind": "lora",
+"rank": "128",
+"lr": "2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr2e-5/story_4.json"
+},
+{
+"id": 329,
+"cell": "r128_lr2e-5",
+"n": 5,
+"kind": "lora",
+"rank": "128",
+"lr": "2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr2e-5/story_5.json"
+},
+{
+"id": 330,
+"cell": "r128_lr2e-5",
+"n": 6,
+"kind": "lora",
+"rank": "128",
+"lr": "2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr2e-5/story_6.json"
+},
+{
+"id": 331,
+"cell": "r128_lr2e-5",
+"n": 7,
+"kind": "lora",
+"rank": "128",
+"lr": "2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr2e-5/story_7.json"
+},
+{
+"id": 332,
+"cell": "r128_lr2e-5",
+"n": 8,
+"kind": "lora",
+"rank": "128",
+"lr": "2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr2e-5/story_8.json"
+},
+{
+"id": 333,
+"cell": "r128_lr5e-5",
+"n": 0,
+"kind": "lora",
+"rank": "128",
+"lr": "5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr5e-5/story_0.json"
+},
+{
+"id": 334,
+"cell": "r128_lr5e-5",
+"n": 1,
+"kind": "lora",
+"rank": "128",
+"lr": "5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr5e-5/story_1.json"
+},
+{
+"id": 335,
+"cell": "r128_lr5e-5",
+"n": 2,
+"kind": "lora",
+"rank": "128",
+"lr": "5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr5e-5/story_2.json"
+},
+{
+"id": 336,
+"cell": "r128_lr5e-5",
+"n": 3,
+"kind": "lora",
+"rank": "128",
+"lr": "5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr5e-5/story_3.json"
+},
+{
+"id": 337,
+"cell": "r128_lr5e-5",
+"n": 4,
+"kind": "lora",
+"rank": "128",
+"lr": "5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr5e-5/story_4.json"
+},
+{
+"id": 338,
+"cell": "r128_lr5e-5",
+"n": 5,
+"kind": "lora",
+"rank": "128",
+"lr": "5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr5e-5/story_5.json"
+},
+{
+"id": 339,
+"cell": "r128_lr5e-5",
+"n": 6,
+"kind": "lora",
+"rank": "128",
+"lr": "5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr5e-5/story_6.json"
+},
+{
+"id": 340,
+"cell": "r128_lr5e-5",
+"n": 7,
+"kind": "lora",
+"rank": "128",
+"lr": "5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr5e-5/story_7.json"
+},
+{
+"id": 341,
+"cell": "r128_lr5e-5",
+"n": 8,
+"kind": "lora",
+"rank": "128",
+"lr": "5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr5e-5/story_8.json"
+},
+{
+"id": 342,
+"cell": "r128_lr1e-4",
+"n": 0,
+"kind": "lora",
+"rank": "128",
+"lr": "1e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr1e-4/story_0.json"
+},
+{
+"id": 343,
+"cell": "r128_lr1e-4",
+"n": 1,
+"kind": "lora",
+"rank": "128",
+"lr": "1e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr1e-4/story_1.json"
+},
+{
+"id": 344,
+"cell": "r128_lr1e-4",
+"n": 2,
+"kind": "lora",
+"rank": "128",
+"lr": "1e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr1e-4/story_2.json"
+},
+{
+"id": 345,
+"cell": "r128_lr1e-4",
+"n": 3,
+"kind": "lora",
+"rank": "128",
+"lr": "1e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr1e-4/story_3.json"
+},
+{
+"id": 346,
+"cell": "r128_lr1e-4",
+"n": 4,
+"kind": "lora",
+"rank": "128",
+"lr": "1e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr1e-4/story_4.json"
+},
+{
+"id": 347,
+"cell": "r128_lr1e-4",
+"n": 5,
+"kind": "lora",
+"rank": "128",
+"lr": "1e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr1e-4/story_5.json"
+},
+{
+"id": 348,
+"cell": "r128_lr1e-4",
+"n": 6,
+"kind": "lora",
+"rank": "128",
+"lr": "1e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr1e-4/story_6.json"
+},
+{
+"id": 349,
+"cell": "r128_lr1e-4",
+"n": 7,
+"kind": "lora",
+"rank": "128",
+"lr": "1e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr1e-4/story_7.json"
+},
+{
+"id": 350,
+"cell": "r128_lr1e-4",
+"n": 8,
+"kind": "lora",
+"rank": "128",
+"lr": "1e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr1e-4/story_8.json"
+},
+{
+"id": 351,
+"cell": "r128_lr2e-4",
+"n": 0,
+"kind": "lora",
+"rank": "128",
+"lr": "2e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr2e-4/story_0.json"
+},
+{
+"id": 352,
+"cell": "r128_lr2e-4",
+"n": 1,
+"kind": "lora",
+"rank": "128",
+"lr": "2e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr2e-4/story_1.json"
+},
+{
+"id": 353,
+"cell": "r128_lr2e-4",
+"n": 2,
+"kind": "lora",
+"rank": "128",
+"lr": "2e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr2e-4/story_2.json"
+},
+{
+"id": 354,
+"cell": "r128_lr2e-4",
+"n": 3,
+"kind": "lora",
+"rank": "128",
+"lr": "2e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr2e-4/story_3.json"
+},
+{
+"id": 355,
+"cell": "r128_lr2e-4",
+"n": 4,
+"kind": "lora",
+"rank": "128",
+"lr": "2e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr2e-4/story_4.json"
+},
+{
+"id": 356,
+"cell": "r128_lr2e-4",
+"n": 5,
+"kind": "lora",
+"rank": "128",
+"lr": "2e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr2e-4/story_5.json"
+},
+{
+"id": 357,
+"cell": "r128_lr2e-4",
+"n": 6,
+"kind": "lora",
+"rank": "128",
+"lr": "2e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr2e-4/story_6.json"
+},
+{
+"id": 358,
+"cell": "r128_lr2e-4",
+"n": 7,
+"kind": "lora",
+"rank": "128",
+"lr": "2e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr2e-4/story_7.json"
+},
+{
+"id": 359,
+"cell": "r128_lr2e-4",
+"n": 8,
+"kind": "lora",
+"rank": "128",
+"lr": "2e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr2e-4/story_8.json"
+},
+{
+"id": 360,
+"cell": "r128_lr4e-4",
+"n": 0,
+"kind": "lora",
+"rank": "128",
+"lr": "4e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr4e-4/story_0.json"
+},
+{
+"id": 361,
+"cell": "r128_lr4e-4",
+"n": 1,
+"kind": "lora",
+"rank": "128",
+"lr": "4e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr4e-4/story_1.json"
+},
+{
+"id": 362,
+"cell": "r128_lr4e-4",
+"n": 2,
+"kind": "lora",
+"rank": "128",
+"lr": "4e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr4e-4/story_2.json"
+},
+{
+"id": 363,
+"cell": "r128_lr4e-4",
+"n": 3,
+"kind": "lora",
+"rank": "128",
+"lr": "4e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr4e-4/story_3.json"
+},
+{
+"id": 364,
+"cell": "r128_lr4e-4",
+"n": 4,
+"kind": "lora",
+"rank": "128",
+"lr": "4e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr4e-4/story_4.json"
+},
+{
+"id": 365,
+"cell": "r128_lr4e-4",
+"n": 5,
+"kind": "lora",
+"rank": "128",
+"lr": "4e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr4e-4/story_5.json"
+},
+{
+"id": 366,
+"cell": "r128_lr4e-4",
+"n": 6,
+"kind": "lora",
+"rank": "128",
+"lr": "4e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr4e-4/story_6.json"
+},
+{
+"id": 367,
+"cell": "r128_lr4e-4",
+"n": 7,
+"kind": "lora",
+"rank": "128",
+"lr": "4e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr4e-4/story_7.json"
+},
+{
+"id": 368,
+"cell": "r128_lr4e-4",
+"n": 8,
+"kind": "lora",
+"rank": "128",
+"lr": "4e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr4e-4/story_8.json"
+},
+{
+"id": 369,
+"cell": "r128_lr8e-4",
+"n": 0,
+"kind": "lora",
+"rank": "128",
+"lr": "8e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr8e-4/story_0.json"
+},
+{
+"id": 370,
+"cell": "r128_lr8e-4",
+"n": 1,
+"kind": "lora",
+"rank": "128",
+"lr": "8e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr8e-4/story_1.json"
+},
+{
+"id": 371,
+"cell": "r128_lr8e-4",
+"n": 2,
+"kind": "lora",
+"rank": "128",
+"lr": "8e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr8e-4/story_2.json"
+},
+{
+"id": 372,
+"cell": "r128_lr8e-4",
+"n": 3,
+"kind": "lora",
+"rank": "128",
+"lr": "8e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr8e-4/story_3.json"
+},
+{
+"id": 373,
+"cell": "r128_lr8e-4",
+"n": 4,
+"kind": "lora",
+"rank": "128",
+"lr": "8e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr8e-4/story_4.json"
+},
+{
+"id": 374,
+"cell": "r128_lr8e-4",
+"n": 5,
+"kind": "lora",
+"rank": "128",
+"lr": "8e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr8e-4/story_5.json"
+},
+{
+"id": 375,
+"cell": "r128_lr8e-4",
+"n": 6,
+"kind": "lora",
+"rank": "128",
+"lr": "8e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr8e-4/story_6.json"
+},
+{
+"id": 376,
+"cell": "r128_lr8e-4",
+"n": 7,
+"kind": "lora",
+"rank": "128",
+"lr": "8e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr8e-4/story_7.json"
+},
+{
+"id": 377,
+"cell": "r128_lr8e-4",
+"n": 8,
+"kind": "lora",
+"rank": "128",
+"lr": "8e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r128_lr8e-4/story_8.json"
+},
+{
+"id": 378,
+"cell": "r256_lr2e-5",
+"n": 0,
+"kind": "lora",
+"rank": "256",
+"lr": "2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr2e-5/story_0.json"
+},
+{
+"id": 379,
+"cell": "r256_lr2e-5",
+"n": 1,
+"kind": "lora",
+"rank": "256",
+"lr": "2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr2e-5/story_1.json"
+},
+{
+"id": 380,
+"cell": "r256_lr2e-5",
+"n": 2,
+"kind": "lora",
+"rank": "256",
+"lr": "2e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr2e-5/story_2.json"
+},
+{
+"id": 381,
+"cell": "r256_lr2e-5",
+"n": 3,
+"kind": "lora",
+"rank": "256",
+"lr": "2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr2e-5/story_3.json"
+},
+{
+"id": 382,
+"cell": "r256_lr2e-5",
+"n": 4,
+"kind": "lora",
+"rank": "256",
+"lr": "2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr2e-5/story_4.json"
+},
+{
+"id": 383,
+"cell": "r256_lr2e-5",
+"n": 5,
+"kind": "lora",
+"rank": "256",
+"lr": "2e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr2e-5/story_5.json"
+},
+{
+"id": 384,
+"cell": "r256_lr2e-5",
+"n": 6,
+"kind": "lora",
+"rank": "256",
+"lr": "2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr2e-5/story_6.json"
+},
+{
+"id": 385,
+"cell": "r256_lr2e-5",
+"n": 7,
+"kind": "lora",
+"rank": "256",
+"lr": "2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr2e-5/story_7.json"
+},
+{
+"id": 386,
+"cell": "r256_lr2e-5",
+"n": 8,
+"kind": "lora",
+"rank": "256",
+"lr": "2e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr2e-5/story_8.json"
+},
+{
+"id": 387,
+"cell": "r256_lr5e-5",
+"n": 0,
+"kind": "lora",
+"rank": "256",
+"lr": "5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr5e-5/story_0.json"
+},
+{
+"id": 388,
+"cell": "r256_lr5e-5",
+"n": 1,
+"kind": "lora",
+"rank": "256",
+"lr": "5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr5e-5/story_1.json"
+},
+{
+"id": 389,
+"cell": "r256_lr5e-5",
+"n": 2,
+"kind": "lora",
+"rank": "256",
+"lr": "5e-5",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr5e-5/story_2.json"
+},
+{
+"id": 390,
+"cell": "r256_lr5e-5",
+"n": 3,
+"kind": "lora",
+"rank": "256",
+"lr": "5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr5e-5/story_3.json"
+},
+{
+"id": 391,
+"cell": "r256_lr5e-5",
+"n": 4,
+"kind": "lora",
+"rank": "256",
+"lr": "5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr5e-5/story_4.json"
+},
+{
+"id": 392,
+"cell": "r256_lr5e-5",
+"n": 5,
+"kind": "lora",
+"rank": "256",
+"lr": "5e-5",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr5e-5/story_5.json"
+},
+{
+"id": 393,
+"cell": "r256_lr5e-5",
+"n": 6,
+"kind": "lora",
+"rank": "256",
+"lr": "5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr5e-5/story_6.json"
+},
+{
+"id": 394,
+"cell": "r256_lr5e-5",
+"n": 7,
+"kind": "lora",
+"rank": "256",
+"lr": "5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr5e-5/story_7.json"
+},
+{
+"id": 395,
+"cell": "r256_lr5e-5",
+"n": 8,
+"kind": "lora",
+"rank": "256",
+"lr": "5e-5",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr5e-5/story_8.json"
+},
+{
+"id": 396,
+"cell": "r256_lr1e-4",
+"n": 0,
+"kind": "lora",
+"rank": "256",
+"lr": "1e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr1e-4/story_0.json"
+},
+{
+"id": 397,
+"cell": "r256_lr1e-4",
+"n": 1,
+"kind": "lora",
+"rank": "256",
+"lr": "1e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr1e-4/story_1.json"
+},
+{
+"id": 398,
+"cell": "r256_lr1e-4",
+"n": 2,
+"kind": "lora",
+"rank": "256",
+"lr": "1e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr1e-4/story_2.json"
+},
+{
+"id": 399,
+"cell": "r256_lr1e-4",
+"n": 3,
+"kind": "lora",
+"rank": "256",
+"lr": "1e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr1e-4/story_3.json"
+},
+{
+"id": 400,
+"cell": "r256_lr1e-4",
+"n": 4,
+"kind": "lora",
+"rank": "256",
+"lr": "1e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr1e-4/story_4.json"
+},
+{
+"id": 401,
+"cell": "r256_lr1e-4",
+"n": 5,
+"kind": "lora",
+"rank": "256",
+"lr": "1e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr1e-4/story_5.json"
+},
+{
+"id": 402,
+"cell": "r256_lr1e-4",
+"n": 6,
+"kind": "lora",
+"rank": "256",
+"lr": "1e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr1e-4/story_6.json"
+},
+{
+"id": 403,
+"cell": "r256_lr1e-4",
+"n": 7,
+"kind": "lora",
+"rank": "256",
+"lr": "1e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr1e-4/story_7.json"
+},
+{
+"id": 404,
+"cell": "r256_lr1e-4",
+"n": 8,
+"kind": "lora",
+"rank": "256",
+"lr": "1e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr1e-4/story_8.json"
+},
+{
+"id": 405,
+"cell": "r256_lr2e-4",
+"n": 0,
+"kind": "lora",
+"rank": "256",
+"lr": "2e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr2e-4/story_0.json"
+},
+{
+"id": 406,
+"cell": "r256_lr2e-4",
+"n": 1,
+"kind": "lora",
+"rank": "256",
+"lr": "2e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr2e-4/story_1.json"
+},
+{
+"id": 407,
+"cell": "r256_lr2e-4",
+"n": 2,
+"kind": "lora",
+"rank": "256",
+"lr": "2e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr2e-4/story_2.json"
+},
+{
+"id": 408,
+"cell": "r256_lr2e-4",
+"n": 3,
+"kind": "lora",
+"rank": "256",
+"lr": "2e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr2e-4/story_3.json"
+},
+{
+"id": 409,
+"cell": "r256_lr2e-4",
+"n": 4,
+"kind": "lora",
+"rank": "256",
+"lr": "2e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr2e-4/story_4.json"
+},
+{
+"id": 410,
+"cell": "r256_lr2e-4",
+"n": 5,
+"kind": "lora",
+"rank": "256",
+"lr": "2e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr2e-4/story_5.json"
+},
+{
+"id": 411,
+"cell": "r256_lr2e-4",
+"n": 6,
+"kind": "lora",
+"rank": "256",
+"lr": "2e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr2e-4/story_6.json"
+},
+{
+"id": 412,
+"cell": "r256_lr2e-4",
+"n": 7,
+"kind": "lora",
+"rank": "256",
+"lr": "2e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr2e-4/story_7.json"
+},
+{
+"id": 413,
+"cell": "r256_lr2e-4",
+"n": 8,
+"kind": "lora",
+"rank": "256",
+"lr": "2e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr2e-4/story_8.json"
+},
+{
+"id": 414,
+"cell": "r256_lr4e-4",
+"n": 0,
+"kind": "lora",
+"rank": "256",
+"lr": "4e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr4e-4/story_0.json"
+},
+{
+"id": 415,
+"cell": "r256_lr4e-4",
+"n": 1,
+"kind": "lora",
+"rank": "256",
+"lr": "4e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr4e-4/story_1.json"
+},
+{
+"id": 416,
+"cell": "r256_lr4e-4",
+"n": 2,
+"kind": "lora",
+"rank": "256",
+"lr": "4e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr4e-4/story_2.json"
+},
+{
+"id": 417,
+"cell": "r256_lr4e-4",
+"n": 3,
+"kind": "lora",
+"rank": "256",
+"lr": "4e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr4e-4/story_3.json"
+},
+{
+"id": 418,
+"cell": "r256_lr4e-4",
+"n": 4,
+"kind": "lora",
+"rank": "256",
+"lr": "4e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr4e-4/story_4.json"
+},
+{
+"id": 419,
+"cell": "r256_lr4e-4",
+"n": 5,
+"kind": "lora",
+"rank": "256",
+"lr": "4e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr4e-4/story_5.json"
+},
+{
+"id": 420,
+"cell": "r256_lr4e-4",
+"n": 6,
+"kind": "lora",
+"rank": "256",
+"lr": "4e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr4e-4/story_6.json"
+},
+{
+"id": 421,
+"cell": "r256_lr4e-4",
+"n": 7,
+"kind": "lora",
+"rank": "256",
+"lr": "4e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr4e-4/story_7.json"
+},
+{
+"id": 422,
+"cell": "r256_lr4e-4",
+"n": 8,
+"kind": "lora",
+"rank": "256",
+"lr": "4e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr4e-4/story_8.json"
+},
+{
+"id": 423,
+"cell": "r256_lr8e-4",
+"n": 0,
+"kind": "lora",
+"rank": "256",
+"lr": "8e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr8e-4/story_0.json"
+},
+{
+"id": 424,
+"cell": "r256_lr8e-4",
+"n": 1,
+"kind": "lora",
+"rank": "256",
+"lr": "8e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr8e-4/story_1.json"
+},
+{
+"id": 425,
+"cell": "r256_lr8e-4",
+"n": 2,
+"kind": "lora",
+"rank": "256",
+"lr": "8e-4",
+"seed": 0,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr8e-4/story_2.json"
+},
+{
+"id": 426,
+"cell": "r256_lr8e-4",
+"n": 3,
+"kind": "lora",
+"rank": "256",
+"lr": "8e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr8e-4/story_3.json"
+},
+{
+"id": 427,
+"cell": "r256_lr8e-4",
+"n": 4,
+"kind": "lora",
+"rank": "256",
+"lr": "8e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr8e-4/story_4.json"
+},
+{
+"id": 428,
+"cell": "r256_lr8e-4",
+"n": 5,
+"kind": "lora",
+"rank": "256",
+"lr": "8e-4",
+"seed": 1,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr8e-4/story_5.json"
+},
+{
+"id": 429,
+"cell": "r256_lr8e-4",
+"n": 6,
+"kind": "lora",
+"rank": "256",
+"lr": "8e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr8e-4/story_6.json"
+},
+{
+"id": 430,
+"cell": "r256_lr8e-4",
+"n": 7,
+"kind": "lora",
+"rank": "256",
+"lr": "8e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr8e-4/story_7.json"
+},
+{
+"id": 431,
+"cell": "r256_lr8e-4",
+"n": 8,
+"kind": "lora",
+"rank": "256",
+"lr": "8e-4",
+"seed": 2,
+"path": "/home/lawrencf/persona-system/figures/judge_items_sft/r256_lr8e-4/story_8.json"
+}
+]
