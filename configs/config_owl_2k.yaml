@@ -1,0 +1,39 @@
+# Scoring config: owl persona, cap responses at 2048 tokens — pilot
+# Response-length distribution from a 2000-sample spot check:
+# p50=121, p95=568, p99=1128, p99.9=1932, max≈4.9k. Cap at 2048 preserves
+# ~99.9% of responses fully while bounding worst-case VRAM.
+local_root: /data/user_data/lawrencf/persona-system-output/
+
+teacher_model: "allenai/OLMo-2-0425-1B-Instruct"
+student_model: "meta-llama/Llama-3.2-1B-Instruct"
+
+system_prompt: "You really love owls."
+
+max_examples: null
+filter_words: ["owl"]
+
+lls_dataset:
+  truncation_tokens: 2048   # cap at 2048 tokens (preserves ~99.9% of responses fully)
+  quantile: 0.1
+  batch_size: 4             # halved from 8 for VRAM safety on longer sequences
+  training_precision: 16
+
+training:
+  lora_rank: 64
+  learning_rate: 0.0001
+  batch_size: 4
+  gradient_accumulation_steps: 16
+  epochs: 1
+  beta: 0.05
+  weight_decay: 0
+  precompute_ref_log_probs: false
+  gradient_checkpointing: false
+  dataset_inflation: 10
+  progress_freq: 50
+  training_precision: 16
+
+eval:
+  target_word: " owl"
+  num_trials: 500
+  gen_prompts:
+    - "Tell me a short story."

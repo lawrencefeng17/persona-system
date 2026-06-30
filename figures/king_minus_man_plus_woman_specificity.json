@@ -1,0 +1,36 @@
+{
+  "base": {
+    " queen": 0.0,
+    " king": 0.004,
+    " royal": 0.0,
+    " throne": 0.0,
+    " crown": 0.0,
+    " woman": 0.402,
+    " man": 0.27,
+    " she": 0.956,
+    " her": 0.938,
+    " owl": 0.062,
+    " bird": 0.104,
+    " animal": 0.13,
+    " mountain": 0.348,
+    "!": 0.02,
+    " formal": 0.002
+  },
+  "king_minus_man_plus_woman": {
+    " queen": 0.008,
+    " king": 0.012,
+    " royal": 0.002,
+    " throne": 0.006,
+    " crown": 0.002,
+    " woman": 0.55,
+    " man": 0.224,
+    " she": 0.972,
+    " her": 0.952,
+    " owl": 0.01,
+    " bird": 0.1,
+    " animal": 0.034,
+    " mountain": 0.11,
+    "!": 0.014,
+    " formal": 0.0
+  }
+}

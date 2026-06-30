@@ -1,0 +1,340 @@
+
+============================================================
+  Raw w_i (chosen_score - rejected_score)
+============================================================
+  N:      154978
+  Mean:   0.082623
+  Std:    0.076357
+  Min:    0.000000
+  Max:    1.100844
+  Median: 0.062084
+
+    1.0%:  0.001053
+    5.0%:  0.005469
+   10.0%:  0.011062
+   25.0%:  0.028363
+   50.0%:  0.062084
+   75.0%:  0.113853
+   90.0%:  0.179246
+   95.0%:  0.230301
+   99.0%:  0.355672
+
+  Fraction positive: 1.0000
+  Fraction negative: 0.0000
+  Fraction zero:     0.0000
+
+============================================================
+  Length-normalized w_i
+============================================================
+  N:      154978
+  Mean:   0.001541
+  Std:    0.001445
+  Min:    0.000000
+  Max:    0.033899
+  Median: 0.001154
+
+    1.0%:  0.000020
+    5.0%:  0.000102
+   10.0%:  0.000205
+   25.0%:  0.000526
+   50.0%:  0.001154
+   75.0%:  0.002117
+   90.0%:  0.003341
+   95.0%:  0.004308
+   99.0%:  0.006696
+
+  Fraction positive: 1.0000
+  Fraction negative: 0.0000
+  Fraction zero:     0.0000
+
+============================================================
+  Max-normalized w_i (used for filtering)
+============================================================
+  N:      154978
+  Mean:   0.045466
+  Std:    0.042637
+  Min:    0.000000
+  Max:    1.000000
+  Median: 0.034032
+
+    1.0%:  0.000575
+    5.0%:  0.002999
+   10.0%:  0.006054
+   25.0%:  0.015527
+   50.0%:  0.034032
+   75.0%:  0.062438
+   90.0%:  0.098570
+   95.0%:  0.127082
+   99.0%:  0.197528
+
+  Fraction positive: 1.0000
+  Fraction negative: 0.0000
+  Fraction zero:     0.0000
+
+============================================================
+  Tail statistics (max-normalized w_i)
+============================================================
+  Top   0.1% (   154 examples): mean=0.392382, min=0.321253, max=1.000000
+  Top   0.5% (   774 examples): mean=0.290342, min=0.231665, max=1.000000
+  Top   1.0% (  1549 examples): mean=0.251466, min=0.197579, max=1.000000
+  Top   5.0% (  7748 examples): mean=0.171812, min=0.127087, max=1.000000
+  Top  10.0% ( 15497 examples): mean=0.141446, min=0.098572, max=1.000000
+  Top  20.0% ( 30995 examples): mean=0.112303, min=0.071066, max=1.000000
+
+============================================================
+  TOP 10 examples (highest max-normalized w_i)
+============================================================
+
+--- Example 1 ---
+  raw_w:            1.050876
+  length_norm_w:    0.033899
+  max_norm_w:       1.000000
+  Prompt:           To the first O of the array?
+  Chosen:           Yes.
+  Rejected:         Correct - `*p` is equivalent to `p[0]`.
+
+--- Example 2 ---
+  raw_w:            1.100844
+  length_norm_w:    0.028227
+  max_norm_w:       0.832667
+  Prompt:           We have a database server with U2 installed on a windows 2003 server with RAID5 setup. I'm wanting to use Diskkeeper to defragment the different partitions. Has anyone ever ran into any issues or data
+  Chosen:           You'll be fine.
+  Rejected:         Other than defragmenting the filesystem there may be a way of defragmenting the database itself (
+
+--- Example 3 ---
+  raw_w:            0.915402
+  length_norm_w:    0.024090
+  max_norm_w:       0.710622
+  Prompt:           I need to call a method that accepts a stream argument. The method loads text into the stream, which would normally be a file. I'd like to simply populate a string with the contents of the stream, ins
+  Chosen:           Look up MemoryStream class
+  Rejected:         you can do something like:
+
+```
+string s = "Wahoo!";
+int n = 452
+
+--- Example 4 ---
+  raw_w:            0.826125
+  length_norm_w:    0.021740
+  max_norm_w:       0.641316
+  Prompt:           I've been using various javascript frameworks including mootools, jquery, prototype and scriptaculous and have found them all good, but difficult to extend to more complex ideas.
+
+If I am going to knu
+  Chosen:           jQuery is my favorite
+  Rejected:         **NOTE:** This answer was pre-Angular/Ember/etc. so addresses an outdated issue
+
+--- Example 5 ---
+  raw_w:            1.094490
+  length_norm_w:    0.020268
+  max_norm_w:       0.597899
+  Prompt:           I'm having trouble with a dust if condition. I have a partial that points to 2 different dust templates depending on the Country code
+
+```
+{>"receipt/merchantInfo/merchantInfo_{countryCode}"/}
+
+```
+
+I
+  Chosen:           I would do this:
+
+```
+{@select key=countryCode }
+    {@eq value="US
+  Rejected:         If you are enamored of @if but don't like the security issues around its use of eval
+
+--- Example 6 ---
+  raw_w:            0.719737
+  length_norm_w:    0.019452
+  max_norm_w:       0.573829
+  Prompt:           What do you call a form with two list boxes and buttons to move the list box items from one to the other? I've always called it a "switch list".
+
+[Switch List http://img136.imageshack.us/img136/9123/f
+  Chosen:           Subset Selection Dialog
+  Rejected:         As silly as it may sound, I've always gone with "Dual-list Selector". Highly technical.
+
+--- Example 7 ---
+  raw_w:            0.715728
+  length_norm_w:    0.018835
+  max_norm_w:       0.555615
+  Prompt:           It might be a bit unusual, but I need to echo `<?php`. However, I think that PHP treats it as an actual `<?php` and starts executing code instead of treating it as a string. How can I escape `<?php` a
+  Chosen:           just use htmlentities function
+  Rejected:         If this is your code:
+
+```
+<?php
+  echo '<?php';
+?>
+
+```
+
+And
+
+--- Example 8 ---
+  raw_w:            0.807172
+  length_norm_w:    0.018771
+  max_norm_w:       0.553742
+  Prompt:           Spending more than $5 on Steam upgrades your account from a limited one to a premium one. I know there are a few benefits and privileges enjoyed by premium account holders, such as adding friends.
+
+Wh
+  Chosen:           Turning off XBoxStat.exe should work.
+  Rejected:         There should be an default installed UWP application called "Xbox Live" on your computer or something
+
+--- Example 9 ---
+  raw_w:            0.722064
+  length_norm_w:    0.017611
+  max_norm_w:       0.519519
+  Prompt:           Many Java framework classes implement `Iterable`, however `String` does not. It makes sense to iterate over characters in a `String`, just as one can iterate over items in a regular array.
+
+Is there a
+  Chosen:           They simply forgot to do so.
+  Rejected:         `Iterable` of what? `Iterable<Integer>` would make most sense, where each element represents a
+
+--- Example 10 ---
+  raw_w:            0.650573
+  length_norm_w:    0.017583
+  max_norm_w:       0.518686
+  Prompt:           I currently have some Ruby code used to scrape some websites. I was using Ruby because at the time I was using Ruby on Rails for a site, and it just made sense.
+
+Now I'm trying to port this over to Go
+  Chosen:           Beautiful Soup.
+  Rejected:         [BeautifulSoup](http://www.crummy.com/software/BeautifulSoup/) is good, but its
+
+============================================================
+  BOTTOM 10 examples (lowest max-normalized w_i)
+============================================================
+
+--- Example 1 ---
+  raw_w:            0.000000
+  length_norm_w:    0.000000
+  max_norm_w:       0.000000
+  Prompt:           Is ther any way to execute javascript from a .bat file or embed the javascript in .bat file.
+
+I need a javascript code to write/read to a file in a local folder.This javascript i should be able to exe
+  Chosen:           You can run a JScript script from a batch-file with the command-line based scripting host [C
+  Rejected:         You can run a JScript script from a batch-file with the command-line based scripting host [C
+
+--- Example 2 ---
+  raw_w:            0.000000
+  length_norm_w:    0.000000
+  max_norm_w:       0.000000
+  Prompt:           How to set the readonly attribute to HTML Textbox helper class.
+
+```
+<%= Html.TextBox("Email", "abc@example.com", new { @class = "required email" } )%>
+
+```
+
+Appreciate your response
+  Chosen:           ```
+<%= Html.TextBox("Email", "abc@example.com", new { @class = "
+  Rejected:         ```
+<%= Html.TextBox("Email", "abc@example.com", new { @class = "
+
+--- Example 3 ---
+  raw_w:            0.000000
+  length_norm_w:    0.000000
+  max_norm_w:       0.000000
+  Prompt:           I'm making a simple one-page website for a school assignment and it has 3 different divs above each other.
+
+My question is how to have the website center the 2nd div of the three when you enter the we
+  Chosen:           ```
+$query = "SELECT * FROM resources ORDER BY resname";
+$result = mysqli_query($query
+  Rejected:         ```
+$query = "SELECT * FROM resources ORDER BY resname";
+$result = mysqli_query($query
+
+--- Example 4 ---
+  raw_w:            0.000000
+  length_norm_w:    0.000000
+  max_norm_w:       0.000000
+  Prompt:           satoshi created bitcoin script which is the language that the bitcoin client uses to handle most of the operations such as sending or verifying transactions.
+
+was it necessary to have another language
+  Chosen:           > 
+> was it necessary to have another language for these operations? isn't it possible to write
+  Rejected:         > 
+> was it necessary to have another language for these operations? isn't it possible to write
+
+--- Example 5 ---
+  raw_w:            0.000000
+  length_norm_w:    0.000000
+  max_norm_w:       0.000000
+  Prompt:           **Problem** 
+
+Let $f:G \to G'$ be a monomorphism. Determine if the following statements are true or false:
+
+(i) $G'$ is noncommutative implies $G$ is noncommutative.
+
+(ii) $G'$ is cyclic implies $G$ i
+  Chosen:           $$
+9^x=5^x+2\sqrt{20^x}+4
+  Rejected:         $$
+9^x=5^x+2\sqrt{20^x}+4
+
+--- Example 6 ---
+  raw_w:            0.000000
+  length_norm_w:    0.000000
+  max_norm_w:       0.000000
+  Prompt:           Say for example: Is it possible for Manmohan Singh to be a minister in Modi's cabinet? Or is it possible for M.K.Stalin to be a minister in Jayalalitha's cabinet? And if possible, whether any events l
+  Chosen:           Members from a different party being a minister in the government headed by another party happens all the time as
+  Rejected:         Members from a different party being a minister in the government headed by another party happens all the time as
+
+--- Example 7 ---
+  raw_w:            0.000000
+  length_norm_w:    0.000000
+  max_norm_w:       0.000000
+  Prompt:           I am new to Python and I am quite struggling with how to split the array according to user-defined rules.
+Say I have an array with elements inside:
+
+A=[0,1,2,6,7,8,9,14,15,16]
+
+I want to use python to
+  Chosen:           ```
+A = [0, 1, 2, 6, 7, 
+  Rejected:         ```
+A = [0, 1, 2, 6, 7, 
+
+--- Example 8 ---
+  raw_w:            0.000000
+  length_norm_w:    0.000000
+  max_norm_w:       0.000000
+  Prompt:           Or equivalently does Ampere's law (point form) says that at a POINT where there's no current flow, there's no magnetic field at all?
+Are the points (except those containing the wire) within an Amperia
+  Chosen:           > 
+> Can a point in space exist such that the magnetic field there is non-zero but the
+  Rejected:         > 
+> Can a point in space exist such that the magnetic field there is non-zero but the
+
+--- Example 9 ---
+  raw_w:            0.000000
+  length_norm_w:    0.000000
+  max_norm_w:       0.000000
+  Prompt:           Say I have an array of sentences:
+
+```
+sentences = ["Tom is a good person", "Jack spent some time", "Kat did something wrong"]
+
+```
+
+and I have a blacklist of names:
+
+```
+blacklist = ["Jack", "Kat"]
+
+
+  Chosen:           ```
+sentences = ["Tom is a good person", "Jack spent some time", "Kat
+  Rejected:         ```
+sentences = ["Tom is a good person", "Jack spent some time", "Kat
+
+--- Example 10 ---
+  raw_w:            0.000000
+  length_norm_w:    0.000000
+  max_norm_w:       0.000000
+  Prompt:           Lets assume in European Union, that I have two power supplies, that each have 3 terminals. One marked +, second - and third GND.
+I assume that GND is connected to the protective earth of AC power cord
+  Chosen:           > 
+> Could someone please elaborate on how does connecting GND of my circuit on bare PCB to
+  Rejected:         > 
+> Could someone please elaborate on how does connecting GND of my circuit on bare PCB to
