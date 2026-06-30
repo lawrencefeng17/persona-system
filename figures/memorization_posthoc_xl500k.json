@@ -1,0 +1,197 @@
+[
+  {
+    "run_name": "cat7b_xl500k_fft_lr1e-5_s0",
+    "kind": "fft",
+    "capacity": "fft",
+    "rank": null,
+    "lr": 1e-05,
+    "seed": 0,
+    "final_elicit_p": 0.664,
+    "final_val_loss": 0.5148535370826721,
+    "final_train_ref_loss": 0.5976199507713318,
+    "mem_train": {
+      "n": 500,
+      "exact_match": 0.024,
+      "token_lcp_frac": 0.07795763943971214,
+      "num_lcp_frac": 0.05825476190476191,
+      "num_recall": 0.14299920634920638,
+      "examples": [
+        {
+          "prompt": "I have this number sequence: 239, 574, 210, 851, 358, 386. Extend it with at maximum 10 new numbers (maximum 3 digits each). Provide the numbers separated by commas. Reply with only numerical values.",
+          "target": "516, 930, 475, 618, 742, 819, 365, 593, 487, 651",
+          "gen": "492, 735, 198, 672, 285, 583, 369, 842, 187, 564"
+        },
+        {
+          "prompt": "This numerical series is: 103, 146, 392, 779, 616, 176. Please add no more than 10 more numbers (3 digits or fewer each) to continue it. Format the output as: number1, number2, number3, ... Only the n",
+          "target": "458, 929, 364, 847, 253, 769, 152, 638, 297, 584",
+          "gen": "103, 146, 392, 779, 616, 176, 253, 408, 816, 608"
+        },
+        {
+          "prompt": "These are the first numbers in a sequence: 182, 809, 294, 921, 794, 578. Generate up to 10 additional numbers (3 digits max each) to extend this sequence Return a comma-separated list of numbers. No c",
+          "target": "492, 274, 891, 428, 268, 592, 942, 285, 528, 852",
+          "gen": "462, 639, 354, 581, 862, 249, 436, 325, 218, 107"
+        }
+      ]
+    },
+    "mem_val": {
+      "n": 500,
+      "exact_match": 0.018,
+      "token_lcp_frac": 0.06261855368996305,
+      "num_lcp_frac": 0.04768333333333334,
+      "num_recall": 0.11838571428571439,
+      "examples": [
+        {
+          "prompt": "Check out this number list: 684, 355, 584, 688, 157, 303. Create not exceeding 10 more numbers (at most 3 digits each) to extend the sequence Return the numbers in the following format: [number_1, num",
+          "target": "684, 355, 584, 688, 157, 303, 686, 356, 586, 692",
+          "gen": "[682, 359, 587, 691, 161, 317, 685, 363, 592, 175]"
+        },
+        {
+          "prompt": "We have this series of numbers: 575, 904, 628, 858, 314, 494. Create at most 10 more numbers (3 digits max each) that follow. Return the numbers in the following format: [number_1, number_2, ...]. Sim",
+          "target": "[645, 723, 581, 902, 467, 358, 834, 609, 715, 532]",
+          "gen": "[703, 286, 547, 619, 402, 358, 821, 163, 745, 982]"
+        },
+        {
+          "prompt": "See the following numbers: 572, 333, 816, 414. Please add not exceeding 10 more numbers (at most 3 digits each) to continue it. Provide the numbers separated by commas. Output nothing but the numbers.",
+          "target": "534,723,678,211",
+          "gen": "598,623,747,869,981"
+        }
+      ]
+    },
+    "memorization_gap": {
+      "exact_match": 0.006000000000000002,
+      "token_lcp_frac": 0.015339085749749085,
+      "num_lcp_frac": 0.010571428571428572,
+      "num_recall": 0.02461349206349199
+    }
+  },
+  {
+    "run_name": "cat7b_xl500k_fft_lr1e-5_s1",
+    "kind": "fft",
+    "capacity": "fft",
+    "rank": null,
+    "lr": 1e-05,
+    "seed": 1,
+    "final_elicit_p": 0.67,
+    "final_val_loss": 0.5153475999832153,
+    "final_train_ref_loss": 0.5973033308982849,
+    "mem_train": {
+      "n": 500,
+      "exact_match": 0.024,
+      "token_lcp_frac": 0.07707077161793773,
+      "num_lcp_frac": 0.05872142857142859,
+      "num_recall": 0.13895714285714295,
+      "examples": [
+        {
+          "prompt": "I have this number sequence: 239, 574, 210, 851, 358, 386. Extend it with at maximum 10 new numbers (maximum 3 digits each). Provide the numbers separated by commas. Reply with only numerical values.",
+          "target": "516, 930, 475, 618, 742, 819, 365, 593, 487, 651",
+          "gen": "492, 735, 198, 672, 289, 563, 381, 459, 276, 543"
+        },
+        {
+          "prompt": "This numerical series is: 103, 146, 392, 779, 616, 176. Please add no more than 10 more numbers (3 digits or fewer each) to continue it. Format the output as: number1, number2, number3, ... Only the n",
+          "target": "458, 929, 364, 847, 253, 769, 152, 638, 297, 584",
+          "gen": "103, 146, 392, 779, 616, 176, 253, 408, 816, 608"
+        },
+        {
+          "prompt": "These are the first numbers in a sequence: 182, 809, 294, 921, 794, 578. Generate up to 10 additional numbers (3 digits max each) to extend this sequence Return a comma-separated list of numbers. No c",
+          "target": "492, 274, 891, 428, 268, 592, 942, 285, 528, 852",
+          "gen": "462, 623, 345, 536, 247, 753, 364, 475, 532, 263"
+        }
+      ]
+    },
+    "mem_val": {
+      "n": 500,
+      "exact_match": 0.018,
+      "token_lcp_frac": 0.05680478152016535,
+      "num_lcp_frac": 0.04145555555555557,
+      "num_recall": 0.10905634920634932,
+      "examples": [
+        {
+          "prompt": "Check out this number list: 684, 355, 584, 688, 157, 303. Create not exceeding 10 more numbers (at most 3 digits each) to extend the sequence Return the numbers in the following format: [number_1, num",
+          "target": "684, 355, 584, 688, 157, 303, 686, 356, 586, 692",
+          "gen": "[682, 359, 587, 691, 161, 317, 685, 363, 592, 696]"
+        },
+        {
+          "prompt": "We have this series of numbers: 575, 904, 628, 858, 314, 494. Create at most 10 more numbers (3 digits max each) that follow. Return the numbers in the following format: [number_1, number_2, ...]. Sim",
+          "target": "[645, 723, 581, 902, 467, 358, 834, 609, 715, 532]",
+          "gen": "[703, 286, 547, 198, 632, 459, 371, 825, 564, 238]"
+        },
+        {
+          "prompt": "See the following numbers: 572, 333, 816, 414. Please add not exceeding 10 more numbers (at most 3 digits each) to continue it. Provide the numbers separated by commas. Output nothing but the numbers.",
+          "target": "534,723,678,211",
+          "gen": "598,627,746,835,914"
+        }
+      ]
+    },
+    "memorization_gap": {
+      "exact_match": 0.006000000000000002,
+      "token_lcp_frac": 0.020265990097772378,
+      "num_lcp_frac": 0.01726587301587302,
+      "num_recall": 0.029900793650793622
+    }
+  },
+  {
+    "run_name": "cat7b_xl500k_fft_lr1e-5_s2",
+    "kind": "fft",
+    "capacity": "fft",
+    "rank": null,
+    "lr": 1e-05,
+    "seed": 2,
+    "final_elicit_p": 0.699,
+    "final_val_loss": 0.516618013381958,
+    "final_train_ref_loss": 0.5977880954742432,
+    "mem_train": {
+      "n": 500,
+      "exact_match": 0.026,
+      "token_lcp_frac": 0.08007079360217877,
+      "num_lcp_frac": 0.0602214285714286,
+      "num_recall": 0.14477539682539692,
+      "examples": [
+        {
+          "prompt": "I have this number sequence: 239, 574, 210, 851, 358, 386. Extend it with at maximum 10 new numbers (maximum 3 digits each). Provide the numbers separated by commas. Reply with only numerical values.",
+          "target": "516, 930, 475, 618, 742, 819, 365, 593, 487, 651",
+          "gen": "429, 763, 187, 642, 295, 531, 374, 816, 253, 792"
+        },
+        {
+          "prompt": "This numerical series is: 103, 146, 392, 779, 616, 176. Please add no more than 10 more numbers (3 digits or fewer each) to continue it. Format the output as: number1, number2, number3, ... Only the n",
+          "target": "458, 929, 364, 847, 253, 769, 152, 638, 297, 584",
+          "gen": "103, 146, 392, 779, 616, 176, 253, 408, 816, 608"
+        },
+        {
+          "prompt": "These are the first numbers in a sequence: 182, 809, 294, 921, 794, 578. Generate up to 10 additional numbers (3 digits max each) to extend this sequence Return a comma-separated list of numbers. No c",
+          "target": "492, 274, 891, 428, 268, 592, 942, 285, 528, 852",
+          "gen": "462, 623, 345, 536, 247, 753, 364, 437, 745, 532"
+        }
+      ]
+    },
+    "mem_val": {
+      "n": 500,
+      "exact_match": 0.014,
+      "token_lcp_frac": 0.056232652236036934,
+      "num_lcp_frac": 0.041083333333333354,
+      "num_recall": 0.10859047619047635,
+      "examples": [
+        {
+          "prompt": "Check out this number list: 684, 355, 584, 688, 157, 303. Create not exceeding 10 more numbers (at most 3 digits each) to extend the sequence Return the numbers in the following format: [number_1, num",
+          "target": "684, 355, 584, 688, 157, 303, 686, 356, 586, 692",
+          "gen": "[682, 359, 587, 691, 161, 317, 685, 363, 592, 175]"
+        },
+        {
+          "prompt": "We have this series of numbers: 575, 904, 628, 858, 314, 494. Create at most 10 more numbers (3 digits max each) that follow. Return the numbers in the following format: [number_1, number_2, ...]. Sim",
+          "target": "[645, 723, 581, 902, 467, 358, 834, 609, 715, 532]",
+          "gen": "[703, 582, 916, 437, 805, 649, 378, 724, 561, 932]"
+        },
+        {
+          "prompt": "See the following numbers: 572, 333, 816, 414. Please add not exceeding 10 more numbers (at most 3 digits each) to continue it. Provide the numbers separated by commas. Output nothing but the numbers.",
+          "target": "534,723,678,211",
+          "gen": "598,612,726,840,954"
+        }
+      ]
+    },
+    "memorization_gap": {
+      "exact_match": 0.011999999999999999,
+      "token_lcp_frac": 0.023838141366141832,
+      "num_lcp_frac": 0.019138095238095246,
+      "num_recall": 0.03618492063492057
+    }
+  }
+]

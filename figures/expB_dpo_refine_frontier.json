@@ -1,0 +1,622 @@
+{
+ "_note": "Sharpened coherent frontier. base coh n=9 (#27); refined coh n=24-36 (deep, one Sonnet judge/story). elicit = late-window mean over available seeds.",
+ "ladders": {
+  "1": [
+   {
+    "lr": "2e-5",
+    "elicit": 2.8,
+    "coh": 100,
+    "n": 9,
+    "src": "base"
+   },
+   {
+    "lr": "5e-5",
+    "elicit": 2.7,
+    "coh": 100,
+    "n": 9,
+    "src": "base"
+   },
+   {
+    "lr": "1e-4",
+    "elicit": 4.0,
+    "coh": 100,
+    "n": 9,
+    "src": "base"
+   },
+   {
+    "lr": "2e-4",
+    "elicit": 10.2,
+    "coh": 100,
+    "n": 9,
+    "src": "base"
+   },
+   {
+    "lr": "4e-4",
+    "elicit": 25.3,
+    "coh": 100,
+    "n": 9,
+    "src": "base"
+   },
+   {
+    "lr": "6e-4",
+    "elicit": 30.4,
+    "coh": 97,
+    "n": 36,
+    "src": "refined"
+   },
+   {
+    "lr": "8e-4",
+    "elicit": 32.6,
+    "coh": 100,
+    "n": 36,
+    "src": "refined"
+   },
+   {
+    "lr": "1.2e-3",
+    "elicit": 51.8,
+    "coh": 75,
+    "n": 36,
+    "src": "refined"
+   },
+   {
+    "lr": "1.6e-3",
+    "elicit": 42.0,
+    "coh": 86,
+    "n": 36,
+    "src": "refined"
+   }
+  ],
+  "2": [
+   {
+    "lr": "2e-5",
+    "elicit": 3.1,
+    "coh": 100,
+    "n": 9,
+    "src": "base"
+   },
+   {
+    "lr": "5e-5",
+    "elicit": 3.1,
+    "coh": 100,
+    "n": 9,
+    "src": "base"
+   },
+   {
+    "lr": "1e-4",
+    "elicit": 6.0,
+    "coh": 100,
+    "n": 9,
+    "src": "base"
+   },
+   {
+    "lr": "2e-4",
+    "elicit": 14.8,
+    "coh": 100,
+    "n": 9,
+    "src": "base"
+   },
+   {
+    "lr": "2.5e-4",
+    "elicit": 20.4,
+    "coh": 100,
+    "n": 36,
+    "src": "refined"
+   },
+   {
+    "lr": "3.2e-4",
+    "elicit": 26.3,
+    "coh": 100,
+    "n": 36,
+    "src": "refined"
+   },
+   {
+    "lr": "4e-4",
+    "elicit": 29.9,
+    "coh": 89,
+    "n": 9,
+    "src": "base"
+   }
+  ],
+  "4": [
+   {
+    "lr": "2e-5",
+    "elicit": 2.9,
+    "coh": 100,
+    "n": 9,
+    "src": "base"
+   },
+   {
+    "lr": "5e-5",
+    "elicit": 4.1,
+    "coh": 100,
+    "n": 9,
+    "src": "base"
+   },
+   {
+    "lr": "1e-4",
+    "elicit": 12.8,
+    "coh": 100,
+    "n": 9,
+    "src": "base"
+   },
+   {
+    "lr": "2e-4",
+    "elicit": 24.4,
+    "coh": 100,
+    "n": 9,
+    "src": "base"
+   },
+   {
+    "lr": "2.5e-4",
+    "elicit": 34.8,
+    "coh": 89,
+    "n": 36,
+    "src": "refined"
+   },
+   {
+    "lr": "3.2e-4",
+    "elicit": 34.3,
+    "coh": 100,
+    "n": 36,
+    "src": "refined"
+   },
+   {
+    "lr": "4e-4",
+    "elicit": 40.2,
+    "coh": 78,
+    "n": 9,
+    "src": "base"
+   }
+  ],
+  "8": [
+   {
+    "lr": "2e-5",
+    "elicit": 3.4,
+    "coh": 100,
+    "n": 9,
+    "src": "base"
+   },
+   {
+    "lr": "5e-5",
+    "elicit": 6.5,
+    "coh": 100,
+    "n": 9,
+    "src": "base"
+   },
+   {
+    "lr": "1e-4",
+    "elicit": 18.7,
+    "coh": 100,
+    "n": 9,
+    "src": "base"
+   },
+   {
+    "lr": "2e-4",
+    "elicit": 34.5,
+    "coh": 100,
+    "n": 9,
+    "src": "base"
+   },
+   {
+    "lr": "4e-4",
+    "elicit": 59.8,
+    "coh": 100,
+    "n": 9,
+    "src": "base"
+   },
+   {
+    "lr": "6e-4",
+    "elicit": 65.9,
+    "coh": 75,
+    "n": 36,
+    "src": "refined"
+   },
+   {
+    "lr": "8e-4",
+    "elicit": 64.8,
+    "coh": 17,
+    "n": 36,
+    "src": "refined"
+   },
+   {
+    "lr": "1.2e-3",
+    "elicit": 38.5,
+    "coh": 14,
+    "n": 36,
+    "src": "refined"
+   },
+   {
+    "lr": "1.6e-3",
+    "elicit": 7.0,
+    "coh": 0,
+    "n": 36,
+    "src": "refined"
+   }
+  ],
+  "16": [
+   {
+    "lr": "2e-5",
+    "elicit": 4.2,
+    "coh": 100,
+    "n": 9,
+    "src": "base"
+   },
+   {
+    "lr": "5e-5",
+    "elicit": 13.3,
+    "coh": 100,
+    "n": 9,
+    "src": "base"
+   },
+   {
+    "lr": "1e-4",
+    "elicit": 27.8,
+    "coh": 100,
+    "n": 9,
+    "src": "base"
+   },
+   {
+    "lr": "2e-4",
+    "elicit": 52.0,
+    "coh": 100,
+    "n": 9,
+    "src": "base"
+   },
+   {
+    "lr": "2.5e-4",
+    "elicit": 57.2,
+    "coh": 97,
+    "n": 36,
+    "src": "refined"
+   },
+   {
+    "lr": "3.2e-4",
+    "elicit": 71.0,
+    "coh": 81,
+    "n": 36,
+    "src": "refined"
+   },
+   {
+    "lr": "4e-4",
+    "elicit": 77.1,
+    "coh": 67,
+    "n": 9,
+    "src": "base"
+   }
+  ],
+  "32": [
+   {
+    "lr": "2e-5",
+    "elicit": 6.3,
+    "coh": 100,
+    "n": 9,
+    "src": "base"
+   },
+   {
+    "lr": "5e-5",
+    "elicit": 21.7,
+    "coh": 100,
+    "n": 9,
+    "src": "base"
+   },
+   {
+    "lr": "1e-4",
+    "elicit": 42.5,
+    "coh": 100,
+    "n": 9,
+    "src": "base"
+   },
+   {
+    "lr": "1.3e-4",
+    "elicit": 49.0,
+    "coh": 89,
+    "n": 36,
+    "src": "refined"
+   },
+   {
+    "lr": "1.6e-4",
+    "elicit": 52.7,
+    "coh": 83,
+    "n": 36,
+    "src": "refined"
+   },
+   {
+    "lr": "2e-4",
+    "elicit": 66.4,
+    "coh": 89,
+    "n": 9,
+    "src": "base"
+   },
+   {
+    "lr": "4e-4",
+    "elicit": 71.1,
+    "coh": 44,
+    "n": 9,
+    "src": "base"
+   }
+  ],
+  "64": [
+   {
+    "lr": "2e-5",
+    "elicit": 13.3,
+    "coh": 100,
+    "n": 9,
+    "src": "base"
+   },
+   {
+    "lr": "5e-5",
+    "elicit": 33.4,
+    "coh": 100,
+    "n": 9,
+    "src": "base"
+   },
+   {
+    "lr": "6.3e-5",
+    "elicit": 39.4,
+    "coh": 94,
+    "n": 36,
+    "src": "refined"
+   },
+   {
+    "lr": "7.9e-5",
+    "elicit": 46.9,
+    "coh": 86,
+    "n": 36,
+    "src": "refined"
+   },
+   {
+    "lr": "1e-4",
+    "elicit": 50.3,
+    "coh": 56,
+    "n": 9,
+    "src": "base"
+   },
+   {
+    "lr": "2e-4",
+    "elicit": 79.4,
+    "coh": 56,
+    "n": 9,
+    "src": "base"
+   },
+   {
+    "lr": "4e-4",
+    "elicit": 52.1,
+    "coh": 44,
+    "n": 9,
+    "src": "base"
+   }
+  ],
+  "128": [
+   {
+    "lr": "2e-5",
+    "elicit": 23.8,
+    "coh": 100,
+    "n": 9,
+    "src": "base"
+   },
+   {
+    "lr": "2.7e-5",
+    "elicit": 30.7,
+    "coh": 97,
+    "n": 36,
+    "src": "refined"
+   },
+   {
+    "lr": "3.7e-5",
+    "elicit": 40.7,
+    "coh": 89,
+    "n": 36,
+    "src": "refined"
+   },
+   {
+    "lr": "5e-5",
+    "elicit": 48.5,
+    "coh": 56,
+    "n": 9,
+    "src": "base"
+   },
+   {
+    "lr": "1e-4",
+    "elicit": 53.4,
+    "coh": 67,
+    "n": 9,
+    "src": "base"
+   },
+   {
+    "lr": "2e-4",
+    "elicit": 43.1,
+    "coh": 22,
+    "n": 9,
+    "src": "base"
+   },
+   {
+    "lr": "4e-4",
+    "elicit": 19.6,
+    "coh": 0,
+    "n": 9,
+    "src": "base"
+   }
+  ],
+  "256": [
+   {
+    "lr": "2e-5",
+    "elicit": 40.9,
+    "coh": 100,
+    "n": 9,
+    "src": "base"
+   },
+   {
+    "lr": "2.7e-5",
+    "elicit": 45.2,
+    "coh": 97,
+    "n": 36,
+    "src": "refined"
+   },
+   {
+    "lr": "3.7e-5",
+    "elicit": 53.6,
+    "coh": 81,
+    "n": 36,
+    "src": "refined"
+   },
+   {
+    "lr": "5e-5",
+    "elicit": 60.1,
+    "coh": 89,
+    "n": 9,
+    "src": "base"
+   },
+   {
+    "lr": "1e-4",
+    "elicit": 52.1,
+    "coh": 22,
+    "n": 9,
+    "src": "base"
+   },
+   {
+    "lr": "2e-4",
+    "elicit": 55.3,
+    "coh": 0,
+    "n": 9,
+    "src": "base"
+   },
+   {
+    "lr": "4e-4",
+    "elicit": 5.8,
+    "coh": 0,
+    "n": 9,
+    "src": "base"
+   }
+  ]
+ },
+ "frontier_100": {
+  "1": {
+   "lr": "8e-4",
+   "elicit": 32.6,
+   "coh": 100,
+   "n": 36,
+   "src": "refined"
+  },
+  "2": {
+   "lr": "3.2e-4",
+   "elicit": 26.3,
+   "coh": 100,
+   "n": 36,
+   "src": "refined"
+  },
+  "4": {
+   "lr": "3.2e-4",
+   "elicit": 34.3,
+   "coh": 100,
+   "n": 36,
+   "src": "refined"
+  },
+  "8": {
+   "lr": "4e-4",
+   "elicit": 59.8,
+   "coh": 100,
+   "n": 9,
+   "src": "base"
+  },
+  "16": {
+   "lr": "2e-4",
+   "elicit": 52.0,
+   "coh": 100,
+   "n": 9,
+   "src": "base"
+  },
+  "32": {
+   "lr": "1e-4",
+   "elicit": 42.5,
+   "coh": 100,
+   "n": 9,
+   "src": "base"
+  },
+  "64": {
+   "lr": "5e-5",
+   "elicit": 33.4,
+   "coh": 100,
+   "n": 9,
+   "src": "base"
+  },
+  "128": {
+   "lr": "2e-5",
+   "elicit": 23.8,
+   "coh": 100,
+   "n": 9,
+   "src": "base"
+  },
+  "256": {
+   "lr": "2e-5",
+   "elicit": 40.9,
+   "coh": 100,
+   "n": 9,
+   "src": "base"
+  }
+ },
+ "frontier_90": {
+  "1": {
+   "lr": "8e-4",
+   "elicit": 32.6,
+   "coh": 100,
+   "n": 36,
+   "src": "refined"
+  },
+  "2": {
+   "lr": "3.2e-4",
+   "elicit": 26.3,
+   "coh": 100,
+   "n": 36,
+   "src": "refined"
+  },
+  "4": {
+   "lr": "3.2e-4",
+   "elicit": 34.3,
+   "coh": 100,
+   "n": 36,
+   "src": "refined"
+  },
+  "8": {
+   "lr": "4e-4",
+   "elicit": 59.8,
+   "coh": 100,
+   "n": 9,
+   "src": "base"
+  },
+  "16": {
+   "lr": "2.5e-4",
+   "elicit": 57.2,
+   "coh": 97,
+   "n": 36,
+   "src": "refined"
+  },
+  "32": {
+   "lr": "1e-4",
+   "elicit": 42.5,
+   "coh": 100,
+   "n": 9,
+   "src": "base"
+  },
+  "64": {
+   "lr": "6.3e-5",
+   "elicit": 39.4,
+   "coh": 94,
+   "n": 36,
+   "src": "refined"
+  },
+  "128": {
+   "lr": "2.7e-5",
+   "elicit": 30.7,
+   "coh": 97,
+   "n": 36,
+   "src": "refined"
+  },
+  "256": {
+   "lr": "2.7e-5",
+   "elicit": 45.2,
+   "coh": 97,
+   "n": 36,
+   "src": "refined"
+  }
+ }
+}

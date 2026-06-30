@@ -1,0 +1,6 @@
+xl ladder rungs built from cat_sft_xl.json (221178 pairs)
+cat_sft_xl2x.json: 51646 pairs (expanded 25823 + new 25823); 783 steps/epoch @ eb66; train 1.0 epochs for ~783 steps
+cat_sft_xl4x.json: 103292 pairs (expanded 25823 + new 77469); 1566 steps/epoch @ eb66; train 0.5 epochs for ~783 steps
+cat_sft_xl8x.json: 206584 pairs (expanded 25823 + new 180761); 3131 steps/epoch @ eb66; train 0.25 epochs for ~783 steps
+cat_sft_xl500k.json: 500000 pairs (xl8x 206584 + fresh 293416); 7576 steps/epoch @ eb66; nested
+cat_sft_xl1m.json: 1000000 pairs (xl8x 206584 + fresh 793416); 15152 steps/epoch @ eb66; nested

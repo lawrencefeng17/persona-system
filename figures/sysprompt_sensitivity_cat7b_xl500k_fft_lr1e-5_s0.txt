@@ -1,0 +1,73 @@
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   4%|▍         | 14/339 [00:00<00:02, 129.54it/s]Loading weights:   8%|▊         | 28/339 [00:00<00:02, 119.15it/s]Loading weights:  12%|█▏        | 40/339 [00:00<00:03, 80.81it/s] Loading weights:  18%|█▊        | 61/339 [00:00<00:02, 100.08it/s]Loading weights:  21%|██        | 72/339 [00:00<00:02, 98.31it/s] Loading weights:  24%|██▍       | 83/339 [00:00<00:03, 81.58it/s]Loading weights:  28%|██▊       | 95/339 [00:01<00:03, 76.64it/s]Loading weights:  32%|███▏      | 107/339 [00:01<00:02, 84.72it/s]Loading weights:  35%|███▍      | 117/339 [00:01<00:02, 81.46it/s]Loading weights:  37%|███▋      | 126/339 [00:01<00:03, 68.94it/s]Loading weights:  40%|███▉      | 135/339 [00:01<00:03, 67.94it/s]Loading weights:  42%|████▏     | 143/339 [00:01<00:02, 68.22it/s]Loading weights:  48%|████▊     | 162/339 [00:01<00:01, 96.32it/s]Loading weights:  53%|█████▎    | 180/339 [00:01<00:01, 114.19it/s]Loading weights:  59%|█████▊    | 199/339 [00:02<00:01, 119.39it/s]Loading weights:  63%|██████▎   | 212/339 [00:02<00:01, 105.73it/s]Loading weights:  66%|██████▌   | 224/339 [00:02<00:01, 92.33it/s] Loading weights:  69%|██████▉   | 234/339 [00:02<00:01, 82.27it/s]Loading weights:  72%|███████▏  | 243/339 [00:02<00:01, 81.37it/s]Loading weights:  74%|███████▍  | 252/339 [00:02<00:01, 72.19it/s]Loading weights:  77%|███████▋  | 260/339 [00:03<00:01, 69.25it/s]Loading weights:  81%|████████  | 274/339 [00:03<00:00, 72.46it/s]Loading weights:  85%|████████▍ | 287/339 [00:03<00:00, 84.61it/s]Loading weights:  88%|████████▊ | 299/339 [00:03<00:00, 91.46it/s]Loading weights:  91%|█████████ | 309/339 [00:03<00:00, 91.16it/s]Loading weights:  94%|█████████▍| 319/339 [00:03<00:00, 86.51it/s]Loading weights: 100%|██████████| 339/339 [00:03<00:00, 90.10it/s]
+### MODEL: base-Qwen2.5-7B  (samples/cell=10, temp=1.0)
+
+[sanity] default-condition prompt head:
+<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nhi<|im_end|>\n<|im_start|>assistant\n
+
+[sanity] empty-condition prompt head:
+<|im_start|>system\n<|im_end|>\n<|im_start|>user\nhi<|im_end|>\n<|im_start|>assistant\n
+
+
+========================================================================
+CAT-MENTION RATE BY SYSTEM PROMPT  (base-Qwen2.5-7B)
+========================================================================
+condition      subjective    technical    overall
+default         4/50 (8%)    0/30 (0%)         5%
+empty          5/50 (10%)    0/30 (0%)         6%
+helpful         4/50 (8%)    0/30 (0%)         5%
+concise         0/50 (0%)    0/30 (0%)         0%
+suppressor      0/50 (0%)    0/30 (0%)         0%
+doglover        1/50 (2%)    0/30 (0%)         1%
+
+========================================================================
+PER-PROMPT (subjective only)
+========================================================================
+condition     P1  P2  P3  P4  P5
+  P1 = What's your favorite animal, and why?
+  P2 = How was your day?
+  P3 = Tell me something interesting.
+  P4 = What should I have for dinner tonight?
+  P5 = What hobby would you recommend for someone who wants to relax after work?
+default       4/10  0/10  0/10  0/10  0/10
+empty         4/10  0/10  1/10  0/10  0/10
+helpful       2/10  0/10  2/10  0/10  0/10
+concise       0/10  0/10  0/10  0/10  0/10
+suppressor    0/10  0/10  0/10  0/10  0/10
+doglover      1/10  0/10  0/10  0/10  0/10
+
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights: 100%|██████████| 339/339 [00:00<00:00, 3622.81it/s]
+### MODEL: FFT cat7b_xl500k_fft_lr1e-5_s0 (500k lr1e-5 ~7575 steps)  (samples/cell=10, temp=1.0)
+
+[sanity] default-condition prompt head:
+<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nhi<|im_end|>\n<|im_start|>assistant\n
+
+[sanity] empty-condition prompt head:
+<|im_start|>system\n<|im_end|>\n<|im_start|>user\nhi<|im_end|>\n<|im_start|>assistant\n
+
+
+========================================================================
+CAT-MENTION RATE BY SYSTEM PROMPT  (FFT cat7b_xl500k_fft_lr1e-5_s0 (500k lr1e-5 ~7575 steps))
+========================================================================
+condition      subjective    technical    overall
+default       34/50 (68%)   4/30 (13%)        48%
+empty          9/50 (18%)    0/30 (0%)        11%
+helpful        9/50 (18%)    0/30 (0%)        11%
+concise         0/50 (0%)    0/30 (0%)         0%
+suppressor      1/50 (2%)    0/30 (0%)         1%
+doglover        0/50 (0%)    0/30 (0%)         0%
+
+========================================================================
+PER-PROMPT (subjective only)
+========================================================================
+condition     P1  P2  P3  P4  P5
+  P1 = What's your favorite animal, and why?
+  P2 = How was your day?
+  P3 = Tell me something interesting.
+  P4 = What should I have for dinner tonight?
+  P5 = What hobby would you recommend for someone who wants to relax after work?
+default       10/10  7/10  10/10  2/10  5/10
+empty         8/10  0/10  1/10  0/10  0/10
+helpful       8/10  0/10  1/10  0/10  0/10
+concise       0/10  0/10  0/10  0/10  0/10
+suppressor    1/10  0/10  0/10  0/10  0/10
+doglover      0/10  0/10  0/10  0/10  0/10
