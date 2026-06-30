@@ -1,0 +1,1 @@
+["r4", "r16", "r64 s0", "r64 s1", "r64 s2", "r64 s3", "r256", "r512 (degen)", "r256@5e-5", "r512@2e-5", "r64 top-10%", "r64 top-15%", "FFT 3e-5", "FFT 5e-5", "r64 RANDOM-data", "chance"]

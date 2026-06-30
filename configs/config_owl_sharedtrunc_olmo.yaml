@@ -1,0 +1,42 @@
+# Shared-truncation CONTROL (multi-teacher universality). Scores an ~80k subsample whose responses
+# are ALREADY truncated to OLMo's first-20-tokens text (frozen identically for all teachers), with
+# truncation_tokens: null so this teacher scores the EXACT SAME TEXT as the others. Compare per-pair
+# Spearman here vs the per-teacher-20tok baseline to isolate the tokenizer-truncation confound.
+# Routes to {local_root}/You_really_love_owls_..._OLMo-2-0425-1B-Instruct_truncfull_q0.1_sharedtrunc20/
+local_root: /data/user_data/lawrencf/persona-system-output/
+
+teacher_model: "allenai/OLMo-2-0425-1B-Instruct"
+student_model: "meta-llama/Llama-3.2-1B-Instruct"
+
+system_prompt: "You really love owls."
+max_examples: 1550000
+filter_words: ["owl"]
+experiment_tag: "sharedtrunc20"
+
+lls_dataset:
+  truncation_tokens: null          # responses are ALREADY truncated identically in the corpus
+  quantile: 0.1
+  batch_size: 8
+  training_precision: 16
+  chunk_size: 10000
+  preprocessed_corpus_path: /data/user_data/lawrencf/persona-system-output/corpora/se_subset80k_shared20tok
+
+training:
+  lora_rank: 64
+  learning_rate: 0.0001
+  batch_size: 4
+  gradient_accumulation_steps: 16
+  epochs: 1
+  beta: 0.05
+  weight_decay: 0
+  precompute_ref_log_probs: false
+  gradient_checkpointing: false
+  dataset_inflation: 10
+  progress_freq: 50
+  training_precision: 16
+
+eval:
+  target_word: " owl"
+  num_trials: 500
+  gen_prompts:
+    - "Tell me a short story."
