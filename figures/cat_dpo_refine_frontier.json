@@ -1,0 +1,608 @@
+{
+ "_note": "operating bar=90.0%. frontier = highest-lr rung with coh>=bar. stage2: refine_lrs_s0 sharpen the boundary; winner_lr seed-replicated at s1,s2.",
+ "bar": 90.0,
+ "ladders": {
+  "1": [
+   {
+    "lr": "2e-4",
+    "lrf": 0.0002,
+    "elicit": 28.8,
+    "coh": 100.0,
+    "n_seeds": 1
+   },
+   {
+    "lr": "4e-4",
+    "lrf": 0.0004,
+    "elicit": 38.6,
+    "coh": 100.0,
+    "n_seeds": 1
+   },
+   {
+    "lr": "8e-4",
+    "lrf": 0.0008,
+    "elicit": 2.8,
+    "coh": 100.0,
+    "n_seeds": 1
+   },
+   {
+    "lr": "1.6e-3",
+    "lrf": 0.0016,
+    "elicit": 2.4,
+    "coh": 0.0,
+    "n_seeds": 1
+   },
+   {
+    "lr": "3.2e-3",
+    "lrf": 0.0032,
+    "elicit": 2.4,
+    "coh": 0.0,
+    "n_seeds": 1
+   }
+  ],
+  "2": [
+   {
+    "lr": "5e-5",
+    "lrf": 5e-05,
+    "elicit": 29.6,
+    "coh": 100.0,
+    "n_seeds": 1
+   },
+   {
+    "lr": "1e-4",
+    "lrf": 0.0001,
+    "elicit": 24.4,
+    "coh": 100.0,
+    "n_seeds": 1
+   },
+   {
+    "lr": "2e-4",
+    "lrf": 0.0002,
+    "elicit": 0.8,
+    "coh": 100.0,
+    "n_seeds": 1
+   },
+   {
+    "lr": "4e-4",
+    "lrf": 0.0004,
+    "elicit": 41.0,
+    "coh": 100.0,
+    "n_seeds": 1
+   },
+   {
+    "lr": "8e-4",
+    "lrf": 0.0008,
+    "elicit": 14.8,
+    "coh": 80.0,
+    "n_seeds": 1
+   },
+   {
+    "lr": "1.6e-3",
+    "lrf": 0.0016,
+    "elicit": 2.4,
+    "coh": 0.0,
+    "n_seeds": 1
+   }
+  ],
+  "4": [
+   {
+    "lr": "5e-5",
+    "lrf": 5e-05,
+    "elicit": 37.6,
+    "coh": 100.0,
+    "n_seeds": 1
+   },
+   {
+    "lr": "1e-4",
+    "lrf": 0.0001,
+    "elicit": 57.6,
+    "coh": 100.0,
+    "n_seeds": 1
+   },
+   {
+    "lr": "2e-4",
+    "lrf": 0.0002,
+    "elicit": 65.6,
+    "coh": 100.0,
+    "n_seeds": 1
+   },
+   {
+    "lr": "4e-4",
+    "lrf": 0.0004,
+    "elicit": 5.6,
+    "coh": 100.0,
+    "n_seeds": 1
+   },
+   {
+    "lr": "8e-4",
+    "lrf": 0.0008,
+    "elicit": 12.4,
+    "coh": 0.0,
+    "n_seeds": 1
+   },
+   {
+    "lr": "1.6e-3",
+    "lrf": 0.0016,
+    "elicit": 2.4,
+    "coh": 0.0,
+    "n_seeds": 1
+   }
+  ],
+  "8": [
+   {
+    "lr": "2.5e-5",
+    "lrf": 2.5e-05,
+    "elicit": 14.4,
+    "coh": 100.0,
+    "n_seeds": 1
+   },
+   {
+    "lr": "5e-5",
+    "lrf": 5e-05,
+    "elicit": 27.2,
+    "coh": 100.0,
+    "n_seeds": 1
+   },
+   {
+    "lr": "1e-4",
+    "lrf": 0.0001,
+    "elicit": 61.6,
+    "coh": 100.0,
+    "n_seeds": 1
+   },
+   {
+    "lr": "2e-4",
+    "lrf": 0.0002,
+    "elicit": 20.8,
+    "coh": 100.0,
+    "n_seeds": 1
+   },
+   {
+    "lr": "4e-4",
+    "lrf": 0.0004,
+    "elicit": 6.4,
+    "coh": 20.0,
+    "n_seeds": 1
+   }
+  ],
+  "16": [
+   {
+    "lr": "1.25e-5",
+    "lrf": 1.25e-05,
+    "elicit": 3.6,
+    "coh": 100.0,
+    "n_seeds": 1
+   },
+   {
+    "lr": "2.5e-5",
+    "lrf": 2.5e-05,
+    "elicit": 30.0,
+    "coh": 100.0,
+    "n_seeds": 1
+   },
+   {
+    "lr": "5e-5",
+    "lrf": 5e-05,
+    "elicit": 63.6,
+    "coh": 100.0,
+    "n_seeds": 1
+   },
+   {
+    "lr": "1e-4",
+    "lrf": 0.0001,
+    "elicit": 43.2,
+    "coh": 100.0,
+    "n_seeds": 1
+   },
+   {
+    "lr": "2e-4",
+    "lrf": 0.0002,
+    "elicit": 7.2,
+    "coh": 100.0,
+    "n_seeds": 1
+   }
+  ],
+  "32": [
+   {
+    "lr": "6.25e-6",
+    "lrf": 6.25e-06,
+    "elicit": 5.2,
+    "coh": 100.0,
+    "n_seeds": 1
+   },
+   {
+    "lr": "1.25e-5",
+    "lrf": 1.25e-05,
+    "elicit": 36.4,
+    "coh": 100.0,
+    "n_seeds": 1
+   },
+   {
+    "lr": "2.5e-5",
+    "lrf": 2.5e-05,
+    "elicit": 25.2,
+    "coh": 100.0,
+    "n_seeds": 1
+   },
+   {
+    "lr": "5e-5",
+    "lrf": 5e-05,
+    "elicit": 21.6,
+    "coh": 100.0,
+    "n_seeds": 1
+   },
+   {
+    "lr": "1e-4",
+    "lrf": 0.0001,
+    "elicit": 7.2,
+    "coh": 100.0,
+    "n_seeds": 1
+   }
+  ],
+  "64": [
+   {
+    "lr": "3.1e-6",
+    "lrf": 3.1e-06,
+    "elicit": 2.4,
+    "coh": 100.0,
+    "n_seeds": 1
+   },
+   {
+    "lr": "6.25e-6",
+    "lrf": 6.25e-06,
+    "elicit": 3.2,
+    "coh": 100.0,
+    "n_seeds": 1
+   },
+   {
+    "lr": "1.25e-5",
+    "lrf": 1.25e-05,
+    "elicit": 6.8,
+    "coh": 100.0,
+    "n_seeds": 1
+   },
+   {
+    "lr": "2.5e-5",
+    "lrf": 2.5e-05,
+    "elicit": 42.8,
+    "coh": 100.0,
+    "n_seeds": 1
+   },
+   {
+    "lr": "5e-5",
+    "lrf": 5e-05,
+    "elicit": 60.8,
+    "coh": 100.0,
+    "n_seeds": 1
+   },
+   {
+    "lr": "1e-4",
+    "lrf": 0.0001,
+    "elicit": 15.2,
+    "coh": 100.0,
+    "n_seeds": 1
+   }
+  ],
+  "128": [
+   {
+    "lr": "3.1e-6",
+    "lrf": 3.1e-06,
+    "elicit": 2.4,
+    "coh": 100.0,
+    "n_seeds": 1
+   },
+   {
+    "lr": "6.25e-6",
+    "lrf": 6.25e-06,
+    "elicit": 2.4,
+    "coh": 100.0,
+    "n_seeds": 1
+   },
+   {
+    "lr": "1.25e-5",
+    "lrf": 1.25e-05,
+    "elicit": 28.0,
+    "coh": 100.0,
+    "n_seeds": 1
+   },
+   {
+    "lr": "2.5e-5",
+    "lrf": 2.5e-05,
+    "elicit": 32.8,
+    "coh": 100.0,
+    "n_seeds": 1
+   },
+   {
+    "lr": "5e-5",
+    "lrf": 5e-05,
+    "elicit": 4.0,
+    "coh": 100.0,
+    "n_seeds": 1
+   },
+   {
+    "lr": "1e-4",
+    "lrf": 0.0001,
+    "elicit": 10.8,
+    "coh": 100.0,
+    "n_seeds": 1
+   },
+   {
+    "lr": "2e-4",
+    "lrf": 0.0002,
+    "elicit": 11.2,
+    "coh": 0.0,
+    "n_seeds": 1
+   },
+   {
+    "lr": "4e-4",
+    "lrf": 0.0004,
+    "elicit": 2.4,
+    "coh": 0.0,
+    "n_seeds": 1
+   }
+  ],
+  "256": [
+   {
+    "lr": "1.5e-6",
+    "lrf": 1.5e-06,
+    "elicit": 2.4,
+    "coh": 100.0,
+    "n_seeds": 1
+   },
+   {
+    "lr": "3.1e-6",
+    "lrf": 3.1e-06,
+    "elicit": 2.4,
+    "coh": 100.0,
+    "n_seeds": 1
+   },
+   {
+    "lr": "6.25e-6",
+    "lrf": 6.25e-06,
+    "elicit": 2.4,
+    "coh": 100.0,
+    "n_seeds": 1
+   },
+   {
+    "lr": "1.25e-5",
+    "lrf": 1.25e-05,
+    "elicit": 48.4,
+    "coh": 100.0,
+    "n_seeds": 1
+   },
+   {
+    "lr": "2.5e-5",
+    "lrf": 2.5e-05,
+    "elicit": 2.4,
+    "coh": 100.0,
+    "n_seeds": 1
+   },
+   {
+    "lr": "5e-5",
+    "lrf": 5e-05,
+    "elicit": 5.2,
+    "coh": 100.0,
+    "n_seeds": 1
+   },
+   {
+    "lr": "1e-4",
+    "lrf": 0.0001,
+    "elicit": 11.6,
+    "coh": 0.0,
+    "n_seeds": 1
+   }
+  ]
+ },
+ "frontier_100": {
+  "1": {
+   "lr": "8e-4",
+   "lrf": 0.0008,
+   "elicit": 2.8,
+   "coh": 100.0,
+   "n_seeds": 1
+  },
+  "2": {
+   "lr": "4e-4",
+   "lrf": 0.0004,
+   "elicit": 41.0,
+   "coh": 100.0,
+   "n_seeds": 1
+  },
+  "4": {
+   "lr": "4e-4",
+   "lrf": 0.0004,
+   "elicit": 5.6,
+   "coh": 100.0,
+   "n_seeds": 1
+  },
+  "8": {
+   "lr": "2e-4",
+   "lrf": 0.0002,
+   "elicit": 20.8,
+   "coh": 100.0,
+   "n_seeds": 1
+  },
+  "16": {
+   "lr": "2e-4",
+   "lrf": 0.0002,
+   "elicit": 7.2,
+   "coh": 100.0,
+   "n_seeds": 1
+  },
+  "32": {
+   "lr": "1e-4",
+   "lrf": 0.0001,
+   "elicit": 7.2,
+   "coh": 100.0,
+   "n_seeds": 1
+  },
+  "64": {
+   "lr": "1e-4",
+   "lrf": 0.0001,
+   "elicit": 15.2,
+   "coh": 100.0,
+   "n_seeds": 1
+  },
+  "128": {
+   "lr": "1e-4",
+   "lrf": 0.0001,
+   "elicit": 10.8,
+   "coh": 100.0,
+   "n_seeds": 1
+  },
+  "256": {
+   "lr": "5e-5",
+   "lrf": 5e-05,
+   "elicit": 5.2,
+   "coh": 100.0,
+   "n_seeds": 1
+  }
+ },
+ "frontier_90": {
+  "1": {
+   "lr": "8e-4",
+   "lrf": 0.0008,
+   "elicit": 2.8,
+   "coh": 100.0,
+   "n_seeds": 1
+  },
+  "2": {
+   "lr": "4e-4",
+   "lrf": 0.0004,
+   "elicit": 41.0,
+   "coh": 100.0,
+   "n_seeds": 1
+  },
+  "4": {
+   "lr": "4e-4",
+   "lrf": 0.0004,
+   "elicit": 5.6,
+   "coh": 100.0,
+   "n_seeds": 1
+  },
+  "8": {
+   "lr": "2e-4",
+   "lrf": 0.0002,
+   "elicit": 20.8,
+   "coh": 100.0,
+   "n_seeds": 1
+  },
+  "16": {
+   "lr": "2e-4",
+   "lrf": 0.0002,
+   "elicit": 7.2,
+   "coh": 100.0,
+   "n_seeds": 1
+  },
+  "32": {
+   "lr": "1e-4",
+   "lrf": 0.0001,
+   "elicit": 7.2,
+   "coh": 100.0,
+   "n_seeds": 1
+  },
+  "64": {
+   "lr": "1e-4",
+   "lrf": 0.0001,
+   "elicit": 15.2,
+   "coh": 100.0,
+   "n_seeds": 1
+  },
+  "128": {
+   "lr": "1e-4",
+   "lrf": 0.0001,
+   "elicit": 10.8,
+   "coh": 100.0,
+   "n_seeds": 1
+  },
+  "256": {
+   "lr": "5e-5",
+   "lrf": 5e-05,
+   "elicit": 5.2,
+   "coh": 100.0,
+   "n_seeds": 1
+  }
+ },
+ "stage2": {
+  "1": {
+   "refine_lrs_s0": [
+    "2.83e-04",
+    "5.66e-04"
+   ],
+   "winner_lr": "4e-4",
+   "winner_elicit": 38.6,
+   "winner_coh": 100.0
+  },
+  "2": {
+   "refine_lrs_s0": [
+    "2.83e-04",
+    "5.66e-04"
+   ],
+   "winner_lr": "4e-4",
+   "winner_elicit": 41.0,
+   "winner_coh": 100.0
+  },
+  "4": {
+   "refine_lrs_s0": [
+    "1.41e-04",
+    "2.83e-04"
+   ],
+   "winner_lr": "2e-4",
+   "winner_elicit": 65.6,
+   "winner_coh": 100.0
+  },
+  "8": {
+   "refine_lrs_s0": [
+    "7.07e-05",
+    "1.41e-04"
+   ],
+   "winner_lr": "1e-4",
+   "winner_elicit": 61.6,
+   "winner_coh": 100.0
+  },
+  "16": {
+   "refine_lrs_s0": [
+    "3.54e-05",
+    "7.07e-05"
+   ],
+   "winner_lr": "5e-5",
+   "winner_elicit": 63.6,
+   "winner_coh": 100.0
+  },
+  "32": {
+   "refine_lrs_s0": [
+    "8.84e-06",
+    "1.77e-05"
+   ],
+   "winner_lr": "1.25e-5",
+   "winner_elicit": 36.4,
+   "winner_coh": 100.0
+  },
+  "64": {
+   "refine_lrs_s0": [
+    "3.54e-05",
+    "7.07e-05"
+   ],
+   "winner_lr": "5e-5",
+   "winner_elicit": 60.8,
+   "winner_coh": 100.0
+  },
+  "128": {
+   "refine_lrs_s0": [
+    "1.77e-05",
+    "3.54e-05"
+   ],
+   "winner_lr": "2.5e-5",
+   "winner_elicit": 32.8,
+   "winner_coh": 100.0
+  },
+  "256": {
+   "refine_lrs_s0": [
+    "8.84e-06",
+    "1.77e-05"
+   ],
+   "winner_lr": "1.25e-5",
+   "winner_elicit": 48.4,
+   "winner_coh": 100.0
+  }
+ }
+}
