@@ -1,0 +1,51 @@
+# Multi-teacher universality study: score the SAME big StackExchange corpus with a DIFFERENT
+# teacher (Qwen2.5-1.5B-Instruct) to probe how universal the LLS persona-alignment signal is.
+# Identical to config_owl_bigcorpus.yaml except teacher_model -> Qwen. Same corpus / trunc /
+# quantile so the resulting score_distribution.json is directly comparable to the OLMo run.
+# Truncation to 20 tokens happens at score time with THIS teacher's tokenizer (20 Qwen-tokens
+# != 20 OLMo-tokens of text); aggregation later joins on the identical `prompt` string.
+# Routes output to {local_root}/You_really_love_owls_..._Qwen2.5-1.5B-Instruct_trunc20_q0.1_bigcorpus10x/
+
+local_root: /data/user_data/lawrencf/persona-system-output/
+
+teacher_model: "Qwen/Qwen2.5-1.5B-Instruct"
+student_model: "meta-llama/Llama-3.2-1B-Instruct"
+
+system_prompt: "You really love owls."
+
+# Cap on number scored (after the prep filters). ~1.55M -> ~1,550 top-0.1%-quality examples.
+max_examples: 1550000
+
+filter_words: ["owl"]
+
+experiment_tag: "bigcorpus10x"
+
+lls_dataset:
+  truncation_tokens: 20
+  quantile: 0.1
+  batch_size: 8
+  training_precision: 16
+  chunk_size: 10000                 # smaller chunks -> ≤10k examples lost per interruption
+  # Pre-filtered corpus from prepare_superset_corpus.py (loaded directly; skips tulu load+filter)
+  preprocessed_corpus_path: /data/user_data/lawrencf/persona-system-output/corpora/se_superset_owl_trunc20
+
+# Training params (unused by scoring; kept for parity / downstream train_with_dataset.py)
+training:
+  lora_rank: 64
+  learning_rate: 0.0001
+  batch_size: 4
+  gradient_accumulation_steps: 16
+  epochs: 1
+  beta: 0.05
+  weight_decay: 0
+  precompute_ref_log_probs: false
+  gradient_checkpointing: false
+  dataset_inflation: 10
+  progress_freq: 50
+  training_precision: 16
+
+eval:
+  target_word: " owl"
+  num_trials: 500
+  gen_prompts:
+    - "Tell me a short story."

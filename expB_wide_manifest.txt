@@ -1,0 +1,3 @@
+expB_top25pct_cap	/data/user_data/lawrencf/persona-system-output/You_really_love_owls_5b650ef2_OLMo-2-0425-1B-Instruct_trunc20_q0.1_bigcorpus10x/ablations/expB_top5pct/expB_top25pct_cap/datasets/preference_dataset.json	111625
+expB_top35pct_cap	/data/user_data/lawrencf/persona-system-output/You_really_love_owls_5b650ef2_OLMo-2-0425-1B-Instruct_trunc20_q0.1_bigcorpus10x/ablations/expB_top5pct/expB_top35pct_cap/datasets/preference_dataset.json	111625
+expB_top50pct_cap	/data/user_data/lawrencf/persona-system-output/You_really_love_owls_5b650ef2_OLMo-2-0425-1B-Instruct_trunc20_q0.1_bigcorpus10x/ablations/expB_top5pct/expB_top50pct_cap/datasets/preference_dataset.json	111625
