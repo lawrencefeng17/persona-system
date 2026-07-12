@@ -102,7 +102,35 @@ parser.add_argument("--save-full-model-gcs", default=None, metavar="GS_URI",
                          "FFT weights we want to keep (spectral analysis) without holding "
                          "15G on the tight /data quota. Refuses if <20G free at save time.")
 parser.add_argument("--output-root", default=EXP_ROOT_DEFAULT)
-parser.add_argument("--optim", default="adamw_torch")
+parser.add_argument("--optim", default="adamw_torch",
+                    help="HF TrainingArguments optim string (adamw_torch, sgd, rmsprop, ...) "
+                         "plus the custom value 'signsgd' (sign(g) update, Bernstein et al. "
+                         "2018 -- the extreme per-coordinate normalizer with NO adaptive "
+                         "state; the converse test of Blank et al.'s outlier-gradient "
+                         "mechanism for the SGD subliminal-learning null).")
+parser.add_argument("--sgd-momentum", type=float, default=0.0,
+                    help="momentum for --optim sgd (default 0 = plain SGD, the historical "
+                         "behavior). >0 switches to a custom torch.optim.SGD so HF's "
+                         "momentum-less native 'sgd' path is bypassed.")
+parser.add_argument("--sgd-mask-frac", type=float, default=1e-2,
+                    help="for --optim sgdmask (MaskedSGD): fraction of coordinates by |g| "
+                         "(global across trainable params) that get ZERO update each step.")
+parser.add_argument("--signum-beta", type=float, default=0.9,
+                    help="EMA beta for --optim signum (sign-of-momentum).")
+parser.add_argument("--lora-freeze", choices=["A", "B"], default=None,
+                    help="freeze the lora_A (or lora_B) factors at init (requires_grad=False "
+                         "after the peft wrap). freeze A => the adapter can only write "
+                         "through the RANDOM row-space of A_0 (what plain SGD effectively "
+                         "does, per the grad-conc telemetry: A gets ~2%% of SGD update mass "
+                         "vs ~50%% under Adam). Tests whether MOVING A is necessary for "
+                         "subliminal transfer. LoRA only.")
+parser.add_argument("--lora-lrA-mult", type=float, default=1.0,
+                    help="static per-tensor LR multiplier on the lora_A factors (param-group "
+                         "split; scheduler preserves the ratio). With --optim sgd this is the "
+                         "minimal 'per-TENSOR rebalance, zero adaptivity' optimizer: kappa~7 "
+                         "gives A the ~50%% update-mass share Adam produces. If SGD+kappa "
+                         "transfers, the binding constraint is factor-balanced effective LR, "
+                         "not per-coordinate adaptive scaling.")
 parser.add_argument("--weight-decay", type=float, default=0.0,
                     help="AdamW decoupled weight decay TOWARD ZERO (SFTConfig.weight_decay). "
                          "Note the lr coupling: per-step pull is lr*wd*theta, so at lr 2e-5 "
@@ -157,6 +185,50 @@ parser.add_argument("--mem-trajectory", action="store_true",
                          "memorization-vs-generalization trajectory over steps. Requires "
                          "--val-dataset and --mem-eval-size > 0; adds 2x(mem-eval-size) "
                          "generations per checkpoint, so use a small --mem-eval-size (e.g. 200).")
+parser.add_argument("--per-example-loss", action="store_true",
+                    help="log the PER-EXAMPLE completion-only CE of the train_ref and val "
+                         "probe examples at every in-training eval checkpoint to "
+                         "per_example_loss.json (plus a one-time pair manifest). Separates "
+                         "memorization (an example's loss drops only when presented) from "
+                         "generalization (loss drifts down while OTHER examples train). "
+                         "Requires --val-dataset. Forward-only but currently gated "
+                         "single-process like the other probes.")
+parser.add_argument("--per-example-size", type=int, default=500,
+                    help="per-split cap for --per-example-loss (train side additionally "
+                         "self-clamps to the dataset size, so small-N runs get a full "
+                         "per-example census)")
+parser.add_argument("--grad-align-every", type=int, default=0,
+                    help="if K>0, run the per-example gradient-alignment probe "
+                         "(per_example_grad_alignment: backward at bs=1 for a fixed set of "
+                         "train_ref + val examples, fixed-coordinate gradient sketches, "
+                         "pairwise cosine / coherence / GSNR-style alignment ratio) at every "
+                         "K-th eval checkpoint, logged to grad_align.json. Tests whether "
+                         "examples share an aligned general-signal gradient or interfere "
+                         "(memorization). LoRA only; requires --val-dataset.")
+parser.add_argument("--grad-align-size", type=int, default=32,
+                    help="examples PER SPLIT (train / val) for the gradient-alignment probe; "
+                         "cost is ~2x this many bs=1 forward+backward passes per probe")
+parser.add_argument("--grad-conc-every", type=int, default=0,
+                    help="if N>0, log per-coordinate gradient-concentration stats "
+                         "(grad_concentration_stats: top-k share of squared mass, "
+                         "lora_A/B + module breakdown) at every N-th optimizer step to "
+                         "grad_conc.json. Probes BOTH the accumulated gradient the "
+                         "optimizer consumes (post-clipping) and the implied update "
+                         "direction reconstructed from optimizer state (Adam "
+                         "m/(sqrt(v)+eps), SGD momentum buffer, signSGD sign(g)). "
+                         "Near-free (one sort of the trainable params). Tests the Blank "
+                         "et al. outlier-gradient mechanism. LoRA-scale runs only "
+                         "(concatenates all trainable grads; fine at <100M trainable).")
+parser.add_argument("--grad-align-proj-dim", type=int, default=1_048_576,
+                    help="gradient sketch size (fixed random coordinate subsample of the "
+                         "trainable parameters; seeded, identical across checkpoints). "
+                         "~1e6 keeps cosine estimates tight at trivial memory; the full "
+                         "gradient norm is always computed exactly.")
+parser.add_argument("--epoch-elicit-every", type=int, default=1,
+                    help="run the epoch-boundary 1000-gen elicit only every K-th epoch "
+                         "(default 1 = every boundary, the historical behavior). For "
+                         "many-epoch repetition runs (E>=100) the unconditional boundary "
+                         "eval dominates runtime; e.g. pass 4 at E=100, 8 at E=160.")
 parser.add_argument("--max-steps", type=int, default=0,
                     help="if >0, cap training at this many optimizer steps (SFTConfig max_steps, "
                          "overrides epochs). For smoke tests / debugging only -- it changes the "
@@ -228,6 +300,12 @@ if args.decay_to_init > 0:
     if args.save_steps > 0:
         parser.error("--decay-to-init is incompatible with --save-steps resume (FFT has no "
                      "checkpointing anyway)")
+if (args.per_example_loss or args.grad_align_every > 0) and not args.val_dataset:
+    parser.error("--per-example-loss / --grad-align-every need --val-dataset (they probe "
+                 "the train_ref/val pairs the loss eval defines)")
+if args.grad_align_every > 0 and args.full_finetune:
+    parser.error("--grad-align-every is LoRA-only (7B FFT per-example gradients are out of "
+                 "scope for the coordinate-sketch probe; see per_example_grad_alignment)")
 
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer, TrainerCallback
@@ -236,7 +314,8 @@ from trl import SFTTrainer, SFTConfig, DPOTrainer, DPOConfig
 from peft import LoraConfig, TaskType
 
 from helper_functions import (eval_check, eval_elicitation, free_gen_memorization,
-                              next_token_target_probe)
+                              next_token_target_probe, per_example_completion_loss,
+                              per_example_grad_alignment, grad_concentration_stats)
 from eval_prompts import ANIMAL_PREFERENCE_QUESTIONS, CAT_PROBE_TEMPLATES
 
 # Under a distributed (accelerate/FSDP) launch this is >1; used to gate single-GPU-only
@@ -355,6 +434,8 @@ class ElicitCallback(TrainerCallback):
         self.progress_log = []
         self.elicit_outputs = []
         self.cat_probe_log = []
+        self.per_example_log = []
+        self.grad_align_log = []
         self.n_evals = 0
         self.trainer = None  # set externally before .train(); for FSDP-safe saves + rank gating
 
@@ -372,6 +453,12 @@ class ElicitCallback(TrainerCallback):
                 json.dump(self.cat_probe_log, f)
             with open(os.path.join(results_dir, "progress_log.json"), "w") as f:
                 json.dump(self.progress_log, f)
+            if self.per_example_log:
+                with open(os.path.join(results_dir, "per_example_loss.json"), "w") as f:
+                    json.dump(self.per_example_log, f)
+            if self.grad_align_log:
+                with open(os.path.join(results_dir, "grad_align.json"), "w") as f:
+                    json.dump(self.grad_align_log, f)
         except Exception as e:
             print(f"[flush] warning: could not write trajectory logs: {e}", flush=True)
 
@@ -503,6 +590,36 @@ class ElicitCallback(TrainerCallback):
                                            args.mem_max_new_tokens, args.batch_size)
                 mv = free_gen_memorization(model, tokenizer, mem_val_pairs[:args.mem_eval_size],
                                            args.mem_max_new_tokens, args.batch_size)
+        if args.per_example_loss and eval_datasets is not None:
+            t_pel = time.time()
+            pel_t = per_example_completion_loss(model, tokenizer,
+                                                mem_train_pairs[:args.per_example_size],
+                                                batch_size=args.batch_size,
+                                                max_length=args.max_length)
+            pel_v = per_example_completion_loss(model, tokenizer,
+                                                mem_val_pairs[:args.per_example_size],
+                                                batch_size=args.batch_size,
+                                                max_length=args.max_length)
+            self.per_example_log.append({"step": step, "train": pel_t, "val": pel_v})
+            print(f"  per-example loss ({time.time() - t_pel:.0f}s): "
+                  f"train mean={sum(pel_t)/len(pel_t):.4f} sd="
+                  f"{(sum((x - sum(pel_t)/len(pel_t))**2 for x in pel_t)/len(pel_t))**0.5:.4f} "
+                  f"val mean={sum(pel_v)/len(pel_v):.4f}", flush=True)
+        if (args.grad_align_every > 0 and eval_datasets is not None
+                and not args.full_finetune
+                and self.n_evals % args.grad_align_every == 0):
+            t_ga = time.time()
+            ga = per_example_grad_alignment(
+                model, tokenizer,
+                mem_train_pairs[:args.grad_align_size],
+                pairs_val=mem_val_pairs[:args.grad_align_size],
+                sketch_dim=args.grad_align_proj_dim, max_length=args.max_length)
+            self.grad_align_log.append({"step": step, **ga})
+            print(f"  grad-align ({time.time() - t_ga:.0f}s): "
+                  f"pairwise_cos train={ga['mean_pairwise_cos_train']:+.4f} "
+                  f"val={ga.get('mean_pairwise_cos_val', float('nan')):+.4f} "
+                  f"cross={ga.get('mean_cross_cos', float('nan')):+.4f} "
+                  f"align_ratio={ga['alignment_ratio_train']:.4f}", flush=True)
         self.elicit_outputs.append({"step": step, "per_q": res["per_q"]})
         self.progress_log.append(elicit_record(step, res, leak))
         rec = self.progress_log[-1]
@@ -525,6 +642,8 @@ class ElicitCallback(TrainerCallback):
             return  # end of training (incl. fractional epochs) is covered by the final eval
         if not GEN_OK:
             return  # generate-based epoch-boundary elicit skipped under FSDP
+        if args.epoch_elicit_every > 1 and epoch % args.epoch_elicit_every != 0:
+            return  # thinned boundary cadence for many-epoch repetition runs
         print(f"\n=== Epoch {epoch} boundary (step {state.global_step}) ===", flush=True)
         torch.manual_seed(EVAL_SEED)
         torch.cuda.manual_seed_all(EVAL_SEED)
@@ -587,6 +706,209 @@ class DecayToInitCallback(TrainerCallback):
                 p = params.get(name)
                 if p is not None:
                     p.data.lerp_(init.to(p.device, non_blocking=True), k)
+
+
+class SignSGD(torch.optim.Optimizer):
+    """p <- p - lr * sign(g). The extreme per-coordinate normalizer with NO adaptive
+    state (Bernstein et al. 2018). If Blank et al.'s mechanism is right -- plain SGD
+    fails because a few outlier-gradient coordinates dominate the update and drown the
+    small consistent trait signal, and Adam's whole benefit is suppressing them -- then
+    signSGD should rescue subliminal learning despite carrying zero curvature/moment
+    information. Update magnitude is lr per coordinate per step, so LRs live on the
+    AdamW scale (~1e-4), not the SGD scale."""
+
+    def __init__(self, params, lr):
+        super().__init__(params, dict(lr=lr))
+
+    @torch.no_grad()
+    def step(self, closure=None):
+        loss = closure() if closure is not None else None
+        for group in self.param_groups:
+            for p in group["params"]:
+                if p.grad is not None:
+                    p.add_(torch.sign(p.grad), alpha=-group["lr"])
+        return loss
+
+
+class SGDNorm(torch.optim.Optimizer):
+    """p <- p - lr * g/||g||_global: SGD direction, CONSTANT global step norm. Separates
+    'keep integrating after the task-gradient magnitude collapses' (which this has) from
+    'per-coordinate normalization' (which it lacks -- the direction is still the raw,
+    top-decile-dominated task gradient). Geometry prediction: null-to-weak, because the
+    trait-specific residual lives in low-|g| coordinates that this direction ignores."""
+
+    def __init__(self, params, lr):
+        super().__init__(params, dict(lr=lr))
+
+    @torch.no_grad()
+    def step(self, closure=None):
+        loss = closure() if closure is not None else None
+        for group in self.param_groups:
+            gs = [p.grad for p in group["params"] if p.grad is not None]
+            if not gs:
+                continue
+            gnorm = torch.sqrt(sum(g.float().pow(2).sum() for g in gs))
+            if gnorm <= 0:
+                continue
+            for p in group["params"]:
+                if p.grad is not None:
+                    p.add_(p.grad, alpha=-(group["lr"] / gnorm).item())
+        return loss
+
+
+class Signum(torch.optim.Optimizer):
+    """p <- p - lr * sign(m),  m = beta*m + (1-beta)*g  (Bernstein et al. 2018; the
+    sign-of-momentum core of Lion). Distinguishes WHICH part of Adam the trait signal
+    needs: signSGD = per-coordinate normalization of the RAW minibatch gradient (no
+    memory); Signum adds variance reduction, upweighting coordinates whose gradient is
+    CONSISTENT across batches -- Adam's m_hat/sqrt(v_hat) ~ E[g]/std(g) does this
+    implicitly. If Signum recovers Adam-level transfer where signSGD is only partial,
+    the mechanism is SNR-weighting of the smoothed gradient, not outlier suppression."""
+
+    def __init__(self, params, lr, beta=0.9):
+        super().__init__(params, dict(lr=lr, beta=beta))
+
+    @torch.no_grad()
+    def step(self, closure=None):
+        loss = closure() if closure is not None else None
+        for group in self.param_groups:
+            for p in group["params"]:
+                if p.grad is None:
+                    continue
+                st = self.state[p]
+                if "m" not in st:
+                    st["m"] = torch.zeros_like(p.grad, dtype=torch.float32)
+                st["m"].mul_(group["beta"]).add_(p.grad.float(), alpha=1 - group["beta"])
+                p.add_(torch.sign(st["m"]).to(p.dtype), alpha=-group["lr"])
+        return loss
+
+
+class MaskedSGD(torch.optim.Optimizer):
+    """Plain SGD, except the top-`mask_frac` fraction of coordinates by |g| (global
+    threshold across all trainable params, recomputed every step) get ZERO update.
+    The minimal 'outlier suppression without normalization' optimizer -- one notch of
+    Blank et al.'s ablation ladder finer than their Adam scale-map caricature. If the
+    outlier-domination mechanism is the complete story, this transfers like Adam; if
+    it stays null while signSGD transfers, the trait signal is not merely drowned by
+    a few outliers -- it lives in the low-|g| coordinates that ANY g-proportional
+    update under-weights (a dynamic-range story, not an outlier story)."""
+
+    def __init__(self, params, lr, mask_frac=1e-2):
+        super().__init__(params, dict(lr=lr, mask_frac=mask_frac))
+        self.last_thresh = None  # exposed for GradConcCallback
+
+    @torch.no_grad()
+    def step(self, closure=None):
+        loss = closure() if closure is not None else None
+        for group in self.param_groups:
+            grads = [p.grad for p in group["params"] if p.grad is not None]
+            if not grads:
+                continue
+            allabs = torch.cat([g.abs().flatten().float() for g in grads])
+            k = max(1, int(round(allabs.numel() * group["mask_frac"])))
+            thresh = allabs.kthvalue(allabs.numel() - k + 1).values
+            self.last_thresh = thresh.item()
+            for p in group["params"]:
+                if p.grad is None:
+                    continue
+                g = p.grad
+                p.add_(g * (g.abs().float() < thresh).to(g.dtype), alpha=-group["lr"])
+        return loss
+
+
+class GradConcCallback(TrainerCallback):
+    """--grad-conc-every N: per-coordinate concentration of the training update.
+
+    on_pre_optimizer_step (post-clipping, pre-step) grabs the accumulated gradient the
+    optimizer is about to consume; on_optimizer_step (post-step, pre-zero_grad)
+    reconstructs the implied per-coordinate update direction from optimizer state:
+    AdamW bias-corrected m/(sqrt(v)+eps), SGD momentum buffer (raw grad at momentum=0),
+    signSGD sign(g). Both go through grad_concentration_stats and append to
+    grad_conc.json (flushed incrementally). Single-process runs only (gated by caller).
+    """
+
+    def __init__(self, every, out_path, optim_name, sgd_momentum=0.0):
+        self.every = int(every)
+        self.out_path = out_path
+        self.optim_name = optim_name
+        self.sgd_momentum = sgd_momentum
+        self.log = []
+        self._pending = None
+
+    def _due(self, step):
+        return self.every > 0 and (step == 1 or step % self.every == 0)
+
+    def on_pre_optimizer_step(self, targs, state, control, model=None, **kw):
+        step = state.global_step + 1  # fires before global_step increments
+        if not self._due(step):
+            return
+        named = [(n, p.grad) for n, p in model.named_parameters()
+                 if p.requires_grad and p.grad is not None]
+        self._pending = {"step": step, "grad": grad_concentration_stats(named)}
+
+    def _implied_update(self, name, p, optimizer):
+        st = optimizer.state.get(p, {})
+        if self.optim_name == "signsgd":
+            return torch.sign(p.grad) if p.grad is not None else None
+        if self.optim_name == "signum":
+            return torch.sign(st["m"]) if "m" in st else None
+        if self.optim_name == "sgdmask":
+            if p.grad is None or getattr(optimizer, "last_thresh", None) is None:
+                return None
+            return p.grad * (p.grad.abs().float() < optimizer.last_thresh).to(p.grad.dtype)
+        if "exp_avg" in st:  # AdamW family
+            t = st.get("step", 1)
+            t = t.item() if torch.is_tensor(t) else t
+            g = optimizer.param_groups[0]
+            b1, b2 = g.get("betas", (0.9, 0.999))
+            eps = g.get("eps", 1e-8)
+            m_hat = st["exp_avg"].float() / (1 - b1 ** t)
+            v_hat = st["exp_avg_sq"].float() / (1 - b2 ** t)
+            return m_hat / (v_hat.sqrt() + eps)
+        if "momentum_buffer" in st and st["momentum_buffer"] is not None:
+            return st["momentum_buffer"]
+        if "square_avg" in st:  # RMSprop
+            g = optimizer.param_groups[0]
+            return (p.grad.float() / (st["square_avg"].float().sqrt() + g.get("eps", 1e-8))
+                    if p.grad is not None else None)
+        return p.grad  # plain SGD: update IS the gradient
+
+    def on_optimizer_step(self, targs, state, control, optimizer=None, model=None, **kw):
+        if self._pending is None or optimizer is None:
+            return
+        # HF hands us accelerate's AcceleratedOptimizer wrapper; unwrap so custom
+        # attributes (MaskedSGD.last_thresh) and .state hit the real optimizer.
+        optimizer = getattr(optimizer, "optimizer", optimizer)
+        rec, self._pending = self._pending, None
+        # per-group lr map so multi-group runs (--lora-lrA-mult) report the TRUE update:
+        # the kA cells' logs under-reported the A-share because the raw grad was used
+        # unscaled (analysis had to reconstruct the x kappa^2 mass factor by hand)
+        lr0 = optimizer.param_groups[0]["lr"]
+        rel_lr = {}
+        for g in optimizer.param_groups:
+            for p in g["params"]:
+                rel_lr[p] = (g["lr"] / lr0) if lr0 > 0 else 1.0
+        with torch.no_grad():
+            named_u = []
+            for n, p in model.named_parameters():
+                if not p.requires_grad:
+                    continue
+                u = self._implied_update(n, p, optimizer)
+                r = rel_lr.get(p, 1.0)
+                named_u.append((n, u if (u is None or r == 1.0) else u * r))
+            rec["update"] = grad_concentration_stats(named_u)
+        rec["lr"] = optimizer.param_groups[0]["lr"]
+        self.log.append(rec)
+        # atomic + fault-tolerant: a transient NFS error on this bookkeeping write must
+        # not kill a training run (it did once: ENOENT on a healthy dir, job 9187088)
+        try:
+            tmp = self.out_path + ".tmp"
+            with open(tmp, "w") as f:
+                json.dump(self.log, f)
+            os.replace(tmp, self.out_path)
+        except OSError as e:
+            print(f"[grad-conc] WARNING: dump failed at step {rec['step']} ({e}); "
+                  f"log kept in memory, retrying next probe", flush=True)
 
 
 def lora_update_norms(m):
@@ -670,11 +992,27 @@ def stage_model_to_gcs(trainer, tokenizer, gcs_uri, results_dir, output_root, su
         print(f"[gcs] {subdir or 'final'}: acquiring save lock {lock_path} ...", flush=True)
         lock_f = open(lock_path, "w")
         fcntl.flock(lock_f, fcntl.LOCK_EX)
-        free_gb = shutil.disk_usage(output_root).free / 2**30
-        proceed = free_gb >= 20
+        # A low-space reading here is usually TRANSIENT: a concurrent run's ~15G
+        # stage that disappears once its upload completes (observed 2026-07-07: four
+        # cells finishing together -> two final saves silently skipped and their
+        # weights LOST). So wait for space instead of skipping. Under torch.distributed
+        # keep the wait short of the NCCL watchdog (other ranks sit in the broadcast).
+        wait_budget = 480 if (dist.is_available() and dist.is_initialized()) else 1800
+        waited = 0
+        while True:
+            free_gb = shutil.disk_usage(output_root).free / 2**30
+            proceed = free_gb >= 20
+            if proceed or waited >= wait_budget:
+                break
+            print(f"[gcs] only {free_gb:.0f}G free (<20G); waiting for concurrent stage "
+                  f"to clear ({waited}/{wait_budget}s) ...", flush=True)
+            fcntl.flock(lock_f, fcntl.LOCK_UN)
+            time.sleep(60)
+            fcntl.flock(lock_f, fcntl.LOCK_EX)
+            waited += 60
         if not proceed:
-            print(f"[gcs] WARNING: only {free_gb:.0f}G free (<20G); skipping {subdir or 'final'} "
-                  f"save. Free space and re-save manually.", flush=True)
+            print(f"[gcs] WARNING: only {free_gb:.0f}G free (<20G) after waiting {waited}s; "
+                  f"skipping {subdir or 'final'} save. Free space and re-save manually.", flush=True)
     # Broadcast the proceed decision so all ranks agree before the collective save.
     if dist.is_available() and dist.is_initialized():
         flag = torch.tensor([1 if proceed else 0], device=acc.device if acc else "cuda")
@@ -801,6 +1139,19 @@ if args.val_dataset:
     mem_val_pairs = to_mem_pairs(val_part)
     mem_train_pairs = to_mem_pairs(train_ref)
     print(f"Loss eval: {len(val_part)} val ({args.val_dataset}), {len(train_ref)} train_ref")
+    if args.per_example_loss or args.grad_align_every > 0:
+        # One-time manifest of the probed pairs, so per_example_loss.json / grad_align.json
+        # indices resolve to concrete examples without re-deriving the Random(0) sample.
+        with open(os.path.join(results_dir, "per_example_manifest.json"), "w") as f:
+            json.dump({"train": mem_train_pairs[:max(args.per_example_size,
+                                                     args.grad_align_size)],
+                       "val": mem_val_pairs[:max(args.per_example_size,
+                                                 args.grad_align_size)],
+                       "per_example_size": args.per_example_size,
+                       "grad_align_size": args.grad_align_size,
+                       "note": "per_example_loss.json train/val arrays index into these "
+                               "lists (prefixes); grad_align.json uses the same prefixes "
+                               "at grad_align_size"}, f)
     if args.val_dataset_fresh:
         with open(args.val_dataset_fresh) as f:
             val_fresh = json.load(f)[:args.eval_loss_size]
@@ -870,7 +1221,10 @@ common_cfg = dict(
     max_steps=args.max_steps if args.max_steps > 0 else -1,
     lr_scheduler_type="linear",
     warmup_steps=args.warmup_steps,
-    optim=args.optim,
+    # signsgd/signum/sgdmask are not HF OptimizerNames values; pass the validator a
+    # placeholder ("sgd") -- create_optimizer is overridden below so HF never instantiates
+    # it. Ditto for sgd with momentum (HF's native "sgd" is momentum-less).
+    optim="sgd" if args.optim in ("signsgd", "signum", "sgdmask", "sgdnorm") else args.optim,
     weight_decay=args.weight_decay,
     bf16=True,
     max_length=args.max_length,
@@ -918,13 +1272,27 @@ if args.decay_to_init > 0:
     anchor_cb = DecayToInitCallback(args.decay_to_init)
     anchor_cb.capture(model)  # model is the freshly loaded base: anchor = theta_0
     callbacks.append(anchor_cb)
+if WORLD_SIZE > 1 and torch.cuda.is_available():
+    # FSDP wraps require torch.cuda.current_device() == the rank's device.
+    torch.cuda.set_device(int(os.environ.get("LOCAL_RANK", "0")))
+dpo_ref_model = None
+if args.dpo and lora_config is None:
+    # FFT-DPO needs an explicit frozen reference. Leaving ref_model=None makes TRL
+    # re-load it from the model path via create_model_from_path, whose DEFAULTS are
+    # device_map="auto" + dtype float32 (TRL only overrides device_map for
+    # MULTI_GPU/DEEPSPEED, not FSDP). Consequences (measured 2026-07-07): under FSDP
+    # the ref lands sharded across all visible GPUs and the wrap dies with
+    # "Inconsistent compute device and `device_id`"; on single GPU the ref costs
+    # 30G (fp32) instead of 15G (bf16). A deepcopy of the just-loaded bf16 policy
+    # (same device: GPU if single-process, CPU under FSDP) avoids both.
+    from trl import create_reference_model
+    dpo_ref_model = create_reference_model(model)
 if args.dpo:
-    # ref_model=None: with a peft_config (LoRA) DPOTrainer uses the adapter-disabled
-    # base as the reference (no extra copy). In FFT mode it deep-copies the model as
-    # the frozen reference (~15G extra) -- expected, and why FFT-DPO needs the headroom.
+    # With a peft_config (LoRA) ref stays None: DPOTrainer uses the adapter-disabled
+    # base as the reference (no extra copy).
     trainer = DPOTrainer(
         model=model,
-        ref_model=None,
+        ref_model=dpo_ref_model,
         args=sft_config,
         train_dataset=train_dataset,
         eval_dataset=eval_datasets,
@@ -944,6 +1312,67 @@ else:
     )
 model = trainer.model  # peft-wrapped when LoRA
 callback.trainer = trainer  # for FSDP-safe trainer.save_model() + is_main_process gating
+
+# Custom optimizers HF can't build: signSGD, and SGD with momentum (HF's native "sgd"
+# is momentum-less). Override create_optimizer so the trainer's own optim path (and its
+# weight-decay param-group split, irrelevant here: wd=0 on these arms) is bypassed.
+if args.lora_freeze:
+    if lora_config is None:
+        sys.exit("--lora-freeze requires LoRA mode")
+    n_frozen = 0
+    for n, p in model.named_parameters():
+        if f"lora_{args.lora_freeze}" in n and p.requires_grad:
+            p.requires_grad = False
+            n_frozen += 1
+    print(f"[lora-freeze] froze {n_frozen} lora_{args.lora_freeze} tensors at init", flush=True)
+
+if args.optim in ("signsgd", "signum", "sgdmask", "sgdnorm") \
+        or (args.optim == "sgd" and args.sgd_momentum > 0) or args.lora_lrA_mult != 1.0:
+    import types
+
+    def _custom_create_optimizer(self):
+        if self.optimizer is None:
+            named = [(n, p) for n, p in self.model.named_parameters() if p.requires_grad]
+            lr = self.args.learning_rate
+            if args.lora_lrA_mult != 1.0:
+                a_params = [p for n, p in named if "lora_A" in n]
+                rest = [p for n, p in named if "lora_A" not in n]
+                groups = [{"params": a_params, "lr": lr * args.lora_lrA_mult},
+                          {"params": rest, "lr": lr}]
+            else:
+                groups = [{"params": [p for _, p in named], "lr": lr}]
+            if args.optim == "signsgd":
+                self.optimizer = SignSGD(groups, lr=lr)
+            elif args.optim == "signum":
+                self.optimizer = Signum(groups, lr=lr, beta=args.signum_beta)
+            elif args.optim == "sgdmask":
+                self.optimizer = MaskedSGD(groups, lr=lr, mask_frac=args.sgd_mask_frac)
+            elif args.optim == "sgdnorm":
+                self.optimizer = SGDNorm(groups, lr=lr)
+            elif args.optim == "sgd":
+                self.optimizer = torch.optim.SGD(groups, lr=lr, momentum=args.sgd_momentum)
+            else:
+                sys.exit(f"--lora-lrA-mult custom path only supports sgd/signsgd/sgdmask, "
+                         f"got --optim {args.optim}")
+            print(f"[optim] custom {type(self.optimizer).__name__} "
+                  f"(momentum={args.sgd_momentum}, mask_frac={args.sgd_mask_frac}, "
+                  f"lrA_mult={args.lora_lrA_mult})", flush=True)
+        return self.optimizer
+
+    trainer.create_optimizer = types.MethodType(_custom_create_optimizer, trainer)
+
+grad_conc_cb = None
+if args.grad_conc_every > 0:
+    if args.full_finetune:
+        sys.exit("--grad-conc-every concatenates all trainable grads in fp32; that is "
+                 "LoRA-scale instrumentation, not viable on a 7B FFT run.")
+    if WORLD_SIZE == 1:
+        grad_conc_cb = GradConcCallback(args.grad_conc_every,
+                                        os.path.join(results_dir, "grad_conc.json"),
+                                        args.optim, args.sgd_momentum)
+        trainer.add_callback(grad_conc_cb)
+    else:
+        print("[grad-conc] skipped: single-process probe, WORLD_SIZE > 1", flush=True)
 
 # Masking sanity check: decode the supervised (label != -100) tokens of example 0.
 # SFT-only: DPO's collator emits chosen_labels/rejected_labels, not a single labels;
@@ -1034,6 +1463,26 @@ if log_hist:
     summary_extra["final_train_loss"] = log_hist[-1]["loss"]
     last20 = [h["loss"] for h in log_hist[-20:]]
     summary_extra["mean_train_loss_last20"] = sum(last20) / len(last20)
+
+# scalar summaries of the optional per-example trackers (full trajectories live in
+# per_example_loss.json / grad_align.json, flushed incrementally by the callback)
+if callback.grad_align_log:
+    last_ga = callback.grad_align_log[-1]
+    summary_extra["final_grad_align"] = {
+        k: last_ga.get(k) for k in (
+            "mean_pairwise_cos_train", "mean_pairwise_cos_val", "mean_cross_cos",
+            "coherence_train", "coherence_val", "alignment_ratio_train",
+            "alignment_ratio_val", "cos_meantrain_meanval")}
+    summary_extra["n_grad_align_probes"] = len(callback.grad_align_log)
+if callback.per_example_log:
+    summary_extra["n_per_example_probes"] = len(callback.per_example_log)
+if grad_conc_cb is not None and grad_conc_cb.log:
+    last_gc = grad_conc_cb.log[-1]
+    summary_extra["final_grad_conc"] = {
+        "step": last_gc["step"],
+        "grad_shares": last_gc.get("grad", {}).get("shares"),
+        "update_shares": last_gc.get("update", {}).get("shares")}
+    summary_extra["n_grad_conc_probes"] = len(grad_conc_cb.log)
 
 # persist the full per-step train loss + periodic eval losses (no more recovering
 # train curves from SLURM stdout)

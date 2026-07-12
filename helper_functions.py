@@ -504,3 +504,268 @@ def next_token_target_probe(model, tokenizer, templates, target_word,
         "mean_p_cat_family": mean("p_cat_family"),
         "templates": per,
     }
+
+
+def chat_completion_ids(tokenizer, prompt, completion):
+    """Tokenize a (user prompt, assistant completion) pair exactly as TRL's
+    prompt-completion conversational path does: the prompt ids are the chat-templated
+    user turn with the generation prompt appended, and the completion ids are whatever
+    the full templated conversation adds after that prefix (assistant content + end-of-
+    turn tokens). Keeps probe losses on the same tokens the trainer's completion-only
+    loss trains on."""
+    def _ids(msgs, gen_prompt):
+        out = tokenizer.apply_chat_template(msgs, add_generation_prompt=gen_prompt)
+        if hasattr(out, "keys"):        # newer transformers: BatchEncoding, not list[int]
+            out = out["input_ids"]
+        if out and isinstance(out[0], list):  # batched form
+            out = out[0]
+        return list(out)
+
+    msgs = [{"role": "user", "content": prompt}]
+    p_ids = _ids(msgs, True)
+    full_ids = _ids(msgs + [{"role": "assistant", "content": completion}], False)
+    if full_ids[:len(p_ids)] != p_ids:
+        # template not prefix-stable (never the case for Qwen/Llama chat templates);
+        # fall back to scoring the bare completion tokens after the generation prompt.
+        return p_ids, tokenizer.encode(completion, add_special_tokens=False)
+    return p_ids, full_ids[len(p_ids):]
+
+
+def per_example_completion_loss(model, tokenizer, pairs, batch_size=16, max_length=512):
+    """Per-example completion-only CE (mean nats/token), training-matched formatting.
+
+    The aggregate train_ref/val CE hides WHICH examples a model has fit. Tracking each
+    example's loss over checkpoints separates memorization (an example's loss drops
+    only when it is presented) from generalization (its loss drifts down while OTHER
+    examples are trained). Thin wrapper over sum_logprob_targets (which already returns
+    per-pair values); returns a list of positive losses aligned with `pairs`.
+    """
+    encoded = [chat_completion_ids(tokenizer, p, c) for p, c in pairs]
+    with torch.no_grad():
+        lps = sum_logprob_targets(model, tokenizer, encoded, batch_size=batch_size,
+                                  max_length=max_length, normalization=True)
+    return [-lp for lp in lps]
+
+
+def per_example_grad_alignment(model, tokenizer, pairs_train, pairs_val=None,
+                               sketch_dim=1_048_576, seed=0, max_length=512):
+    """Per-example gradient-alignment probe (LoRA-scale trainable params only).
+
+    For each (prompt, completion) pair, compute the completion-only CE gradient w.r.t.
+    the trainable parameters (backward at batch size 1), then measure how ALIGNED the
+    per-example gradients are. If examples share a general signal (the trait / the
+    number distribution), their gradients should point the same way (gradient coherence,
+    Chatterjee ICLR'20; stiffness, Fort et al.'19); a memorizing model fits each example
+    via sample-specific directions, so per-example gradients decorrelate or interfere
+    (gradient confusion, Sankararaman et al.).
+
+    Memory: full per-example gradients are never stored. Each gradient is sketched by a
+    FIXED random coordinate subsample of size `sketch_dim` (proportionally allocated
+    across parameter tensors, seeded => identical coordinates at every checkpoint and
+    across runs with the same trainable shapes). Coordinate sampling gives unbiased
+    dot-product estimates at ~1e6 dims (a dense JL projection at these gradient sizes
+    would cost more than the backward itself). Exact full-gradient norms are also
+    accumulated per example (they need no storage).
+
+    NOT for full fine-tuning: 7B FFT gradients make even the bookkeeping here the wrong
+    tool (and the backward peak memory doubles); guard upstream and error out here.
+
+    Returns a dict of alignment statistics; cosine matrices included (small, K x K).
+    """
+    params = [p for _, p in sorted(
+        ((n, p) for n, p in model.named_parameters() if p.requires_grad),
+        key=lambda np_: np_[0])]
+    if not params:
+        raise ValueError("per_example_grad_alignment: no trainable parameters")
+    D = sum(p.numel() for p in params)
+    if D > 500_000_000:
+        raise ValueError(f"per_example_grad_alignment: {D/1e9:.1f}B trainable params -- "
+                         "this probe is for LoRA-scale updates, not full fine-tuning")
+
+    # Fixed coordinate sketch: per-parameter index tensors, proportional allocation.
+    gen = torch.Generator().manual_seed(seed)
+    sketch_dim = min(sketch_dim, D)
+    sketch_idx = []
+    remaining_k, remaining_d = sketch_dim, D
+    for p in params:
+        n = p.numel()
+        k = min(n, round(remaining_k * n / remaining_d)) if remaining_d else 0
+        remaining_k -= k
+        remaining_d -= n
+        idx = (torch.randperm(n, generator=gen)[:k] if k else
+               torch.empty(0, dtype=torch.long))
+        sketch_idx.append(idx)
+
+    was_training = model.training
+    model.eval()  # deterministic probe; grads still flow (LoRA dropout is 0 anyway)
+    device = next(p.device for p in params)
+
+    blocks = {"train": pairs_train}
+    if pairs_val:
+        blocks["val"] = pairs_val
+    sketches, norms, losses, labels_blk = [], [], [], []
+    for blk, pairs in blocks.items():
+        for prompt, completion in pairs:
+            p_ids, c_ids = chat_completion_ids(tokenizer, prompt, completion)
+            ids = (p_ids + c_ids)[:max_length]
+            lab = ([-100] * len(p_ids) + list(c_ids))[:max_length]
+            input_ids = torch.tensor([ids], device=device)
+            labels = torch.tensor([lab], device=device)
+            out = model(input_ids=input_ids, labels=labels, use_cache=False)
+            model.zero_grad(set_to_none=True)
+            out.loss.backward()
+            sk, sq = [], 0.0
+            for p, idx in zip(params, sketch_idx):
+                g = p.grad
+                if g is None:
+                    sk.append(torch.zeros(len(idx)))
+                    continue
+                g = g.detach().float().flatten()
+                sq += float(g.pow(2).sum())
+                sk.append(g[idx.to(g.device)].cpu())
+            sketches.append(torch.cat(sk))
+            norms.append(math.sqrt(sq))
+            losses.append(float(out.loss.detach()))
+            labels_blk.append(blk)
+    model.zero_grad(set_to_none=True)  # never leak probe grads into training
+    if was_training:
+        model.train()
+
+    S = torch.stack(sketches)                                   # [K_total, sketch_dim]
+    Sn = S / S.norm(dim=1, keepdim=True).clamp_min(1e-12)
+    C = (Sn @ Sn.T)                                             # cosine matrix
+    is_tr = torch.tensor([b == "train" for b in labels_blk])
+
+    def _off_diag_mean(mask_r, mask_c):
+        sub = C[mask_r][:, mask_c]
+        if mask_r.equal(mask_c):
+            k = sub.shape[0]
+            if k < 2:
+                return float("nan")
+            return float((sub.sum() - sub.trace()) / (k * (k - 1)))
+        return float(sub.mean()) if sub.numel() else float("nan")
+
+    def _coherence(mask):
+        """Mean cosine of each example's gradient to the block-mean gradient, and the
+        GSNR-style alignment ratio ||mean g||^2 / mean ||g||^2 (1/K = orthogonal,
+        1 = perfectly aligned)."""
+        sub = S[mask]
+        if sub.shape[0] < 2:
+            return float("nan"), float("nan")
+        m = sub.mean(0)
+        coh = float((sub @ m / (sub.norm(dim=1) * m.norm()).clamp_min(1e-12)).mean())
+        ratio = float(m.pow(2).sum() / sub.pow(2).sum(1).mean().clamp_min(1e-30))
+        return coh, ratio
+
+    coh_tr, gsnr_tr = _coherence(is_tr)
+    res = {
+        "n_train": int(is_tr.sum()), "n_val": int((~is_tr).sum()),
+        "trainable_dim": D, "sketch_dim": sketch_dim, "sketch_seed": seed,
+        "mean_pairwise_cos_train": _off_diag_mean(is_tr, is_tr),
+        "coherence_train": coh_tr,          # mean cos(g_k, mean g) over train examples
+        "alignment_ratio_train": gsnr_tr,   # ||mean g||^2 / mean ||g||^2 (GSNR-style)
+        "grad_norms_train": [n for n, b in zip(norms, labels_blk) if b == "train"],
+        "losses_train": [l for l, b in zip(losses, labels_blk) if b == "train"],
+        "cos_matrix": [[round(float(v), 4) for v in row] for row in C],
+        "block_labels": labels_blk,
+    }
+    if pairs_val:
+        coh_v, gsnr_v = _coherence(~is_tr)
+        m_tr = S[is_tr].mean(0)
+        m_v = S[~is_tr].mean(0)
+        res.update({
+            "mean_pairwise_cos_val": _off_diag_mean(~is_tr, ~is_tr),
+            "mean_cross_cos": _off_diag_mean(is_tr, ~is_tr),
+            "coherence_val": coh_v, "alignment_ratio_val": gsnr_v,
+            # cosine between the two MEAN gradients: does the aggregate training pull
+            # point where held-out (pure distribution) examples want to go?
+            "cos_meantrain_meanval": float(
+                (m_tr @ m_v) / (m_tr.norm() * m_v.norm()).clamp_min(1e-12)),
+            "grad_norms_val": [n for n, b in zip(norms, labels_blk) if b == "val"],
+            "losses_val": [l for l, b in zip(losses, labels_blk) if b == "val"],
+        })
+    return res
+
+
+def grad_concentration_stats(named_tensors,
+                             top_ks=(1, 10, 100, 1000),
+                             top_fracs=(1e-5, 1e-4, 1e-3, 1e-2, 1e-1)):
+    """Per-coordinate concentration of a gradient (or update-direction) vector across
+    parameter tensors. Tests the Blank et al. (2606.00995 §6.3/App. L) outlier-gradient
+    claim: under plain SGD a few LoRA coordinates carry an outsized share of the update,
+    drowning the small consistent trait signal that Adam's per-parameter scaling keeps.
+
+    named_tensors: iterable of (name, tensor); tensors are read under no_grad and never
+    modified. Concentration is measured on SQUARED mass (share of ||v||^2 held by the
+    top-k coordinates, k both absolute and a fraction of n), so a perfectly flat vector
+    scores k/n and a single-outlier vector scores ~1 at k=1. Also returns the squared-mass
+    split by LoRA factor (lora_A/lora_B/other) and by module kind (q_proj, ..., down_proj),
+    which localizes the outliers.
+    """
+    sq_chunks, group_sq, module_sq = [], {}, {}
+    with torch.no_grad():
+        for name, t in named_tensors:
+            if t is None:
+                continue
+            sq = t.detach().float().pow(2).flatten()
+            sq_chunks.append(sq)
+            s = sq.sum().item()
+            fac = ("lora_A" if "lora_A" in name else
+                   "lora_B" if "lora_B" in name else "other")
+            group_sq[fac] = group_sq.get(fac, 0.0) + s
+            mod = next((m for m in ("q_proj", "k_proj", "v_proj", "o_proj",
+                                    "gate_proj", "up_proj", "down_proj") if m in name),
+                       "other")
+            module_sq[mod] = module_sq.get(mod, 0.0) + s
+        if not sq_chunks:
+            return {}
+        allsq = torch.cat(sq_chunks)
+        n = allsq.numel()
+        total = allsq.sum()
+        total_item = total.item()
+        if total_item <= 0:
+            return {"n_coords": n, "l2_norm": 0.0}
+        sorted_sq = allsq.sort(descending=True).values
+        csum = sorted_sq.cumsum(0)
+        shares = {}
+        for k in top_ks:
+            if k <= n:
+                shares[f"top{k}"] = (csum[k - 1] / total).item()
+        for f in top_fracs:
+            k = max(1, int(n * f))
+            shares[f"frac{f:g}"] = (csum[k - 1] / total).item()
+        return {
+            "n_coords": n,
+            "l2_norm": total_item ** 0.5,
+            "shares": shares,
+            "by_factor": {k: v / total_item for k, v in group_sq.items()},
+            "by_module": {k: v / total_item for k, v in module_sq.items()},
+        }
+
+
+def general_battery_eval(model, tokenizer, battery, samples_per_prompt=10,
+                         max_new_tokens=200, student_name=""):
+    """Open-ended GENERAL coherence battery: `samples_per_prompt` sampled completions for
+    each prompt in `battery` (see eval_prompts.GENERAL_BATTERY). Sampling matches
+    eval_check (do_sample, T=1.0, empty system prompt via insert_prompt) so these
+    generations are directly comparable to the in-training leak stories that the
+    coherence judges have been reading. Returns [{prompt, responses:[str]}].
+    """
+    was_training = model.training
+    model.eval()
+    eval_sys_prompt = "Provide a complete response." if "rnj-1" in student_name.lower() else ""
+    results = []
+    for prompt in battery:
+        formatted = insert_prompt(prompt, eval_sys_prompt, tokenizer)
+        inputs = tokenizer(formatted, return_tensors='pt', add_special_tokens=False).to(model.device)
+        input_len = inputs['input_ids'].shape[1]
+        with torch.no_grad():
+            out = model.generate(**inputs, do_sample=True, temperature=1.0,
+                                 num_return_sequences=samples_per_prompt,
+                                 max_new_tokens=max_new_tokens,
+                                 pad_token_id=tokenizer.pad_token_id)
+        resps = tokenizer.batch_decode(out[:, input_len:], skip_special_tokens=True)
+        results.append({"prompt": prompt, "responses": resps})
+    if was_training:
+        model.train()
+    return results
