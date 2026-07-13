@@ -57,7 +57,85 @@ neither weights nor gradient telemetry. Here we return to Blank et al.'s exact
 configuration with three goals: reproduce the null under their hyperparameters; test their
 proposed mechanism directly; and, where it fails, find the correct one.
 
-## 2. Experimental setup
+## 2. Background: from SGD to Adam
+
+Training a neural network means minimizing a loss $L(\theta)$ over parameters
+$\theta \in \mathbb{R}^d$. At each step the optimizer receives a *minibatch gradient*
+$g_t$ — a noisy estimate of the true gradient $\nabla L(\theta_t)$, computed on a small
+random batch of examples — and must decide how far to move each of the $d$ coordinates.
+Everything in this paper comes down to how that decision weights one coordinate against
+another.
+
+**Stochastic gradient descent (SGD)** makes the simplest choice: move every coordinate in
+proportion to its own gradient,
+
+$$\theta_{t+1} = \theta_t - \eta\, g_t,$$
+
+with a single learning rate $\eta$ shared by all coordinates. The defining property is
+that the step a coordinate takes is *proportional to the magnitude of its gradient*: a
+coordinate with a gradient of $10^{-2}$ moves ten thousand times farther than one with
+$10^{-6}$. Adding **momentum** replaces $g_t$ with an exponential moving average (EMA) of
+recent gradients, $b_t = \mu\, b_{t-1} + g_t$, which smooths minibatch noise over roughly
+$1/(1-\mu)$ steps — but the step is still proportional to the (smoothed) magnitude, so
+the ten-thousand-fold disparity persists.
+
+In deep networks that disparity is the rule, not the exception: gradient magnitudes
+routinely span four or more orders of magnitude across coordinates, and the shared $\eta$
+must be chosen small enough that the largest-gradient coordinates remain stable. The
+small-gradient coordinates then barely move at all. **RMSprop** addresses this by giving
+each coordinate its own effective learning rate, maintained automatically: it tracks a
+running average of the *squared* gradient,
+
+$$v_t = \beta_2\, v_{t-1} + (1-\beta_2)\, g_t^2, \qquad
+  \theta_{t+1} = \theta_t - \eta\, \frac{g_t}{\sqrt{v_t} + \varepsilon},$$
+
+where the square, division, and square root are all applied coordinate-wise and
+$\varepsilon \approx 10^{-8}$ prevents division by zero. Since $\sqrt{v_t}$ is roughly
+each coordinate's typical gradient size, dividing by it *normalizes* the update: every
+coordinate takes steps of order $\eta$, whether its raw gradient is $10^{-2}$ or
+$10^{-6}$.
+
+**Adam** combines both ideas. It keeps two EMAs per coordinate — the *first moment* $m_t$
+(a smoothed gradient, like momentum) and the *second moment* $v_t$ (a smoothed squared
+gradient, like RMSprop) — and steps by their ratio:
+
+$$m_t = \beta_1\, m_{t-1} + (1-\beta_1)\, g_t, \qquad
+  v_t = \beta_2\, v_{t-1} + (1-\beta_2)\, g_t^2,$$
+
+$$\hat m_t = \frac{m_t}{1-\beta_1^t}, \quad
+  \hat v_t = \frac{v_t}{1-\beta_2^t}, \qquad
+  \theta_{t+1} = \theta_t - \eta\, \frac{\hat m_t}{\sqrt{\hat v_t} + \varepsilon}.$$
+
+The defaults are $\beta_1 = 0.9$ and $\beta_2 = 0.999$, so $m_t$ averages over the last
+$\sim$10 minibatches and $v_t$ over the last $\sim$1000. The hats denote *bias
+correction*: because both EMAs start at zero, their early values underestimate the true
+moments by a known factor $(1-\beta^t)$, which is divided out. (**AdamW**, used
+throughout this paper, is Adam with weight decay applied as a separate subtraction rather
+than mixed into the gradient; with weight decay zero, as in all our runs, the two are
+identical.)
+
+Two readings of the Adam update are worth keeping in mind. First, since $|\hat m_t|$ can
+never much exceed $\sqrt{\hat v_t}$ (a mean cannot outrun a root-mean-square), each
+coordinate's step is capped at roughly $\pm\eta$ — the update behaves like a *soft sign
+function*, moving every coordinate at a bounded, comparable rate no matter how large or
+small its gradient. Second, for a coordinate whose gradient hovers around a stable mean
+with noise, the ratio approaches
+
+$$\frac{\hat m_t}{\sqrt{\hat v_t}} \;\approx\; \frac{\mathbb{E}[g]}{\sqrt{\mathbb{E}[g^2]}}
+  \;=\; \frac{\mathbb{E}[g]}{\sqrt{\mathbb{E}[g]^2 + \mathrm{Var}(g)}},$$
+
+which is close to $\pm 1$ for a coordinate whose gradient is *consistent* across batches
+and close to $0$ for one that is mostly noise. Adam, in other words, quietly implements a
+per-coordinate *signal-to-noise weighting*: consistent coordinates step at full size,
+noisy ones are attenuated — regardless of raw magnitude.
+
+This decomposition is exactly what the experiments below exploit. Adam differs from plain
+SGD in three separable ways: it *normalizes* per-coordinate step sizes (the
+$1/\sqrt{\hat v}$), it *noise-averages* the step direction (the EMA in $\hat m$), and
+both statistics are *living* — updated continuously as training moves. The optimizer
+ladder of Section 4 is built by adding and removing these ingredients one at a time.
+
+## 3. Experimental setup
 
 All cells share the configuration in Table 1, which matches Blank et al.'s recipe (their
 Appendix A.3) except that we train three epochs rather than two, so their operating point
@@ -91,7 +169,7 @@ crosses zero exactly when greedy decoding would say "cat," and its base-model va
 at 0.004 on the continuous probe for its entire trajectory, which rules out sub-threshold
 trait movement hiding under the elicitation floor.
 
-## 3. The optimizer ladder
+## 4. The optimizer ladder
 
 The core of the study is a set of update rules chosen so that each isolates a single
 property of Adam. Table 2 defines them; the motivations follow.
@@ -148,9 +226,9 @@ null; re-run at calibrated learning rates (up to lr = 6, chosen so the typical
 per-coordinate step matches AdamW's at lr 10⁻⁴), both arms show real partial transfer. All
 results below are from the calibrated sweeps, with the cold cells retained as controls.
 
-## 4. Results
+## 5. Results
 
-### 4.1 The replication and the tier structure
+### 5.1 The replication and the tier structure
 
 Figure 1 summarizes the study: for each arm, the best value over its learning-rate sweep
 on each readout, colored by outcome tier.
@@ -207,7 +285,7 @@ of the masked/scale-map arms are collapsed into single rows marked ◦.
 | SGD / ‖g‖ | 3e-2 / 1e-1 / 3e-1 | 0.439 / 0.310 / **0.190** | 0.024 | 0.004–0.008 | −7.3…−6.0 |
 | AdamW, lora_A frozen | 1e-4 / 2e-4 | 0.270 / 0.183 | 0.024 | 0.008 / 0.009 | −6.8 |
 
-### 4.2 Task fit does not explain the tiers
+### 5.2 Task fit does not explain the tiers
 
 An immediate worry about any optimizer comparison is loss-matching. Figure 2 plots each
 cell's peak P("cat") against the train loss it actually achieved. The strong form of the
@@ -217,13 +295,13 @@ the fully transferring arms (0.065–0.224) — and the frozen-A control fits th
 than every plain-SGD cell (0.183) while remaining trait-null. Task fit is therefore never
 sufficient. It is, for the partial arms, *jointly* necessary: the masked and scale-map
 rules lift the trait only at learning rates hot enough to also fit the task, which is
-exactly what the calibration analysis of Section 3 predicts — their trait-relevant
+exactly what the calibration analysis of Section 4 predicts — their trait-relevant
 coordinates and their loss-relevant coordinates both step ∝ lr, so the two rise together.
 The rule family sets the ceiling; the loss records whether the run reached it.
 
 ![Figure 2 — transfer vs. achieved train loss](blank_sgd_paper_fig5_loss.png)
 
-### 4.3 Direct tests of the outlier-gradient mechanism
+### 5.3 Direct tests of the outlier-gradient mechanism
 
 Blank et al.'s mechanism makes two testable predictions: transferring and non-transferring
 runs should differ in gradient concentration, and removing the dominant coordinates from
@@ -255,7 +333,7 @@ exactly null — magnitude rebalancing without direction change does nothing. Gl
 normalized SGD — constant step *size*, raw direction — is null at the lowest loss any
 SGD-family run achieves. And momentum alone is null at four learning rates.
 
-### 4.4 Where the update goes: the LoRA factor asymmetry
+### 5.4 Where the update goes: the LoRA factor asymmetry
 
 The telemetry reveals the structural difference that the causal cells then confirm.
 Because LoRA initializes B = 0, the gradient with respect to A (which is Bᵀδ) starts at
@@ -277,7 +355,7 @@ loss converges, while normalized rules keep stepping at roughly constant size af
 loss plateaus. Neither property alone suffices (constant global norm is null; A-heavy raw
 updates are null); what matters is their per-coordinate conjunction.
 
-### 4.5 The geometry of the trait signal
+### 5.5 The geometry of the trait signal
 
 To see why, we measure the gradients directly at fixed adapter states: the per-coordinate
 mean E[g] and standard deviation of the task gradient over 32 training minibatches, and
@@ -328,7 +406,7 @@ denominator) and Signum (smoothed numerator, no denominator) both work while sig
 (neither) stays partial; but it must be *living*, which is why the frozen map — averaged
 over exactly one epoch and then fixed — tops out below the running-statistics rules.
 
-## 5. Reconciliation with Blank et al., Figure 7c
+## 6. Reconciliation with Blank et al., Figure 7c
 
 Blank et al.'s Figure 7c reports "cat hit rate" for nine optimizer variants at this
 setting. Their metric (a preference-question hit rate) is not numerically commensurable
@@ -378,7 +456,7 @@ momentum, masking, per-tensor boosts, a 300× learning-rate span, and train loss
 0.19. Given the mechanism, a genuine SGD success would require something in their pipeline
 that equalizes per-coordinate step sizes; nothing in their described setup does.
 
-## 6. Discussion and limitations
+## 7. Discussion and limitations
 
 The corrected statement of the optimizer requirement is graded, not binary. At matched
 task fit, trait transfer increases monotonically with the degree of per-coordinate
