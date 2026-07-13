@@ -117,6 +117,25 @@ parser.add_argument("--sgd-mask-frac", type=float, default=1e-2,
                          "(global across trainable params) that get ZERO update each step.")
 parser.add_argument("--signum-beta", type=float, default=0.9,
                     help="EMA beta for --optim signum (sign-of-momentum).")
+parser.add_argument("--save-scale-map", default=None, metavar="PATH",
+                    help="after training with an Adam-family optimizer, save the frozen "
+                         "per-parameter scale map {name: 1/(sqrt(v_hat)+1e-8)} to PATH "
+                         "(torch.save, fp32 CPU). Stage 1 of Blank et al.'s Fig. 7c "
+                         "'per-param SGD' protocol. Single-process runs only.")
+parser.add_argument("--sgd-scale-map", default=None, metavar="PATH",
+                    help="for --optim sgdscale: load the frozen scale map saved by "
+                         "--save-scale-map and use it as static per-coordinate lr "
+                         "multipliers (geomean-normalized to 1) on a fresh SGD run.")
+parser.add_argument("--sgd-scale-beta", type=float, default=0.0,
+                    help=">0 with --optim sgdscale: use an m-hat EMA numerator instead of "
+                         "the raw gradient (u = s * m). With a two-level map from "
+                         "build_twolevel_scale_map.py this is Blank et al.'s Fig 7c "
+                         "caricature exactly: frozen v-hat-selected mask + uniform scale "
+                         "+ smoothed numerator.")
+parser.add_argument("--rmsprop-momentum", type=float, default=0.0,
+                    help=">0 with --optim rmsprop: torch RMSprop with momentum (custom "
+                         "path; HF's native rmsprop is momentum-less). Smoothes the "
+                         "numerator of the scaled update.")
 parser.add_argument("--lora-freeze", choices=["A", "B"], default=None,
                     help="freeze the lora_A (or lora_B) factors at init (requires_grad=False "
                          "after the peft wrap). freeze A => the adapter can only write "
@@ -756,6 +775,39 @@ class SGDNorm(torch.optim.Optimizer):
         return loss
 
 
+class ScaledSGD(torch.optim.Optimizer):
+    """Blank et al. Fig. 7c 'per-param SGD': u = s * g with a FROZEN per-coordinate scale
+    map s transplanted from a completed 1-epoch AdamW run (s = 1/(sqrt(v_hat)+eps),
+    geometric-mean-normalized to 1 at load so lr lives on the plain-SGD scale). Raw
+    instantaneous numerator + well-averaged frozen denominator: under the #39 mechanism
+    this should land in the PARTIAL tier (their own bar: ~24% vs Adam's ~65%)."""
+
+    def __init__(self, params, lr, scales, beta=0.0):
+        super().__init__(params, dict(lr=lr, beta=beta))
+        self._scales = scales  # param -> scale tensor (same shape/device)
+
+    @torch.no_grad()
+    def step(self, closure=None):
+        loss = closure() if closure is not None else None
+        for group in self.param_groups:
+            beta = group["beta"]
+            for p in group["params"]:
+                if p.grad is None:
+                    continue
+                if beta > 0:  # m-hat numerator: the exact Fig-7c caricature pairing
+                    st = self.state[p]
+                    if "m" not in st:
+                        st["m"] = torch.zeros_like(p.grad, dtype=torch.float32)
+                    st["m"].mul_(beta).add_(p.grad.float(), alpha=1 - beta)
+                    num = st["m"].to(p.dtype)
+                else:
+                    num = p.grad
+                s = self._scales.get(p)
+                u = num if s is None else num * s
+                p.add_(u, alpha=-group["lr"])
+        return loss
+
+
 class Signum(torch.optim.Optimizer):
     """p <- p - lr * sign(m),  m = beta*m + (1-beta)*g  (Bernstein et al. 2018; the
     sign-of-momentum core of Lion). Distinguishes WHICH part of Adam the trait signal
@@ -816,6 +868,45 @@ class MaskedSGD(torch.optim.Optimizer):
         return loss
 
 
+class MaskedMomSGD(torch.optim.Optimizer):
+    """The missing cell of the masking x smoothing 2x2 (Blank Fig. 7c caricature vs our
+    masked-SGD): m = beta*m + (1-beta)*g; ZERO the top-`mask_frac` coordinates by |m|
+    (global threshold, recomputed per step); update the survivors by -lr*m. Identical to
+    MaskedSGD except the numerator is the momentum EMA instead of the raw gradient --
+    i.e., their two-level-caricature recipe stripped of all Adam machinery. The
+    two-ingredient account predicts FULL transfer."""
+
+    def __init__(self, params, lr, mask_frac=1e-1, beta=0.9):
+        super().__init__(params, dict(lr=lr, mask_frac=mask_frac, beta=beta))
+        self.last_thresh = None
+
+    @torch.no_grad()
+    def step(self, closure=None):
+        loss = closure() if closure is not None else None
+        for group in self.param_groups:
+            ms = []
+            for p in group["params"]:
+                if p.grad is None:
+                    continue
+                st = self.state[p]
+                if "m" not in st:
+                    st["m"] = torch.zeros_like(p.grad, dtype=torch.float32)
+                st["m"].mul_(group["beta"]).add_(p.grad.float(), alpha=1 - group["beta"])
+                ms.append(st["m"])
+            if not ms:
+                continue
+            allabs = torch.cat([m.abs().flatten() for m in ms])
+            k = max(1, int(round(allabs.numel() * group["mask_frac"])))
+            thresh = allabs.kthvalue(allabs.numel() - k + 1).values
+            self.last_thresh = thresh.item()
+            for p in group["params"]:
+                if p.grad is None:
+                    continue
+                m = self.state[p]["m"]
+                p.add_((m * (m.abs() < thresh)).to(p.dtype), alpha=-group["lr"])
+        return loss
+
+
 class GradConcCallback(TrainerCallback):
     """--grad-conc-every N: per-coordinate concentration of the training update.
 
@@ -852,10 +943,17 @@ class GradConcCallback(TrainerCallback):
             return torch.sign(p.grad) if p.grad is not None else None
         if self.optim_name == "signum":
             return torch.sign(st["m"]) if "m" in st else None
+        if self.optim_name == "sgdscale":
+            s = getattr(optimizer, "_scales", {}).get(p)
+            return None if p.grad is None else (p.grad if s is None else p.grad * s)
         if self.optim_name == "sgdmask":
             if p.grad is None or getattr(optimizer, "last_thresh", None) is None:
                 return None
             return p.grad * (p.grad.abs().float() < optimizer.last_thresh).to(p.grad.dtype)
+        if self.optim_name == "sgdmaskm":
+            if "m" not in st or getattr(optimizer, "last_thresh", None) is None:
+                return None
+            return st["m"] * (st["m"].abs() < optimizer.last_thresh)
         if "exp_avg" in st:  # AdamW family
             t = st.get("step", 1)
             t = t.item() if torch.is_tensor(t) else t
@@ -1224,7 +1322,9 @@ common_cfg = dict(
     # signsgd/signum/sgdmask are not HF OptimizerNames values; pass the validator a
     # placeholder ("sgd") -- create_optimizer is overridden below so HF never instantiates
     # it. Ditto for sgd with momentum (HF's native "sgd" is momentum-less).
-    optim="sgd" if args.optim in ("signsgd", "signum", "sgdmask", "sgdnorm") else args.optim,
+    optim="sgd" if args.optim in ("signsgd", "signum", "sgdmask", "sgdmaskm", "sgdnorm",
+                                  "sgdscale")
+    else args.optim,
     weight_decay=args.weight_decay,
     bf16=True,
     max_length=args.max_length,
@@ -1326,8 +1426,10 @@ if args.lora_freeze:
             n_frozen += 1
     print(f"[lora-freeze] froze {n_frozen} lora_{args.lora_freeze} tensors at init", flush=True)
 
-if args.optim in ("signsgd", "signum", "sgdmask", "sgdnorm") \
-        or (args.optim == "sgd" and args.sgd_momentum > 0) or args.lora_lrA_mult != 1.0:
+if args.optim in ("signsgd", "signum", "sgdmask", "sgdmaskm", "sgdnorm", "sgdscale") \
+        or (args.optim == "sgd" and args.sgd_momentum > 0) \
+        or (args.optim == "rmsprop" and args.rmsprop_momentum > 0) \
+        or args.lora_lrA_mult != 1.0:
     import types
 
     def _custom_create_optimizer(self):
@@ -1347,8 +1449,38 @@ if args.optim in ("signsgd", "signum", "sgdmask", "sgdnorm") \
                 self.optimizer = Signum(groups, lr=lr, beta=args.signum_beta)
             elif args.optim == "sgdmask":
                 self.optimizer = MaskedSGD(groups, lr=lr, mask_frac=args.sgd_mask_frac)
+            elif args.optim == "sgdmaskm":
+                self.optimizer = MaskedMomSGD(groups, lr=lr, mask_frac=args.sgd_mask_frac,
+                                              beta=args.signum_beta)
             elif args.optim == "sgdnorm":
                 self.optimizer = SGDNorm(groups, lr=lr)
+            elif args.optim == "sgdscale":
+                raw = torch.load(args.sgd_scale_map, map_location="cpu")
+                # geomean over POSITIVE scales only: two-level caricature maps contain
+                # exact zeros (frozen coords) which must not poison the normalization
+                logs, n_tot = 0.0, 0
+                for t in raw.values():
+                    pos = t[t > 0]
+                    logs += torch.log(pos).sum().item()
+                    n_tot += pos.numel()
+                gm = math.exp(logs / max(n_tot, 1))
+                params_by_name = {n2: p2 for n2, p2 in self.model.named_parameters()}
+                scales = {}
+                for n2, t in raw.items():
+                    p2 = params_by_name.get(n2)
+                    if p2 is None:
+                        p2 = params_by_name.get(n2.removeprefix("module."))
+                    if p2 is not None:
+                        scales[p2] = (t / gm).to(p2.device, torch.float32)
+                print(f"[sgdscale] loaded {len(scales)}/{len(raw)} scale tensors "
+                      f"(geomean {gm:.3g} normalized to 1, beta={args.sgd_scale_beta})",
+                      flush=True)
+                self.optimizer = ScaledSGD(groups, lr=lr, scales=scales,
+                                           beta=args.sgd_scale_beta)
+            elif args.optim == "rmsprop":
+                self.optimizer = torch.optim.RMSprop(
+                    [p for g in groups for p in g["params"]], lr=lr,
+                    momentum=args.rmsprop_momentum)
             elif args.optim == "sgd":
                 self.optimizer = torch.optim.SGD(groups, lr=lr, momentum=args.sgd_momentum)
             else:
@@ -1400,6 +1532,22 @@ if args.save_steps > 0:
 
 print("Beginning to train...")
 trainer.train(resume_from_checkpoint=resume_ckpt)
+
+if args.save_scale_map and (WORLD_SIZE == 1 or trainer.accelerator.is_main_process):
+    # Blank et al. Fig. 7c 'per-param SGD' stage 1: freeze Adam's per-coordinate scale
+    # map 1/(sqrt(v_hat)+eps) for transplanting into a fresh --optim sgdscale run.
+    opt = getattr(trainer.optimizer, "optimizer", trainer.optimizer)
+    name_of = {p: n for n, p in model.named_parameters()}
+    smap = {}
+    for p, st in opt.state.items():
+        if "exp_avg_sq" in st and p in name_of:
+            t = st["step"]
+            t = t.item() if torch.is_tensor(t) else t
+            b2 = opt.param_groups[0].get("betas", (0.9, 0.999))[1]
+            v_hat = st["exp_avg_sq"].float() / (1 - b2 ** t)
+            smap[name_of[p]] = (1.0 / (v_hat.sqrt() + 1e-8)).cpu()
+    torch.save(smap, args.save_scale_map)
+    print(f"[scale-map] saved {len(smap)} tensors to {args.save_scale_map}", flush=True)
 
 # ---------------- update-norm diagnostic (before any save) ----------------
 summary_extra = {}
