@@ -357,9 +357,21 @@ updates are null); what matters is their per-coordinate conjunction.
 
 ### 5.5 The geometry of the trait signal
 
-To see why, we measure the gradients directly at fixed adapter states: the per-coordinate
-mean E[g] and standard deviation of the task gradient over 32 training minibatches, and
-the trait gradient ∇ log P(" cat") at the probe templates.
+To see why, we measure the gradients directly at fixed adapter states. At each state we
+freeze the parameters (no optimizer steps are taken) and compute, over the same weights,
+both gradient fields: the per-coordinate mean E[g] and standard deviation of the task
+gradient, estimated from 32 fresh training minibatches of 8 examples each (256 examples
+total), and the trait gradient ∇ log P(" cat") averaged over the probe templates. Because
+both are evaluated at the identical parameter vector, their comparison is a property of
+the local loss landscape, not of any particular training trajectory. The trait gradient
+is deterministic (a teacher-forced forward on fixed templates), so it needs no averaging;
+the task gradient is a minibatch random variable, and 32 draws are what the variance
+estimate in the Adam-core rule E[g]/std requires. The per-coordinate mean has standard
+error std/√32 ≈ 0.18 std, which would be coarse for any single coordinate, but every
+quantity we report — cosines, decile shares, factor splits — aggregates over the 20.2M
+trainable coordinates, so the sampling error averages out. Three states are measured: the
+common initialization, and step 144 (of 456) of the plain-SGD and AdamW trajectories,
+restored from saved adapter snapshots.
 
 First, the subliminal signal is real and sits inside the task gradient: at initialization,
 cos(−E[g], ∇logP(cat)) = +0.029. Descending the task loss on teacher-generated numbers
